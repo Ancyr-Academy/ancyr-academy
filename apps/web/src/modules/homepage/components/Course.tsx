@@ -1,0 +1,152 @@
+import styled from "styled-components";
+import React from "react";
+import { FaKey } from "react-icons/fa";
+import { pxToRem } from "../../ui/font-utils";
+import { Button } from "../../ui/Button";
+
+export const Course: React.FC<{
+  type: string;
+  title: string;
+  resume: string;
+  keyPoints: string[];
+  imageUrl: string;
+  url: string;
+  isHot?: boolean;
+  isFree?: boolean;
+}> = ({ type, title, resume, keyPoints, imageUrl, url, isHot, isFree }) => {
+  return (
+    <View>
+      {isHot ? <HotBadge>Hot</HotBadge> : null}
+      <Head>
+        <ImageContainer>
+          <img src={imageUrl} />
+          {isFree ? <FreeBadge>Gratuit</FreeBadge> : null}
+        </ImageContainer>
+        <Texts>
+          <Type>{type}</Type>
+          <Title>{title}</Title>
+          <Resume>{resume}</Resume>
+        </Texts>
+      </Head>
+      <KeyPoints>
+        {keyPoints.map((point) => (
+          <KeyPoint key={point}>
+            <FaKey />
+            <KeyPointText>{point}</KeyPointText>
+          </KeyPoint>
+        ))}
+      </KeyPoints>
+      <Button size="big" url={url} wide>
+        Découvrir la formation
+      </Button>
+    </View>
+  );
+};
+
+const View = styled.div`
+  position: relative;
+
+  padding-inline: 32px;
+  padding-top: 32px;
+  padding-bottom: 20px;
+
+  border: 1px solid #dfe8e8;
+  border-radius: 5px;
+
+  max-width: 960px;
+  margin-inline: auto;
+`;
+
+const HotBadge = styled.div`
+  position: absolute;
+  top: -20px;
+  right: 20px;
+
+  background-color: #ee5a1b;
+  color: white;
+  font-weight: 600;
+
+  padding-inline: 16px;
+  padding-block: 8px;
+  border-radius: 4px;
+
+  text-transform: uppercase;
+  font-size: ${pxToRem(20)};
+`;
+const Head = styled.div`
+  display: flex;
+  gap: 32px;
+`;
+
+const ImageContainer = styled.div`
+  position: relative;
+  z-index: -1;
+
+  img {
+    height: 240px;
+  }
+`;
+
+const FreeBadge = styled.div`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background-color: #49d5cc;
+  color: white;
+  font-weight: 600;
+
+  padding-inline: 8px;
+  padding-block: 4px;
+  border-radius: 4px;
+
+  text-transform: uppercase;
+  font-size: ${pxToRem(18)};
+`;
+
+const Texts = styled.div`
+  padding-block: 32px;
+`;
+
+const Type = styled.h6`
+  font-size: ${pxToRem(20)};
+  text-transform: uppercase;
+  color: #7caeb1;
+
+  margin-top: 0;
+  margin-bottom: 4px;
+`;
+
+const Title = styled.h4`
+  font-size: ${pxToRem(32)};
+  margin-top: 0;
+  margin-bottom: 14px;
+`;
+
+const Resume = styled.p`
+  font-size: ${pxToRem(20)};
+  line-height: 1.3;
+  margin: 0;
+  color: #3e3e3e;
+`;
+
+const KeyPoints = styled.div`
+  margin-block: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+`;
+
+const KeyPoint = styled.div`
+  font-size: ${pxToRem(20)};
+
+  svg {
+    fill: var(--color-primary);
+  }
+`;
+
+const KeyPointText = styled.span`
+  margin-left: 10px;
+  line-height: 1.3;
+`;

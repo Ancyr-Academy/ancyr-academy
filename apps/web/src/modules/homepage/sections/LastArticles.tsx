@@ -40,7 +40,7 @@ export const LastArticles: React.FC = () => {
 };
 
 const View = styled.div`
-  margin-block: 50px;
+  margin-block: 80px;
 `;
 
 const List = styled.div`

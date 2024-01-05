@@ -40,6 +40,7 @@ export const Header = () => {
 
 const View = styled.div`
   position: fixed;
+  z-index: 9;
   top: 0;
   left: 0;
   right: 0;
