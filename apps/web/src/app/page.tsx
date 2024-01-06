@@ -6,7 +6,6 @@ import { LastCourses } from "../modules/homepage/sections/LastCourses";
 const Page = () => {
   return (
     <main>
-      <Header />
       <Intro />
       <LastArticles />
       <LastCourses />

@@ -26,10 +26,12 @@ export const Header = () => {
             <Logo alt="Ancyr Academy" src={LogoFull} />
           </div>
           <Menu>
-            <MenuItem url="/">Articles</MenuItem>
-            <MenuItem url="/blog">Livres</MenuItem>
-            <MenuItem url="/about">Formations</MenuItem>
-            <MenuItem url="/contact">Youtube</MenuItem>
+            <MenuItem url="/">Accueil</MenuItem>
+            <MenuItem url="/books">Livres</MenuItem>
+            <MenuItem url="/courses">Formations</MenuItem>
+            <MenuItem url="https://www.youtube.com/@ancyracademy">
+              Youtube
+            </MenuItem>
           </Menu>
         </InnerView>
       </View>

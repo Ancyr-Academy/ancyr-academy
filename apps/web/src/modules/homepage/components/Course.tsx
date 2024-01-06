@@ -3,6 +3,7 @@ import React from "react";
 import { FaKey } from "react-icons/fa";
 import { pxToRem } from "../../ui/font-utils";
 import { Button } from "../../ui/Button";
+import { mediaQuery, size } from "../../ui/media-query";
 
 export const Course: React.FC<{
   type: string;
@@ -55,6 +56,12 @@ const View = styled.div`
 
   max-width: 960px;
   margin-inline: auto;
+
+  ${mediaQuery(size.medium)} {
+    padding-inline: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 `;
 
 const HotBadge = styled.div`
@@ -76,6 +83,11 @@ const HotBadge = styled.div`
 const Head = styled.div`
   display: flex;
   gap: 32px;
+
+  ${mediaQuery(size.medium)} {
+    flex-direction: column;
+    gap: 0;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -84,13 +96,19 @@ const ImageContainer = styled.div`
 
   img {
     height: 240px;
+
+    ${mediaQuery(size.medium)} {
+      height: initial;
+      width: 100%;
+      object-fit: contain;
+    }
   }
 `;
 
 const FreeBadge = styled.div`
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
 
   background-color: #49d5cc;
   color: white;
@@ -136,6 +154,13 @@ const KeyPoints = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+
+  ${mediaQuery(size.medium)} {
+    gap: 12px;
+    margin-block: 12px;
+    margin-bottom: 28px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const KeyPoint = styled.div`

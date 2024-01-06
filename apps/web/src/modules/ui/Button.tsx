@@ -7,7 +7,7 @@ type Size = "normal" | "big";
 export const Button: React.FC<{
   url: string;
   children: string;
-  wide: boolean;
+  wide?: boolean;
   size?: "normal" | "big";
 }> = ({ url, children, wide, size }) => {
   return (

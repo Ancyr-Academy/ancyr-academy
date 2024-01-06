@@ -6,6 +6,7 @@ import { Article } from "../components/Article";
 import { Container } from "../../ui/Container";
 import { pxToRem } from "../../ui/font-utils";
 import { SectionTitle } from "../components/SectionTitle";
+import { mediaQuery, size } from "../../ui/media-query";
 
 export const LastArticles: React.FC = () => {
   return (
@@ -47,4 +48,8 @@ const List = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+
+  ${mediaQuery(size.medium)} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
