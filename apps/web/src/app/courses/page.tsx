@@ -32,7 +32,7 @@ const Page = () => {
             resume="Apprenez à développer des applications robustes et scalables en mettant en place une Clean Architecture testée de bout en bout."
             title="Clean Architecture"
             type="Formation"
-            url="/1"
+            url="/clean-architecture"
           />
           <Course
             imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/ZPoSCdqeQK2NNUe8DDkP"
@@ -49,7 +49,7 @@ const Page = () => {
             resume="Découvrez ce que sont les tests unitaires et apprenez à les mettre en oeuvre dans n’importe quel type de projet, qu’il s’agisse d’une app, d’un CLI ou d’un jeu."
             title="Tests Unitaires"
             type="Essentials"
-            url="/2"
+            url="https://courses.ancyracademy.fr/p/essentials-tests-unitaires"
           />
         </List>
       </Container>
