@@ -11,7 +11,8 @@ const font = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ancyr Academy",
-  description: "La Ancyr Academy",
+  description:
+    "Formations, Cours, Articles & Vidéos sur l'Ingénierie Logicielle, le Software Craftsmanship et le Développement d'application robustes et maintenables.",
 };
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
