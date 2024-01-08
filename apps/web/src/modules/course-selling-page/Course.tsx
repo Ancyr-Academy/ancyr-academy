@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import { styled } from "styled-components";
 import { pxToRem } from "../ui/font-utils";
 import { Button } from "../ui/Button";
 import { mediaQuery, size } from "../ui/media-query";

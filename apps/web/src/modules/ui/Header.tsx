@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import styled from "styled-components";
+import { styled } from "styled-components";
 import LogoFull from "../../assets/logo-full.png";
 import { Container } from "./Container";
 import { pxToRem } from "./font-utils";

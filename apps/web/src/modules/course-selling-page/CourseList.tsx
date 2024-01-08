@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 import { mediaQuery, size } from "../ui/media-query";
 
 export const CourseList = styled.div`

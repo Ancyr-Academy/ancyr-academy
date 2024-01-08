@@ -1,6 +1,6 @@
 "use client";
 
-import styled from "styled-components";
+import { styled } from "styled-components";
 import Image from "next/image";
 import { Container } from "../../ui/Container";
 import { pxToRem } from "../../ui/font-utils";

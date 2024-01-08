@@ -1,6 +1,6 @@
 "use client";
 
-import styled from "styled-components";
+import { styled } from "styled-components";
 import React from "react";
 import { Article } from "../components/Article";
 import { Container } from "../../ui/Container";

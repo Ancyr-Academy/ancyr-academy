@@ -1,6 +1,6 @@
 "use client";
 
-import styled from "styled-components";
+import { styled } from "styled-components";
 import Image from "next/image";
 import React from "react";
 import LogoAlone from "../../../assets/logo-alone.png";

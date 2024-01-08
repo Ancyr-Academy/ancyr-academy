@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 import React from "react";
 import { FaKey } from "react-icons/fa";
 import { pxToRem } from "../../ui/font-utils";
