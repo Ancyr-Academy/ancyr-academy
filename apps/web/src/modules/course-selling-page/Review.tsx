@@ -55,6 +55,8 @@ const Content = styled.p`
 
   font-size: ${pxToRem(24)};
   line-height: 1.3;
+  font-weight: 300;
+  color: #3e3e3e;
 `;
 
 const Stars = styled.div`

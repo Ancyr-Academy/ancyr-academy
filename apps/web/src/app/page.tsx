@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <main>
       <Intro />
-      <LastArticles />
+      {/*<LastArticles />*/}
       <LastCourses />
     </main>
   );

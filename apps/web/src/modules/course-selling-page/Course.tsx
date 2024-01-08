@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { pxToRem } from "../ui/font-utils";
 import { Button } from "../ui/Button";
+import { mediaQuery, size } from "../ui/media-query";
 
 export const Course: React.FC<{
   title: string;
@@ -44,6 +45,11 @@ const HeadImage = styled.img`
 const Content = styled.div`
   padding-inline: 40px;
   padding-block: 20px;
+
+  ${mediaQuery(size.medium)} {
+    padding-inline: 24px;
+    padding-block: 12px;
+  }
 `;
 
 const Title = styled.h3`

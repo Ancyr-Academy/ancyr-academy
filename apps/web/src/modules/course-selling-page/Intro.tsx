@@ -27,8 +27,7 @@ const View = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  background-color: #1b8071;
-  opacity: 0.9;
+  background-color: rgba(27, 128, 113, 0.9);
 
   position: absolute;
   top: 0;

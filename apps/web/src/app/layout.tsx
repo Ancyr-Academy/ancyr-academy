@@ -5,6 +5,7 @@ import "./globals.css";
 import "normalize.css/normalize.css";
 import { StyledComponentsRegistry } from "../modules/ui/StyledComponentRegistry";
 import { Header } from "../modules/ui/Header";
+import { Footer } from "../modules/ui/Footer";
 
 const font = Outfit({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <StyledComponentsRegistry>
           <Header />
           {children}
+          <Footer />
         </StyledComponentsRegistry>
       </body>
     </html>
