@@ -59,7 +59,7 @@ const Texts = styled.div`
 `;
 
 const IntroTitle = styled.h6`
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
   text-transform: uppercase;
   margin: 0;
 

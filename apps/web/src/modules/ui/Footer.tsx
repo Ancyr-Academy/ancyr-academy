@@ -99,7 +99,7 @@ const Title = styled.h6`
   margin-block: 0;
 
   text-transform: uppercase;
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
   font-weight: 700;
   color: var(--color-primary);
 `;
@@ -159,7 +159,7 @@ const SectionTitle = styled.h6`
   margin-block: 0;
 
   text-transform: uppercase;
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
   font-weight: 700;
   color: var(--color-primary);
 `;

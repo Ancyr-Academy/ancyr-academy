@@ -14,13 +14,13 @@ export const Content = styled.div`
     }
 
     & > p {
-      font-size: ${pxToRem(24)};
+      font-size: ${pxToRem(21)};
       line-height: 1.5;
     }
 
     & > ul {
       li {
-        font-size: ${pxToRem(24)};
+        font-size: ${pxToRem(21)};
         line-height: 1.5;
       }
     }

@@ -37,7 +37,7 @@ const IntroTitle = styled.h6`
 `;
 
 const IntroText = styled.p`
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
   font-weight: 300;
 
   margin-block: 0;

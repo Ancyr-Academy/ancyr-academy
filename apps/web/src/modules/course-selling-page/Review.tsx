@@ -45,7 +45,7 @@ const Author = styled.h6`
   margin-inline-start: 20px;
   margin-block: 0;
 
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
   font-weight: 700;
 `;
 
@@ -53,7 +53,7 @@ const Content = styled.p`
   margin-block: 0;
   margin-top: 20px;
 
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
   line-height: 1.3;
   font-weight: 300;
   color: #3e3e3e;
@@ -64,7 +64,7 @@ const Stars = styled.div`
 
   display: flex;
   align-items: center;
-  font-size: ${pxToRem(32)};
+  font-size: ${pxToRem(28)};
   gap: 8px;
   color: var(--color-primary);
 `;

@@ -14,6 +14,7 @@ export const Course: React.FC<{
 }> = ({ title, text, price, imageUrl, url, isHot }) => {
   return (
     <View>
+      {isHot ? <HotBadge>Hot</HotBadge> : null}
       <HeadImage src={imageUrl} />
       <Content>
         <Title>{title}</Title>
@@ -29,6 +30,8 @@ export const Course: React.FC<{
 };
 
 const View = styled.div`
+  position: relative;
+
   display: block;
   text-decoration: none;
   color: #3e3e3e;
@@ -54,19 +57,63 @@ const Content = styled.div`
 
 const Title = styled.h3`
   text-transform: uppercase;
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
   color: var(--color-primary);
 `;
 
 const Text = styled.p`
   line-height: 1.2;
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
 `;
 
 const Pricing = styled.p`
   text-align: right;
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(21)};
   font-weight: 700;
 
   margin-block: 0;
+`;
+
+const HotBadge = styled.div`
+  @keyframes text-wizz {
+    0%,
+    5%,
+    50%,
+    100% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-10px); /* shake to the left */
+    }
+    20% {
+      transform: translateX(10px); /* shake to the right */
+    }
+    30% {
+      transform: translateX(-5px); /* shake to the left */
+    }
+    40% {
+      transform: translateX(5px); /* shake to the right */
+    }
+  }
+
+  position: absolute;
+  top: -10px;
+  right: 20px;
+
+  background-color: #ec420e;
+  color: white;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  width: 80px;
+
+  border-radius: 4px;
+
+  text-transform: uppercase;
+  font-size: ${pxToRem(20)};
+  animation: text-wizz 1.2s infinite; /* Apply the animation */
 `;

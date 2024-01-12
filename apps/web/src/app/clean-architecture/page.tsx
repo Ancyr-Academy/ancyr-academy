@@ -38,38 +38,46 @@ const Page = () => {
               <h2>Une approche pragmatique et concrète</h2>
               <p>
                 L’objectif de cette formation est de vous rendre capable de
-                coder des applications plus robustes et plus facile à maintenir
-                en situation réelle.
+                <b>
+                  coder des applications plus robustes et plus facile à
+                  maintenir en situation réelle.
+                </b>
               </p>
               <p>Vous y apprendez :</p>
               <ul>
-                <li>Les principes fondateurs de la Clean Architecture</li>
+                <li>
+                  Les principes fondateurs de la <b>Clean Architecture</b>
+                </li>
                 <li>
                   Comment structurer vos applications, front-end comme back-end
                 </li>
-                <li>Comment tirer profit des principes SOLID</li>
                 <li>
-                  A modulariser votre code afin d’être capable de travailler à
-                  plusieurs sur la même feature sans se marcher dessus
+                  Comment tirer profit des <b>principes SOLID</b>
                 </li>
                 <li>
-                  A rendre votre application entièrement testable en unitaire et
-                  en intégration
+                  A <b>modulariser votre code</b> afin d’être capable de{" "}
+                  <b>travailler à plusieurs sur la même feature</b> sans se
+                  marcher dessus
                 </li>
                 <li>
-                  A isoler votre logique métier des détails d’infrastructure
+                  A rendre votre application{" "}
+                  <b>entièrement testable en unitaire et en intégration</b>
                 </li>
                 <li>
-                  Comment se rendre indépendant de la base de données et changer
-                  de technologie au besoin
+                  A isoler votre{" "}
+                  <b>logique métier des détails d’infrastructure</b>
                 </li>
                 <li>
-                  Comment tirer parti du Domain-Driven Design pour faire émerger
-                  la problématique métier à l’intérieur de votre code
+                  Comment <b>se rendre indépendant de la base de données</b> et
+                  changer de technologie au besoin
                 </li>
                 <li>
-                  A tirer parti du CQRS pour optimiser différemment votre modèle
-                  de lecture et votre modèle d’écriture
+                  Comment tirer parti du <b> Domain-Driven Design</b> pour faire
+                  émerger la problématique métier à l’intérieur de votre code
+                </li>
+                <li>
+                  A tirer parti du <b>CQRS</b> pour optimiser différemment votre
+                  modèle de lecture et votre modèle d’écriture
                 </li>
               </ul>
             </section>
@@ -93,9 +101,15 @@ const Page = () => {
                   De dizaines d’heures de cours dans lesquels je code devant
                   vous
                 </li>
-                <li>D’un accès illimité au support de formation en VoD</li>
-                <li>D’une communauté privée des élèves de la formation</li>
-                <li>De mises à jour gratuites et illimités du contenu à vie</li>
+                <li>
+                  D’un <b>accès illimité</b> au support de formation en VoD
+                </li>
+                <li>
+                  D’une <b>communauté privée</b> des élèves de la formation
+                </li>
+                <li>
+                  De <b>mises à jour gratuites et illimités du contenu à vie</b>
+                </li>
                 <li>
                   D’un accès anticipé aux futures formations et aux workshops
                 </li>
@@ -135,6 +149,7 @@ const Page = () => {
               <CourseList>
                 <Course
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/WV6TlGkbRQChrQCdtLbn"
+                  isHot
                   price={300}
                   text="L'ensemble des formations Clean Architecture (Fondamentaux + NextJS + NestJS) et les futures formations sur la Clean Architecture."
                   title="MegaBundle"
