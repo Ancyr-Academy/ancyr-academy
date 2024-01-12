@@ -23,6 +23,9 @@ import AdrienVerschaere from "../../assets/reviews/adrienverschaere.jpeg";
 import MelDonati from "../../assets/reviews/meldonati.jpeg";
 import FlavioMoreno from "../../assets/reviews/flaviomoreno.jpeg";
 import Chaka from "../../assets/reviews/chaka.jpeg";
+import FredericLossignol from "../../assets/reviews/frederic_lossignol.jpeg";
+import AnthonyDelhaye from "../../assets/reviews/anthony_delhaye.jpeg";
+import AmelieHusson from "../../assets/reviews/amlie_husson.jpeg";
 
 const Page = () => {
   return (
@@ -142,15 +145,6 @@ const Page = () => {
             <section>
               <h2>Ce qu'en disent les élèves</h2>
               <ReviewList>
-                <Review authorName="Chaka">
-                  Avant cette formation, je cherchais à améliorer la qualité et
-                  la maintenabilité des architectures Front-end. Cette formation
-                  a non seulement répondu à mes attentes, mais elle les a même
-                  dépassées. cette formation a été extrêmement enrichissante et
-                  m'a permis de consolider mes connaissances en clean
-                  architecture. Je la recommande vivement à quiconque souhaite
-                  améliorer ses compétences en matière d'architecture Front-end.
-                </Review>
                 <Review authorImage={YazidDaoudi.src} authorName="Yazid Daoudi">
                   Je conseil fortement la formation d'Anthony. Elle convient a
                   tous, debutant et confirmé. Anthony prend le temps d'expliquer
@@ -169,6 +163,25 @@ const Page = () => {
                   et m'a fourni une compréhension approfondie sur la façon
                   d'architecturer une application de manière cohérente.
                 </Review>
+                <Review authorName="Chaka">
+                  Avant cette formation, je cherchais à améliorer la qualité et
+                  la maintenabilité des architectures Front-end. Cette formation
+                  a non seulement répondu à mes attentes, mais elle les a même
+                  dépassées. cette formation a été extrêmement enrichissante et
+                  m'a permis de consolider mes connaissances en clean
+                  architecture. Je la recommande vivement à quiconque souhaite
+                  améliorer ses compétences en matière d'architecture Front-end.
+                </Review>
+                <Review
+                  authorImage={AmelieHusson.src}
+                  authorName="Amélie Husson"
+                >
+                  C'est une formation très claire qui permet de stimuler
+                  l'intérêt sur les sujets du Craft et corréler les notions de
+                  bases entre elles. Recommandée d'intérêt public dans le monde
+                  du dév !
+                </Review>
+
                 <Review
                   authorImage={AdrienVerschaere.src}
                   authorName="Adrien Verschaere"
@@ -210,6 +223,34 @@ const Page = () => {
                   incroyablement détaillée et complète, même pour des étudiants
                   débutant en programmation.
                 </Review>
+                <Review
+                  authorImage={FredericLossignol.src}
+                  authorName="Frederic Lossignol"
+                >
+                  Formateur JS, Angular, Node.js orienté clean Architecture,
+                  j'ai particulièrement aimé la précision de cette formation,
+                  tant dans la terminologie du vocabulaire, que les comparaisons
+                  des types de tests, leur raison d'être et le choix des tests à
+                  privilégier selon les situations. Ce niveau de précision est
+                  rare quand on parle des test, au niveau des développeurs,
+                  c'est un plus indéniable de cette formation que je recommande
+                  moi-même à mes apprenants.
+                </Review>
+                <Review authorName="Alex Boisseau">
+                  Très content de la formation jusqu'ici, pas facile de tout
+                  intégrer et c'est normal mais je trouve que tu as une très
+                  bonne allure de croisière et que tu expliques bien les choses,
+                  bravo !
+                </Review>
+                <Review
+                  authorImage={AnthonyDelhaye.src}
+                  authorName="Anthony Delhaye"
+                >
+                  Enfin une formation qui reprend les bases ou plutôt le socle
+                  théorique de la clean architecture (bien plus que le livre du
+                  même nom)
+                </Review>
+                <Review authorName="Geoffrey Villard">Vraiment Top !</Review>
               </ReviewList>
             </section>
           </Content>
