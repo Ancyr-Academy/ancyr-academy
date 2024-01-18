@@ -4,6 +4,7 @@ import { styled } from "styled-components";
 import Image from "next/image";
 import React from "react";
 import LogoAlone from "../../../assets/logo-alone.png";
+import { Promotional } from "../promotion/Promotional";
 import { Container } from "./Container";
 import { pxToRem } from "./font-utils";
 
@@ -12,14 +13,17 @@ export const PageIntro: React.FC<{
   subtitle: string;
 }> = ({ title, subtitle }) => {
   return (
-    <View>
-      <Container>
-        <Content>
-          <IntroTitle>{title}</IntroTitle>
-          <IntroText>{subtitle}</IntroText>
-        </Content>
-      </Container>
-    </View>
+    <>
+      <View>
+        <Container>
+          <Content>
+            <IntroTitle>{title}</IntroTitle>
+            <IntroText>{subtitle}</IntroText>
+          </Content>
+        </Container>
+      </View>
+      <Promotional />
+    </>
   );
 };
 

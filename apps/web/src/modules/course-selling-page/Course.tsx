@@ -3,26 +3,44 @@ import { styled } from "styled-components";
 import { pxToRem } from "../ui/font-utils";
 import { Button } from "../ui/Button";
 import { mediaQuery, size } from "../ui/media-query";
+import { isDiscountActive, salesDiscount } from "../promotion";
+import { useIsDiscountActive } from "../promotion/use-is-discount-active";
 
 export const Course: React.FC<{
   title: string;
-  text: string;
   price: number;
   imageUrl: string;
   url: string;
   isHot?: boolean;
-}> = ({ title, text, price, imageUrl, url, isHot }) => {
+  children: React.ReactNode;
+}> = ({ title, children, price, imageUrl, url, isHot }) => {
+  const isDiscount = useIsDiscountActive();
+  const code = salesDiscount.code;
+
+  let finalUrl = url;
+  if (isDiscount) {
+    finalUrl = `${url}?coupon_code=${code}`;
+  }
   return (
     <View>
       {isHot ? <HotBadge>Hot</HotBadge> : null}
       <HeadImage src={imageUrl} />
       <Content>
         <Title>{title}</Title>
-        <Text>{text}</Text>
-        <Pricing>{price}€ TTC</Pricing>
+        <Text>{children}</Text>
+        {isDiscount ? (
+          <>
+            <OldPricing>
+              <s>{price}€ TTC</s>
+            </OldPricing>
+            <Pricing>{price - price * salesDiscount.percentage}€ TTC</Pricing>
+          </>
+        ) : (
+          <Pricing>{price}€ TTC</Pricing>
+        )}
       </Content>
 
-      <Button url={url} wide>
+      <Button url={finalUrl} wide>
         Découvrir
       </Button>
     </View>
@@ -66,9 +84,16 @@ const Text = styled.p`
   font-size: ${pxToRem(21)};
 `;
 
-const Pricing = styled.p`
+const OldPricing = styled.p`
   text-align: right;
   font-size: ${pxToRem(21)};
+  font-weight: 300;
+  color: #a0a0a0;
+  margin-block: 0;
+`;
+const Pricing = styled.p`
+  text-align: right;
+  font-size: ${pxToRem(24)};
   font-weight: 700;
 
   margin-block: 0;

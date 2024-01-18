@@ -26,11 +26,13 @@ import Chaka from "../../assets/reviews/chaka.jpeg";
 import FredericLossignol from "../../assets/reviews/frederic_lossignol.jpeg";
 import AnthonyDelhaye from "../../assets/reviews/anthony_delhaye.jpeg";
 import AmelieHusson from "../../assets/reviews/amlie_husson.jpeg";
+import { Promotional } from "../../modules/promotion/Promotional";
 
 const Page = () => {
   return (
     <main>
       <Intro title="Développez des application robustes et scalables avec la Clean Architecture" />
+      <Promotional />
       <ContentBody>
         <Container>
           <Content>
@@ -122,24 +124,33 @@ const Page = () => {
                 <Course
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/mBkKdN7QdaTOzbWXW9WF"
                   price={50}
-                  text="Apprenez la théorie derrière la Clean Architecture en étudiant les concepts de principes SOLID, d’injection de dépendance et des patterns de la Clean Architecture."
                   title="Fondamentaux"
-                  url="https://courses.ancyracademy.fr/courses/enrolled/2416567"
-                />
+                  url="https://courses.ancyracademy.fr/p/clean-architecture-theorie"
+                >
+                  Apprenez la théorie derrière la Clean Architecture en étudiant
+                  les concepts de principes SOLID, d’injection de dépendance et
+                  des patterns de la Clean Architecture.
+                </Course>
                 <Course
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/HQeGzGLBT3iMntw82WdE"
                   price={150}
-                  text="Apprenez à développer une application front-end en Clean Architecture avec des tests unitaires en utilisant le framework NextJS version 13."
                   title="Front-End NextJS"
-                  url="https://courses.ancyracademy.fr/courses/enrolled/2416572"
-                />
+                  url="https://courses.ancyracademy.fr/p/clean-architecture-nextjs"
+                >
+                  Apprenez à développer une application front-end en Clean
+                  Architecture avec des tests unitaires en utilisant le
+                  framework NextJS version 13.
+                </Course>
                 <Course
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/FI20zcQx6Wx1WweQUZmg"
                   price={150}
-                  text="Apprenez à développer une application back-end en Clean Architecture avec le framework NestJS avec une suite de tests complète, allant des tests unitaires aux tests e2e."
                   title="Back-End NestJS"
-                  url="https://courses.ancyracademy.fr/courses/enrolled/2416574"
-                />
+                  url="https://courses.ancyracademy.fr/p/clean-architecture-nestjs"
+                >
+                  Apprenez à développer une application back-end en Clean
+                  Architecture avec le framework NestJS avec une suite de tests
+                  complète, allant des tests unitaires aux tests e2e.
+                </Course>
               </CourseList>
             </section>
 
@@ -151,10 +162,13 @@ const Page = () => {
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/WV6TlGkbRQChrQCdtLbn"
                   isHot
                   price={300}
-                  text="L'ensemble des formations Clean Architecture (Fondamentaux + NextJS + NestJS) et les futures formations sur la Clean Architecture."
                   title="MegaBundle"
                   url="https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle"
-                />
+                >
+                  L'ensemble des formations Clean Architecture (Fondamentaux +
+                  NextJS + NestJS) et les futures formations sur la Clean
+                  Architecture.
+                </Course>
               </CourseList>
             </section>
             <section>
