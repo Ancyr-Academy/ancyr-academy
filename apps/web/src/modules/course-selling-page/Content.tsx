@@ -14,7 +14,7 @@ export const Content = styled.div`
     }
 
     & > p {
-      font-size: ${pxToRem(21)};
+      font-size: ${pxToRem(22)};
       line-height: 1.5;
       font-weight: 300;
 
@@ -24,10 +24,24 @@ export const Content = styled.div`
     }
 
     & > ul {
+      list-style-type: none;
+      padding-inline-start: 0;
+
       li {
-        font-size: ${pxToRem(21)};
-        line-height: 1.5;
+        svg {
+          margin-right: 12px;
+          fill: var(--color-primary);
+          font-size: ${pxToRem(36)};
+        }
+
+        display: flex;
+        align-items: center;
+
+        font-size: ${pxToRem(22)};
+        line-height: 1;
         font-weight: 300;
+
+        padding-block: 8px;
 
         b {
           font-weight: 600;

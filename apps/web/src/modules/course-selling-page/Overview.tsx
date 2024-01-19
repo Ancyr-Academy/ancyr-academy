@@ -12,6 +12,7 @@ import {
 import { pxToRem } from "../ui/font-utils";
 import CourseBackground from "../../assets/course-background-colored.png";
 import { Container } from "../ui/Container";
+import { mediaQuery, size } from "../ui/media-query";
 
 export const Overview: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ export const Overview: React.FC = () => {
             <Subtitle>
               Développez des applications robustes et maintenables.
               <br />
-              Devenez un véritable développeur Senior.
+              Devenez un véritable <b>développeur Senior.</b>
             </Subtitle>
           </Left>
           <Right>
@@ -62,9 +63,9 @@ const View = styled.div`
   background-image: url("${CourseBackground.src}");
   background-position: center;
   background-size: cover;
-  padding-block: 60px;
 
   position: relative;
+  padding-block: 60px;
 `;
 
 const Content = styled.div`
@@ -75,6 +76,14 @@ const Content = styled.div`
   justify-content: space-between;
 
   gap: 60px;
+
+  ${mediaQuery(size.medium)} {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+
+    gap: 40px;
+  }
 `;
 const Left = styled.div`
   flex: 1;
@@ -93,6 +102,10 @@ const Subtitle = styled.p`
   font-weight: 300;
 
   line-height: 1.3;
+
+  b {
+    font-weight: 600;
+  }
 `;
 
 const Right = styled.div`

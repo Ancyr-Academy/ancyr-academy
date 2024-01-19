@@ -2,11 +2,8 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Book } from "../../modules/books/components/Book";
+import { IoCheckmarkCircle } from "react-icons/io5";
 import { Container } from "../../modules/ui/Container";
-import { PageIntro } from "../../modules/ui/PageIntro";
-import { mediaQuery, size } from "../../modules/ui/media-query";
-import { Intro } from "../../modules/course-selling-page/Intro";
 import { Content } from "../../modules/course-selling-page/Content";
 import { Course } from "../../modules/course-selling-page/Course";
 import { CourseList } from "../../modules/course-selling-page/CourseList";
@@ -22,7 +19,6 @@ import YazidDaoudi from "../../assets/reviews/yaziddaoudi.jpeg";
 import AdrienVerschaere from "../../assets/reviews/adrienverschaere.jpeg";
 import MelDonati from "../../assets/reviews/meldonati.jpeg";
 import FlavioMoreno from "../../assets/reviews/flaviomoreno.jpeg";
-import Chaka from "../../assets/reviews/chaka.jpeg";
 import FredericLossignol from "../../assets/reviews/frederic_lossignol.jpeg";
 import AnthonyDelhaye from "../../assets/reviews/anthony_delhaye.jpeg";
 import AmelieHusson from "../../assets/reviews/amlie_husson.jpeg";
@@ -32,7 +28,6 @@ import { Overview } from "../../modules/course-selling-page/Overview";
 const Page = () => {
   return (
     <main>
-      {/*<Intro title="Développez des application robustes et scalables avec la Clean Architecture" />*/}
       <Overview />
       <Promotional />
       <ContentBody>
@@ -51,8 +46,9 @@ const Page = () => {
             <section>
               <h2>Une approche pragmatique et concrète</h2>
               <p>
-                L’objectif de cette formation est de vous rendre capable de
+                L’objectif de cette formation est de vous rendre capable de{" "}
                 <b>
+                  {" "}
                   coder des applications plus robustes et plus facile à
                   maintenir en situation réelle.
                 </b>
@@ -60,38 +56,66 @@ const Page = () => {
               <p>Vous y apprendez :</p>
               <ul>
                 <li>
-                  Les principes fondateurs de la <b>Clean Architecture</b>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Les principes fondateurs de la <b>Clean Architecture</b>
+                  </span>
                 </li>
                 <li>
-                  Comment structurer vos applications, front-end comme back-end
+                  <IoCheckmarkCircle />
+                  <span>
+                    Comment structurer vos applications, front-end comme
+                    back-end
+                  </span>
                 </li>
                 <li>
-                  Comment tirer profit des <b>principes SOLID</b>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Comment tirer profit des <b>principes SOLID</b>
+                  </span>
                 </li>
                 <li>
-                  A <b>modulariser votre code</b> afin d’être capable de{" "}
-                  <b>travailler à plusieurs sur la même feature</b> sans se
-                  marcher dessus
+                  <IoCheckmarkCircle />
+                  <span>
+                    A <b>modulariser votre code</b> pour
+                    <b> travailler à plusieurs sur la même feature</b> sans se
+                    marcher dessus
+                  </span>
                 </li>
                 <li>
-                  A rendre votre application{" "}
-                  <b>entièrement testable en unitaire et en intégration</b>
+                  <IoCheckmarkCircle />
+                  <span>
+                    A rendre votre application
+                    <b> entièrement testable en unitaire et en intégration</b>
+                  </span>
                 </li>
                 <li>
-                  A isoler votre{" "}
-                  <b>logique métier des détails d’infrastructure</b>
+                  <IoCheckmarkCircle />
+                  <span>
+                    A isoler votre{" "}
+                    <b> logique métier des détails d’infrastructure</b>
+                  </span>
                 </li>
                 <li>
-                  Comment <b>se rendre indépendant de la base de données</b> et
-                  changer de technologie au besoin
+                  <IoCheckmarkCircle />
+                  <span>
+                    Comment <b>se rendre indépendant de la base de données</b>{" "}
+                    et changer de technologie au besoin
+                  </span>
                 </li>
                 <li>
-                  Comment tirer parti du <b> Domain-Driven Design</b> pour faire
-                  émerger la problématique métier à l’intérieur de votre code
+                  <IoCheckmarkCircle />
+                  <span>
+                    Exploiter le <b> Domain-Driven Design</b> pour faire émerger
+                    la problématique métier à l’intérieur de votre code
+                  </span>
                 </li>
                 <li>
-                  A tirer parti du <b>CQRS</b> pour optimiser différemment votre
-                  modèle de lecture et votre modèle d’écriture
+                  <IoCheckmarkCircle />
+                  <span>
+                    Exploiter le <b>CQRS</b> pour optimiser différemment votre
+                    modèle de lecture et votre modèle d’écriture
+                  </span>
                 </li>
               </ul>
             </section>
