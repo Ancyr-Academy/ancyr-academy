@@ -174,7 +174,60 @@ const Page = () => {
               </CourseList>
             </section>
             <section>
-              <h2>Ce qu'en disent les élèves</h2>
+              <h2>A qui s'adresse cette formation ?</h2>
+              <p>Cette formation s'adresse à : </p>
+              <ul>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tout développeur souhaitant atteindre{" "}
+                    <b>un niveau Senior</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tout développeur préparant un{" "}
+                    <b>entretien dans une entreprise à haut niveau technique</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tout développeur désireux d'écrire{" "}
+                    <b>du code maintenable & extensible</b>
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Prérequis</h2>
+              <p>Pour suivre cette formation, il est conseillé : </p>
+              <ul>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    D'avoir déjà <b>développé quelques applications</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    D'être à l'aise avec les rudiments du code{" "}
+                    <b>Orienté Objet</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    D'être curieux et{" "}
+                    <b>désireux d'en apprendre toujours plus</b>
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Ce qu'en disent les élèves (+450)</h2>
               <ReviewList>
                 <Review authorImage={YazidDaoudi.src} authorName="Yazid Daoudi">
                   Je conseil fortement la formation d'Anthony. Elle convient a
