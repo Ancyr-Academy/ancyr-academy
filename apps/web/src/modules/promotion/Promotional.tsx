@@ -3,6 +3,7 @@
 import { styled } from "styled-components";
 import { Container } from "../ui/Container";
 import { pxToRem } from "../ui/font-utils";
+import { mediaQuery, size } from "../ui/media-query";
 import { useIsDiscountActive } from "./use-is-discount-active";
 import { useCountdown } from "./use-countdown";
 import { useDuration } from "./use-duration";
@@ -51,7 +52,7 @@ export const Promotional = () => {
                 <CountdownNumber>
                   {duration.pad(duration.seconds)}
                 </CountdownNumber>
-                <CountdownLabel>secondes</CountdownLabel>
+                <CountdownLabel>sec</CountdownLabel>
               </Countdown>
             </Countdowns>
           </Right>
@@ -71,6 +72,14 @@ const SubView = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  ${mediaQuery(size.medium)} {
+    flex-direction: column;
+    align-items: initial;
+    justify-content: initial;
+
+    gap: 20px;
+  }
 `;
 
 const Left = styled.div``;
@@ -103,6 +112,10 @@ const Countdown = styled.div`
 
   width: 90px;
   gap: 8px;
+
+  ${mediaQuery(size.medium)} {
+    width: fit-content;
+  }
 `;
 
 const CountdownNumber = styled.div`
