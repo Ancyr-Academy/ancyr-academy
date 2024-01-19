@@ -16,12 +16,22 @@ export const Content = styled.div`
     & > p {
       font-size: ${pxToRem(21)};
       line-height: 1.5;
+      font-weight: 300;
+
+      b {
+        font-weight: 600;
+      }
     }
 
     & > ul {
       li {
         font-size: ${pxToRem(21)};
         line-height: 1.5;
+        font-weight: 300;
+
+        b {
+          font-weight: 600;
+        }
       }
     }
   }

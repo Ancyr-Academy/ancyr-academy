@@ -25,13 +25,11 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           {children}
           <Footer />
         </StyledComponentsRegistry>
-
         <Script
           async
           id="gtag-1"
           src="https://www.googletagmanager.com/gtag/js?id=G-SNNPPR1VGQ"
         />
-
         <Script id="gtag-2">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

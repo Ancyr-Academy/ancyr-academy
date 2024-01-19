@@ -27,15 +27,27 @@ import FredericLossignol from "../../assets/reviews/frederic_lossignol.jpeg";
 import AnthonyDelhaye from "../../assets/reviews/anthony_delhaye.jpeg";
 import AmelieHusson from "../../assets/reviews/amlie_husson.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
+import { Overview } from "../../modules/course-selling-page/Overview";
 
 const Page = () => {
   return (
     <main>
-      <Intro title="Développez des application robustes et scalables avec la Clean Architecture" />
+      {/*<Intro title="Développez des application robustes et scalables avec la Clean Architecture" />*/}
+      <Overview />
       <Promotional />
       <ContentBody>
         <Container>
           <Content>
+            <section>
+              <h2>Ils ont suivi cette formation</h2>
+              <div className="companies">
+                <img alt="Amazon" src={Amazon.src} />
+                <img alt="Google" src={Google.src} />
+                <img alt="UKG" src={UKG.src} />
+                <img alt="CapGemini" src={CapGemini.src} />
+                <img alt="Orange" src={Orange.src} />
+              </div>
+            </section>
             <section>
               <h2>Une approche pragmatique et concrète</h2>
               <p>
@@ -80,40 +92,6 @@ const Page = () => {
                 <li>
                   A tirer parti du <b>CQRS</b> pour optimiser différemment votre
                   modèle de lecture et votre modèle d’écriture
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h2>Ils ont suivi cette formation</h2>
-              <div className="companies">
-                <img alt="Amazon" src={Amazon.src} />
-                <img alt="Google" src={Google.src} />
-                <img alt="UKG" src={UKG.src} />
-                <img alt="CapGemini" src={CapGemini.src} />
-                <img alt="Orange" src={Orange.src} />
-              </div>
-            </section>
-
-            <section>
-              <h2>Ce que contient cette formation</h2>
-              <p>En rejoignant cette formation, vous bénéficierez :</p>
-              <ul>
-                <li>
-                  De dizaines d’heures de cours dans lesquels je code devant
-                  vous
-                </li>
-                <li>
-                  D’un <b>accès illimité</b> au support de formation en VoD
-                </li>
-                <li>
-                  D’une <b>communauté privée</b> des élèves de la formation
-                </li>
-                <li>
-                  De <b>mises à jour gratuites et illimités du contenu à vie</b>
-                </li>
-                <li>
-                  D’un accès anticipé aux futures formations et aux workshops
                 </li>
               </ul>
             </section>
