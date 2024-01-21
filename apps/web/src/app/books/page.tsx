@@ -17,16 +17,24 @@ const Page = () => {
             downloadUrl="https://courses.ancyracademy.fr/digital-products/527562"
             imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/m2zZZLGlTdSi2cX30DSn"
             isFree
-            resume="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices arcu at elit aliquet, vitae gravida mauris fermentum. Integer dignissim sem risus, et egestas erat fringilla id. Suspendisse at eros mauris. Proin feugiat, odio ut porttitor malesuada, enim tortor placerat lorem, eget imperdiet augue est at nibh."
             title="Introduction à la Clean Architecture"
-          />
+          >
+            Vous ne connaissez pas la Clean Architecture ? Ce petit e-book vous
+            propose de la découvrir en partant d'un constant que n'importe quel
+            développeur a pu faire dans sa carrière, avant de la présenter dans
+            les grandes lignes.
+          </Book>
           <Book
             downloadUrl="https://courses.ancyracademy.fr/digital-products/527560"
             imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/zcDDBbSIRzKElhzrAN1n"
             isFree
-            resume="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices arcu at elit aliquet, vitae gravida mauris fermentum. Integer dignissim sem risus, et egestas erat fringilla id. Suspendisse at eros mauris. Proin feugiat, odio ut porttitor malesuada, enim tortor placerat lorem, eget imperdiet augue est at nibh."
             title="Road to Senior"
-          />
+          >
+            Cet e-book recense une liste de notions à connaître pour devenir un
+            développeur Senior qui se démarque. Il est destiné aux développeurs
+            qui ont besoin d'une roadmap et de références à suivre pour
+            progresser.
+          </Book>
         </List>
       </Container>
     </main>

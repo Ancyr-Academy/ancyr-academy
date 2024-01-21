@@ -7,10 +7,10 @@ import { mediaQuery, size } from "../../ui/media-query";
 export const Book: React.FC<{
   title: string;
   imageUrl: string;
-  resume: string;
   downloadUrl: string;
+  children: React.ReactNode;
   isFree?: boolean;
-}> = ({ title, imageUrl, resume, downloadUrl, isFree }) => {
+}> = ({ title, imageUrl, children, downloadUrl, isFree }) => {
   return (
     <View>
       <ImageContainer>
@@ -22,7 +22,7 @@ export const Book: React.FC<{
         <Author>
           Par <b>Anthony Cyrille</b>
         </Author>
-        <Resume>{resume}</Resume>
+        <Resume>{children}</Resume>
         <Button url={downloadUrl}>Télécharger</Button>
       </ContentContainer>
     </View>
@@ -47,14 +47,14 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 380px;
+  height: 320px;
 
   ${mediaQuery(size.medium)} {
-    height: 280px;
+    height: 240px;
   }
 
   ${mediaQuery(size.small)} {
-    height: 380px;
+    height: 320px;
   }
 `;
 
