@@ -49,6 +49,8 @@ const View = styled.div`
 
   background-color: white;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+
+  overflow-x: auto;
 `;
 
 const Padder = styled.div`
