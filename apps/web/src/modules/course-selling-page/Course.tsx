@@ -10,17 +10,32 @@ export const Course: React.FC<{
   title: string;
   price: number;
   imageUrl: string;
-  url: string;
+  status:
+    | {
+        type: "available";
+        url: string;
+      }
+    | {
+        type: "soon";
+      }
+    | {
+        type: "unavailable";
+      };
   isHot?: boolean;
   children: React.ReactNode;
-}> = ({ title, children, price, imageUrl, url, isHot }) => {
+}> = ({ title, children, price, imageUrl, status, isHot }) => {
   const isDiscount = useIsDiscountActive();
   const code = salesDiscount.code;
 
-  let finalUrl = url;
-  if (isDiscount) {
-    finalUrl = `${url}?coupon_code=${code}`;
+  let finalUrl: string | null = null;
+
+  if (status.type === "available") {
+    finalUrl = status.url;
+    if (isDiscount) {
+      finalUrl = `${status.url}?coupon_code=${code}`;
+    }
   }
+
   return (
     <View>
       {isHot ? <HotBadge>Hot</HotBadge> : null}
@@ -40,9 +55,21 @@ export const Course: React.FC<{
         )}
       </Content>
 
-      <Button url={finalUrl} wide>
-        Découvrir
-      </Button>
+      {status.type === "available" && (
+        <Button url={finalUrl!} wide>
+          Découvrir
+        </Button>
+      )}
+      {status.type === "soon" && (
+        <Button disabled tint="secondary" wide>
+          Bientôt disponible
+        </Button>
+      )}
+      {status.type === "unavailable" && (
+        <Button disabled tint="tertiary" wide>
+          Planifié
+        </Button>
+      )}
     </View>
   );
 };
@@ -50,7 +77,9 @@ export const Course: React.FC<{
 const View = styled.div`
   position: relative;
 
-  display: block;
+  display: flex;
+  flex-direction: column;
+
   text-decoration: none;
   color: #3e3e3e;
 
@@ -64,6 +93,8 @@ const HeadImage = styled.img`
 `;
 
 const Content = styled.div`
+  flex: 1;
+
   padding-inline: 40px;
   padding-block: 20px;
 

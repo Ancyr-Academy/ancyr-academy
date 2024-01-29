@@ -9,6 +9,10 @@ import { Course } from "../../modules/course-selling-page/Course";
 import { CourseList } from "../../modules/course-selling-page/CourseList";
 import { ReviewList } from "../../modules/course-selling-page/ReviewList";
 import { Review } from "../../modules/course-selling-page/Review";
+import CleanSpring from "../../assets/formations/ca/CleanSpring.png";
+import CleanSymfony from "../../assets/formations/ca/CleanSymfony.png";
+import CleanNetCore from "../../assets/formations/ca/CleanNetCore.png";
+import CleanFastAPI from "../../assets/formations/ca/CleanFastAPI.png";
 import Amazon from "../../assets/companies/amazon.png";
 import Google from "../../assets/companies/google.png";
 import UKG from "../../assets/companies/ukg.png";
@@ -92,6 +96,13 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
+                    Comment développer en <b>Test-Driven Development</b> afin de
+                    faire émerger la solution au problème
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
                     A isoler votre{" "}
                     <b> logique métier des détails d’infrastructure</b>
                   </span>
@@ -101,6 +112,15 @@ const Page = () => {
                   <span>
                     Comment <b>se rendre indépendant de la base de données</b>{" "}
                     et changer de technologie au besoin
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    A créer toute votre application{" "}
+                    <b>
+                      sans même ouvrir votre navigateur ou votre client Postman.
+                    </b>
                   </span>
                 </li>
                 <li>
@@ -126,8 +146,11 @@ const Page = () => {
                 <Course
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/mBkKdN7QdaTOzbWXW9WF"
                   price={50}
+                  status={{
+                    type: "available",
+                    url: "https://courses.ancyracademy.fr/p/clean-architecture-fondamentaux",
+                  }}
                   title="Fondamentaux"
-                  url="https://courses.ancyracademy.fr/p/clean-architecture-theorie"
                 >
                   Apprenez la théorie derrière la Clean Architecture en étudiant
                   les concepts de principes SOLID, d’injection de dépendance et
@@ -136,22 +159,83 @@ const Page = () => {
                 <Course
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/HQeGzGLBT3iMntw82WdE"
                   price={150}
-                  title="Front-End NextJS"
-                  url="https://courses.ancyracademy.fr/p/clean-architecture-nextjs"
+                  status={{
+                    type: "available",
+                    url: "https://courses.ancyracademy.fr/p/clean-architecture-nextjs",
+                  }}
+                  title="Web NextJS"
                 >
-                  Apprenez à développer une application front-end en Clean
-                  Architecture avec des tests unitaires en utilisant le
-                  framework NextJS version 13.
+                  Apprenez à développer une application front-end en{" "}
+                  <b>Clean Architecture</b> avec NextJS 13 en <b>TDD</b> avec
+                  une suite de tests unitaire qui couvre 100% du périmètre
+                  fonctionnel.
                 </Course>
                 <Course
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/FI20zcQx6Wx1WweQUZmg"
+                  isHot
                   price={150}
-                  title="Back-End NestJS"
-                  url="https://courses.ancyracademy.fr/p/clean-architecture-nestjs"
+                  status={{
+                    type: "available",
+                    url: "https://courses.ancyracademy.fr/p/clean-architecture-nestjs",
+                  }}
+                  title="API NestJS"
                 >
                   Apprenez à développer une application back-end en Clean
-                  Architecture avec le framework NestJS avec une suite de tests
-                  complète, allant des tests unitaires aux tests e2e.
+                  Architecture avec le framework NestJS en TDD et avec une suite
+                  de tests d'intégrations complète, ainsi que quelques notions
+                  de Domain-Driven Design.
+                </Course>
+                <Course
+                  imageUrl={CleanSpring.src}
+                  price={150}
+                  status={{
+                    type: "soon",
+                  }}
+                  title="API Spring Java"
+                >
+                  Apprenez à développer une application back-end en{" "}
+                  <b>Clean Architecture / Domain-Driven Design</b> avec Spring
+                  Boot, développé en <b>TDD</b> et couvert de{" "}
+                  <b>tests d'intégrations</b> sur un projet complexe.
+                </Course>
+                <Course
+                  imageUrl={CleanSymfony.src}
+                  price={150}
+                  status={{
+                    type: "unavailable",
+                  }}
+                  title="API Symfony PHP"
+                >
+                  Apprenez à développer une application back-end en{" "}
+                  <b>Clean Architecture / Domain-Driven Design</b> avec Symfony,
+                  développé en <b>TDD</b> et couvert de{" "}
+                  <b>tests d'intégrations</b> sur un projet complexe.
+                </Course>
+                <Course
+                  imageUrl={CleanNetCore.src}
+                  price={150}
+                  status={{
+                    type: "unavailable",
+                  }}
+                  title="API .NET Core C#"
+                >
+                  Apprenez à développer une application back-end en{" "}
+                  <b>Clean Architecture / Domain-Driven Design</b> avec .NET
+                  Core en C#, développé en <b>TDD</b> et couvert de{" "}
+                  <b>tests d'intégrations</b> sur un projet complexe.
+                </Course>
+                <Course
+                  imageUrl={CleanFastAPI.src}
+                  price={150}
+                  status={{
+                    type: "unavailable",
+                  }}
+                  title="API FastAPI Python"
+                >
+                  Apprenez à développer une application back-end en{" "}
+                  <b>Clean Architecture / Domain-Driven Design</b> avec FastAPi,
+                  développé en <b>TDD</b> et couvert de{" "}
+                  <b>tests d'intégrations</b> sur un projet complexe.
                 </Course>
               </CourseList>
             </section>
@@ -164,8 +248,11 @@ const Page = () => {
                   imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/WV6TlGkbRQChrQCdtLbn"
                   isHot
                   price={300}
+                  status={{
+                    type: "available",
+                    url: "https://courses.ancyracademy.fr/p/megabundle-clean-architecture",
+                  }}
                   title="MegaBundle"
-                  url="https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle"
                 >
                   L'ensemble des formations Clean Architecture (Fondamentaux +
                   NextJS + NestJS) et les futures formations sur la Clean

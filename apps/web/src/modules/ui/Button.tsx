@@ -3,27 +3,42 @@ import React from "react";
 import { pxToRem } from "./font-utils";
 
 type Size = "normal" | "big";
+type Tint = "primary" | "secondary" | "tertiary";
 
 export const Button: React.FC<{
-  url: string;
+  disabled?: boolean;
+  url?: string;
   children: string;
   wide?: boolean;
-  size?: "normal" | "big";
-}> = ({ url, children, wide, size }) => {
+  tint?: Tint;
+  size?: Size;
+}> = ({ url, children, wide, size, disabled, tint }) => {
+  if (disabled) {
+    return (
+      <View $disabled $size={size} $tint={tint} $wide={wide} as="div">
+        {children}
+      </View>
+    );
+  }
+
   return (
-    <View $size={size} $wide={wide} href={url}>
+    <View $size={size} $tint={tint} $wide={wide} href={url}>
       {children}
     </View>
   );
 };
 
-const View = styled.a<{ $wide?: boolean; $size?: Size }>`
+const View = styled.a<{
+  $wide?: boolean;
+  $size?: Size;
+  $disabled?: boolean;
+  $tint?: Tint;
+}>`
   display: inline-block;
   text-decoration: none;
 
   text-align: center;
   font-size: ${pxToRem(20)};
-  background-color: var(--color-primary);
   color: white;
 
   border: none;
@@ -38,11 +53,37 @@ const View = styled.a<{ $wide?: boolean; $size?: Size }>`
     filter: brightness(1.2);
   }
 
+  ${(props) => {
+    switch (props.$tint) {
+      case "secondary":
+        return `
+        background-color: var(--color-button-secondary);
+      `;
+      case "tertiary":
+        return `
+        background-color: var(--color-button-tertiary);
+      `;
+      default:
+        return `
+        background-color: var(--color-primary);
+      `;
+    }
+  }}
+
   ${(props) => props.$wide && `display: block;`}
   ${(props) =>
     props.$size === "big" &&
     `
   font-size: ${pxToRem(20)};
   padding-block: 20px;
+  `}
+
+  ${(props) =>
+    props.$disabled === true &&
+    `
+    opacity: 0.6;
+    &:hover {
+      filter: none;
+    }
   `}
 `;
