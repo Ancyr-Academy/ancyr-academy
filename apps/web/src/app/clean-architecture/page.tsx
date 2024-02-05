@@ -13,6 +13,7 @@ import CleanSpring from "../../assets/formations/ca/CleanSpring.png";
 import CleanSymfony from "../../assets/formations/ca/CleanSymfony.png";
 import CleanNetCore from "../../assets/formations/ca/CleanNetCore.png";
 import CleanFastAPI from "../../assets/formations/ca/CleanFastAPI.png";
+import CleanNextJS14 from "../../assets/formations/ca/CleanNextJS14.png";
 import Amazon from "../../assets/companies/amazon.png";
 import Google from "../../assets/companies/google.png";
 import UKG from "../../assets/companies/ukg.png";
@@ -199,6 +200,19 @@ const Page = () => {
                   <b>tests d'intégrations</b> sur un projet complexe.
                 </Course>
                 <Course
+                  imageUrl={CleanNetCore.src}
+                  price={150}
+                  status={{
+                    type: "soon",
+                  }}
+                  title="API .NET Core C#"
+                >
+                  Apprenez à développer une application back-end en{" "}
+                  <b>Clean Architecture / Domain-Driven Design</b> avec .NET
+                  Core en C#, développé en <b>TDD</b> et couvert de{" "}
+                  <b>tests d'intégrations</b> sur un projet complexe.
+                </Course>
+                <Course
                   imageUrl={CleanSymfony.src}
                   price={150}
                   status={{
@@ -209,19 +223,6 @@ const Page = () => {
                   Apprenez à développer une application fullstack en{" "}
                   <b>Clean Architecture / Domain-Driven Design</b> avec Symfony,
                   développé en <b>TDD</b> et couvert de{" "}
-                  <b>tests d'intégrations</b> sur un projet complexe.
-                </Course>
-                <Course
-                  imageUrl={CleanNetCore.src}
-                  price={150}
-                  status={{
-                    type: "unavailable",
-                  }}
-                  title="API .NET Core C#"
-                >
-                  Apprenez à développer une application back-end en{" "}
-                  <b>Clean Architecture / Domain-Driven Design</b> avec .NET
-                  Core en C#, développé en <b>TDD</b> et couvert de{" "}
                   <b>tests d'intégrations</b> sur un projet complexe.
                 </Course>
                 <Course
@@ -236,6 +237,19 @@ const Page = () => {
                   <b>Clean Architecture / Domain-Driven Design</b> avec FastAPi,
                   développé en <b>TDD</b> et couvert de{" "}
                   <b>tests d'intégrations</b> sur un projet complexe.
+                </Course>{" "}
+                <Course
+                  imageUrl={CleanNextJS14.src}
+                  price={150}
+                  status={{
+                    type: "unavailable",
+                  }}
+                  title="NextJS 14 avec RSC"
+                >
+                  Apprenez à développer une application back-end en{" "}
+                  <b>Clean Architecture</b> en React avec NextJS, développé en{" "}
+                  <b>TDD</b> en utilisant les React Server Components et les
+                  Route Handlers.
                 </Course>
               </CourseList>
             </section>
