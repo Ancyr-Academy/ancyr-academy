@@ -136,25 +136,6 @@ const Page = () => {
                 </li>
               </ul>
             </section>
-
-            <section>
-              <h2>Les Formations</h2>
-              <CourseList>
-                {allCourses.map((course) => (
-                  <Course
-                    key={course.id}
-                    imageUrl={course.imageUrl}
-                    isHot={course.isHot}
-                    price={course.price}
-                    status={course.status}
-                    title={course.title}
-                  >
-                    {course.resume}
-                  </Course>
-                ))}
-              </CourseList>
-            </section>
-
             <section>
               <h2>Les Bundle</h2>
               <p>Ces formations sont souvent achetées ensembles</p>
@@ -175,6 +156,25 @@ const Page = () => {
                 </Course>
               </CourseList>
             </section>
+
+            <section>
+              <h2>Les Formations</h2>
+              <CourseList>
+                {allCourses.map((course) => (
+                  <Course
+                    imageUrl={course.imageUrl}
+                    isHot={course.isHot}
+                    key={course.id}
+                    price={course.price}
+                    status={course.status}
+                    title={course.title}
+                  >
+                    {course.resume}
+                  </Course>
+                ))}
+              </CourseList>
+            </section>
+
             <section>
               <h2>A qui s'adresse cette formation ?</h2>
               <p>Cette formation s'adresse à : </p>
