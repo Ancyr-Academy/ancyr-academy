@@ -142,6 +142,7 @@ const Page = () => {
               <CourseList>
                 {allCourses.map((course) => (
                   <Course
+                    key={course.id}
                     imageUrl={course.imageUrl}
                     isHot={course.isHot}
                     price={course.price}
