@@ -43,15 +43,21 @@ export const Course: React.FC<{
       <Content>
         <Title>{title}</Title>
         <Text>{children}</Text>
-        {isDiscount ? (
+        {status.type === "available" && (
           <>
-            <OldPricing>
-              <s>{price}€ TTC</s>
-            </OldPricing>
-            <Pricing>{price - price * salesDiscount.percentage}€ TTC</Pricing>
+            {isDiscount ? (
+              <>
+                <OldPricing>
+                  <s>{price}€ TTC</s>
+                </OldPricing>
+                <Pricing>
+                  {price - price * salesDiscount.percentage}€ TTC
+                </Pricing>
+              </>
+            ) : (
+              <Pricing>{price}€ TTC</Pricing>
+            )}
           </>
-        ) : (
-          <Pricing>{price}€ TTC</Pricing>
         )}
       </Content>
 

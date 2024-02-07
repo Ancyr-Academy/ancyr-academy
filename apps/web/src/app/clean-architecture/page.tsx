@@ -9,11 +9,6 @@ import { Course } from "../../modules/course-selling-page/Course";
 import { CourseList } from "../../modules/course-selling-page/CourseList";
 import { ReviewList } from "../../modules/course-selling-page/ReviewList";
 import { Review } from "../../modules/course-selling-page/Review";
-import CleanSpring from "../../assets/formations/ca/CleanSpring.png";
-import CleanSymfony from "../../assets/formations/ca/CleanSymfony.png";
-import CleanNetCore from "../../assets/formations/ca/CleanNetCore.png";
-import CleanFastAPI from "../../assets/formations/ca/CleanFastAPI.png";
-import CleanNextJS14 from "../../assets/formations/ca/CleanNextJS14.png";
 import Amazon from "../../assets/companies/amazon.png";
 import Google from "../../assets/companies/google.png";
 import UKG from "../../assets/companies/ukg.png";
@@ -29,6 +24,7 @@ import AnthonyDelhaye from "../../assets/reviews/anthony_delhaye.jpeg";
 import AmelieHusson from "../../assets/reviews/amlie_husson.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
+import { allCourses } from "../../modules/formations/clean-architecture";
 
 const Page = () => {
   return (
@@ -144,113 +140,17 @@ const Page = () => {
             <section>
               <h2>Les Formations</h2>
               <CourseList>
-                <Course
-                  imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/mBkKdN7QdaTOzbWXW9WF"
-                  price={50}
-                  status={{
-                    type: "available",
-                    url: "https://courses.ancyracademy.fr/p/clean-architecture-fondamentaux",
-                  }}
-                  title="Fondamentaux"
-                >
-                  Apprenez la théorie derrière la Clean Architecture en étudiant
-                  les concepts de principes SOLID, d’injection de dépendance et
-                  des patterns de la Clean Architecture.
-                </Course>
-                <Course
-                  imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/HQeGzGLBT3iMntw82WdE"
-                  price={150}
-                  status={{
-                    type: "available",
-                    url: "https://courses.ancyracademy.fr/p/clean-architecture-nextjs",
-                  }}
-                  title="Web NextJS"
-                >
-                  Apprenez à développer une application front-end en{" "}
-                  <b>Clean Architecture</b> avec NextJS 13 en <b>TDD</b> avec
-                  une suite de tests unitaire qui couvre 100% du périmètre
-                  fonctionnel.
-                </Course>
-                <Course
-                  imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/FI20zcQx6Wx1WweQUZmg"
-                  isHot
-                  price={150}
-                  status={{
-                    type: "available",
-                    url: "https://courses.ancyracademy.fr/p/clean-architecture-nestjs",
-                  }}
-                  title="API NestJS"
-                >
-                  Apprenez à développer une application back-end en Clean
-                  Architecture avec le framework NestJS en TDD et avec une suite
-                  de tests d'intégrations complète, ainsi que quelques notions
-                  de Domain-Driven Design.
-                </Course>
-                <Course
-                  imageUrl={CleanSpring.src}
-                  price={150}
-                  status={{
-                    type: "soon",
-                  }}
-                  title="API Spring Java"
-                >
-                  Apprenez à développer une application back-end en{" "}
-                  <b>Clean Architecture / Domain-Driven Design</b> avec Spring
-                  Boot, développé en <b>TDD</b> et couvert de{" "}
-                  <b>tests d'intégrations</b> sur un projet complexe.
-                </Course>
-                <Course
-                  imageUrl={CleanNetCore.src}
-                  price={150}
-                  status={{
-                    type: "soon",
-                  }}
-                  title="API .NET Core C#"
-                >
-                  Apprenez à développer une application back-end en{" "}
-                  <b>Clean Architecture / Domain-Driven Design</b> avec .NET
-                  Core en C#, développé en <b>TDD</b> et couvert de{" "}
-                  <b>tests d'intégrations</b> sur un projet complexe.
-                </Course>
-                <Course
-                  imageUrl={CleanSymfony.src}
-                  price={150}
-                  status={{
-                    type: "unavailable",
-                  }}
-                  title="Fullstack Symfony PHP"
-                >
-                  Apprenez à développer une application fullstack en{" "}
-                  <b>Clean Architecture / Domain-Driven Design</b> avec Symfony,
-                  développé en <b>TDD</b> et couvert de{" "}
-                  <b>tests d'intégrations</b> sur un projet complexe.
-                </Course>
-                <Course
-                  imageUrl={CleanFastAPI.src}
-                  price={150}
-                  status={{
-                    type: "unavailable",
-                  }}
-                  title="API FastAPI Python"
-                >
-                  Apprenez à développer une application back-end en{" "}
-                  <b>Clean Architecture / Domain-Driven Design</b> avec FastAPi,
-                  développé en <b>TDD</b> et couvert de{" "}
-                  <b>tests d'intégrations</b> sur un projet complexe.
-                </Course>{" "}
-                <Course
-                  imageUrl={CleanNextJS14.src}
-                  price={150}
-                  status={{
-                    type: "unavailable",
-                  }}
-                  title="NextJS 14 avec RSC"
-                >
-                  Apprenez à développer une application back-end en{" "}
-                  <b>Clean Architecture</b> en React avec NextJS, développé en{" "}
-                  <b>TDD</b> en utilisant les React Server Components et les
-                  Route Handlers.
-                </Course>
+                {allCourses.map((course) => (
+                  <Course
+                    imageUrl={course.imageUrl}
+                    isHot={course.isHot}
+                    price={course.price}
+                    status={course.status}
+                    title={course.title}
+                  >
+                    {course.resume}
+                  </Course>
+                ))}
               </CourseList>
             </section>
 

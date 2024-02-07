@@ -48,6 +48,9 @@ export const Footer: React.FC = () => {
                 <SectionSingleLink href="https://courses.ancyracademy.fr/p/essentials-tests-unitaires">
                   Tests Unitaires
                 </SectionSingleLink>
+                <SectionSingleLink href="https://courses.ancyracademy.fr/p/essentials-principes-solid">
+                  Principes SOLID
+                </SectionSingleLink>
               </SectionLinks>
             </SingleSection>
             <SingleSection>
