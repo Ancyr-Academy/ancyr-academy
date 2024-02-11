@@ -1,17 +1,24 @@
-import { api } from "../../../modules/ghost";
+import { notFound } from "next/navigation";
+import React from "react";
+import { getPost } from "../../../modules/blog/get-posts";
+import { PostBody } from "../../../modules/blog/PostBody";
 
-interface Props {
+const Page: React.FC<{
   params: {
     slug: string;
   };
-}
+}> = async ({ params }) => {
+  const { slug } = params;
+  const post = await getPost(slug);
+  if (!post) {
+    return notFound();
+  }
 
-const Page = async ({ params }: Props) => {
   return (
     <div>
       <article>
         <h2>Super Article</h2>
-        <div dangerouslySetInnerHTML={{ __html: "" }} />
+        <PostBody>{post.body}</PostBody>
       </article>
     </div>
   );
