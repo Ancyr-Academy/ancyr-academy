@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import { Code } from "bright";
 import type { MDXComponents } from "mdx/types";
 
@@ -7,15 +5,15 @@ export const mdxComponents: MDXComponents = {
   pre: Code,
   a: ({ children, ...props }) => {
     return (
-      <Link {...props} href={props.href || ""}>
+      <a {...props} href={props.href ?? ""}>
         {children}
-      </Link>
+      </a>
     );
   },
-  img: ({ children, props }) => {
+  img: ({ children, ...props }) => {
     // You need to do some work here to get the width and height of the image.
     // See the details below for my solution.
-    return <Image {...props} />;
+    return <img {...props} />;
   },
   // any other components you want to use in your markdown
 };
