@@ -5,9 +5,8 @@ import { Container } from "../ui/Container";
 import { pxToRem } from "../ui/font-utils";
 import { mediaQuery, size } from "../ui/media-query";
 import { useIsDiscountActive } from "./use-is-discount-active";
-import { useCountdown } from "./use-countdown";
 import { useDuration } from "./use-duration";
-import { salesDiscount } from "./index";
+import { getSalesDiscount } from "./index";
 
 export const Promotional = () => {
   const isPromotionActive = useIsDiscountActive();
@@ -17,8 +16,8 @@ export const Promotional = () => {
     return null;
   }
 
-  const percentage = salesDiscount.percentage;
-  const code = salesDiscount.code;
+  const percentage = getSalesDiscount().percentage;
+  const code = getSalesDiscount().code;
 
   return (
     <View>

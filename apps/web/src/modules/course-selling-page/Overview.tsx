@@ -1,13 +1,14 @@
 import React from "react";
 import { styled } from "styled-components";
 import {
-  IoPodium,
   IoBook,
-  IoPlayCircle,
-  IoPeople,
-  IoTime,
-  IoInfinite,
+  IoCash,
   IoFolderOpen,
+  IoInfinite,
+  IoPeople,
+  IoPlayCircle,
+  IoPodium,
+  IoTime,
 } from "react-icons/io5";
 import { pxToRem } from "../ui/font-utils";
 import CourseBackground from "../../assets/course-background-colored.png";
@@ -20,9 +21,10 @@ export const Overview: React.FC = () => {
       <Container>
         <Content>
           <Left>
-            <Title>Les formations complètes Clean Architecture</Title>
+            <Title>Les formations Clean Architecture en TDD</Title>
             <Subtitle>
-              Développez des applications robustes et maintenables.
+              Développez des applications de
+              <br /> <b>très hautes qualité.</b>
               <br />
               Devenez un véritable <b>développeur Senior.</b>
             </Subtitle>
@@ -50,6 +52,11 @@ export const Overview: React.FC = () => {
               </li>
               <li>
                 <IoTime /> Apprenez à votre rythme
+              </li>
+              <li>
+                <IoCash /> Satisfait ou Remboursé
+                <br />
+                (30 jours)
               </li>
             </OverviewList>
           </Right>

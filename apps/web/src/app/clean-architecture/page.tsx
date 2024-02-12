@@ -141,18 +141,30 @@ const Page = () => {
               <p>Ces formations sont souvent achetées ensembles</p>
               <CourseList>
                 <Course
-                  imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/WV6TlGkbRQChrQCdtLbn"
+                  imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
                   isHot
                   price={300}
                   status={{
                     type: "available",
-                    url: "https://courses.ancyracademy.fr/p/megabundle-clean-architecture",
+                    url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
+                  }}
+                  title="JavaScript Bundle"
+                >
+                  L'ensemble des formations Clean Architecture JavaScript :{" "}
+                  <b>Fondamentaux</b> + <b>Web NextJS</b> + <b>API NestJS</b>
+                </Course>
+                <Course
+                  imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
+                  price={400}
+                  status={{
+                    type: "available",
+                    url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
                   }}
                   title="MegaBundle"
                 >
-                  L'ensemble des formations Clean Architecture (Fondamentaux +
-                  NextJS + NestJS) et les futures formations sur la Clean
-                  Architecture.
+                  Toutes les formations Clean Architecture disponibles
+                  (JavaScript) +{" "}
+                  <b>Celles à venir (.NET, Spring, Symfony...)</b>
                 </Course>
               </CourseList>
             </section>
@@ -229,7 +241,7 @@ const Page = () => {
               </ul>
             </section>
             <section>
-              <h2>Ce qu'en disent les élèves (+450)</h2>
+              <h2>Ce qu'en disent les élèves (+600)</h2>
               <ReviewList>
                 <Review authorImage={YazidDaoudi.src} authorName="Yazid Daoudi">
                   Je conseil fortement la formation d'Anthony. Elle convient a

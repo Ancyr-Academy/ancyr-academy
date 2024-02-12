@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import { pxToRem } from "../ui/font-utils";
 import { Button } from "../ui/Button";
 import { mediaQuery, size } from "../ui/media-query";
-import { isDiscountActive, salesDiscount } from "../promotion";
+import { getSalesDiscount } from "../promotion";
 import { useIsDiscountActive } from "../promotion/use-is-discount-active";
 
 export const Course: React.FC<{
@@ -25,7 +25,7 @@ export const Course: React.FC<{
   children: React.ReactNode;
 }> = ({ title, children, price, imageUrl, status, isHot }) => {
   const isDiscount = useIsDiscountActive();
-  const code = salesDiscount.code;
+  const code = getSalesDiscount().code;
 
   let finalUrl: string | null = null;
 
@@ -51,7 +51,7 @@ export const Course: React.FC<{
                   <s>{price}€ TTC</s>
                 </OldPricing>
                 <Pricing>
-                  {price - price * salesDiscount.percentage}€ TTC
+                  {price - price * getSalesDiscount().percentage}€ TTC
                 </Pricing>
               </>
             ) : (
