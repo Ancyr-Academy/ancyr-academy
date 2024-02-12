@@ -334,6 +334,22 @@ const Page = () => {
                   c'est un plus indéniable de cette formation que je recommande
                   moi-même à mes apprenants.
                 </Review>
+                <Review authorName="Rosko">
+                  La formation Clean Architecture offerte par Anthony Cyrille a
+                  été très satisfaisante. Le formateur démontre une pédagogie
+                  remarquable, la partie théorique est bien structurée avec des
+                  schémas facilitant la compréhension, et la flexibilité des
+                  vidéos permet une visualisation à tout moment. La partie
+                  pratique de la formation utilise des sujets concrets
+                  rencontrés en entreprise, renforçant l'applicabilité des
+                  compétences acquises dans des situations réelles. L'accès au
+                  code du projet est un atout majeur, et le discord actif
+                  présente une communauté de développeurs prête à répondre aux
+                  questions et partager des informations pertinentes. Le rapport
+                  qualité-prix est vraiment imbattable compte tenu de la
+                  complexité du sujet, et Anthony manifeste un réel engagement à
+                  nous aider à réussir. Je recommande fortement !
+                </Review>
                 <Review authorName="Alex Boisseau">
                   Très content de la formation jusqu'ici, pas facile de tout
                   intégrer et c'est normal mais je trouve que tu as une très
