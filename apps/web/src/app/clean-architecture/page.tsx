@@ -22,6 +22,8 @@ import FlavioMoreno from "../../assets/reviews/flaviomoreno.jpeg";
 import FredericLossignol from "../../assets/reviews/frederic_lossignol.jpeg";
 import AnthonyDelhaye from "../../assets/reviews/anthony_delhaye.jpeg";
 import AmelieHusson from "../../assets/reviews/amlie_husson.jpeg";
+import RachidJeffali from "../../assets/reviews/rachid_jeffali.jpeg";
+import YlliesH from "../../assets/reviews/yllies_h.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
 import { allCourses } from "../../modules/formations/clean-architecture";
@@ -270,29 +272,6 @@ const Page = () => {
                   architecture. Je la recommande vivement à quiconque souhaite
                   améliorer ses compétences en matière d'architecture Front-end.
                 </Review>
-                <Review
-                  authorImage={AmelieHusson.src}
-                  authorName="Amélie Husson"
-                >
-                  C'est une formation très claire qui permet de stimuler
-                  l'intérêt sur les sujets du Craft et corréler les notions de
-                  bases entre elles. Recommandée d'intérêt public dans le monde
-                  du dév !
-                </Review>
-
-                <Review
-                  authorImage={AdrienVerschaere.src}
-                  authorName="Adrien Verschaere"
-                >
-                  La formation Clean Architecture est clairement une référence à
-                  avoir pour tous ceux qui cherchent à apprendre les bonnes
-                  pratiques et faire du code professionnel et propre ! La
-                  formation est bien structurée et Anthony fait preuve d'une
-                  excellent pédagogie pour enseigner les concepts, il est
-                  également toujours là pour nous répondre lorsqu'on a des
-                  questions, ce qui permet d'avancer plus vite et de mieux
-                  comprendre les concepts !
-                </Review>
                 <Review authorImage={MelDonati.src} authorName="Melaïna Donati">
                   Si je devais donner trois mots pour la définir, ce serait :
                   Clarté, Pédagogie et Pratique. Anthony a une façon unique de
@@ -308,6 +287,73 @@ const Page = () => {
                   souhaitant approfondir sa compréhension de l'architecture
                   logicielle !
                 </Review>
+                <Review
+                  authorImage={RachidJeffali.src}
+                  authorName="Rachid Jeffali"
+                >
+                  Excellente formation ! Je suis Développeur depuis un moment et
+                  j'avais l'impression de stagner sur les concepts
+                  d'Architecture. Le contenu anglophone et francophone sur la
+                  Clean Architecture était soit indigeste, soit compliqué à
+                  comprendre et surtout je ne trouvais pas de projet de A à Z en
+                  Clean Architecture. Je suis formateur, je dois rester à
+                  l'affût de ce qui se fait, des nouvelles tendances etc... Et
+                  l'architecture hexagonale et le TDD m'ont toujours intéressés
+                  et j'avais besoin de faire sauter ce verrou de compréhension.
+                  La formation d'Anthony Cyrille vient régler ce problème. A
+                  l'issue on a l'impression de faire parti d'une élite, d'une
+                  classe (limitée en places) de développeurs à part, on se sent
+                  enfin Dev Senior !
+                </Review>
+                <Review authorName="Rosko">
+                  La formation Clean Architecture offerte par Anthony Cyrille a
+                  été très satisfaisante. Le formateur démontre une pédagogie
+                  remarquable, la partie théorique est bien structurée avec des
+                  schémas facilitant la compréhension, et la flexibilité des
+                  vidéos permet une visualisation à tout moment. La partie
+                  pratique de la formation utilise des sujets concrets
+                  rencontrés en entreprise, renforçant l'applicabilité des
+                  compétences acquises dans des situations réelles. L'accès au
+                  code du projet est un atout majeur, et le discord actif
+                  présente une communauté de développeurs prête à répondre aux
+                  questions et partager des informations pertinentes. Le rapport
+                  qualité-prix est vraiment imbattable compte tenu de la
+                  complexité du sujet, et Anthony manifeste un réel engagement à
+                  nous aider à réussir. Je recommande fortement !
+                </Review>
+                <Review
+                  authorImage={AmelieHusson.src}
+                  authorName="Amélie Husson"
+                >
+                  C'est une formation très claire qui permet de stimuler
+                  l'intérêt sur les sujets du Craft et corréler les notions de
+                  bases entre elles. Recommandée d'intérêt public dans le monde
+                  du dév !
+                </Review>
+
+                <Review authorImage={YlliesH.src} authorName="Yllies H">
+                  J’ai trouvé la formation sur la Clean Architecture extrêmement
+                  interessante. Elle m'a offert une compréhension approfondie
+                  des principes fondamentaux de conception logicielle, en
+                  mettant l'accent sur la séparation des préoccupations et la
+                  maintenabilité du code. Je recommande sans hésiter surtout
+                  pour se démarquer de la masse de développeurs !
+                </Review>
+
+                <Review
+                  authorImage={AdrienVerschaere.src}
+                  authorName="Adrien Verschaere"
+                >
+                  La formation Clean Architecture est clairement une référence à
+                  avoir pour tous ceux qui cherchent à apprendre les bonnes
+                  pratiques et faire du code professionnel et propre ! La
+                  formation est bien structurée et Anthony fait preuve d'une
+                  excellent pédagogie pour enseigner les concepts, il est
+                  également toujours là pour nous répondre lorsqu'on a des
+                  questions, ce qui permet d'avancer plus vite et de mieux
+                  comprendre les concepts !
+                </Review>
+
                 <Review
                   authorImage={FlavioMoreno.src}
                   authorName="Flavio Moreno"
@@ -334,22 +380,7 @@ const Page = () => {
                   c'est un plus indéniable de cette formation que je recommande
                   moi-même à mes apprenants.
                 </Review>
-                <Review authorName="Rosko">
-                  La formation Clean Architecture offerte par Anthony Cyrille a
-                  été très satisfaisante. Le formateur démontre une pédagogie
-                  remarquable, la partie théorique est bien structurée avec des
-                  schémas facilitant la compréhension, et la flexibilité des
-                  vidéos permet une visualisation à tout moment. La partie
-                  pratique de la formation utilise des sujets concrets
-                  rencontrés en entreprise, renforçant l'applicabilité des
-                  compétences acquises dans des situations réelles. L'accès au
-                  code du projet est un atout majeur, et le discord actif
-                  présente une communauté de développeurs prête à répondre aux
-                  questions et partager des informations pertinentes. Le rapport
-                  qualité-prix est vraiment imbattable compte tenu de la
-                  complexité du sujet, et Anthony manifeste un réel engagement à
-                  nous aider à réussir. Je recommande fortement !
-                </Review>
+
                 <Review authorName="Alex Boisseau">
                   Très content de la formation jusqu'ici, pas facile de tout
                   intégrer et c'est normal mais je trouve que tu as une très
