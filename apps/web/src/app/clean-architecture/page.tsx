@@ -143,8 +143,21 @@ const Page = () => {
               <p>Ces formations sont souvent achetées ensembles</p>
               <CourseList>
                 <Course
-                  imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
+                  imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
                   isHot
+                  price={400}
+                  status={{
+                    type: "available",
+                    url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
+                  }}
+                  title="MegaBundle"
+                >
+                  Toutes les formations Clean Architecture disponibles
+                  (JavaScript & Spring) +{" "}
+                  <b>Celles à venir (.NET, Symfony...)</b>
+                </Course>
+                <Course
+                  imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
                   price={300}
                   status={{
                     type: "available",
@@ -155,18 +168,18 @@ const Page = () => {
                   L'ensemble des formations Clean Architecture JavaScript :{" "}
                   <b>Fondamentaux</b> + <b>Web NextJS</b> + <b>API NestJS</b>
                 </Course>
+
                 <Course
-                  imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
-                  price={400}
+                  imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
+                  price={90}
                   status={{
                     type: "available",
-                    url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
+                    url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
                   }}
-                  title="MegaBundle"
+                  title="Java Bundle (Anticipé)"
                 >
-                  Toutes les formations Clean Architecture disponibles
-                  (JavaScript) +{" "}
-                  <b>Celles à venir (.NET, Spring, Symfony...)</b>
+                  L'ensemble des formations Clean Architecture en environnement
+                  Java : <b>Fondamentaux</b> + <b>Java Spring</b>.
                 </Course>
               </CourseList>
             </section>

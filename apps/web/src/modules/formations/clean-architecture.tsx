@@ -89,11 +89,12 @@ export const allCourses: Course[] = [
   {
     id: "spring-java",
     imageUrl: CleanSpring.src,
-    price: 150,
+    price: 70,
     status: {
-      type: "soon",
+      type: "available",
+      url: "https://courses.ancyracademy.fr/p/clean-architecture-api-spring-java",
     },
-    title: "API Spring Java",
+    title: "API Spring Java (Accès Anticipé)",
     resume: (
       <>
         Apprenez à développer une application back-end en{" "}
@@ -109,7 +110,7 @@ export const allCourses: Course[] = [
     imageUrl: CleanNetCore.src,
     price: 150,
     status: {
-      type: "soon",
+      type: "unavailable",
     },
     title: "API .NET Core C#",
     resume: (

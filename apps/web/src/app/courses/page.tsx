@@ -2,7 +2,6 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Book } from "../../modules/books/components/Book";
 import { Container } from "../../modules/ui/Container";
 import { PageIntro } from "../../modules/ui/PageIntro";
 import { mediaQuery, size } from "../../modules/ui/media-query";
@@ -18,7 +17,6 @@ const Page = () => {
       />
       <Container>
         <List>
-          {" "}
           {allCourses.map((course, index) => (
             <Course
               imageUrl={course.imageUrl}
