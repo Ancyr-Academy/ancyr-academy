@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 import "normalize.css/normalize.css";
@@ -25,19 +25,8 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           {children}
           <Footer />
         </StyledComponentsRegistry>
-        <Script
-          async
-          id="gtag-1"
-          src="https://www.googletagmanager.com/gtag/js?id=G-SNNPPR1VGQ"
-        />
-        <Script id="gtag-2">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-SNNPPR1VGQ');`}
-        </Script>
       </body>
+      <GoogleAnalytics gaId="G-SNNPPR1VGQ" />
     </html>
   );
 };
