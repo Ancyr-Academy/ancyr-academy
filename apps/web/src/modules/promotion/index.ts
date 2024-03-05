@@ -1,8 +1,8 @@
 export const getSalesDiscount = () => ({
-  startsAt: new Date("2024-03-06T00:00:00.000Z"),
-  endsAt: new Date("2024-03-11T00:00:00.000Z"),
-  percentage: 0.4,
-  code: "CLEAN40",
+  startsAt: new Date("2024-03-05T00:00:00.000Z"),
+  endsAt: new Date("2024-03-10T00:00:00.000Z"),
+  percentage: 0.3,
+  code: "CLEAN30",
 });
 
 export const isDiscountActive = (date: Date = new Date()) => {
