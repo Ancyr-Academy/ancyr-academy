@@ -45,7 +45,7 @@ export const useCurrentDiscount = (now = new Date()): Nullable<Discount> => {
   // A more robust solution would be to use an interval to recompute the discount once the day change
   // But that should only occur if the user is visiting the website around midnight.
   // Not every interesting :)
-  
+
   const slot = daysIntoYear(now) % (totalSlots + 1);
   const discount = discountStates.find((d) => {
     return slot >= d.slots[0] && slot <= d.slots[1];
@@ -60,6 +60,10 @@ export const useCurrentDiscount = (now = new Date()): Nullable<Discount> => {
 
   const daysToAdd = discount.slots[1] - discount.slots[0];
   const endDate = startOfDay(addDays(startDate, daysToAdd));
+
+  if (endDate.getTime() < now.getTime()) {
+    return null;
+  }
 
   return {
     startsAt: startDate,
