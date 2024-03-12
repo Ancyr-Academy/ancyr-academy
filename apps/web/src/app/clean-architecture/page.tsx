@@ -27,8 +27,11 @@ import YlliesH from "../../assets/reviews/yllies_h.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
 import { allCourses } from "../../modules/formations/clean-architecture";
+import { useCurrentDiscount } from "../../modules/promotion/discount-hooks";
 
 const Page = () => {
+  const discount = useCurrentDiscount();
+
   return (
     <main>
       <Overview />
@@ -151,6 +154,7 @@ const Page = () => {
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
                   }}
                   title="MegaBundle"
+                  discount={discount}
                 >
                   Toutes les formations Clean Architecture disponibles
                   (JavaScript & Spring) +{" "}
@@ -164,6 +168,7 @@ const Page = () => {
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
                   }}
                   title="JavaScript Bundle"
+                  discount={discount}
                 >
                   L'ensemble des formations Clean Architecture JavaScript :{" "}
                   <b>Fondamentaux</b> + <b>Web NextJS</b> + <b>API NestJS</b>
@@ -177,6 +182,7 @@ const Page = () => {
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
                   }}
                   title="Java Bundle (Anticipé)"
+                  discount={discount}
                 >
                   L'ensemble des formations Clean Architecture en environnement
                   Java : <b>Fondamentaux</b> + <b>Java Spring</b>.
@@ -195,6 +201,7 @@ const Page = () => {
                     price={course.price}
                     status={course.status}
                     title={course.title}
+                    discount={discount}
                   >
                     {course.resume}
                   </Course>

@@ -4,20 +4,14 @@ import { styled } from "styled-components";
 import { Container } from "../ui/Container";
 import { pxToRem } from "../ui/font-utils";
 import { mediaQuery, size } from "../ui/media-query";
-import { useIsDiscountActive } from "./use-is-discount-active";
-import { useDuration } from "./use-duration";
-import { getSalesDiscount } from "./index";
+import { useDiscountDuration } from "./discount-hooks";
 
 export const Promotional = () => {
-  const isPromotionActive = useIsDiscountActive();
-  const duration = useDuration();
+  const { duration, discount } = useDiscountDuration();
 
-  if (!isPromotionActive) {
+  if (duration.total === 0) {
     return null;
   }
-
-  const percentage = getSalesDiscount().percentage;
-  const code = getSalesDiscount().code;
 
   return (
     <View>
@@ -26,7 +20,8 @@ export const Promotional = () => {
           <Left>
             <Title>PROMOTION</Title>
             <Content>
-              Jusqu'à <b>-{percentage * 100}%</b> avec le code <b>{code}</b>
+              Jusqu'à <b>-{discount!.percentage * 100}%</b> avec le code{" "}
+              <b>{discount!.code}</b>
             </Content>
           </Left>
           <Right>

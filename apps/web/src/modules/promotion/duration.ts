@@ -4,7 +4,7 @@ export class Duration {
   public readonly minutes: number = 0;
   public readonly seconds: number = 0;
 
-  constructor(private total: number) {
+  constructor(public readonly total: number) {
     this.seconds = this.total;
 
     if (this.seconds > 86400) {
@@ -29,7 +29,7 @@ export class Duration {
     }
 
     return `${this.days}j ${this.pad(this.hours)}h ${this.pad(
-      this.minutes
+      this.minutes,
     )}m ${this.pad(this.seconds)}s`;
   }
 

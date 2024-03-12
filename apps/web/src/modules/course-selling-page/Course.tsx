@@ -3,8 +3,6 @@ import { styled } from "styled-components";
 import { pxToRem } from "../ui/font-utils";
 import { Button } from "../ui/Button";
 import { mediaQuery, size } from "../ui/media-query";
-import { getSalesDiscount } from "../promotion";
-import { useIsDiscountActive } from "../promotion/use-is-discount-active";
 
 export const Course: React.FC<{
   title: string;
@@ -23,16 +21,17 @@ export const Course: React.FC<{
       };
   isHot?: boolean;
   children: React.ReactNode;
-}> = ({ title, children, price, imageUrl, status, isHot }) => {
-  const isDiscount = useIsDiscountActive();
-  const code = getSalesDiscount().code;
-
+  discount?: {
+    code: string;
+    percentage: number;
+  } | null;
+}> = ({ title, children, price, imageUrl, status, isHot, discount }) => {
   let finalUrl: string | null = null;
 
   if (status.type === "available") {
     finalUrl = status.url;
-    if (isDiscount) {
-      finalUrl = `${status.url}?coupon_code=${code}`;
+    if (discount) {
+      finalUrl = `${status.url}?coupon_code=${discount.code}`;
     }
   }
 
@@ -45,14 +44,12 @@ export const Course: React.FC<{
         <Text>{children}</Text>
         {status.type === "available" && (
           <>
-            {isDiscount ? (
+            {discount ? (
               <>
                 <OldPricing>
                   <s>{price}€ TTC</s>
                 </OldPricing>
-                <Pricing>
-                  {price - price * getSalesDiscount().percentage}€ TTC
-                </Pricing>
+                <Pricing>{price - price * discount.percentage}€ TTC</Pricing>
               </>
             ) : (
               <Pricing>{price}€ TTC</Pricing>

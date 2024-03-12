@@ -1,6 +1,4 @@
 import { Intro } from "../modules/homepage/sections/Intro";
-import { Header } from "../modules/ui/Header";
-import { LastArticles } from "../modules/homepage/sections/LastArticles";
 import { LastCourses } from "../modules/homepage/sections/LastCourses";
 import { Promotional } from "../modules/promotion/Promotional";
 
