@@ -42,7 +42,7 @@ export const Overview: React.FC = () => {
                 <IoFolderOpen /> 4 Formations
               </li>
               <li>
-                <IoPlayCircle /> 24 heures de vidéo HD
+                <IoPlayCircle /> 30 heures de vidéo HD
               </li>
               <li>
                 <IoPeople /> Aide de la communauté
