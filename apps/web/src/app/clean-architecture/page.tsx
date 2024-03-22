@@ -176,12 +176,12 @@ const Page = () => {
 
                 <Course
                   imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
-                  price={90}
+                  price={180}
                   status={{
                     type: "available",
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
                   }}
-                  title="Java Bundle (Anticipé)"
+                  title="Java Bundle"
                   discount={discount}
                 >
                   L'ensemble des formations Clean Architecture en environnement
