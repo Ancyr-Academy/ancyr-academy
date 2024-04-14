@@ -143,7 +143,10 @@ const Page = () => {
             </section>
             <section>
               <h2>Les Bundle</h2>
-              <p>Ces formations sont souvent achetées ensembles</p>
+              <p>
+                Ces formations sont souvent achetées ensembles{" "}
+                <i>(payable en 2x et 3x)</i>
+              </p>
               <CourseList>
                 <Course
                   imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"

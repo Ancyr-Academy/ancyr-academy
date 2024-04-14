@@ -21,6 +21,10 @@ export const Content = styled.div`
       b {
         font-weight: 600;
       }
+
+      & > i {
+        color: #5c5c5c;
+      }
     }
 
     & > ul {

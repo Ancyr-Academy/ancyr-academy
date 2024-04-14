@@ -70,7 +70,7 @@ export const Course: React.FC<{
       )}
       {status.type === "unavailable" && (
         <Button disabled tint="tertiary" wide>
-          Planifié
+          Indisponible
         </Button>
       )}
     </View>
@@ -127,8 +127,8 @@ const OldPricing = styled.p`
 `;
 const Pricing = styled.p`
   text-align: right;
-  font-size: ${pxToRem(24)};
-  font-weight: 700;
+  font-size: ${pxToRem(28)};
+  font-weight: 800;
 
   margin-block: 0;
 `;

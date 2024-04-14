@@ -3,7 +3,6 @@ import CleanSpring from "../../assets/formations/ca/CleanSpring.png";
 import CleanSymfony from "../../assets/formations/ca/CleanSymfony.png";
 import CleanNetCore from "../../assets/formations/ca/CleanNetCore.png";
 import CleanFastAPI from "../../assets/formations/ca/CleanFastAPI.png";
-import CleanNextJS14 from "../../assets/formations/ca/CleanNextJS14.png";
 
 export type Status =
   | {
@@ -155,23 +154,6 @@ export const allCourses: Course[] = [
         <b>Clean Architecture / Domain-Driven Design</b> avec FastAPI, développé
         en <b>TDD</b> et couvert de <b>tests d'intégrations</b> sur un projet
         complexe.
-      </>
-    ),
-    isHot: false,
-  },
-  {
-    id: "web-nextjs-14",
-    imageUrl: CleanNextJS14.src,
-    price: 300,
-    status: {
-      type: "unavailable",
-    },
-    title: "NextJS 14 avec RSC",
-    resume: (
-      <>
-        Apprenez à développer une application back-end en{" "}
-        <b>Clean Architecture</b> en React avec NextJS, développé en <b>TDD</b>{" "}
-        en utilisant les React Server Components et les Route Handlers.
       </>
     ),
     isHot: false,
