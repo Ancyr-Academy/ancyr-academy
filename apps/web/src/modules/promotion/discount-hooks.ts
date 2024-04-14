@@ -21,7 +21,7 @@ const daysIntoYear = (date: Date) => {
   );
 };
 
-const totalSlots = 9;
+const totalSlots = 13;
 const discountStates = [
   {
     percentage: 0.3,
@@ -37,6 +37,11 @@ const discountStates = [
     percentage: 0.4,
     code: "CLEAN40",
     slots: [6, 8],
+  },
+  {
+    percentage: 0.6,
+    code: "CLEAN60",
+    slots: [10, 12],
   },
 ] as const;
 
