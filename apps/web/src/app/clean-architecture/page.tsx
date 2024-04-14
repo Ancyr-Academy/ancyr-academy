@@ -266,7 +266,7 @@ const Page = () => {
               </ul>
             </section>
             <section>
-              <h2>Ce qu'en disent les élèves (+800)</h2>
+              <h2>Ce qu'en disent les élèves (+950)</h2>
               <ReviewList>
                 <Review authorImage={YazidDaoudi.src} authorName="Yazid Daoudi">
                   Je conseil fortement la formation d'Anthony. Elle convient a
