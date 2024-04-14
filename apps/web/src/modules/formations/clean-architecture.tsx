@@ -32,7 +32,7 @@ export const allCourses: Course[] = [
     id: "fondamentaux",
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/mBkKdN7QdaTOzbWXW9WF",
-    price: 50,
+    price: 100,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-fondamentaux",
@@ -51,7 +51,7 @@ export const allCourses: Course[] = [
     id: "web-nextjs",
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/HQeGzGLBT3iMntw82WdE",
-    price: 150,
+    price: 300,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-nextjs",
@@ -70,7 +70,7 @@ export const allCourses: Course[] = [
     id: "api-nestjs",
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/FI20zcQx6Wx1WweQUZmg",
-    price: 150,
+    price: 300,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-nestjs",
@@ -89,7 +89,7 @@ export const allCourses: Course[] = [
   {
     id: "spring-java",
     imageUrl: CleanSpring.src,
-    price: 150,
+    price: 300,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-api-spring-java",
@@ -108,7 +108,7 @@ export const allCourses: Course[] = [
   {
     id: "csharp-dotnet",
     imageUrl: CleanNetCore.src,
-    price: 150,
+    price: 300,
     status: {
       type: "unavailable",
     },
@@ -126,7 +126,7 @@ export const allCourses: Course[] = [
   {
     id: "php-symfony",
     imageUrl: CleanSymfony.src,
-    price: 150,
+    price: 300,
     status: {
       type: "unavailable",
     },
@@ -144,7 +144,7 @@ export const allCourses: Course[] = [
   {
     id: "python-fastapi",
     imageUrl: CleanFastAPI.src,
-    price: 150,
+    price: 300,
     status: {
       type: "unavailable",
     },
@@ -162,7 +162,7 @@ export const allCourses: Course[] = [
   {
     id: "web-nextjs-14",
     imageUrl: CleanNextJS14.src,
-    price: 150,
+    price: 300,
     status: {
       type: "unavailable",
     },

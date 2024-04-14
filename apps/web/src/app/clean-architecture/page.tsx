@@ -148,7 +148,7 @@ const Page = () => {
                 <Course
                   imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
                   isHot
-                  price={400}
+                  price={800}
                   status={{
                     type: "available",
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
@@ -162,7 +162,7 @@ const Page = () => {
                 </Course>
                 <Course
                   imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
-                  price={300}
+                  price={600}
                   status={{
                     type: "available",
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
@@ -176,7 +176,7 @@ const Page = () => {
 
                 <Course
                   imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
-                  price={180}
+                  price={320}
                   status={{
                     type: "available",
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
