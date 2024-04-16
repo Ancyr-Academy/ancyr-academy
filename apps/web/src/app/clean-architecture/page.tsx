@@ -266,7 +266,7 @@ const Page = () => {
               </ul>
             </section>
             <section>
-              <h2>Ce qu'en disent les élèves (+950)</h2>
+              <h2>Ce qu'en disent les élèves (+1000)</h2>
               <ReviewList>
                 <Review authorImage={YazidDaoudi.src} authorName="Yazid Daoudi">
                   Je conseil fortement la formation d'Anthony. Elle convient a
@@ -343,6 +343,35 @@ const Page = () => {
                   qualité-prix est vraiment imbattable compte tenu de la
                   complexité du sujet, et Anthony manifeste un réel engagement à
                   nous aider à réussir. Je recommande fortement !
+                </Review>
+                <Review authorName="Carlo">
+                  "Comment créer une nouvelle fonctionnalité ? Quels fichiers
+                  dois-je modifier pour mettre à jour cette fonctionnalité ? Ah
+                  tiens, pourquoi ne pas ré-implémenter le même code, une énième
+                  fois, à cet endroit ? Mais il sert vraiment à quelque chose ce
+                  test ? Ce test est instable non ? Non non, il fonctionne bien
+                  sur ma machine" Sur le long terme, ce sont effectivement des
+                  questions du quotidien. De ce constat, je cherchais, moi
+                  aussi, à améliorer la qualité et la maintenabilité de mes
+                  applications, et surtout à retrouver le plaisir de coder. Les
+                  formations d'Anthony constituent, pour moi, la porte d'entrée
+                  idéale aux concepts de Clean architecture et de stratégies de
+                  tests. Anthony a su rendre concrets les concepts qui restaient
+                  encore trop abstraits pour moi. J'ai toujours un onglet ouvert
+                  sur la formation pour me rassurer et me donner le cap. Enfin,
+                  je suis très heureux de faire partie de sa belle communauté !
+                </Review>
+                <Review authorName="Celdama">
+                  La formation Clean Architecture d'Anthony a été une révélation
+                  pour moi en tant que développeur junior. Elle combine une
+                  excellente pédagogie avec une compréhension profonde des
+                  principes de conception logicielle, rendant le contenu
+                  accessible à tous les niveaux. Les études de cas pratiques
+                  utilisant React et Next.js sont particulièrement
+                  enrichissantes. Un plus notable est la disponibilité d'Anthony
+                  sur Discord pour répondre aux questions, ce qui renforce
+                  l'apprentissage continu. Je recommande pour ceux qui veulent
+                  affiner leurs compétences en architecture logicielle.
                 </Review>
                 <Review
                   authorImage={AmelieHusson.src}
