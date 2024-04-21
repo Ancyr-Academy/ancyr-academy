@@ -21,27 +21,27 @@ const daysIntoYear = (date: Date) => {
   );
 };
 
-const totalSlots = 8;
+const totalSlots = 7;
 const discountStates = [
   {
     percentage: 0.3,
     code: "CLEAN30",
-    slots: [0, 2],
+    slots: [0, 1],
   },
   {
     percentage: 0.5,
     code: "CLEAN50",
-    slots: [2, 4],
+    slots: [2, 3],
   },
   {
     percentage: 0.4,
     code: "CLEAN40",
-    slots: [4, 6],
+    slots: [4, 5],
   },
   {
     percentage: 0.6,
     code: "CLEAN60",
-    slots: [6, 8],
+    slots: [6, 7],
   },
 ] as const;
 
@@ -51,10 +51,11 @@ export const useCurrentDiscount = (now = new Date()): Nullable<Discount> => {
   // But that should only occur if the user is visiting the website around midnight.
   // Not every interesting :)
 
-  const slot = daysIntoYear(now) % (totalSlots + 1);
-  const discount = discountStates.find((d) => {
-    return slot >= d.slots[0] && slot <= d.slots[1];
-  });
+  const slot = (daysIntoYear(now) + 1) % totalSlots;
+
+  const discount = discountStates.find(
+    (d) => slot >= d.slots[0] && slot <= d.slots[1],
+  );
 
   if (!discount) {
     return null;
@@ -63,9 +64,9 @@ export const useCurrentDiscount = (now = new Date()): Nullable<Discount> => {
   const daysToRemove = slot - discount.slots[0];
   const startDate = startOfDay(subDays(now, daysToRemove));
 
-  const daysToAdd = discount.slots[1] - discount.slots[0];
+  const daysToAdd = discount.slots[1] - discount.slots[0] + 1;
   const endDate = startOfDay(addDays(startDate, daysToAdd));
-
+  
   if (endDate.getTime() < now.getTime()) {
     return null;
   }
