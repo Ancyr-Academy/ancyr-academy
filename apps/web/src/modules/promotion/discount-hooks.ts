@@ -66,7 +66,7 @@ export const useCurrentDiscount = (now = new Date()): Nullable<Discount> => {
 
   const daysToAdd = discount.slots[1] - discount.slots[0] + 1;
   const endDate = startOfDay(addDays(startDate, daysToAdd));
-  
+
   if (endDate.getTime() < now.getTime()) {
     return null;
   }
@@ -79,15 +79,15 @@ export const useCurrentDiscount = (now = new Date()): Nullable<Discount> => {
   };
 };
 
-export const useDiscountDuration = (now = new Date()) => {
-  function compute(discount: Discount) {
+export const useDiscountDuration = () => {
+  function compute(discount: Discount, now: Date = new Date()) {
     return Math.max(
       0,
       Math.floor((discount.endsAt.getTime() - now.getTime()) / 1000),
     );
   }
 
-  const discount = useCurrentDiscount(now);
+  const discount = useCurrentDiscount();
   const [seconds, setSeconds] = useState(discount ? compute(discount) : 0);
 
   useEffect(() => {
@@ -98,7 +98,7 @@ export const useDiscountDuration = (now = new Date()) => {
     return () => {
       clearInterval(interval);
     };
-  }, [discount]);
+  }, [discount, setSeconds]);
 
   return {
     duration: new Duration(seconds),
