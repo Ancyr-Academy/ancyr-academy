@@ -24,6 +24,8 @@ import AnthonyDelhaye from "../../assets/reviews/anthony_delhaye.jpeg";
 import AmelieHusson from "../../assets/reviews/amlie_husson.jpeg";
 import RachidJeffali from "../../assets/reviews/rachid_jeffali.jpeg";
 import YlliesH from "../../assets/reviews/yllies_h.jpeg";
+import YohannHerbet from "../../assets/reviews/yohann_herbet.png";
+import YounesAdem from "../../assets/reviews/younes_adem.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
 import { allCourses } from "../../modules/formations/clean-architecture";
@@ -374,6 +376,32 @@ const Page = () => {
                   affiner leurs compétences en architecture logicielle.
                 </Review>
                 <Review
+                  authorImage={YohannHerbet.src}
+                  authorName="Yohann Herbet"
+                >
+                  Anthony est très bon pédagogue. J'ai adoré la formation et la
+                  qualité technique est vraiment au rendez-vous ! J'ai obtenu
+                  beaucoup de réponses à mes questions, avec en prime pas mal de
+                  bonus à ce que je recherchais. Cette formation m'a fait monter
+                  en niveau très rapidement et m'a permis de comprendre chaque
+                  principe évoqué. J'ai maintenant une très bonne compréhension
+                  de la clean architecture et suis capable d'interpréter
+                  différentes façons de l'implémenter et de l'appliquer.
+                </Review>
+                <Review authorImage={YounesAdem.src} authorName="Younes Adem">
+                  J'ai suivi la formation Clean Architecture + Spring. Celle-ci
+                  fournit de très bonnes bases théoriques ainsi qu'un réel cas
+                  pratique digne de ce que l'on retrouve dans le monde
+                  professionnel. Bien que la formation soit focalisée sur la
+                  Clean Architecture, j'ai vraiment apprécié le fait qu'Anthony
+                  nous partage également sa façon de penser une application et
+                  sa mise en oeuvre du Test-Driven Development. Il nous livre
+                  même un avant goût de CQRS et de Domain-Driven Design dans
+                  cette formation. Anthony est un excellent instructeur. Sa
+                  capacité à vulgariser des choses complexes rend la formation
+                  accessible, aussi bien aux juniors qu'aux plus seniors.
+                </Review>
+                <Review
                   authorImage={AmelieHusson.src}
                   authorName="Amélie Husson"
                 >
@@ -439,6 +467,7 @@ const Page = () => {
                   bonne allure de croisière et que tu expliques bien les choses,
                   bravo !
                 </Review>
+
                 <Review
                   authorImage={AnthonyDelhaye.src}
                   authorName="Anthony Delhaye"

@@ -1,4 +1,3 @@
-import { Nullable } from "@tryghost/content-api";
 import { addDays, startOfDay, subDays } from "date-fns";
 import { useEffect, useState } from "react";
 import { Duration } from "./duration";
@@ -21,7 +20,7 @@ const daysIntoYear = (date: Date) => {
   );
 };
 
-const totalSlots = 7;
+const totalSlots = 8;
 const discountStates = [
   {
     percentage: 0.3,
@@ -45,11 +44,10 @@ const discountStates = [
   },
 ] as const;
 
-export const useCurrentDiscount = (now = new Date()): Nullable<Discount> => {
+export const useCurrentDiscount = (now = new Date()): Discount | null => {
   // Note : this implementation is simplified since we have no way to know when it's gonna be recomputed
   // A more robust solution would be to use an interval to recompute the discount once the day change
   // But that should only occur if the user is visiting the website around midnight.
-  // Not every interesting :)
 
   const slot = (daysIntoYear(now) + 1) % totalSlots;
 
