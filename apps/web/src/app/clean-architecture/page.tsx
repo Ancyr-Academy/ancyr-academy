@@ -26,6 +26,7 @@ import RachidJeffali from "../../assets/reviews/rachid_jeffali.jpeg";
 import YlliesH from "../../assets/reviews/yllies_h.jpeg";
 import YohannHerbet from "../../assets/reviews/yohann_herbet.png";
 import YounesAdem from "../../assets/reviews/younes_adem.jpeg";
+import BastienCorre from "../../assets/reviews/bastien_corre.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
 import { allCourses } from "../../modules/formations/clean-architecture";
@@ -446,6 +447,22 @@ const Page = () => {
                   plus. Je tiens à souligner que cette formation est
                   incroyablement détaillée et complète, même pour des étudiants
                   débutant en programmation.
+                </Review>
+                <Review
+                  authorImage={BastienCorre.src}
+                  authorName="Bastien Corré"
+                >
+                  La formation théorique sur les principes fondamentaux de la
+                  clean architecture m'a apporté beaucoup de précision sur des
+                  concepts peu ou mal enseigné. Étant encore en étude j'en ai
+                  plus appris pendant cette formation que pendant tous les
+                  différents modules que j'ai pu suivre, qu'ils soient
+                  d'architecture logicielle ou non. On retrouve ici des concepts
+                  poussés mais expliqués d'une manière simple avec des exemples
+                  à l'appui ce qui permet une compréhension profonde de ce qu'on
+                  veut mettre en place. Je ne peux que recommander cette
+                  formation, peu importe le niveau de compréhension de la
+                  programmation logicielle.
                 </Review>
                 <Review
                   authorImage={FredericLossignol.src}
