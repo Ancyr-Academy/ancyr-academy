@@ -30,6 +30,7 @@ import BastienCorre from "../../assets/reviews/bastien_corre.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
 import { useCurrentDiscount } from "../../modules/promotion/discount-hooks";
+import { pxToRem } from "../../modules/ui/font-utils";
 
 const Page = () => {
   const discount = useCurrentDiscount();
@@ -168,11 +169,15 @@ const Page = () => {
                 </li>
               </ul>
               <p>
-                Cette formation contient tout ce que j'ai appris ces 15
-                dernières années en tant que développeur, architecte et
-                formateur. J'y distille les méthodes qui ont prouvées leur
-                efficacité et aidé, en temps que freelance, à n'avoir que des
-                retours hautement positifs et un haut TJM.
+                Cette formation, c'est{" "}
+                <b>
+                  tout ce que j'ai appris ces 15 dernières années en tant que
+                  développeur, architecte et formateur
+                </b>
+                . J'y distille une façon de faire originale mais terriblement
+                efficace & productive qui, en temps que freelance, m'a permis
+                d'avoir que des retours hautement positifs et à avoir un haut
+                TJM.
               </p>
               <p>
                 Plus encore, j'y partage les erreurs que j'ai commises, les
@@ -287,83 +292,33 @@ const Page = () => {
                 </li>
               </ul>
             </section>
-            <section>
-              <h2>Prérequis</h2>
-              <p>Pour suivre cette formation, il est conseillé : </p>
-              <ul>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    D'avoir déjà <b>développé quelques applications</b>
-                  </span>
-                </li>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    D'être à l'aise avec les rudiments du code{" "}
-                    <b>Orienté Objet</b>
-                  </span>
-                </li>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    D'être curieux et{" "}
-                    <b>désireux d'en apprendre toujours plus</b>
-                  </span>
-                </li>
-              </ul>
-            </section>
-            <section>
-              <h2>Les formations</h2>
-              <p>
-                La formation Clean Architecture est disponible en plusieurs
-                formats.
-                <br />
-                <i>(payable en 2x et 3x)</i>
-              </p>
-              <CourseList>
-                <Course
-                  imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
-                  isHot
-                  price={500}
-                  status={{
-                    type: "available",
-                    url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
-                  }}
-                  title="MegaBundle"
-                  discount={discount}
-                >
-                  Toutes les formations Clean Architecture disponibles
-                  (JavaScript & Java)
-                </Course>
-                <Course
-                  imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
-                  price={400}
-                  status={{
-                    type: "available",
-                    url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
-                  }}
-                  title="Fullstack JavaScript"
-                  discount={discount}
-                >
-                  Apprendre à développer des apps en Clean Architecture avec
-                  React et NestJS.
-                </Course>
 
-                <Course
-                  imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
-                  price={400}
-                  status={{
-                    type: "available",
-                    url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
-                  }}
-                  title="Java"
-                  discount={discount}
-                >
-                  Apprendre à développer des apps en Clean Architecture avec
-                  Java + Spring.
-                </Course>
-              </CourseList>
+            <Courses />
+            <section>
+              <Moneyback>
+                <h2>Et si la formation ne me plait pas ?</h2>
+                <p>
+                  Aucune chance, la formation est complète et de très haute
+                  qualité. <b>Elle a déjà aidé plus de 1000 développeurs</b> à
+                  passer au niveau supérieur <b>en seulement un an.</b>
+                  <br />
+                  <br />
+                  Si bien que j'ai une politique de remboursement inédite :{" "}
+                  <b>
+                    tu as 30 jours pour consommer toute la formation et demander
+                    un remboursement si elle ne te convient pas.
+                  </b>
+                  <br />
+                  <br />
+                  Tu as bien lu : <b>30 jours.</b>
+                  <br />
+                  Si après ça tu désire tout de même être remboursé, je le ferai
+                  sans te poser de question.
+                  <br />
+                  <br />
+                  Mais jusqu'ici, <b>seulement 1 élève l'a demandé.</b>
+                </p>
+              </Moneyback>
             </section>
 
             <section>
@@ -591,9 +546,9 @@ const Page = () => {
                   théorique de la clean architecture (bien plus que le livre du
                   même nom)
                 </Review>
-                <Review authorName="Geoffrey Villard">Vraiment Top !</Review>
               </ReviewList>
             </section>
+            <Courses />
           </Content>
         </Container>
       </ContentBody>
@@ -601,8 +556,87 @@ const Page = () => {
   );
 };
 
+const Courses = () => {
+  const discount = useCurrentDiscount();
+
+  return (
+    <section>
+      <h2>Les formations</h2>
+      <p>
+        Pour toucher un maximum de développeurs, cette formation existe pour
+        plusieurs langages.
+        <br />
+        <i>(payable en 2x et 3x)</i>
+      </p>
+      <CourseList>
+        <Course
+          imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
+          isHot
+          price={500}
+          status={{
+            type: "available",
+            url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
+          }}
+          title="MegaBundle"
+          discount={discount}
+        >
+          Toutes les formations Clean Architecture disponibles (JavaScript &
+          Java)
+        </Course>
+        <Course
+          imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
+          price={400}
+          status={{
+            type: "available",
+            url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
+          }}
+          title="Fullstack JavaScript"
+          discount={discount}
+        >
+          Apprendre à développer des apps en Clean Architecture avec React et
+          NestJS.
+        </Course>
+
+        <Course
+          imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
+          price={400}
+          status={{
+            type: "available",
+            url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
+          }}
+          title="Java"
+          discount={discount}
+        >
+          Apprendre à développer des apps en Clean Architecture avec Java +
+          Spring.
+        </Course>
+      </CourseList>
+    </section>
+  );
+};
+
 const ContentBody = styled.div`
   margin-top: 80px;
 `;
 
+const Moneyback = styled.div`
+  background-color: var(--color-primary);
+  border-radius: 5px;
+
+  padding: 40px;
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: ${pxToRem(32)};
+  }
+
+  p {
+    color: white;
+    font-size: ${pxToRem(22)};
+
+    line-height: 1.3;
+  }
+`;
 export default Page;
