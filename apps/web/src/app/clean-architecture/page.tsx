@@ -29,7 +29,6 @@ import YounesAdem from "../../assets/reviews/younes_adem.jpeg";
 import BastienCorre from "../../assets/reviews/bastien_corre.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
-import { allCourses } from "../../modules/formations/clean-architecture";
 import { useCurrentDiscount } from "../../modules/promotion/discount-hooks";
 
 const Page = () => {
@@ -145,16 +144,18 @@ const Page = () => {
               </ul>
             </section>
             <section>
-              <h2>Les Bundle</h2>
+              <h2>Les formations</h2>
               <p>
-                Ces formations sont souvent achetées ensembles{" "}
+                La formation Clean Architecture est disponible en plusieurs
+                formats.
+                <br />
                 <i>(payable en 2x et 3x)</i>
               </p>
               <CourseList>
                 <Course
                   imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
                   isHot
-                  price={800}
+                  price={500}
                   status={{
                     type: "available",
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
@@ -163,55 +164,35 @@ const Page = () => {
                   discount={discount}
                 >
                   Toutes les formations Clean Architecture disponibles
-                  (JavaScript & Spring) +{" "}
-                  <b>Celles à venir (.NET, Symfony...)</b>
+                  (JavaScript & Java)
                 </Course>
                 <Course
                   imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
-                  price={600}
+                  price={400}
                   status={{
                     type: "available",
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
                   }}
-                  title="JavaScript Bundle"
+                  title="Fullstack JavaScript"
                   discount={discount}
                 >
-                  L'ensemble des formations Clean Architecture JavaScript :{" "}
-                  <b>Fondamentaux</b> + <b>Web NextJS</b> + <b>API NestJS</b>
+                  Apprendre à développer des apps en Clean Architecture avec
+                  React et NestJS.
                 </Course>
 
                 <Course
                   imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
-                  price={320}
+                  price={400}
                   status={{
                     type: "available",
                     url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
                   }}
-                  title="Java Bundle"
+                  title="Java"
                   discount={discount}
                 >
-                  L'ensemble des formations Clean Architecture en environnement
-                  Java : <b>Fondamentaux</b> + <b>Java Spring</b>.
+                  Apprendre à développer des apps en Clean Architecture avec
+                  Java + Spring.
                 </Course>
-              </CourseList>
-            </section>
-
-            <section>
-              <h2>Les Formations</h2>
-              <CourseList>
-                {allCourses.map((course) => (
-                  <Course
-                    imageUrl={course.imageUrl}
-                    isHot={course.isHot}
-                    key={course.id}
-                    price={course.price}
-                    status={course.status}
-                    title={course.title}
-                    discount={discount}
-                  >
-                    {course.resume}
-                  </Course>
-                ))}
               </CourseList>
             </section>
 
