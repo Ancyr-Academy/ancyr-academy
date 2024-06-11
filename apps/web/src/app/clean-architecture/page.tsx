@@ -581,7 +581,7 @@ const Courses = () => {
           discount={discount}
         >
           Toutes les formations Clean Architecture disponibles (JavaScript &
-          Java)
+          Java) <b>+ celles à venir</b>
         </Course>
         <Course
           imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
