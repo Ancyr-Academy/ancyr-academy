@@ -18,7 +18,7 @@ export const Promotional = () => {
       <Container>
         <SubView>
           <Left>
-            <Title>PROMOTION</Title>
+            <Title>EN COURS</Title>
             <Content>
               Jusqu'à <b>-{discount!.percentage * 100}%</b> avec le code{" "}
               <b>{discount!.code}</b>

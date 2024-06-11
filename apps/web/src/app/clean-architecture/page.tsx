@@ -54,11 +54,11 @@ const Page = () => {
             <section>
               <h2>Une approche pragmatique et concrète</h2>
               <p>
-                L’objectif de cette formation est de vous rendre capable de{" "}
+                Avec cette formation Clean Architecture, je désire vous montrer
+                comment développer des applications{" "}
                 <b>
-                  {" "}
-                  coder des applications plus robustes et plus facile à
-                  maintenir en situation réelle.
+                  plus robustes, plus faciles à maintenir et à faire évoluer,
+                  avec des exemples tirés de la vie réelle.
                 </b>
               </p>
               <p>Vous y apprendez :</p>
@@ -66,7 +66,16 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    Les principes fondateurs de la <b>Clean Architecture</b>
+                    Les principes fondateurs de la <b>Clean Architecture</b>, y
+                    compris les moins connus
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Ce qu'est véritablement l'architecture logicielle avec des
+                    heuristiques riches sur la <b>gestion des dépendances</b> et{" "}
+                    <b>la décomposition modulaire</b>
                   </span>
                 </li>
                 <li>
@@ -79,15 +88,16 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    Comment tirer profit des <b>principes SOLID</b>
+                    Comment tirer profit des <b>principes SOLID</b> dans un
+                    niveau de détail insoupçonné
                   </span>
                 </li>
                 <li>
                   <IoCheckmarkCircle />
                   <span>
                     A <b>modulariser votre code</b> pour
-                    <b> travailler à plusieurs sur la même feature</b> sans se
-                    marcher dessus
+                    <b> travailler à plusieurs sur la même feature</b> et
+                    booster votre productivité d'équipe
                   </span>
                 </li>
                 <li>
@@ -100,8 +110,23 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    Comment développer en <b>Test-Driven Development</b> afin de
-                    faire émerger la solution au problème
+                    A écrire des tests <b>robustes</b> qui{" "}
+                    <b>ne se mettent pas en travers de votre</b> route quand
+                    vous avez besoin de changer votre code
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    A tester correctement vos applications en end-to-end avec{" "}
+                    <b>PlayWright</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    A entrer dans une boucle de développement itérative en TDD
+                    et à être véritablement guidé par les tests
                   </span>
                 </li>
                 <li>
@@ -139,6 +164,151 @@ const Page = () => {
                   <span>
                     Exploiter le <b>CQRS</b> pour optimiser différemment votre
                     modèle de lecture et votre modèle d’écriture
+                  </span>
+                </li>
+              </ul>
+              <p>
+                Cette formation contient tout ce que j'ai appris ces 15
+                dernières années en tant que développeur, architecte et
+                formateur. J'y distille les méthodes qui ont prouvées leur
+                efficacité et aidé, en temps que freelance, à n'avoir que des
+                retours hautement positifs et un haut TJM.
+              </p>
+              <p>
+                Plus encore, j'y partage les erreurs que j'ai commises, les
+                astuces que j'ai appris par ma longue expérience de développeur
+                (y compris dans l'open source){" "}
+                <i>
+                  et quelques petits tricks secrets introuvables sur Internet.
+                </i>
+              </p>
+            </section>
+            <section>
+              <h2>Ils en parlent mieux que moi</h2>
+              <ReviewList>
+                <Review
+                  authorImage={RachidJeffali.src}
+                  authorName="Rachid Jeffali"
+                >
+                  Excellente formation ! Je suis Développeur depuis un moment et
+                  j'avais l'impression de stagner sur les concepts
+                  d'Architecture. Le contenu anglophone et francophone sur la
+                  Clean Architecture était soit indigeste, soit compliqué à
+                  comprendre et surtout je ne trouvais pas de projet de A à Z en
+                  Clean Architecture. Je suis formateur, je dois rester à
+                  l'affût de ce qui se fait, des nouvelles tendances etc... Et
+                  l'architecture hexagonale et le TDD m'ont toujours intéressés
+                  et j'avais besoin de faire sauter ce verrou de compréhension.
+                  La formation d'Anthony Cyrille vient régler ce problème. A
+                  l'issue on a l'impression de faire parti d'une élite, d'une
+                  classe (limitée en places) de développeurs à part, on se sent
+                  enfin Dev Senior !
+                </Review>
+                <Review authorName="Rosko">
+                  La formation Clean Architecture offerte par Anthony Cyrille a
+                  été très satisfaisante. Le formateur démontre une pédagogie
+                  remarquable, la partie théorique est bien structurée avec des
+                  schémas facilitant la compréhension, et la flexibilité des
+                  vidéos permet une visualisation à tout moment. La partie
+                  pratique de la formation utilise des sujets concrets
+                  rencontrés en entreprise, renforçant l'applicabilité des
+                  compétences acquises dans des situations réelles. L'accès au
+                  code du projet est un atout majeur, et le discord actif
+                  présente une communauté de développeurs prête à répondre aux
+                  questions et partager des informations pertinentes. Le rapport
+                  qualité-prix est vraiment imbattable compte tenu de la
+                  complexité du sujet, et Anthony manifeste un réel engagement à
+                  nous aider à réussir. Je recommande fortement !
+                </Review>
+                <Review authorName="Carlo">
+                  "Comment créer une nouvelle fonctionnalité ? Quels fichiers
+                  dois-je modifier pour mettre à jour cette fonctionnalité ? Ah
+                  tiens, pourquoi ne pas ré-implémenter le même code, une énième
+                  fois, à cet endroit ? Mais il sert vraiment à quelque chose ce
+                  test ? Ce test est instable non ? Non non, il fonctionne bien
+                  sur ma machine" Sur le long terme, ce sont effectivement des
+                  questions du quotidien. De ce constat, je cherchais, moi
+                  aussi, à améliorer la qualité et la maintenabilité de mes
+                  applications, et surtout à retrouver le plaisir de coder. Les
+                  formations d'Anthony constituent, pour moi, la porte d'entrée
+                  idéale aux concepts de Clean architecture et de stratégies de
+                  tests. Anthony a su rendre concrets les concepts qui restaient
+                  encore trop abstraits pour moi. J'ai toujours un onglet ouvert
+                  sur la formation pour me rassurer et me donner le cap. Enfin,
+                  je suis très heureux de faire partie de sa belle communauté !
+                </Review>
+                <Review authorName="Celdama">
+                  La formation Clean Architecture d'Anthony a été une révélation
+                  pour moi en tant que développeur junior. Elle combine une
+                  excellente pédagogie avec une compréhension profonde des
+                  principes de conception logicielle, rendant le contenu
+                  accessible à tous les niveaux. Les études de cas pratiques
+                  utilisant React et Next.js sont particulièrement
+                  enrichissantes. Un plus notable est la disponibilité d'Anthony
+                  sur Discord pour répondre aux questions, ce qui renforce
+                  l'apprentissage continu. Je recommande pour ceux qui veulent
+                  affiner leurs compétences en architecture logicielle.
+                </Review>
+              </ReviewList>
+            </section>
+            <section>
+              <h2>A qui s'adresse cette formation ?</h2>
+              <p>Cette formation a été pensée pour toi si...</p>
+              <ul>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tu désires passer deux ou trois crans au dessus et
+                    t'affirmer en tant que <b>développeur Senior</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tu désires avoir le jargon et le savoir technique pour
+                    discuter avec des <b>Tech Leads & Architectes</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tu sens que ta façon de développer n'est pas encore optimale
+                    et que tu as l'impression <b>de tatonner à l'aveuglette</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tu es lassé{" "}
+                    <b>de passer 70% de ton temps à régler des bugs</b> et
+                    désire plutôt en passer{" "}
+                    <b>90% à ajouter de la valeur continuellement</b>
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Prérequis</h2>
+              <p>Pour suivre cette formation, il est conseillé : </p>
+              <ul>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    D'avoir déjà <b>développé quelques applications</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    D'être à l'aise avec les rudiments du code{" "}
+                    <b>Orienté Objet</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    D'être curieux et{" "}
+                    <b>désireux d'en apprendre toujours plus</b>
                   </span>
                 </li>
               </ul>
@@ -196,59 +366,6 @@ const Page = () => {
               </CourseList>
             </section>
 
-            <section>
-              <h2>A qui s'adresse cette formation ?</h2>
-              <p>Cette formation s'adresse à : </p>
-              <ul>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    Tout développeur souhaitant atteindre{" "}
-                    <b>un niveau Senior</b>
-                  </span>
-                </li>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    Tout développeur préparant un{" "}
-                    <b>entretien dans une entreprise à haut niveau technique</b>
-                  </span>
-                </li>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    Tout développeur désireux d'écrire{" "}
-                    <b>du code maintenable & extensible</b>
-                  </span>
-                </li>
-              </ul>
-            </section>
-            <section>
-              <h2>Prérequis</h2>
-              <p>Pour suivre cette formation, il est conseillé : </p>
-              <ul>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    D'avoir déjà <b>développé quelques applications</b>
-                  </span>
-                </li>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    D'être à l'aise avec les rudiments du code{" "}
-                    <b>Orienté Objet</b>
-                  </span>
-                </li>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    D'être curieux et{" "}
-                    <b>désireux d'en apprendre toujours plus</b>
-                  </span>
-                </li>
-              </ul>
-            </section>
             <section>
               <h2>Ce qu'en disent les élèves (+1000)</h2>
               <ReviewList>

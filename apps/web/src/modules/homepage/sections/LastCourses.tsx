@@ -2,12 +2,11 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Article } from "../components/Article";
 import { Container } from "../../ui/Container";
-import { pxToRem } from "../../ui/font-utils";
 import { SectionTitle } from "../components/SectionTitle";
 import { Course } from "../components/Course";
 import { allCourses } from "../../formations/data";
+import { mediaQuery, size } from "../../ui/media-query";
 
 export const LastCourses: React.FC = () => {
   return (
@@ -19,9 +18,7 @@ export const LastCourses: React.FC = () => {
             <Course
               imageUrl={course.imageUrl}
               isFree={course.isFree}
-              isHot={course.isHot}
               key={index}
-              keyPoints={course.keyPoints}
               resume={course.resume}
               title={course.title}
               type={course.type}
@@ -42,6 +39,11 @@ const List = styled.div`
   margin-top: 40px;
 
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  
+  ${mediaQuery(size.medium)} {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
 `;

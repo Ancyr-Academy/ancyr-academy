@@ -23,7 +23,6 @@ const Page = () => {
               isFree={course.isFree}
               isHot={course.isHot}
               key={index}
-              keyPoints={course.keyPoints}
               resume={course.resume}
               title={course.title}
               type={course.type}
@@ -37,15 +36,15 @@ const Page = () => {
 };
 
 const List = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  margin-top: 40px;
 
-  margin-inline: auto;
-  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
 
-  ${mediaQuery(size.small)} {
-    gap: 80px;
+  ${mediaQuery(size.medium)} {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
   }
 `;
 

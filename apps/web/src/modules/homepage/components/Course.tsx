@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import React from "react";
-import { FaKey } from "react-icons/fa";
 import { pxToRem } from "../../ui/font-utils";
 import { Button } from "../../ui/Button";
 import { mediaQuery, size } from "../../ui/media-query";
@@ -9,19 +8,18 @@ export const Course: React.FC<{
   type: string;
   title: string;
   resume: string;
-  keyPoints: string[];
   imageUrl: string;
   url: string;
   isHot?: boolean;
   isFree?: boolean;
-}> = ({ type, title, resume, keyPoints, imageUrl, url, isHot, isFree }) => {
+}> = ({ type, title, resume, imageUrl, url, isHot, isFree }) => {
   return (
     <View>
       {isHot ? <HotBadge>Hot</HotBadge> : null}
+      {isFree ? <HotBadge>GRATUIT</HotBadge> : null}
       <Head>
         <ImageContainer>
           <img src={imageUrl} />
-          {isFree ? <FreeBadge>Gratuit</FreeBadge> : null}
         </ImageContainer>
         <Texts>
           <Type>{type}</Type>
@@ -29,14 +27,6 @@ export const Course: React.FC<{
           <Resume>{resume}</Resume>
         </Texts>
       </Head>
-      <KeyPoints>
-        {keyPoints.map((point) => (
-          <KeyPoint key={point}>
-            <FaKey />
-            <KeyPointText>{point}</KeyPointText>
-          </KeyPoint>
-        ))}
-      </KeyPoints>
       <Button size="big" url={url} wide>
         Découvrir la formation
       </Button>
@@ -54,7 +44,6 @@ const View = styled.div`
   border: 1px solid #dfe8e8;
   border-radius: 5px;
 
-  max-width: 960px;
   margin-inline: auto;
 
   ${mediaQuery(size.medium)} {
@@ -82,7 +71,7 @@ const HotBadge = styled.div`
 `;
 const Head = styled.div`
   display: flex;
-  gap: 32px;
+  flex-direction: column;
 
   ${mediaQuery(size.medium)} {
     flex-direction: column;
@@ -95,11 +84,10 @@ const ImageContainer = styled.div`
   z-index: -1;
 
   img {
-    height: 240px;
+    width: 100%;
 
     ${mediaQuery(size.medium)} {
       height: initial;
-      width: 100%;
       object-fit: contain;
     }
   }

@@ -42,10 +42,10 @@ export const Content = styled.div`
         align-items: center;
 
         font-size: ${pxToRem(22)};
-        line-height: 1;
+        line-height: 1.4;
         font-weight: 300;
 
-        padding-block: 8px;
+        padding-block: 10px;
 
         b {
           font-weight: 600;
