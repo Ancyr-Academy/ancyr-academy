@@ -31,6 +31,7 @@ import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
 import { useCurrentDiscount } from "../../modules/promotion/discount-hooks";
 import { pxToRem } from "../../modules/ui/font-utils";
+import { allCourses } from "../../modules/formations/clean-architecture";
 
 const Page = () => {
   const discount = useCurrentDiscount();
@@ -661,58 +662,78 @@ const Courses = () => {
   const discount = useCurrentDiscount();
 
   return (
-    <section>
-      <h2>Les formations</h2>
-      <p>
-        Pour toucher un maximum de développeurs, cette formation existe pour
-        plusieurs langages.
-        <br />
-        <i>(payable en 2x et 3x)</i>
-      </p>
-      <CourseList>
-        <Course
-          imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
-          isHot
-          price={800}
-          status={{
-            type: "available",
-            url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
-          }}
-          title="MegaBundle"
-          discount={discount}
-        >
-          Toutes les formations Clean Architecture disponibles (JavaScript &
-          Java) <b>+ celles à venir</b>
-        </Course>
-        <Course
-          imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
-          price={600}
-          status={{
-            type: "available",
-            url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
-          }}
-          title="Fullstack JavaScript"
-          discount={discount}
-        >
-          Apprendre à développer des apps en Clean Architecture avec React et
-          NestJS.
-        </Course>
+    <>
+      <section>
+        <h2>Les Bundles</h2>
+        <p>
+          Pour toucher un maximum de développeurs, cette formation existe pour
+          plusieurs langages.
+          <br />
+          <i>(payable en 2x et 3x)</i>
+        </p>
+        <CourseList>
+          <Course
+            imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
+            isHot
+            price={800}
+            status={{
+              type: "available",
+              url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
+            }}
+            title="MegaBundle"
+            discount={discount}
+          >
+            Toutes les formations Clean Architecture disponibles (JavaScript &
+            Java) <b>+ celles à venir</b>
+          </Course>
+          <Course
+            imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
+            price={600}
+            status={{
+              type: "available",
+              url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
+            }}
+            title="Fullstack JavaScript"
+            discount={discount}
+          >
+            Apprendre à développer des apps en Clean Architecture avec React et
+            NestJS.
+          </Course>
 
-        <Course
-          imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
-          price={600}
-          status={{
-            type: "available",
-            url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
-          }}
-          title="Java"
-          discount={discount}
-        >
-          Apprendre à développer des apps en Clean Architecture avec Java +
-          Spring.
-        </Course>
-      </CourseList>
-    </section>
+          <Course
+            imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
+            price={600}
+            status={{
+              type: "available",
+              url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
+            }}
+            title="Java"
+            discount={discount}
+          >
+            Apprendre à développer des apps en Clean Architecture avec Java +
+            Spring.
+          </Course>
+        </CourseList>
+      </section>
+      <section>
+        <h2>Les Formations</h2>
+        <CourseList>
+          {allCourses.map((course) => (
+            <Course
+              imageUrl={course.imageUrl}
+              isHot={course.isHot}
+              key={course.id}
+              price={course.price}
+              status={course.status}
+              title={course.title}
+              discount={discount}
+            >
+              {course.resume}
+            </Course>
+          ))}
+        </CourseList>
+      </section>
+    </>
   );
 };
 
