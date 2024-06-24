@@ -53,16 +53,127 @@ const Page = () => {
               </div>
             </section>
             <section>
-              <h2>Une approche pragmatique et concrète</h2>
+              <h2>Une approche qui résout notre vrai problème</h2>
+              <p>Est-ce que, comme moi auparavant, vous en avez marre...</p>
+              <ul>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    De passer la majeure partie de votre temps{" "}
+                    <b>sur des bugs et des hotfix ?</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    De perdre des heures à{" "}
+                    <b>débugguer du code incompréhensible ?</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    D'écrire des tests qui vous{" "}
+                    <b>empêchent de changer votre code</b>
+                    et que <b>vous devez systématiquement réécrire ?</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    De devoir bloquer le développement à cause{" "}
+                    <b>
+                      d'une mise à jour de votre framework ou de votre ORM ?
+                    </b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    De bloquer le développement de features pendant{" "}
+                    <b>
+                      des semaines voir des mois pour faire du refactoring ?
+                    </b>
+                  </span>
+                </li>
+              </ul>
+              <p>Si c'est le cas, alors une chose est certaine.</p>
               <p>
-                Avec cette formation Clean Architecture, je désire vous montrer
-                comment développer des applications{" "}
-                <b>
-                  plus robustes, plus faciles à maintenir et à faire évoluer,
-                  avec des exemples tirés de la vie réelle.
-                </b>
+                <b>Vous avez perdu le contrôle de votre propre code.</b>
               </p>
-              <p>Vous y apprendez :</p>
+              <p>
+                Avec le temps,
+                <br />
+                Le code se complexifie. <br />
+                La vélocité diminue. <br />
+                Le projet devient douloureux.
+                <br />
+                Et en même pas 3 ans, <b>on repart de zéro.</b>
+              </p>
+              <p>
+                Je sais que vous avez déjà connu cette situation. <br />
+                Et je suis sûr que vous la vivez en ce moment même. <br />
+              </p>
+              <p>
+                Vous pensez certainement que c'est normal. <br />
+                Que toutes les boîtes fonctionnent comme ça.
+                <br />
+                <b>Sauf que ça n'a rien de normal.</b>
+              </p>
+              <p>
+                Des milliers d'entreprises travaillent très différement.
+                <br />
+                Avec une méthode qui leur permet d'empiler feature sur feature,
+                <br />
+                Jour après jour,
+                <br />
+                <b>Sans jamais sacrifier leur vélocité.</b>
+              </p>
+              <p>
+                Grâce à <b>4 outils</b> extrêmement connus et complémentaires.
+              </p>
+              <ul>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    La <b>Clean Architecture</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Le <b>Test-Driven Development</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Le <b>Domain-Driven Design</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Le <b>Refactoring</b>
+                  </span>
+                </li>
+              </ul>
+              <p>
+                Je les utilise au quotidien depuis plus de 7 ans, <br />
+                En témoigne mes{" "}
+                <a
+                  href={"https://www.malt.fr/profile/anthonycyrille"}
+                  target={"_blank"}
+                >
+                  39 missions sur Malt et mes nombreux retours client.
+                </a>
+              </p>
+              <p>
+                Ces méthodes, je vous les fait découvrir en profondeur dans
+                cette formation.
+                <br />
+                Vous y apprendrez...
+              </p>
               <ul>
                 <li>
                   <IoCheckmarkCircle />
@@ -96,7 +207,7 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    A <b>modulariser votre code</b> pour
+                    <b>Modulariser votre code</b> pour
                     <b> travailler à plusieurs sur la même feature</b> et
                     booster votre productivité d'équipe
                   </span>
@@ -104,14 +215,14 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    A rendre votre application
+                    Rendre votre application
                     <b> entièrement testable en unitaire et en intégration</b>
                   </span>
                 </li>
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    A écrire des tests <b>robustes</b> qui{" "}
+                    Ecrire des tests <b>robustes</b> qui{" "}
                     <b>ne se mettent pas en travers de votre</b> route quand
                     vous avez besoin de changer votre code
                   </span>
@@ -119,21 +230,21 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    A tester correctement vos applications en end-to-end avec{" "}
+                    Tester correctement vos applications en end-to-end avec{" "}
                     <b>PlayWright</b>
                   </span>
                 </li>
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    A entrer dans une boucle de développement itérative en TDD
-                    et à être véritablement guidé par les tests
+                    Entrer dans une boucle de développement itérative en TDD et
+                    à être véritablement guidé par les tests
                   </span>
                 </li>
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    A isoler votre{" "}
+                    Isoler votre{" "}
                     <b> logique métier des détails d’infrastructure</b>
                   </span>
                 </li>
@@ -147,7 +258,7 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    A créer toute votre application{" "}
+                    Créer toute votre application{" "}
                     <b>
                       sans même ouvrir votre navigateur ou votre client Postman.
                     </b>
@@ -169,23 +280,12 @@ const Page = () => {
                 </li>
               </ul>
               <p>
-                Cette formation, c'est{" "}
+                Plus encore, j'y partage <b>les erreurs que j'ai commises</b>,
+                les astuces que j'ai appris par ma longue expérience de
+                développeur (y compris dans l'open source){" "}
                 <b>
-                  tout ce que j'ai appris ces 15 dernières années en tant que
-                  développeur, architecte et formateur
-                </b>
-                . J'y distille une façon de faire originale mais terriblement
-                efficace & productive qui, en temps que freelance, m'a permis
-                d'avoir que des retours hautement positifs et à avoir un haut
-                TJM.
-              </p>
-              <p>
-                Plus encore, j'y partage les erreurs que j'ai commises, les
-                astuces que j'ai appris par ma longue expérience de développeur
-                (y compris dans l'open source){" "}
-                <i>
                   et quelques petits tricks secrets introuvables sur Internet.
-                </i>
+                </b>
               </p>
             </section>
             <section>
@@ -263,20 +363,6 @@ const Page = () => {
                 <li>
                   <IoCheckmarkCircle />
                   <span>
-                    Tu désires passer deux ou trois crans au dessus et
-                    t'affirmer en tant que <b>développeur Senior</b>
-                  </span>
-                </li>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
-                    Tu désires avoir le jargon et le savoir technique pour
-                    discuter avec des <b>Tech Leads & Architectes</b>
-                  </span>
-                </li>
-                <li>
-                  <IoCheckmarkCircle />
-                  <span>
                     Tu sens que ta façon de développer n'est pas encore optimale
                     et que tu as l'impression <b>de tatonner à l'aveuglette</b>
                   </span>
@@ -290,6 +376,20 @@ const Page = () => {
                     <b>90% à ajouter de la valeur continuellement</b>
                   </span>
                 </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tu désires passer deux ou trois crans au dessus et
+                    t'affirmer en tant que <b>développeur Senior</b>
+                  </span>
+                </li>
+                <li>
+                  <IoCheckmarkCircle />
+                  <span>
+                    Tu désires avoir le jargon et le savoir technique pour
+                    discuter avec des <b>Tech Leads & Architectes</b>
+                  </span>
+                </li>
               </ul>
             </section>
 
@@ -300,7 +400,8 @@ const Page = () => {
                 <p>
                   Aucune chance, la formation est complète et de très haute
                   qualité. <b>Elle a déjà aidé plus de 1000 développeurs</b> à
-                  passer au niveau supérieur <b>en seulement un an.</b>
+                  passer au niveau supérieur{" "}
+                  <b>en seulement un an d'existence.</b>
                   <br />
                   <br />
                   Si bien que j'ai une politique de remboursement inédite :{" "}
@@ -572,7 +673,7 @@ const Courses = () => {
         <Course
           imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
           isHot
-          price={500}
+          price={800}
           status={{
             type: "available",
             url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
@@ -585,7 +686,7 @@ const Courses = () => {
         </Course>
         <Course
           imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
-          price={400}
+          price={600}
           status={{
             type: "available",
             url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
@@ -599,7 +700,7 @@ const Courses = () => {
 
         <Course
           imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
-          price={400}
+          price={600}
           status={{
             type: "available",
             url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",

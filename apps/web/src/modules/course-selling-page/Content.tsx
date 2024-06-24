@@ -18,6 +18,16 @@ export const Content = styled.div`
       line-height: 1.5;
       font-weight: 300;
 
+      a {
+        text-decoration: none;
+        color: var(--color-primary);
+        transition: all 0.2s;
+
+        &:hover {
+          filter: brightness(0.7);
+        }
+      }
+
       b {
         font-weight: 600;
       }
