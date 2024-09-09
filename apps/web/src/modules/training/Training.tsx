@@ -33,6 +33,7 @@ export const Training: React.FC<{ training: TrainingType }> = ({
             <KeyPoint>
               Environnement : <b>{training.environment}</b>
             </KeyPoint>
+            <KeyPoint>Places : 8 participants</KeyPoint>
 
             <KeyPoint>
               Programme :{" "}
