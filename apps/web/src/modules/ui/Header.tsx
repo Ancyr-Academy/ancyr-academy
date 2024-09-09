@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { styled } from "styled-components";
 import LogoFull from "../../assets/logo-full.png";
-import { Container } from "./Container";
 import { pxToRem } from "./font-utils";
 
 const MenuItem: React.FC<{
@@ -28,7 +27,8 @@ export const Header = () => {
           <Menu>
             <MenuItem url="/">Accueil</MenuItem>
             <MenuItem url="/books">Livres</MenuItem>
-            <MenuItem url="/courses">Formations</MenuItem>
+            <MenuItem url="/courses">Cours</MenuItem>
+            <MenuItem url="/training">Formations</MenuItem>
             <MenuItem url="https://www.youtube.com/@ancyracademy">
               Youtube
             </MenuItem>

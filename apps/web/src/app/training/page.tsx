@@ -5,29 +5,20 @@ import React from "react";
 import { Container } from "../../modules/ui/Container";
 import { PageIntro } from "../../modules/ui/PageIntro";
 import { mediaQuery, size } from "../../modules/ui/media-query";
-import { Course } from "../../modules/homepage/components/Course";
-import { allCourses } from "../../modules/courses/data";
+import { Training } from "../../modules/training/Training";
+import { trainings } from "../../modules/training/trainings";
 
 const Page = () => {
   return (
     <main>
       <PageIntro
-        subtitle="Retrouvez mes cours disponibles en e-learning"
-        title="Cours"
+        subtitle="Suivez 2 à 3 jours de formation en live avec moi sur des sujets complexes"
+        title="Formations"
       />
       <Container>
         <List>
-          {allCourses.map((course, index) => (
-            <Course
-              imageUrl={course.imageUrl}
-              isFree={course.isFree}
-              isHot={course.isHot}
-              key={index}
-              resume={course.resume}
-              title={course.title}
-              type={course.type}
-              url={course.url}
-            />
+          {trainings.map((training, index) => (
+            <Training key={index} training={training} />
           ))}
         </List>
       </Container>
@@ -39,7 +30,7 @@ const List = styled.div`
   margin-top: 40px;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 28px;
 
   ${mediaQuery(size.medium)} {

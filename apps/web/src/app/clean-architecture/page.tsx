@@ -31,7 +31,7 @@ import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
 import { useCurrentDiscount } from "../../modules/promotion/discount-hooks";
 import { pxToRem } from "../../modules/ui/font-utils";
-import { allCourses } from "../../modules/formations/clean-architecture";
+import { allCourses } from "../../modules/courses/clean-architecture";
 
 const Page = () => {
   const discount = useCurrentDiscount();

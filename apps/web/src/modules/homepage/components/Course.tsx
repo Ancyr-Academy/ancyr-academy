@@ -28,7 +28,7 @@ export const Course: React.FC<{
         </Texts>
       </Head>
       <Button size="big" url={url} wide>
-        Découvrir la formation
+        Découvrir le cours
       </Button>
     </View>
   );
@@ -93,23 +93,6 @@ const ImageContainer = styled.div`
   }
 `;
 
-const FreeBadge = styled.div`
-  position: absolute;
-  top: 10px;
-  left: 10px;
-
-  background-color: #49d5cc;
-  color: white;
-  font-weight: 600;
-
-  padding-inline: 8px;
-  padding-block: 4px;
-  border-radius: 4px;
-
-  text-transform: uppercase;
-  font-size: ${pxToRem(18)};
-`;
-
 const Texts = styled.div`
   padding-block: 32px;
 `;
@@ -134,32 +117,4 @@ const Resume = styled.p`
   line-height: 1.3;
   margin: 0;
   color: #3e3e3e;
-`;
-
-const KeyPoints = styled.div`
-  margin-block: 40px;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-
-  ${mediaQuery(size.medium)} {
-    gap: 12px;
-    margin-block: 12px;
-    margin-bottom: 28px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-`;
-
-const KeyPoint = styled.div`
-  font-size: ${pxToRem(20)};
-
-  svg {
-    fill: var(--color-primary);
-  }
-`;
-
-const KeyPointText = styled.span`
-  margin-left: 10px;
-  line-height: 1.3;
 `;

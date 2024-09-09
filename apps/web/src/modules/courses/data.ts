@@ -1,4 +1,4 @@
-type CourseType = "Formation" | "Essentials";
+type CourseType = "Cours Complet" | "Essentials";
 
 type Course = {
   title: string;
@@ -16,7 +16,7 @@ export const allCourses: Course[] = [
     title: "Clean Architecture",
     resume:
       "Apprenez à développer des applications robustes et scalables en mettant en place une Clean Architecture testée de bout en bout.",
-    type: "Formation",
+    type: "Cours Complet",
     url: "/clean-architecture",
     keyPoints: [
       "Découvrir les principes de la Clean Architecture",

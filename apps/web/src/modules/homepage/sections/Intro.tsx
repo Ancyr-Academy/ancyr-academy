@@ -18,7 +18,7 @@ export const Intro = () => {
             <IntroText>
               Aider les développeurs à créer de meilleurs logiciels.
             </IntroText>
-            <Button url="/courses">Voir les formations</Button>
+            <Button url="/courses">Voir les cours</Button>
           </Texts>
           <ImageContainer>
             <Image alt="Ancyr Academy" src={LogoAlone} />

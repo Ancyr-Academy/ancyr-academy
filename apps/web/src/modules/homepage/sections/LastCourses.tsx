@@ -5,14 +5,14 @@ import React from "react";
 import { Container } from "../../ui/Container";
 import { SectionTitle } from "../components/SectionTitle";
 import { Course } from "../components/Course";
-import { allCourses } from "../../formations/data";
+import { allCourses } from "../../courses/data";
 import { mediaQuery, size } from "../../ui/media-query";
 
 export const LastCourses: React.FC = () => {
   return (
     <Container>
       <View>
-        <SectionTitle>Dernières Formations</SectionTitle>
+        <SectionTitle>Derniers Cours</SectionTitle>
         <List>
           {allCourses.map((course, index) => (
             <Course
@@ -41,7 +41,7 @@ const List = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
-  
+
   ${mediaQuery(size.medium)} {
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
