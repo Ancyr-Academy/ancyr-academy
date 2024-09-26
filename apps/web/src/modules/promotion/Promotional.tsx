@@ -20,8 +20,8 @@ export const Promotional = () => {
           <Left>
             <Title>EN COURS</Title>
             <Content>
-              Jusqu'à <b>-{discount!.percentage * 100}%</b> sur les cours en
-              e-learning avec le code <b>{discount!.code}</b>
+              Jusqu'à <b>-{discount!.percentage * 100}%</b> sur les{" "}
+              <b>cours en e-learning</b> avec le code <b>{discount!.code}</b>
             </Content>
           </Left>
           <Right>

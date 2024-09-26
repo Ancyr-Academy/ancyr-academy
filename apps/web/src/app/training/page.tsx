@@ -12,8 +12,9 @@ const Page = () => {
   return (
     <main>
       <PageIntro
-        subtitle="Suivez 2 à 3 jours de formation en live avec moi sur des sujets complexes"
-        title="Formations"
+        subtitle="Suivez 2 à 3 jours de formation en live avec moi sur des sujets complexes mais essentielles"
+        title="Training / Formations"
+        showPromotional={false}
       />
       <Container>
         <List>

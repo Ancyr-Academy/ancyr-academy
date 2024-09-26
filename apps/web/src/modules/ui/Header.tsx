@@ -28,7 +28,7 @@ export const Header = () => {
             <MenuItem url="/">Accueil</MenuItem>
             <MenuItem url="/books">Livres</MenuItem>
             <MenuItem url="/courses">Cours</MenuItem>
-            <MenuItem url="/training">Formations</MenuItem>
+            <MenuItem url="/training">Training</MenuItem>
             <MenuItem url="https://www.youtube.com/@ancyracademy">
               Youtube
             </MenuItem>
