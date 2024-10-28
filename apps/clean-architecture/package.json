@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ancyracademy/shared": "workspace:*",
     "@types/node": "20.1.2",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
@@ -21,6 +22,7 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "styled-components": "6.0.0-rc.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "ui": "workspace:*"
   }
 }

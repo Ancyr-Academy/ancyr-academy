@@ -23,6 +23,9 @@ importers:
 
   apps/clean-architecture:
     dependencies:
+      '@ancyracademy/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
       '@types/node':
         specifier: 20.1.2
         version: 20.1.2
@@ -62,6 +65,9 @@ importers:
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
+      ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
 
   apps/web:
     dependencies:

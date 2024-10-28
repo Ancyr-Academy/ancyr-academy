@@ -2,13 +2,8 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import {useDelay, useIsPromotionActive} from "../hooks/use-delay";
-import {Promotion} from "@/sections/Promotion";
 
 export const Header: React.FC<{}> = () => {
-  const seconds = useDelay();
-  const isPromotionVisible = useIsPromotionActive()
-
   return (
     <>
       <View>
@@ -19,7 +14,6 @@ export const Header: React.FC<{}> = () => {
           </Text>
         </Content>
       </View>
-    { isPromotionVisible && <Promotion /> }
     </>
   );
 };
