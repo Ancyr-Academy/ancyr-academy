@@ -16,10 +16,10 @@
     "date-fns": "^2.30.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
-    "next": "13.4.1",
+    "next": "14.2.16",
     "purecss": "^3.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "styled-components": "6.0.0-rc.1",
     "typescript": "5.0.4"
   }

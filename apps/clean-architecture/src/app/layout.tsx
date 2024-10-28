@@ -1,9 +1,9 @@
 import "purecss/build/pure.css";
-import { Source_Sans_Pro } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import { StyledComponentsRegistry } from "../../lib/registry";
 import { GlobalStyles } from "../../lib/global-styles";
 
-const sourceSansPro = Source_Sans_Pro({
+const sourceSansPro = Source_Sans_3({
   weight: ["300", "400", "600", "700", "900"],
   subsets: ["latin-ext"],
 });
