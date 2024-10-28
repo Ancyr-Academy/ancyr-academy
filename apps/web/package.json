@@ -30,7 +30,8 @@
     "remark-gfm": "^4.0.0",
     "remark-toc": "^9.0.0",
     "styled-components": "^6.1.11",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "@ancyracademy/shared": "workspace:*"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.2.3",

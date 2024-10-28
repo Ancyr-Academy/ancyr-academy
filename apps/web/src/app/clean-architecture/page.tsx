@@ -29,13 +29,11 @@ import YounesAdem from "../../assets/reviews/younes_adem.jpeg";
 import BastienCorre from "../../assets/reviews/bastien_corre.jpeg";
 import { Promotional } from "../../modules/promotion/Promotional";
 import { Overview } from "../../modules/course-selling-page/Overview";
-import { useCurrentDiscount } from "../../modules/promotion/discount-hooks";
+import { useCurrentDiscount } from "ui";
 import { pxToRem } from "../../modules/ui/font-utils";
 import { allCourses } from "../../modules/courses/clean-architecture";
 
 const Page = () => {
-  const discount = useCurrentDiscount();
-
   return (
     <main>
       <Overview />

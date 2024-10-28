@@ -1,2 +1,1 @@
-// component exports
-export { Card } from "./card";
+export { useDiscountDuration, useCurrentDiscount } from "./src/discount-hooks";

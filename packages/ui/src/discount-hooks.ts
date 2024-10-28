@@ -1,6 +1,6 @@
 import { addDays, startOfDay, subDays } from "date-fns";
 import { useEffect, useState } from "react";
-import { Duration } from "./duration";
+import { Duration, promotional } from "@ancyracademy/shared";
 
 type Discount = {
   startsAt: Date;
@@ -20,38 +20,14 @@ const daysIntoYear = (date: Date) => {
   );
 };
 
-const totalSlots = 8;
-const discountStates = [
-  {
-    percentage: 0.4,
-    code: "CLEAN40",
-    slots: [0, 1],
-  },
-  {
-    percentage: 0.5,
-    code: "CLEAN50",
-    slots: [2, 3],
-  },
-  {
-    percentage: 0.3,
-    code: "CLEAN30",
-    slots: [4, 5],
-  },
-  {
-    percentage: 0.5,
-    code: "CLEAN50",
-    slots: [6, 7],
-  },
-] as const;
-
 export const useCurrentDiscount = (now = new Date()): Discount | null => {
   // Note : this implementation is simplified since we have no way to know when it's gonna be recomputed
   // A more robust solution would be to use an interval to recompute the discount once the day change
   // But that should only occur if the user is visiting the website around midnight.
 
-  const slot = (daysIntoYear(now) + 1) % totalSlots;
+  const slot = (daysIntoYear(now) + 1) % promotional.totalSlots;
 
-  const discount = discountStates.find(
+  const discount = promotional.discountStates.find(
     (d) => slot >= d.slots[0] && slot <= d.slots[1],
   );
 
