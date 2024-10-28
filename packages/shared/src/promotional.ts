@@ -1,24 +1,24 @@
-const totalSlots = 8;
+const totalSlots = 11;
 const discountStates = [
   {
     percentage: 0.4,
-    code: "CLEAN40",
+    code: "CLEAN20",
     slots: [0, 1],
   },
   {
     percentage: 0.5,
-    code: "CLEAN50",
-    slots: [2, 3],
+    code: "CLEAN30",
+    slots: [3, 4],
   },
   {
     percentage: 0.3,
-    code: "CLEAN30",
-    slots: [4, 5],
+    code: "CLEAN20",
+    slots: [6, 7],
   },
   {
     percentage: 0.5,
-    code: "CLEAN50",
-    slots: [6, 7],
+    code: "CLEAN40",
+    slots: [9, 10],
   },
 ] as const;
 
