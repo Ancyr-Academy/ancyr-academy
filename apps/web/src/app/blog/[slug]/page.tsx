@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import React from "react";
-import { getPost } from "../../../modules/blog/get-posts";
-import { PostBody } from "../../../modules/blog/PostBody";
+import { getPost } from "../../../core/get-posts";
+import { PostBody } from "../../../components/PostBody";
 
 const Page = async ({
   params,

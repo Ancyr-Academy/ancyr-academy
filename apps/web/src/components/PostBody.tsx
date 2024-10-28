@@ -3,7 +3,7 @@ import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import remarkToc from "remark-toc";
-import { mdxComponents } from "../../app/mdx-components";
+import { mdxComponents } from "../app/mdx-components";
 
 export const PostBody = ({ children }: { children: any }) => {
   return (

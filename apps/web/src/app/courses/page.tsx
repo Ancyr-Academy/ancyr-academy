@@ -2,11 +2,11 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Container } from "../../modules/ui/Container";
-import { PageIntro } from "../../modules/ui/PageIntro";
-import { mediaQuery, size } from "../../modules/ui/media-query";
-import { Course } from "../../modules/homepage/components/Course";
-import { allCourses } from "../../modules/courses/data";
+import { Container } from "../../ui/Container";
+import { PageIntro } from "../../ui/PageIntro";
+import { mediaQuery, size } from "../../ui/media-query";
+import { CourseResume } from "../../components/CourseResume";
+import { allCourses } from "../../core/data";
 
 const Page = () => {
   return (
@@ -18,7 +18,7 @@ const Page = () => {
       <Container>
         <List>
           {allCourses.map((course, index) => (
-            <Course
+            <CourseResume
               imageUrl={course.imageUrl}
               isFree={course.isFree}
               isHot={course.isHot}

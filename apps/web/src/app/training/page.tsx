@@ -2,11 +2,11 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Container } from "../../modules/ui/Container";
-import { PageIntro } from "../../modules/ui/PageIntro";
-import { mediaQuery, size } from "../../modules/ui/media-query";
-import { Training } from "../../modules/training/Training";
-import { trainings } from "../../modules/training/trainings";
+import { Container } from "../../ui/Container";
+import { PageIntro } from "../../ui/PageIntro";
+import { mediaQuery, size } from "../../ui/media-query";
+import { Training } from "../../components/Training";
+import { trainings } from "../../core/trainings";
 
 const Page = () => {
   return (

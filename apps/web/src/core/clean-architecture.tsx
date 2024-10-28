@@ -1,8 +1,8 @@
 import React from "react";
-import CleanSpring from "../../assets/formations/ca/CleanSpring.png";
-import CleanSymfony from "../../assets/formations/ca/CleanSymfony.png";
-import CleanNetCore from "../../assets/formations/ca/CleanNetCore.png";
-import CleanFastAPI from "../../assets/formations/ca/CleanFastAPI.png";
+import CleanSpring from "../assets/formations/ca/CleanSpring.png";
+import CleanSymfony from "../assets/formations/ca/CleanSymfony.png";
+import CleanNetCore from "../assets/formations/ca/CleanNetCore.png";
+import CleanFastAPI from "../assets/formations/ca/CleanFastAPI.png";
 
 export type Status =
   | {

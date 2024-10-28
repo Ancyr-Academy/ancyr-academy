@@ -2,11 +2,11 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Container } from "../../ui/Container";
+import { Container } from "../ui/Container";
 import { SectionTitle } from "../components/SectionTitle";
-import { Course } from "../components/Course";
-import { allCourses } from "../../courses/data";
-import { mediaQuery, size } from "../../ui/media-query";
+import { CourseResume } from "../components/CourseResume";
+import { allCourses } from "../core/data";
+import { mediaQuery, size } from "../ui/media-query";
 
 export const LastCourses: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ export const LastCourses: React.FC = () => {
         <SectionTitle>Derniers Cours</SectionTitle>
         <List>
           {allCourses.map((course, index) => (
-            <Course
+            <CourseResume
               imageUrl={course.imageUrl}
               isFree={course.isFree}
               key={index}

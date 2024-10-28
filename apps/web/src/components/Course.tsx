@@ -46,9 +46,7 @@ export const Course: React.FC<{
           <>
             {discount ? (
               <>
-                <OldPricing>
-                  <s>{price}€ TTC</s>
-                </OldPricing>
+                <OldPricing>{price}€ TTC</OldPricing>
                 <Pricing>{price - price * discount.percentage}€ TTC</Pricing>
               </>
             ) : (
@@ -122,8 +120,9 @@ const OldPricing = styled.p`
   text-align: right;
   font-size: ${pxToRem(21)};
   font-weight: 300;
-  color: #a0a0a0;
+  color: #808080;
   margin-block: 0;
+  text-decoration: line-through;
 `;
 const Pricing = styled.p`
   text-align: right;

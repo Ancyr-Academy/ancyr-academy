@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { styled } from "styled-components";
-import LogoFull from "../../assets/logo-full.png";
+import LogoFull from "../assets/logo-full.png";
 import { pxToRem } from "./font-utils";
 
 const MenuItem: React.FC<{

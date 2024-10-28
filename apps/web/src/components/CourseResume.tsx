@@ -1,10 +1,10 @@
 import { styled } from "styled-components";
 import React from "react";
-import { pxToRem } from "../../ui/font-utils";
-import { Button } from "../../ui/Button";
-import { mediaQuery, size } from "../../ui/media-query";
+import { pxToRem } from "../ui/font-utils";
+import { Button } from "../ui/Button";
+import { mediaQuery, size } from "../ui/media-query";
 
-export const Course: React.FC<{
+export const CourseResume: React.FC<{
   type: string;
   title: string;
   resume: string;

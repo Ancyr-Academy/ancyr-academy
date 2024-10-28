@@ -3,10 +3,9 @@
 import { styled } from "styled-components";
 import React from "react";
 import { Article } from "../components/Article";
-import { Container } from "../../ui/Container";
-import { pxToRem } from "../../ui/font-utils";
+import { Container } from "../ui/Container";
 import { SectionTitle } from "../components/SectionTitle";
-import { mediaQuery, size } from "../../ui/media-query";
+import { mediaQuery, size } from "../ui/media-query";
 
 export const LastArticles: React.FC = () => {
   return (

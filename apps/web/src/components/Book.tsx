@@ -1,8 +1,8 @@
 import React from "react";
 import { styled } from "styled-components";
-import { Button } from "../../ui/Button";
-import { pxToRem } from "../../ui/font-utils";
-import { mediaQuery, size } from "../../ui/media-query";
+import { Button } from "../ui/Button";
+import { pxToRem } from "../ui/font-utils";
+import { mediaQuery, size } from "../ui/media-query";
 
 export const Book: React.FC<{
   title: string;

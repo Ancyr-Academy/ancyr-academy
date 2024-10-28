@@ -2,8 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 import { FaStar } from "react-icons/fa";
 import { pxToRem } from "../ui/font-utils";
-import { Button } from "../ui/Button";
-import User from "../../assets/user.png";
+import User from "../assets/user.png";
 
 export const Review: React.FC<{
   authorImage?: string;

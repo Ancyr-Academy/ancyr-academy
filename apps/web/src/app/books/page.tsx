@@ -2,10 +2,10 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Book } from "../../modules/books/components/Book";
-import { Container } from "../../modules/ui/Container";
-import { PageIntro } from "../../modules/ui/PageIntro";
-import { mediaQuery, size } from "../../modules/ui/media-query";
+import { Book } from "../../components/Book";
+import { Container } from "../../ui/Container";
+import { PageIntro } from "../../ui/PageIntro";
+import { mediaQuery, size } from "../../ui/media-query";
 
 const Page = () => {
   return (

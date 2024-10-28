@@ -3,12 +3,12 @@
 import { styled } from "styled-components";
 import React from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
-import { Container } from "../../modules/ui/Container";
-import { Content } from "../../modules/course-selling-page/Content";
-import { Course } from "../../modules/course-selling-page/Course";
-import { CourseList } from "../../modules/course-selling-page/CourseList";
-import { ReviewList } from "../../modules/course-selling-page/ReviewList";
-import { Review } from "../../modules/course-selling-page/Review";
+import { Container } from "../../ui/Container";
+import { Content } from "../../components/Content";
+import { Course } from "../../components/Course";
+import { CourseList } from "../../components/CourseList";
+import { ReviewList } from "../../components/ReviewList";
+import { Review } from "../../components/Review";
 import Amazon from "../../assets/companies/amazon.png";
 import Google from "../../assets/companies/google.png";
 import UKG from "../../assets/companies/ukg.png";
@@ -27,11 +27,11 @@ import YlliesH from "../../assets/reviews/yllies_h.jpeg";
 import YohannHerbet from "../../assets/reviews/yohann_herbet.png";
 import YounesAdem from "../../assets/reviews/younes_adem.jpeg";
 import BastienCorre from "../../assets/reviews/bastien_corre.jpeg";
-import { Promotional } from "../../modules/promotion/Promotional";
-import { Overview } from "../../modules/course-selling-page/Overview";
+import { Promotional } from "../../components/Promotional";
+import { Overview } from "../../components/Overview";
 import { useCurrentDiscount } from "ui";
-import { pxToRem } from "../../modules/ui/font-utils";
-import { allCourses } from "../../modules/courses/clean-architecture";
+import { pxToRem } from "../../ui/font-utils";
+import { allCourses } from "../../core/clean-architecture";
 
 const Page = () => {
   return (
@@ -398,7 +398,7 @@ const Page = () => {
                 <h2>Et si la formation ne me plait pas ?</h2>
                 <p>
                   Aucune chance, la formation est complète et de très haute
-                  qualité. <b>Elle a déjà aidé plus de 1000 développeurs</b> à
+                  qualité. <b>Elle a déjà aidé plus de 1500 développeurs</b> à
                   passer au niveau supérieur{" "}
                   <b>en seulement un an d'existence.</b>
                   <br />
@@ -422,7 +422,7 @@ const Page = () => {
             </section>
 
             <section>
-              <h2>Ce qu'en disent les élèves (+1000)</h2>
+              <h2>Ce qu'en disent les élèves (+1500)</h2>
               <ReviewList>
                 <Review authorImage={YazidDaoudi.src} authorName="Yazid Daoudi">
                   Je conseil fortement la formation d'Anthony. Elle convient a

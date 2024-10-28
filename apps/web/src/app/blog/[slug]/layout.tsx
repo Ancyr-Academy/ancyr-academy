@@ -1,5 +1,5 @@
 "use client";
-import { Container } from "../../../modules/ui/Container";
+import { Container } from "../../../ui/Container";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return <Container>{children}</Container>;

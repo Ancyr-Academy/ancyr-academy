@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import React from "react";
-import { pxToRem } from "../../ui/font-utils";
+import { pxToRem } from "../ui/font-utils";
 
 export const Article: React.FC<{
   title: string;

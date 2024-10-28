@@ -4,9 +4,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 import "normalize.css/normalize.css";
-import { StyledComponentsRegistry } from "../modules/ui/StyledComponentRegistry";
-import { Header } from "../modules/ui/Header";
-import { Footer } from "../modules/ui/Footer";
+import { StyledComponentsRegistry } from "../ui/StyledComponentRegistry";
+import { Header } from "../ui/Header";
+import { Footer } from "../ui/Footer";
 
 const font = Outfit({ subsets: ["latin"] });
 

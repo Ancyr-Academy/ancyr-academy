@@ -11,7 +11,7 @@ import {
   IoTime,
 } from "react-icons/io5";
 import { pxToRem } from "../ui/font-utils";
-import CourseBackground from "../../assets/course-background-colored.png";
+import CourseBackground from "../assets/course-background-colored.png";
 import { Container } from "../ui/Container";
 import { mediaQuery, size } from "../ui/media-query";
 

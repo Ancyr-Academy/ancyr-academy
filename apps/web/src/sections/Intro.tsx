@@ -2,11 +2,11 @@
 
 import { styled } from "styled-components";
 import Image from "next/image";
-import { Container } from "../../ui/Container";
-import { pxToRem } from "../../ui/font-utils";
-import { Button } from "../../ui/Button";
-import LogoAlone from "../../../assets/logo-alone.png";
-import { mediaQuery, size } from "../../ui/media-query";
+import { Container } from "../ui/Container";
+import { pxToRem } from "../ui/font-utils";
+import { Button } from "../ui/Button";
+import LogoAlone from "../assets/logo-alone.png";
+import { mediaQuery, size } from "../ui/media-query";
 
 export const Intro = () => {
   return (

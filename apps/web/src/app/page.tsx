@@ -1,6 +1,6 @@
-import { Intro } from "../modules/homepage/sections/Intro";
-import { LastCourses } from "../modules/homepage/sections/LastCourses";
-import { Promotional } from "../modules/promotion/Promotional";
+import { Intro } from "../sections/Intro";
+import { LastCourses } from "../sections/LastCourses";
+import { Promotional } from "../components/Promotional";
 
 const Page = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import CourseBackground from "../../assets/course-background.jpg";
+import CourseBackground from "../assets/course-background.jpg";
 import { pxToRem } from "../ui/font-utils";
 import { Container } from "../ui/Container";
 
