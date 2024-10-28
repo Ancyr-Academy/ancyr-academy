@@ -3,7 +3,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
-import { Container } from "../components/Container";
+import { Container } from "../components/legacy/Container";
 
 export const Curriculum: React.FC<{}> = () => {
   return (

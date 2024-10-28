@@ -3,8 +3,8 @@
 import React from "react";
 import { styled } from "styled-components";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
-import { Container } from "../components/Container";
-import { Paragraph } from "../components/Typography";
+import { Container } from "../components/legacy/Container";
+import { Paragraph } from "../components/legacy/Typography";
 
 export const Reviews: React.FC<{}> = () => {
   return (

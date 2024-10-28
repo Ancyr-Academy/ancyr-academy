@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { breakpoints, mediaQuery } from "../../lib/global-styles";
+import { breakpoints, mediaQuery } from "../../../lib/global-styles";
 
 type Variant = "normal" | "large";
 

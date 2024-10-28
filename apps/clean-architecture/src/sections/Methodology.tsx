@@ -2,8 +2,8 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import { Container } from "../components/Container";
-import { Paragraph, Title } from "../components/Typography";
+import { Container } from "../components/legacy/Container";
+import { Paragraph, Title } from "../components/legacy/Typography";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
 
 export const Methodology: React.FC<{}> = () => {

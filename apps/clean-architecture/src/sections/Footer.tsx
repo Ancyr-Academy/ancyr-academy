@@ -2,8 +2,8 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import { Container } from "../components/Container";
-import { Paragraph } from "../components/Typography";
+import { Container } from "../components/legacy/Container";
+import { Paragraph } from "../components/legacy/Typography";
 
 export const Footer: React.FC<{}> = () => {
   return (

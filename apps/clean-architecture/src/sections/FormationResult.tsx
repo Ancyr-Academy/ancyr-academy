@@ -2,10 +2,10 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import { Container } from "../components/Container";
-import { Paragraph } from "../components/Typography";
+import { Container } from "../components/legacy/Container";
+import { Paragraph } from "../components/legacy/Typography";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
-import { UnorderedList } from "@/components/Typography";
+import { UnorderedList } from "@/components/legacy/Typography";
 
 export const FormationResult: React.FC<{}> = () => {
   return (

@@ -1,9 +1,13 @@
 "use client";
 
-import { Container } from "@/components/Container";
+import { Container } from "@/components/legacy/Container";
 import React from "react";
 import { styled } from "styled-components";
-import { Paragraph, Title, UnorderedList } from "../components/Typography";
+import {
+  Paragraph,
+  Title,
+  UnorderedList,
+} from "../components/legacy/Typography";
 
 export const Intro: React.FC<{}> = () => {
   return (
