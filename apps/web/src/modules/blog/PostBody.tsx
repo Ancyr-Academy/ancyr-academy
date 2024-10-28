@@ -5,11 +5,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import remarkToc from "remark-toc";
 import { mdxComponents } from "../../app/mdx-components";
 
-export const PostBody: React.FC<{ children: string }> = ({
-  children,
-}: {
-  children: string;
-}) => {
+export const PostBody = ({ children }: { children: any }) => {
   return (
     <MDXRemote
       components={mdxComponents}
@@ -27,5 +23,5 @@ export const PostBody: React.FC<{ children: string }> = ({
       }}
       source={children}
     />
-  );
+  ) as any;
 };

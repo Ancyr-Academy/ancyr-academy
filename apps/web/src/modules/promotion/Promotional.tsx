@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { styled } from "styled-components";
 import { Container } from "../ui/Container";
 import { pxToRem } from "../ui/font-utils";
@@ -10,7 +11,7 @@ export const Promotional = () => {
   const { duration, discount } = useDiscountDuration();
 
   if (duration.total === 0) {
-    return null;
+    return <></>;
   }
 
   return (

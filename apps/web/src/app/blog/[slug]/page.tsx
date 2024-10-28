@@ -3,11 +3,13 @@ import React from "react";
 import { getPost } from "../../../modules/blog/get-posts";
 import { PostBody } from "../../../modules/blog/PostBody";
 
-const Page: React.FC<{
+const Page = async ({
+  params,
+}: {
   params: {
     slug: string;
   };
-}> = async ({ params }) => {
+}) => {
   const { slug } = params;
   const post = await getPost(slug);
   if (!post) {
