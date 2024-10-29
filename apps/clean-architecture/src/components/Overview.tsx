@@ -39,7 +39,7 @@ export const Overview: React.FC = () => {
                 <IoBook /> Théorie & Pratique
               </li>
               <li>
-                <IoFolderOpen /> 2 Formations
+                <IoFolderOpen /> 4 Formations
               </li>
               <li>
                 <IoPlayCircle /> 30 heures de vidéo HD
