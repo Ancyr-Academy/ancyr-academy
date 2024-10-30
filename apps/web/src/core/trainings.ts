@@ -12,7 +12,7 @@ export type TrainingType = {
 
 export const trainings = [
   {
-    title: "Test-Driven Development & Advanced Testing Patterns",
+    title: "Test-Driven Development",
     resume: [
       "Dans cette formation, vous apprendrez les rudiments du Test-Driven Development (TDD) ",
       "en partant de programmes simples jusqu'à créer de vraies application. ",
@@ -23,7 +23,7 @@ export const trainings = [
     ].join(""),
     imageUrl: "",
     url: "https://4yv4n2t0bjp.typeform.com/to/SiD3eztl",
-    dates: "15 / 16 Octobre 2024",
+    dates: "14 / 15 Janvier 2025",
     duration: "2 jours",
     level: "Tout niveau",
     environment: "JavaScript (TS)",
@@ -42,7 +42,7 @@ export const trainings = [
     ].join(""),
     imageUrl: "",
     url: "https://4yv4n2t0bjp.typeform.com/to/tpEmYrMO",
-    dates: "22 / 23 Octobre 2024",
+    dates: "28 / 29 Janvier 2025",
     duration: "2 jours",
     level: "Tout niveau",
     environment: "JavaScript (TS), NestJS",

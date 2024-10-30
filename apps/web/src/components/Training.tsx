@@ -33,7 +33,7 @@ export const Training: React.FC<{ training: TrainingType }> = ({
             <KeyPoint>
               Environnement : <b>{training.environment}</b>
             </KeyPoint>
-            <KeyPoint>Places : 8 participants</KeyPoint>
+            <KeyPoint>Places : 6 participants</KeyPoint>
 
             <KeyPoint>
               Programme :{" "}
@@ -41,9 +41,9 @@ export const Training: React.FC<{ training: TrainingType }> = ({
             </KeyPoint>
             <KeyPoint>
               <h3>Tarif</h3>
-              <b>Entreprise / Société / EI</b> : 1,500.00€ HT
+              <b>Entreprise / Société / EI / Micro</b> : 1,500.00€ HT
               <br />
-              <b>Microentreprise / Salarié / Etudiant</b> : 400.00€ TTC
+              <b>Salarié / Etudiant</b> : 400.00€ TTC
               <br />
               <br />
             </KeyPoint>
