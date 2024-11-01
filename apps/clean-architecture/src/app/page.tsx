@@ -695,13 +695,14 @@ const Courses = () => {
             title="Fullstack JavaScript"
             discount={discount}
           >
-            Apprendre à développer des apps en Clean Architecture avec React et
-            NestJS.
+            Contient les 3 formations "Clean Architecture Fondamentaux", "Clean
+            Architecture API NestJS" & "Clean Architecture Frontend
+            React/Next.js"
           </Course>
 
           <Course
             imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
-            price={600}
+            price={400}
             status={{
               type: "available",
               url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
@@ -709,8 +710,8 @@ const Courses = () => {
             title="Java"
             discount={discount}
           >
-            Apprendre à développer des apps en Clean Architecture avec Java +
-            Spring.
+            Contient les 2 formations "Clean Architecture Fondamentaux" et
+            "Clean Architecture Java/Spring"
           </Course>
         </CourseList>
       </section>

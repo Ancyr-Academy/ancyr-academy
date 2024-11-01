@@ -31,7 +31,7 @@ export const allCourses: Course[] = [
     id: "fondamentaux",
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/mBkKdN7QdaTOzbWXW9WF",
-    price: 100,
+    price: 200,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-fondamentaux",
