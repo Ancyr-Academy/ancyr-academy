@@ -16,3 +16,7 @@ export { PageContent } from "./src/components/PageContent";
 export { Course } from "./src/components/Course";
 export { CourseList } from "./src/components/CourseList";
 export { Overview } from "./src/components/Overview";
+export { Review } from "./src/components/Review";
+export { ReviewList } from "./src/components/ReviewList";
+
+export { CleanArchitecturePage } from "./src/pages/CleanArchitecturePage";

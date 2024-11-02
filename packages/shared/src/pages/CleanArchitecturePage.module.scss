@@ -1,0 +1,26 @@
+@import '../core';
+
+.content_body {
+  margin-top: 80px;
+}
+
+.moneyback {
+  background-color: var(--color-primary);
+  border-radius: 5px;
+
+  padding: 40px;
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: pxToRem(32);
+  }
+
+  p {
+    color: white;
+    font-size: pxToRem(22);
+
+    line-height: 1.3;
+  }
+}
