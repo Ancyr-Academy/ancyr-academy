@@ -1,6 +1,6 @@
 import React from "react";
 
-export type Status =
+type Status =
   | {
       type: "available";
       url: string;
@@ -12,7 +12,7 @@ export type Status =
       type: "unavailable";
     };
 
-export type Course = {
+type Course = {
   id: string;
   imageUrl: string;
   price: number;

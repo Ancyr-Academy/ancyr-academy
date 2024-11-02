@@ -1,6 +1,7 @@
 import { addDays, startOfDay, subDays } from "date-fns";
 import { useEffect, useState } from "react";
-import { Duration, promotional } from "@ancyracademy/shared";
+import { promotional } from "./content/promotional";
+import { Duration } from "./lib/duration";
 
 type Discount = {
   startsAt: Date;
