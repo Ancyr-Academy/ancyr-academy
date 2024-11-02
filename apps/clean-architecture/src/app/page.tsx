@@ -6,15 +6,15 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 import {
   cleanArchitectureCourses,
   Container,
+  Course,
+  CourseList,
+  Overview,
   PageContent,
   Promotional,
   useCurrentDiscount,
 } from "@ancyracademy/shared";
-import { Overview } from "@/components/Overview";
 import { ReviewList } from "@/components/ReviewList";
 import { Review } from "@/components/Review";
-import { CourseList } from "@/components/CourseList";
-import { Course } from "@/components/Course";
 import { pxToRem } from "@/ui/font-utils";
 
 const Page = () => {

@@ -1,18 +1,17 @@
-import { styled } from "styled-components";
-import { mediaQuery, size } from "../ui/media-query";
+@import '../core';
 
-export const CourseList = styled.div`
+.view {
   margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 
-  ${mediaQuery(size.large)} {
+  @include mediaQuery("large") {
     gap: 40px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  ${mediaQuery(size.medium)} {
+  @include mediaQuery("medium") {
     grid-template-columns: repeat(1, 1fr);
   }
-`;
+}

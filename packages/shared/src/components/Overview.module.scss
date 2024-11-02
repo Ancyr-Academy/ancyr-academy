@@ -1,0 +1,90 @@
+@import '../core';
+
+.view {
+  background-image: url("https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/course-background-colored.png");
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  padding-block: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  @include mediaQuery("medium") {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+
+    gap: 40px;
+  }
+}
+
+.left {
+  flex: 1;
+  color: white;
+}
+
+.title {
+  margin-block: 0;
+  font-size: pxToRem(48);
+}
+
+.subtitle {
+  margin-block: 0;
+  margin-top: 40px;
+
+  font-size: pxToRem(32);
+  font-weight: 300;
+
+  line-height: 1.3;
+
+  b {
+    font-weight: 600;
+  }
+}
+
+.right {
+  border-radius: 5px;
+  background-color: #036372;
+  color: white;
+
+  padding-inline: 48px;
+  padding-block: 52px;
+}
+
+.course_overview {
+  font-size: pxToRem(24);
+  text-transform: uppercase;
+
+  margin-block: 0;
+  margin-bottom: 28px;
+}
+
+.overview_list {
+  list-style: none;
+  margin-block: 0;
+  padding-inline-start: 0;
+
+  li {
+    svg {
+      margin-right: 16px;
+    }
+
+    display: flex;
+    align-items: center;
+
+    font-size: pxToRem(24);
+    line-height: 1;
+    font-weight: 300;
+
+    padding-block: 12px;
+  }
+}

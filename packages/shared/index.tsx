@@ -13,3 +13,6 @@ export { Promotional } from "./src/components/Promotional";
 export { PageIntro } from "./src/components/PageIntro";
 export { Button } from "./src/components/Button";
 export { PageContent } from "./src/components/PageContent";
+export { Course } from "./src/components/Course";
+export { CourseList } from "./src/components/CourseList";
+export { Overview } from "./src/components/Overview";
