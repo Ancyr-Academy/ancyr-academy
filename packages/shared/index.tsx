@@ -12,3 +12,4 @@ export { Container } from "./src/components/Container";
 export { Promotional } from "./src/components/Promotional";
 export { PageIntro } from "./src/components/PageIntro";
 export { Button } from "./src/components/Button";
+export { PageContent } from "./src/components/PageContent";

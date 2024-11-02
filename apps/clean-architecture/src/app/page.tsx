@@ -6,11 +6,11 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 import {
   cleanArchitectureCourses,
   Container,
+  PageContent,
   Promotional,
   useCurrentDiscount,
 } from "@ancyracademy/shared";
 import { Overview } from "@/components/Overview";
-import { Content } from "@/components/Content";
 import { ReviewList } from "@/components/ReviewList";
 import { Review } from "@/components/Review";
 import { CourseList } from "@/components/CourseList";
@@ -24,7 +24,7 @@ const Page = () => {
       <Promotional />
       <ContentBody>
         <Container>
-          <Content>
+          <PageContent>
             <section>
               <h2>Ils ont suivi cette formation</h2>
               <div className="companies">
@@ -698,7 +698,7 @@ const Page = () => {
               </ReviewList>
             </section>
             <Courses />
-          </Content>
+          </PageContent>
         </Container>
       </ContentBody>
     </main>
