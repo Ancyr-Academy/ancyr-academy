@@ -5,11 +5,11 @@ import React from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import {
   cleanArchitectureCourses,
+  Container,
   useCurrentDiscount,
 } from "@ancyracademy/shared";
 import { Overview } from "@/components/Overview";
 import { Promotional } from "@/components/Promotional";
-import { Container } from "@/ui/Container";
 import { Content } from "@/components/Content";
 import { ReviewList } from "@/components/ReviewList";
 import { Review } from "@/components/Review";

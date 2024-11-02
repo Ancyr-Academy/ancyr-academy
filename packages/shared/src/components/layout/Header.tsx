@@ -40,7 +40,6 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
           </ul>
         </div>
       </div>
-      <div className={styles.padder} />
     </>
   );
 };
