@@ -3,7 +3,10 @@
 import { styled } from "styled-components";
 import React from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
-import { cleanArchitectureCourses, useCurrentDiscount } from "ui";
+import {
+  cleanArchitectureCourses,
+  useCurrentDiscount,
+} from "@ancyracademy/shared";
 import { Overview } from "@/components/Overview";
 import { Promotional } from "@/components/Promotional";
 import { Container } from "@/ui/Container";

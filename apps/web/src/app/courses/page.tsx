@@ -6,7 +6,7 @@ import { Container } from "../../ui/Container";
 import { PageIntro } from "../../ui/PageIntro";
 import { mediaQuery, size } from "../../ui/media-query";
 import { CourseResume } from "../../components/CourseResume";
-import { allCourses } from "ui";
+import { allCourses } from "@ancyracademy/shared";
 
 const Page = () => {
   return (

@@ -11,7 +11,10 @@ import { ReviewList } from "../../components/ReviewList";
 import { Review } from "../../components/Review";
 import { Promotional } from "../../components/Promotional";
 import { Overview } from "../../components/Overview";
-import { cleanArchitectureCourses, useCurrentDiscount } from "ui";
+import {
+  cleanArchitectureCourses,
+  useCurrentDiscount,
+} from "@ancyracademy/shared";
 import { pxToRem } from "../../ui/font-utils";
 
 const Page = () => {

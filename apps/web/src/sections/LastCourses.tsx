@@ -5,7 +5,7 @@ import React from "react";
 import { Container } from "../ui/Container";
 import { SectionTitle } from "../components/SectionTitle";
 import { CourseResume } from "../components/CourseResume";
-import { allCourses } from "ui";
+import { allCourses } from "@ancyracademy/shared";
 import { mediaQuery, size } from "../ui/media-query";
 
 export const LastCourses: React.FC = () => {
