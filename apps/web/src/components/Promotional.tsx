@@ -2,10 +2,9 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import { Container } from "../ui/Container";
+import { Container, useDiscountDuration } from "@ancyracademy/shared";
 import { pxToRem } from "../ui/font-utils";
 import { mediaQuery, size } from "../ui/media-query";
-import { useDiscountDuration } from "@ancyracademy/shared";
 
 export const Promotional = () => {
   const { duration, discount } = useDiscountDuration();

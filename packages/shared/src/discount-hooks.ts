@@ -1,3 +1,5 @@
+"use client";
+
 import { addDays, startOfDay, subDays } from "date-fns";
 import { useEffect, useState } from "react";
 import { promotional } from "./content/promotional";

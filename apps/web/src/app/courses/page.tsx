@@ -2,11 +2,10 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Container } from "../../ui/Container";
+import { allCourses, Container } from "@ancyracademy/shared";
 import { PageIntro } from "../../ui/PageIntro";
 import { mediaQuery, size } from "../../ui/media-query";
 import { CourseResume } from "../../components/CourseResume";
-import { allCourses } from "@ancyracademy/shared";
 
 const Page = () => {
   return (

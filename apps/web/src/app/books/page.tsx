@@ -3,7 +3,7 @@
 import { styled } from "styled-components";
 import React from "react";
 import { Book } from "../../components/Book";
-import { Container } from "../../ui/Container";
+import { Container } from "@ancyracademy/shared";
 import { PageIntro } from "../../ui/PageIntro";
 import { mediaQuery, size } from "../../ui/media-query";
 

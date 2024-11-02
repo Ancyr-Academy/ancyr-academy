@@ -2,10 +2,9 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { Container } from "../ui/Container";
+import { allCourses, Container } from "@ancyracademy/shared";
 import { SectionTitle } from "../components/SectionTitle";
 import { CourseResume } from "../components/CourseResume";
-import { allCourses } from "@ancyracademy/shared";
 import { mediaQuery, size } from "../ui/media-query";
 
 export const LastCourses: React.FC = () => {

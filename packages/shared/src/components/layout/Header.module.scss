@@ -1,0 +1,58 @@
+@import '../../core';
+
+.view {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+
+  overflow-x: auto;
+}
+
+.padder {
+  height: var(--navbar-height);
+  background-color: var(--color-secondary);
+}
+
+.inner_view {
+  max-width: var(--container-size);
+  margin-inline: auto;
+  padding-inline: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: var(--navbar-height);
+}
+
+.logo {
+
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  gap: 28px;
+
+  li {
+    display: block;
+  }
+
+  a {
+    font-size: (pxToRem(20));
+    color: #444;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+    }
+  }
+}

@@ -5,3 +5,7 @@ export { allTrainings } from "./src/content/trainings";
 export type { TrainingType } from "./src/content/trainings";
 export { promotional } from "./src/content/promotional";
 export { Duration } from "./src/lib/duration";
+
+export { Header } from "./src/components/layout/Header";
+export { Footer } from "./src/components/layout/Footer";
+export { Container } from "./src/components/Container";

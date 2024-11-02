@@ -1,0 +1,19 @@
+@function pxToRem($px) {
+  @return ($px / 16) * 1rem;
+}
+
+@mixin mediaQuery($breakpoint) {
+  @if $breakpoint == 'small' {
+    @media screen and (max-width: 600px), print {
+      @content;
+    }
+  } @else if $breakpoint == 'medium' {
+    @media screen and (max-width: 900px), print {
+      @content;
+    }
+  } @else if $breakpoint == 'large' {
+    @media screen and (min-width: 1320px), print {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '../core';
+
+.view {
+  max-width: var(--container-size);
+  margin: 0 auto;
+
+  padding-inline: 40px;
+
+  @include mediaQuery("small") {
+    padding-inline: 16px;
+  }
+}

@@ -11,7 +11,7 @@ import {
   IoTime,
 } from "react-icons/io5";
 import { pxToRem } from "../ui/font-utils";
-import { Container } from "../ui/Container";
+import { Container } from "@ancyracademy/shared";
 import { mediaQuery, size } from "../ui/media-query";
 
 export const Overview: React.FC = () => {

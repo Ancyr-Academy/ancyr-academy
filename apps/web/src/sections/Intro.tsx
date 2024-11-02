@@ -1,7 +1,7 @@
 "use client";
 
 import { styled } from "styled-components";
-import { Container } from "../ui/Container";
+import { Container } from "@ancyracademy/shared";
 import { pxToRem } from "../ui/font-utils";
 import { Button } from "../ui/Button";
 import { mediaQuery, size } from "../ui/media-query";

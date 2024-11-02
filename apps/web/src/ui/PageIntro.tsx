@@ -3,7 +3,7 @@
 import { styled } from "styled-components";
 import React from "react";
 import { Promotional } from "../components/Promotional";
-import { Container } from "./Container";
+import { Container } from "@ancyracademy/shared";
 import { pxToRem } from "./font-utils";
 
 export const PageIntro: React.FC<{
