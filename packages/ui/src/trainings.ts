@@ -10,7 +10,7 @@ export type TrainingType = {
   programUrl: string;
 };
 
-export const trainings = [
+export const allTrainings = [
   {
     title: "Test-Driven Development",
     resume: [

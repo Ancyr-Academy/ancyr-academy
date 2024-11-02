@@ -3,7 +3,7 @@
 import { styled } from "styled-components";
 import React from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
-import { useCurrentDiscount } from "ui";
+import { cleanArchitectureCourses, useCurrentDiscount } from "ui";
 import { Overview } from "@/components/Overview";
 import { Promotional } from "@/components/Promotional";
 import { Container } from "@/ui/Container";
@@ -13,7 +13,6 @@ import { Review } from "@/components/Review";
 import { CourseList } from "@/components/CourseList";
 import { Course } from "@/components/Course";
 import { pxToRem } from "@/ui/font-utils";
-import { allCourses } from "@/core/clean-architecture";
 
 const Page = () => {
   return (
@@ -764,7 +763,7 @@ const Courses = () => {
       <section>
         <h2>Les Formations</h2>
         <CourseList>
-          {allCourses.map((course) => (
+          {cleanArchitectureCourses.map((course) => (
             <Course
               imageUrl={course.imageUrl}
               isHot={course.isHot}

@@ -3,7 +3,7 @@ import React from "react";
 import { pxToRem } from "../ui/font-utils";
 import { Button } from "../ui/Button";
 import { mediaQuery, size } from "../ui/media-query";
-import { TrainingType } from "../core/trainings";
+import { TrainingType } from "ui";
 
 export const Training: React.FC<{ training: TrainingType }> = ({
   training,

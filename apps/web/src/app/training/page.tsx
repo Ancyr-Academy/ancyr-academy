@@ -6,7 +6,7 @@ import { Container } from "../../ui/Container";
 import { PageIntro } from "../../ui/PageIntro";
 import { mediaQuery, size } from "../../ui/media-query";
 import { Training } from "../../components/Training";
-import { trainings } from "../../core/trainings";
+import { allTrainings } from "ui";
 
 const Page = () => {
   return (
@@ -18,7 +18,7 @@ const Page = () => {
       />
       <Container>
         <List>
-          {trainings.map((training, index) => (
+          {allTrainings.map((training, index) => (
             <Training key={index} training={training} />
           ))}
         </List>

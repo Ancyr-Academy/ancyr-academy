@@ -22,7 +22,7 @@ export type Course = {
   isHot: boolean;
 };
 
-export const allCourses: Course[] = [
+export const cleanArchitectureCourses: Course[] = [
   {
     id: "fondamentaux",
     imageUrl:

@@ -11,9 +11,8 @@ import { ReviewList } from "../../components/ReviewList";
 import { Review } from "../../components/Review";
 import { Promotional } from "../../components/Promotional";
 import { Overview } from "../../components/Overview";
-import { useCurrentDiscount } from "ui";
+import { cleanArchitectureCourses, useCurrentDiscount } from "ui";
 import { pxToRem } from "../../ui/font-utils";
-import { allCourses } from "../../core/clean-architecture";
 
 const Page = () => {
   return (
@@ -764,7 +763,7 @@ const Courses = () => {
       <section>
         <h2>Les Formations</h2>
         <CourseList>
-          {allCourses.map((course) => (
+          {cleanArchitectureCourses.map((course) => (
             <Course
               imageUrl={course.imageUrl}
               isHot={course.isHot}

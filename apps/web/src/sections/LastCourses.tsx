@@ -5,7 +5,7 @@ import React from "react";
 import { Container } from "../ui/Container";
 import { SectionTitle } from "../components/SectionTitle";
 import { CourseResume } from "../components/CourseResume";
-import { allCourses } from "../core/data";
+import { allCourses } from "ui";
 import { mediaQuery, size } from "../ui/media-query";
 
 export const LastCourses: React.FC = () => {
