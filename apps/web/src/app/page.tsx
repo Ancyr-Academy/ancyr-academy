@@ -1,6 +1,6 @@
 import { Intro } from "../sections/Intro";
 import { LastCourses } from "../sections/LastCourses";
-import { Promotional } from "../components/Promotional";
+import { Promotional } from "@ancyracademy/shared";
 
 const Page = () => {
   return (

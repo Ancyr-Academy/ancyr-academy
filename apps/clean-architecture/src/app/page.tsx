@@ -6,10 +6,10 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 import {
   cleanArchitectureCourses,
   Container,
+  Promotional,
   useCurrentDiscount,
 } from "@ancyracademy/shared";
 import { Overview } from "@/components/Overview";
-import { Promotional } from "@/components/Promotional";
 import { Content } from "@/components/Content";
 import { ReviewList } from "@/components/ReviewList";
 import { Review } from "@/components/Review";

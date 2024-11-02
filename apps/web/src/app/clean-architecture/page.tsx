@@ -6,6 +6,7 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 import {
   cleanArchitectureCourses,
   Container,
+  Promotional,
   useCurrentDiscount,
 } from "@ancyracademy/shared";
 import { Content } from "../../components/Content";
@@ -13,7 +14,6 @@ import { Course } from "../../components/Course";
 import { CourseList } from "../../components/CourseList";
 import { ReviewList } from "../../components/ReviewList";
 import { Review } from "../../components/Review";
-import { Promotional } from "../../components/Promotional";
 import { Overview } from "../../components/Overview";
 import { pxToRem } from "../../ui/font-utils";
 

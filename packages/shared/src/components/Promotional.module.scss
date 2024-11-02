@@ -1,0 +1,78 @@
+@import '../core';
+
+.view {
+  background-color: #b40404;
+}
+
+.subview {
+  padding-block: 28px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @include mediaQuery("medium") {
+    flex-direction: column;
+    align-items: initial;
+    justify-content: initial;
+
+    gap: 20px;
+  }
+}
+
+.left {
+}
+
+.right {
+}
+
+.title {
+  color: white;
+  font-size: pxToRem(32);
+  margin: 0;
+}
+
+.content {
+  margin-top: 4px;
+
+  color: #fff1f1;
+  font-size: pxToRem(24);
+
+  max-width: 450px;
+}
+
+.countdowns {
+  display: flex;
+  gap: 5px;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90px;
+  gap: 8px;
+
+  @include mediaQuery("medium") {
+    width: fit-content;
+  }
+}
+
+.countdown_number {
+  font-size: pxToRem(24);
+  font-weight: 600;
+
+  background-color: #fff3f3;
+  color: #810d0d;
+
+  padding-inline: 20px;
+  padding-block: 8px;
+
+  border-radius: 5px;
+}
+
+.countdown_label {
+  color: var(--color-secondary);
+  font-size: pxToRem(18);
+}
