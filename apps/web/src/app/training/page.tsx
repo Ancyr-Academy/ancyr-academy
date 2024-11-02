@@ -2,8 +2,7 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { allTrainings, Container } from "@ancyracademy/shared";
-import { PageIntro } from "../../ui/PageIntro";
+import { allTrainings, Container, PageIntro } from "@ancyracademy/shared";
 import { mediaQuery, size } from "../../ui/media-query";
 import { Training } from "../../components/Training";
 

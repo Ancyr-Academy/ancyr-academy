@@ -1,0 +1,22 @@
+@import '../core';
+
+.view {
+  background-color: var(--color-secondary);
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.content {
+}
+
+.intro_title {
+  font-size: pxToRem(40);
+  margin: 0;
+}
+
+.intro_text {
+  font-size: pxToRem(21);
+  font-weight: 300;
+
+  margin-block: 0;
+}
