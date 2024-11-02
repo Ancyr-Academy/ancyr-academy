@@ -11,3 +11,4 @@ export { Footer } from "./src/components/layout/Footer";
 export { Container } from "./src/components/Container";
 export { Promotional } from "./src/components/Promotional";
 export { PageIntro } from "./src/components/PageIntro";
+export { Button } from "./src/components/Button";

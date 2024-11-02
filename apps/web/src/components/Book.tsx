@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import { Button } from "../ui/Button";
+import { Button } from "@ancyracademy/shared";
 import { pxToRem } from "../ui/font-utils";
 import { mediaQuery, size } from "../ui/media-query";
 

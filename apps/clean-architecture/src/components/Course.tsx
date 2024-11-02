@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { pxToRem } from "../ui/font-utils";
-import { Button } from "../ui/Button";
+import { Button } from "@ancyracademy/shared";
 import { mediaQuery, size } from "../ui/media-query";
 
 export const Course: React.FC<{
