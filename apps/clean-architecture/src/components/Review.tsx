@@ -2,7 +2,6 @@ import React from "react";
 import { styled } from "styled-components";
 import { FaStar } from "react-icons/fa";
 import { pxToRem } from "../ui/font-utils";
-import User from "../assets/user.png";
 
 export const Review: React.FC<{
   authorImage?: string;
@@ -12,7 +11,12 @@ export const Review: React.FC<{
   return (
     <View>
       <Head>
-        <ProfilePicture src={authorImage ?? User.src} />
+        <ProfilePicture
+          src={
+            authorImage ??
+            "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/user.png"
+          }
+        />
         <Author>{authorName}</Author>
       </Head>
       <Content>{children}</Content>

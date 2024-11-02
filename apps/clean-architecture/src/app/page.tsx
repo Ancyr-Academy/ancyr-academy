@@ -3,35 +3,16 @@
 import { styled } from "styled-components";
 import React from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
-import { Container } from "../ui/Container";
-import { Content } from "../components/Content";
-import { Course } from "../components/Course";
-import { CourseList } from "../components/CourseList";
-import { ReviewList } from "../components/ReviewList";
-import { Review } from "../components/Review";
-import { Promotional } from "../components/Promotional";
-import { Overview } from "../components/Overview";
-import Amazon from "../assets/companies/amazon.png";
-import Google from "../assets/companies/google.png";
-import UKG from "../assets/companies/ukg.png";
-import CapGemini from "../assets/companies/capgemini.png";
-import Orange from "../assets/companies/orange.png";
-import SimonPotier from "../assets/reviews/simonpotier.png";
-import YazidDaoudi from "../assets/reviews/yaziddaoudi.jpeg";
-import AdrienVerschaere from "../assets/reviews/adrienverschaere.jpeg";
-import MelDonati from "../assets/reviews/meldonati.jpeg";
-import FlavioMoreno from "../assets/reviews/flaviomoreno.jpeg";
-import FredericLossignol from "../assets/reviews/frederic_lossignol.jpeg";
-import AnthonyDelhaye from "../assets/reviews/anthony_delhaye.jpeg";
-import AmelieHusson from "../assets/reviews/amlie_husson.jpeg";
-import RachidJeffali from "../assets/reviews/rachid_jeffali.jpeg";
-import YlliesH from "../assets/reviews/yllies_h.jpeg";
-import YohannHerbet from "../assets/reviews/yohann_herbet.png";
-import YounesAdem from "../assets/reviews/younes_adem.jpeg";
-import BastienCorre from "../assets/reviews/bastien_corre.jpeg";
-
 import { useCurrentDiscount } from "ui";
-import { pxToRem } from "../ui/font-utils";
+import { Overview } from "@/components/Overview";
+import { Promotional } from "@/components/Promotional";
+import { Container } from "@/ui/Container";
+import { Content } from "@/components/Content";
+import { ReviewList } from "@/components/ReviewList";
+import { Review } from "@/components/Review";
+import { CourseList } from "@/components/CourseList";
+import { Course } from "@/components/Course";
+import { pxToRem } from "@/ui/font-utils";
 import { allCourses } from "@/core/clean-architecture";
 
 const Page = () => {
@@ -45,11 +26,36 @@ const Page = () => {
             <section>
               <h2>Ils ont suivi cette formation</h2>
               <div className="companies">
-                <img alt="Amazon" src={Amazon.src} />
-                <img alt="Google" src={Google.src} />
-                <img alt="UKG" src={UKG.src} />
-                <img alt="CapGemini" src={CapGemini.src} />
-                <img alt="Orange" src={Orange.src} />
+                <img
+                  alt="Amazon"
+                  src={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/amazon.png"
+                  }
+                />
+                <img
+                  alt="Google"
+                  src={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/google.png"
+                  }
+                />
+                <img
+                  alt="UKG"
+                  src={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/ukg.png"
+                  }
+                />
+                <img
+                  alt="CapGemini"
+                  src={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/capgemini.png"
+                  }
+                />
+                <img
+                  alt="Orange"
+                  src={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/orange.png"
+                  }
+                />
               </div>
             </section>
             <section>
@@ -292,7 +298,9 @@ const Page = () => {
               <h2>Ils en parlent mieux que moi</h2>
               <ReviewList>
                 <Review
-                  authorImage={RachidJeffali.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/rachid_jeffali.jpeg"
+                  }
                   authorName="Rachid Jeffali"
                 >
                   Excellente formation ! Je suis Développeur depuis un moment et
@@ -425,7 +433,12 @@ const Page = () => {
             <section>
               <h2>Ce qu'en disent les élèves (+1500)</h2>
               <ReviewList>
-                <Review authorImage={YazidDaoudi.src} authorName="Yazid Daoudi">
+                <Review
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yaziddaoudi.jpeg"
+                  }
+                  authorName="Yazid Daoudi"
+                >
                   Je conseil fortement la formation d'Anthony. Elle convient a
                   tous, debutant et confirmé. Anthony prend le temps d'expliquer
                   toute la theorie autour de la clean architecture pour ensuite
@@ -434,7 +447,9 @@ const Page = () => {
                   les membres de la formation. Je recommande a 100% !
                 </Review>
                 <Review
-                  authorImage={SimonPotier.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/simonpotier.jpeg"
+                  }
                   authorName="Simon Pottier"
                 >
                   J'ai eu le privilège de participer à la formation Clean
@@ -452,7 +467,12 @@ const Page = () => {
                   architecture. Je la recommande vivement à quiconque souhaite
                   améliorer ses compétences en matière d'architecture Front-end.
                 </Review>
-                <Review authorImage={MelDonati.src} authorName="Melaïna Donati">
+                <Review
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/meldonati.jpeg"
+                  }
+                  authorName="Melaïna Donati"
+                >
                   Si je devais donner trois mots pour la définir, ce serait :
                   Clarté, Pédagogie et Pratique. Anthony a une façon unique de
                   rendre les concepts parfois abstraits, simples et accessibles.
@@ -468,7 +488,9 @@ const Page = () => {
                   logicielle !
                 </Review>
                 <Review
-                  authorImage={RachidJeffali.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/rachid_jeffali.jpeg"
+                  }
                   authorName="Rachid Jeffali"
                 >
                   Excellente formation ! Je suis Développeur depuis un moment et
@@ -531,7 +553,9 @@ const Page = () => {
                   affiner leurs compétences en architecture logicielle.
                 </Review>
                 <Review
-                  authorImage={YohannHerbet.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yohann_herbet.jpeg"
+                  }
                   authorName="Yohann Herbet"
                 >
                   Anthony est très bon pédagogue. J'ai adoré la formation et la
@@ -543,7 +567,12 @@ const Page = () => {
                   de la clean architecture et suis capable d'interpréter
                   différentes façons de l'implémenter et de l'appliquer.
                 </Review>
-                <Review authorImage={YounesAdem.src} authorName="Younes Adem">
+                <Review
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/younes_adem.jpeg"
+                  }
+                  authorName="Younes Adem"
+                >
                   J'ai suivi la formation Clean Architecture + Spring. Celle-ci
                   fournit de très bonnes bases théoriques ainsi qu'un réel cas
                   pratique digne de ce que l'on retrouve dans le monde
@@ -557,7 +586,9 @@ const Page = () => {
                   accessible, aussi bien aux juniors qu'aux plus seniors.
                 </Review>
                 <Review
-                  authorImage={AmelieHusson.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/amlie_husson.jpeg"
+                  }
                   authorName="Amélie Husson"
                 >
                   C'est une formation très claire qui permet de stimuler
@@ -566,7 +597,12 @@ const Page = () => {
                   du dév !
                 </Review>
 
-                <Review authorImage={YlliesH.src} authorName="Yllies H">
+                <Review
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yllies_h.jpeg"
+                  }
+                  authorName="Yllies H"
+                >
                   J’ai trouvé la formation sur la Clean Architecture extrêmement
                   interessante. Elle m'a offert une compréhension approfondie
                   des principes fondamentaux de conception logicielle, en
@@ -576,7 +612,9 @@ const Page = () => {
                 </Review>
 
                 <Review
-                  authorImage={AdrienVerschaere.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/adrienverschaere.jpeg"
+                  }
                   authorName="Adrien Verschaere"
                 >
                   La formation Clean Architecture est clairement une référence à
@@ -590,7 +628,9 @@ const Page = () => {
                 </Review>
 
                 <Review
-                  authorImage={FlavioMoreno.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/flaviomoreno.jpeg"
+                  }
                   authorName="Flavio Moreno"
                 >
                   Remettant continuellement en question la solidité et la
@@ -603,7 +643,9 @@ const Page = () => {
                   débutant en programmation.
                 </Review>
                 <Review
-                  authorImage={BastienCorre.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/bastien_corre.jpeg"
+                  }
                   authorName="Bastien Corré"
                 >
                   La formation théorique sur les principes fondamentaux de la
@@ -619,7 +661,9 @@ const Page = () => {
                   programmation logicielle.
                 </Review>
                 <Review
-                  authorImage={FredericLossignol.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/frederic_lossignol.jpeg"
+                  }
                   authorName="Frederic Lossignol"
                 >
                   Formateur JS, Angular, Node.js orienté clean Architecture,
@@ -640,7 +684,9 @@ const Page = () => {
                 </Review>
 
                 <Review
-                  authorImage={AnthonyDelhaye.src}
+                  authorImage={
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/anthony_delhaye.jpeg"
+                  }
                   authorName="Anthony Delhaye"
                 >
                   Enfin une formation qui reprend les bases ou plutôt le socle

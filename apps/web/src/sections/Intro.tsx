@@ -1,11 +1,9 @@
 "use client";
 
 import { styled } from "styled-components";
-import Image from "next/image";
 import { Container } from "../ui/Container";
 import { pxToRem } from "../ui/font-utils";
 import { Button } from "../ui/Button";
-import LogoAlone from "../assets/logo-alone.png";
 import { mediaQuery, size } from "../ui/media-query";
 
 export const Intro = () => {
@@ -21,7 +19,12 @@ export const Intro = () => {
             <Button url="/courses">Voir les cours</Button>
           </Texts>
           <ImageContainer>
-            <Image alt="Ancyr Academy" src={LogoAlone} />
+            <img
+              alt="Ancyr Academy"
+              src={
+                "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/logo-alone.png"
+              }
+            />
           </ImageContainer>
         </Content>
       </Container>

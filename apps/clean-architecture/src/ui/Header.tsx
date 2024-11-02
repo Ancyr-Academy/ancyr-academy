@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { styled } from "styled-components";
-import LogoFull from "../assets/logo-full.png";
 import { pxToRem } from "./font-utils";
 
 const MenuItem: React.FC<{
@@ -22,7 +20,12 @@ export const Header = () => {
       <View>
         <InnerView>
           <div>
-            <Logo alt="Ancyr Academy" src={LogoFull} />
+            <Logo
+              alt="Ancyr Academy"
+              src={
+                "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/logo-full.png"
+              }
+            />
           </div>
           <Menu>
             <MenuItem url="https://ancyracademy.fr/">Accueil</MenuItem>
@@ -70,7 +73,7 @@ const InnerView = styled.div`
   height: var(--navbar-height);
 `;
 
-const Logo = styled(Image)``;
+const Logo = styled.img``;
 
 const Menu = styled.ul`
   display: flex;

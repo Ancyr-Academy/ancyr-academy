@@ -11,7 +11,6 @@ import {
   IoTime,
 } from "react-icons/io5";
 import { pxToRem } from "../ui/font-utils";
-import CourseBackground from "../assets/course-background-colored.png";
 import { Container } from "../ui/Container";
 import { mediaQuery, size } from "../ui/media-query";
 
@@ -67,7 +66,7 @@ export const Overview: React.FC = () => {
 };
 
 const View = styled.div`
-  background-image: url("${CourseBackground.src}");
+  background-image: url("https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/course-background-colored.png");
   background-position: center;
   background-size: cover;
 

@@ -1,8 +1,4 @@
 import React from "react";
-import CleanSpring from "../assets/formations/ca/CleanSpring.png";
-import CleanSymfony from "../assets/formations/ca/CleanSymfony.png";
-import CleanNetCore from "../assets/formations/ca/CleanNetCore.png";
-import CleanFastAPI from "../assets/formations/ca/CleanFastAPI.png";
 
 export type Status =
   | {
@@ -31,7 +27,7 @@ export const allCourses: Course[] = [
     id: "fondamentaux",
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/mBkKdN7QdaTOzbWXW9WF",
-    price: 200,
+    price: 100,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-fondamentaux",
@@ -87,7 +83,8 @@ export const allCourses: Course[] = [
   },
   {
     id: "spring-java",
-    imageUrl: CleanSpring.src,
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanSpring.png",
     price: 300,
     status: {
       type: "available",
@@ -106,7 +103,8 @@ export const allCourses: Course[] = [
   },
   {
     id: "php-symfony",
-    imageUrl: CleanSymfony.src,
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanSymfony.png",
     price: 300,
     status: {
       type: "soon",
@@ -124,7 +122,8 @@ export const allCourses: Course[] = [
   },
   {
     id: "csharp-dotnet",
-    imageUrl: CleanNetCore.src,
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanNetCore.png",
     price: 300,
     status: {
       type: "unavailable",
@@ -142,7 +141,8 @@ export const allCourses: Course[] = [
   },
   {
     id: "python-fastapi",
-    imageUrl: CleanFastAPI.src,
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanFastAPI.png",
     price: 300,
     status: {
       type: "unavailable",
