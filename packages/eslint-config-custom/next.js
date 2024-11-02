@@ -50,5 +50,9 @@ module.exports = {
     "@typescript-eslint/require-await": "off",
     "react/function-component-definition": "off",
     "unicorn/filename-case": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/alt-text": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
   },
 };
