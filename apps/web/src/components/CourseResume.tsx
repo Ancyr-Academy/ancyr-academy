@@ -12,11 +12,13 @@ export const CourseResume: React.FC<{
   url: string;
   isHot?: boolean;
   isFree?: boolean;
-}> = ({ type, title, resume, imageUrl, url, isHot, isFree }) => {
+  isNew?: boolean;
+}> = ({ type, title, resume, imageUrl, url, isNew, isHot, isFree }) => {
   return (
     <View>
+      {isNew ? <HotBadge>OFFRE DE LANCEMENT</HotBadge> : null}
       {isHot ? <HotBadge>Hot</HotBadge> : null}
-      {isFree ? <HotBadge>GRATUIT</HotBadge> : null}
+      {isFree ? <HotBadge $type={"free"}>GRATUIT</HotBadge> : null}
       <Head>
         <ImageContainer>
           <img src={imageUrl} />
@@ -53,12 +55,13 @@ const View = styled.div`
   }
 `;
 
-const HotBadge = styled.div`
+const HotBadge = styled.div<{ $type?: "free" }>`
   position: absolute;
   top: -20px;
   right: 20px;
 
-  background-color: #ee5a1b;
+  background-color: ${({ $type }) =>
+    $type === "free" ? "#7caeb1" : "#f44336"};
   color: white;
   font-weight: 600;
 

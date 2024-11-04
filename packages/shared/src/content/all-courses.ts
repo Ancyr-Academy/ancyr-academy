@@ -5,6 +5,7 @@ type Course = {
   resume: string;
   type: CourseType;
   keyPoints: string[];
+  isNew?: boolean;
   isFree: boolean;
   isHot: boolean;
   imageUrl: string;
@@ -26,8 +27,9 @@ export const allCourses: Course[] = [
       "Savoir quand utiliser l'un ou l'autre selon le contexte",
       "Faire du TDD dans des projets complexes",
     ],
+    isNew: true,
     isFree: false,
-    isHot: true,
+    isHot: false,
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/4IOk4vyYRAilc9MnO8LE",
   },

@@ -16,6 +16,7 @@ export const LastCourses: React.FC = () => {
           {allCourses.map((course, index) => (
             <CourseResume
               imageUrl={course.imageUrl}
+              isNew={course.isNew}
               isFree={course.isFree}
               isHot={course.isHot}
               key={index}
@@ -40,7 +41,7 @@ const List = styled.div`
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  gap: 30px;
 
   ${mediaQuery(size.medium)} {
     grid-template-columns: repeat(1, 1fr);
