@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "@ancyracademy/shared";
 import styles from "./Course.module.scss";
+import { Button } from "./Button";
 
 export const Course: React.FC<{
   title: string;
