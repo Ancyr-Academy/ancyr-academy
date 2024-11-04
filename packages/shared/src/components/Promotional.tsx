@@ -5,10 +5,13 @@ import { useDiscountDuration } from "../discount-hooks";
 import { Container } from "./Container";
 
 import styles from "./Promotional.module.scss";
+import { Duration } from "../lib/duration";
 
-export const Promotional: React.FC = () => {
-  const { duration, discount } = useDiscountDuration();
-
+export const PromotionalUI: React.FC<{
+  duration: Duration;
+  title: string;
+  message: any;
+}> = ({ duration, title, message }) => {
   if (duration.total === 0) {
     return null;
   }
@@ -18,11 +21,8 @@ export const Promotional: React.FC = () => {
       <Container>
         <div className={styles.subview}>
           <div className={styles.left}>
-            <h2 className={styles.title}>EN COURS</h2>
-            <div className={styles.content}>
-              Jusqu'à <b>-{discount!.percentage * 100}%</b> sur les{" "}
-              <b>cours en e-learning</b> avec le code <b>{discount!.code}</b>
-            </div>
+            <h2 className={styles.title}>{title.toUpperCase()}</h2>
+            <div className={styles.content}>{message}</div>
           </div>
           <div className={styles.right}>
             <div className={styles.countdowns}>
@@ -55,5 +55,26 @@ export const Promotional: React.FC = () => {
         </div>
       </Container>
     </div>
+  );
+};
+
+export const Promotional: React.FC = () => {
+  const { duration, discount } = useDiscountDuration();
+
+  if (!discount) {
+    return null;
+  }
+
+  return (
+    <PromotionalUI
+      duration={duration}
+      title={"En cours"}
+      message={
+        <>
+          Jusqu'à <b>-{discount!.percentage * 100}%</b> sur les{" "}
+          <b>cours en e-learning</b> avec le code <b>{discount!.code}</b>
+        </>
+      }
+    />
   );
 };

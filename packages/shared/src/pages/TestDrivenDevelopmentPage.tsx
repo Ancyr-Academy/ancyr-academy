@@ -13,7 +13,7 @@ import {
 } from "react-icons/io5";
 import styles from "./TestDrivenDevelopment.module.scss";
 import { Overview } from "../components/Overview";
-import { Promotional } from "../components/Promotional";
+import { PromotionalUI } from "../components/Promotional";
 import { Container } from "../components/Container";
 import { PageContent } from "../components/PageContent";
 import { ReviewList } from "../components/ReviewList";
@@ -21,8 +21,11 @@ import { Review } from "../components/Review";
 import { CourseList } from "../components/CourseList";
 import { Course } from "../components/Course";
 import { useCurrentDiscount } from "../discount-hooks";
+import { useCountdown } from "../use-countdown";
 
 export const TestDrivenDevelopmentPage = () => {
+  const countdown = useCountdown(new Date("2024-11-18T00:00:00Z"));
+
   return (
     <main>
       <Overview
@@ -66,7 +69,16 @@ export const TestDrivenDevelopmentPage = () => {
           },
         ]}
       />
-      <Promotional />
+      <PromotionalUI
+        title={"Offre de lancement"}
+        duration={countdown}
+        message={
+          <>
+            La formation TDD complète à <b>80,00€</b> (-60%) pendant seulement
+            14 jours !
+          </>
+        }
+      />
       <div className={styles.content_body}>
         <Container>
           <PageContent>

@@ -9,7 +9,7 @@ export { Duration } from "./src/lib/duration";
 export { Header } from "./src/components/layout/Header";
 export { Footer } from "./src/components/layout/Footer";
 export { Container } from "./src/components/Container";
-export { Promotional } from "./src/components/Promotional";
+export { Promotional, PromotionalUI } from "./src/components/Promotional";
 export { PageIntro } from "./src/components/PageIntro";
 export { Button } from "./src/components/Button";
 export { PageContent } from "./src/components/PageContent";
@@ -21,3 +21,4 @@ export { ReviewList } from "./src/components/ReviewList";
 
 export { CleanArchitecturePage } from "./src/pages/CleanArchitecturePage";
 export { TestDrivenDevelopmentPage } from "./src/pages/TestDrivenDevelopmentPage";
+export { useCountdown } from "./src/use-countdown";
