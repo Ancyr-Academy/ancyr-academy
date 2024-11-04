@@ -24,3 +24,16 @@
     line-height: 1.3;
   }
 }
+
+.companies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 40px;
+
+  img {
+    width: 100%;
+    max-width: 180px;
+  }
+}

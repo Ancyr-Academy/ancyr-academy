@@ -1,7 +1,17 @@
 "use client";
 
 import React from "react";
-import { IoCheckmarkCircle } from "react-icons/io5";
+import {
+  IoBook,
+  IoCash,
+  IoCheckmarkCircle,
+  IoFolderOpen,
+  IoInfinite,
+  IoPeople,
+  IoPlayCircle,
+  IoPodium,
+  IoTime,
+} from "react-icons/io5";
 import styles from "./CleanArchitecturePage.module.scss";
 import { Overview } from "../components/Overview";
 import { Promotional } from "../components/Promotional";
@@ -17,14 +27,58 @@ import { cleanArchitectureCourses } from "../content/clean-architecture";
 export const CleanArchitecturePage = () => {
   return (
     <main>
-      <Overview />
+      <Overview
+        title={"Les formations Clean Architecture en TDD"}
+        subtitle={
+          <>
+            Développez des applications de
+            <br /> <b>très hautes qualité.</b>
+            <br />
+            Devenez un véritable <b>développeur Senior.</b>
+          </>
+        }
+        points={[
+          {
+            Icon: IoPodium,
+            text: "Débutants à Experts",
+          },
+          {
+            Icon: IoBook,
+            text: "Théorie & Pratique",
+          },
+          {
+            Icon: IoFolderOpen,
+            text: "4 Formations",
+          },
+          {
+            Icon: IoPlayCircle,
+            text: "30 heures de vidéo HD",
+          },
+          {
+            Icon: IoPeople,
+            text: "Aide de la communauté",
+          },
+          {
+            Icon: IoInfinite,
+            text: "Accès à vie",
+          },
+          {
+            Icon: IoTime,
+            text: "Apprenez à votre rythme",
+          },
+          {
+            Icon: IoCash,
+            text: "Satisfait ou Remboursé",
+          },
+        ]}
+      />
       <Promotional />
       <div className={styles.content_body}>
         <Container>
           <PageContent>
             <section>
               <h2>Ils ont suivi cette formation</h2>
-              <div className="companies">
+              <div className={styles.companies}>
                 <img
                   alt="Amazon"
                   src={
