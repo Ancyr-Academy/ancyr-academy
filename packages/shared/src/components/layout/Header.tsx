@@ -30,7 +30,6 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
             />
           </div>
           <ul className={styles.menu}>
-            <MenuItem url="/">Accueil</MenuItem>
             <MenuItem url={prefix + "/books"}>Livres</MenuItem>
             <MenuItem url={prefix + "/courses"}>Cours</MenuItem>
             <MenuItem url={prefix + "/training"}>Training</MenuItem>

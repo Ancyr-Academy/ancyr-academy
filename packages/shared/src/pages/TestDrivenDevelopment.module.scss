@@ -27,13 +27,21 @@
 
 .companies {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 
   margin-top: 40px;
+  gap: 40px;
 
   img {
     width: 100%;
     max-width: 180px;
+  }
+
+  @include mediaQuery("small") {
+    img {
+      max-width: 100px;
+    }
   }
 }

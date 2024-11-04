@@ -45,15 +45,15 @@ export const Footer: React.FC = () => {
               <div className={styles.section_links}>
                 <a
                   className={styles.section_single_link}
-                  href="/clean-architecture"
+                  href="https://ancyracademy.fr/clean-architecture"
                 >
                   Clean Architecture
                 </a>
                 <a
                   className={styles.section_single_link}
-                  href="https://courses.ancyracademy.fr/p/essentials-tests-unitaires"
+                  href="https://ancyracademy.fr/test-driven-development"
                 >
-                  Tests Unitaires
+                  Test-Driven Development
                 </a>
                 <a
                   className={styles.section_single_link}
