@@ -13,6 +13,25 @@ type Course = {
 
 export const allCourses: Course[] = [
   {
+    title: "Test-Driven Development",
+    resume:
+      "Apprenez à développer des applications riches & complexes en étant véritablement guidés par les tests.",
+    type: "Cours Complet",
+    url: "/test-driven-development",
+    keyPoints: [
+      "Découvrir ce qu'est le TDD",
+      "Apprendre à décomposer une tâche complexes en sous tâches",
+      "Guider le développement de features difficiles par les tests",
+      "Enfin comprendre le Classicisme et le Mockisme",
+      "Savoir quand utiliser l'un ou l'autre selon le contexte",
+      "Faire du TDD dans des projets complexes",
+    ],
+    isFree: false,
+    isHot: true,
+    imageUrl:
+      "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/4IOk4vyYRAilc9MnO8LE",
+  },
+  {
     title: "Clean Architecture",
     resume:
       "Apprenez à développer des applications robustes et scalables en mettant en place une Clean Architecture testée de bout en bout.",
@@ -27,7 +46,7 @@ export const allCourses: Course[] = [
       "Structurer et découper ses tests selon la difficulté du code à tester et le besoin du client",
     ],
     isFree: false,
-    isHot: true,
+    isHot: false,
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/WV6TlGkbRQChrQCdtLbn",
   },

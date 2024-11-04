@@ -17,6 +17,7 @@ export const LastCourses: React.FC = () => {
             <CourseResume
               imageUrl={course.imageUrl}
               isFree={course.isFree}
+              isHot={course.isHot}
               key={index}
               resume={course.resume}
               title={course.title}
