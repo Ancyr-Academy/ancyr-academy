@@ -20,7 +20,7 @@ export const Course: React.FC<{
   isHot?: boolean;
   children: React.ReactNode;
   discount?: {
-    code: string;
+    code?: string;
     percentage: number;
   } | null;
 }> = ({ title, children, price, imageUrl, status, isHot, discount }) => {
@@ -28,7 +28,7 @@ export const Course: React.FC<{
 
   if (status.type === "available") {
     finalUrl = status.url;
-    if (discount) {
+    if (discount && discount.code) {
       finalUrl = `${status.url}?coupon_code=${discount.code}`;
     }
   }

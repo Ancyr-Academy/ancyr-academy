@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { CleanArchitecturePage } from "@ancyracademy/shared";
+import { TestDrivenDevelopmentPage } from "@ancyracademy/shared";
 
 const Page = () => {
-  return <CleanArchitecturePage />;
+  return <TestDrivenDevelopmentPage />;
 };
 
 export default Page;

@@ -20,3 +20,4 @@ export { Review } from "./src/components/Review";
 export { ReviewList } from "./src/components/ReviewList";
 
 export { CleanArchitecturePage } from "./src/pages/CleanArchitecturePage";
+export { TestDrivenDevelopmentPage } from "./src/pages/TestDrivenDevelopmentPage";
