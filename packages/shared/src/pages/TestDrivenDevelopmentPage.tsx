@@ -424,7 +424,20 @@ export const TestDrivenDevelopmentPage = () => {
                 </li>
               </ul>
             </section>
-
+            <section>
+              <div className={styles.launching_offer}>
+                <h2>Offre de lancement à durée limité</h2>
+                <p>
+                  Cette formation est au prix de lancement de{" "}
+                  <b>80,00€ pendant seulement deux semaines.</b>
+                  <br />
+                  Elle repassera ensuite définitivement à 200,00€.
+                  <br />
+                  <br />
+                  <b>C'est la dernière fois qu'elle sera à ce prix là.</b>
+                </p>
+              </div>
+            </section>
             <Courses />
             <section>
               <div className={styles.moneyback}>
@@ -472,7 +485,7 @@ export const TestDrivenDevelopmentPage = () => {
                 </Review>
                 <Review
                   authorImage={
-                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/simonpotier.jpeg"
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/simonpotier.png"
                   }
                   authorName="Simon Pottier"
                 >

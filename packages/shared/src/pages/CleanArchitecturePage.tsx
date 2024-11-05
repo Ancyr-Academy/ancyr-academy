@@ -501,7 +501,7 @@ export const CleanArchitecturePage = () => {
                 </Review>
                 <Review
                   authorImage={
-                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/simonpotier.jpeg"
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/simonpotier.png"
                   }
                   authorName="Simon Pottier"
                 >

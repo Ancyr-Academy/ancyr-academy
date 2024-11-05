@@ -45,3 +45,24 @@
     }
   }
 }
+
+.launching_offer {
+  background-color: #c95c00;
+  border-radius: 5px;
+
+  padding: 20px 40px;
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: pxToRem(32);
+  }
+
+  p {
+    color: white;
+    font-size: pxToRem(24);
+
+    line-height: 1.3;
+  }
+}
