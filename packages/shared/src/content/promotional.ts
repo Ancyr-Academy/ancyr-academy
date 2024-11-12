@@ -16,8 +16,8 @@ const discountStates = [
     slots: [6, 7],
   },
   {
-    percentage: 0.4,
-    code: "CLEAN40",
+    percentage: 0.3,
+    code: "CLEAN30",
     slots: [9, 10],
   },
 ] as const;
