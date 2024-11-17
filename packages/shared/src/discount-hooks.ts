@@ -28,6 +28,15 @@ export const useCurrentDiscount = (now = new Date()): Discount | null => {
   // A more robust solution would be to use an interval to recompute the discount once the day change
   // But that should only occur if the user is visiting the website around midnight.
 
+  if (promotional.exceptionalDiscount) {
+    if (
+      now >= promotional.exceptionalDiscount.startsAt &&
+      now <= promotional.exceptionalDiscount.endsAt
+    ) {
+      return promotional.exceptionalDiscount;
+    }
+  }
+
   const slot = (daysIntoYear(now) + 1) % promotional.totalSlots;
 
   const discount = promotional.discountStates.find(

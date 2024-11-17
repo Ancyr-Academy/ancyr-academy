@@ -1,3 +1,10 @@
+type ExceptionalDiscount = {
+  startsAt: Date;
+  endsAt: Date;
+  percentage: number;
+  code: string;
+};
+
 const totalSlots = 11;
 const discountStates = [
   {
@@ -22,7 +29,15 @@ const discountStates = [
   },
 ] as const;
 
+let exceptionalDiscount: ExceptionalDiscount | null = {
+  startsAt: new Date("2024-11-19T00:00:00.000Z"),
+  endsAt: new Date("2024-11-31T00:00:00.000Z"),
+  percentage: 0.5,
+  code: "BLACKFRIDAY2024",
+};
+
 export const promotional = {
   totalSlots,
   discountStates,
+  exceptionalDiscount,
 };

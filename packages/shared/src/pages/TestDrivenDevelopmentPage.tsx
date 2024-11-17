@@ -74,8 +74,8 @@ export const TestDrivenDevelopmentPage = () => {
         duration={countdown}
         message={
           <>
-            La formation TDD complète à <b>80,00€</b> (-60%) pendant seulement
-            14 jours !
+            La formation TDD complète à <b>80,00€</b> (-60%) pendant encore 24h
+            !
           </>
         }
       />
