@@ -63,7 +63,7 @@ export const Course: React.FC<{
       )}
       {status.type === "soon" && (
         <Button disabled tint="secondary" wide>
-          Bientôt disponible
+          En développpement
         </Button>
       )}
       {status.type === "unavailable" && (

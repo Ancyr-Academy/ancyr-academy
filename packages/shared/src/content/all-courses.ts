@@ -27,7 +27,7 @@ export const allCourses: Course[] = [
       "Savoir quand utiliser l'un ou l'autre selon le contexte",
       "Faire du TDD dans des projets complexes",
     ],
-    isNew: true,
+    isNew: false,
     isFree: false,
     isHot: false,
     imageUrl:

@@ -126,7 +126,7 @@ export const cleanArchitectureCourses: Course[] = [
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanNetCore.png",
     price: 300,
     status: {
-      type: "unavailable",
+      type: "soon",
     },
     title: "API .NET Core C#",
     resume: (
