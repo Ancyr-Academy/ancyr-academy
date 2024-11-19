@@ -109,7 +109,7 @@ export const cleanArchitectureCourses: Course[] = [
     status: {
       type: "soon",
     },
-    title: "Fullstack Symfony PHP",
+    title: "APIg Symfony PHP",
     resume: (
       <>
         Apprenez à développer une application fullstack en{" "}
