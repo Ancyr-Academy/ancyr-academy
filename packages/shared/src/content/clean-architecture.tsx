@@ -107,7 +107,8 @@ export const cleanArchitectureCourses: Course[] = [
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanSymfony.png",
     price: 300,
     status: {
-      type: "soon",
+      type: "available",
+      url: "https://courses.ancyracademy.fr/p/clean-architecture-api-symfony-php",
     },
     title: "API Symfony PHP",
     resume: (
@@ -118,7 +119,7 @@ export const cleanArchitectureCourses: Course[] = [
         complexe.
       </>
     ),
-    isHot: false,
+    isHot: true,
   },
   {
     id: "csharp-dotnet",
