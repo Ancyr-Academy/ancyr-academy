@@ -13,7 +13,6 @@ import {
 } from "react-icons/io5";
 import styles from "./TestDrivenDevelopment.module.scss";
 import { Overview } from "../components/Overview";
-import { PromotionalUI } from "../components/Promotional";
 import { Container } from "../components/Container";
 import { PageContent } from "../components/PageContent";
 import { ReviewList } from "../components/ReviewList";
@@ -21,11 +20,8 @@ import { Review } from "../components/Review";
 import { CourseList } from "../components/CourseList";
 import { Course } from "../components/Course";
 import { useCurrentDiscount } from "../discount-hooks";
-import { useCountdown } from "../use-countdown";
 
 export const TestDrivenDevelopmentPage = () => {
-  const countdown = useCountdown(new Date("2024-11-18T00:00:00Z"));
-
   return (
     <main>
       <Overview
@@ -68,16 +64,6 @@ export const TestDrivenDevelopmentPage = () => {
             text: "Satisfait ou Remboursé",
           },
         ]}
-      />
-      <PromotionalUI
-        title={"Offre de lancement"}
-        duration={countdown}
-        message={
-          <>
-            La formation TDD complète à <b>80,00€</b> (-60%) pendant encore 24h
-            !
-          </>
-        }
       />
       <div className={styles.content_body}>
         <Container>
@@ -424,20 +410,6 @@ export const TestDrivenDevelopmentPage = () => {
                 </li>
               </ul>
             </section>
-            <section>
-              <div className={styles.launching_offer}>
-                <h2>Offre de lancement à durée limité</h2>
-                <p>
-                  Cette formation est au prix de lancement de{" "}
-                  <b>80,00€ pendant seulement deux semaines.</b>
-                  <br />
-                  Elle repassera ensuite définitivement à 200,00€.
-                  <br />
-                  <br />
-                  <b>C'est la dernière fois qu'elle sera à ce prix là.</b>
-                </p>
-              </div>
-            </section>
             <Courses />
             <section>
               <div className={styles.moneyback}>
@@ -757,9 +729,6 @@ const Courses = () => {
               url: "https://courses.ancyracademy.fr/p/test-driven-development",
             }}
             title="Formation TDD"
-            discount={{
-              percentage: 0.6,
-            }}
           >
             Apprenez à développer des applications riches & complexes en étant
             véritablement guidés par les tests.
