@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaLinkedin, FaPodcast, FaYoutube } from "react-icons/fa";
+import { FaDiscord, FaLinkedin, FaPodcast, FaYoutube } from "react-icons/fa";
 import styles from "./Footer.module.scss";
 import { Container } from "../Container";
 
@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
               </a>
               <a
                 className={styles.icon}
-                href="https://www.youtube.com/channel/UCeWmlEby64lJUiDJDQ3Y8Dw"
+                href="https://www.youtube.com/@ancyracademyfr"
               >
                 <FaYoutube />
               </a>
@@ -31,6 +31,9 @@ export const Footer: React.FC = () => {
                 href="https://smartlink.ausha.co/ancyr-academy-podcast"
               >
                 <FaPodcast />
+              </a>
+              <a className={styles.icon} href="discord.gg/TzaU5uFrjk">
+                <FaDiscord />
               </a>
             </div>
             <p className={styles.copyright}>

@@ -30,8 +30,11 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
             />
           </div>
           <ul className={styles.menu}>
-            <MenuItem url={prefix + "/books"}>Livres</MenuItem>
-            <MenuItem url={prefix + "/courses"}>Cours</MenuItem>
+            <MenuItem url={"https://blog.ancyracademy.fr"}>Blog</MenuItem>
+            <MenuItem url={"https://youtube.com/@ancyracademyfr"}>
+              Youtube
+            </MenuItem>
+            <MenuItem url={prefix + "/courses"}>E-learning</MenuItem>
             <MenuItem url={prefix + "/training"}>Training</MenuItem>
             <MenuItem url="https://www.youtube.com/@ancyracademy">
               Youtube
