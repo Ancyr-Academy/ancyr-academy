@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
               >
                 <FaPodcast />
               </a>
-              <a className={styles.icon} href="discord.gg/TzaU5uFrjk">
+              <a className={styles.icon} href="https://discord.gg/TzaU5uFrjk">
                 <FaDiscord />
               </a>
             </div>
