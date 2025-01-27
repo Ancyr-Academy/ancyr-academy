@@ -31,7 +31,7 @@ const discountStates = [
 
 let exceptionalDiscount: ExceptionalDiscount | null = {
   startsAt: new Date("2025-01-27T00:00:00.000Z"),
-  endsAt: new Date("2024-01-31T00:00:00.000Z"),
+  endsAt: new Date("2025-01-31T00:00:00.000Z"),
   percentage: 0.4,
   code: "NOUVELAN2025",
 };
