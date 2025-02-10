@@ -19,7 +19,6 @@ import { ReviewList } from "../components/ReviewList";
 import { Review } from "../components/Review";
 import { CourseList } from "../components/CourseList";
 import { Course } from "../components/Course";
-import { useCurrentDiscount } from "../discount-hooks";
 
 export const TestDrivenDevelopmentPage = () => {
   return (
@@ -713,8 +712,6 @@ export const TestDrivenDevelopmentPage = () => {
 };
 
 const Courses = () => {
-  const discount = useCurrentDiscount();
-
   return (
     <>
       <section>
@@ -723,7 +720,7 @@ const Courses = () => {
           <Course
             imageUrl="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/4IOk4vyYRAilc9MnO8LE"
             isHot
-            price={200}
+            price={80}
             status={{
               type: "available",
               url: "https://courses.ancyracademy.fr/p/test-driven-development",

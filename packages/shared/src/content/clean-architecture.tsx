@@ -27,7 +27,7 @@ export const cleanArchitectureCourses: Course[] = [
     id: "fondamentaux",
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/mBkKdN7QdaTOzbWXW9WF",
-    price: 200,
+    price: 30,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-fondamentaux",
@@ -46,7 +46,7 @@ export const cleanArchitectureCourses: Course[] = [
     id: "web-nextjs",
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/HQeGzGLBT3iMntw82WdE",
-    price: 300,
+    price: 150,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-nextjs",
@@ -65,7 +65,7 @@ export const cleanArchitectureCourses: Course[] = [
     id: "api-nestjs",
     imageUrl:
       "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/FI20zcQx6Wx1WweQUZmg",
-    price: 300,
+    price: 150,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-nestjs",
@@ -85,7 +85,7 @@ export const cleanArchitectureCourses: Course[] = [
     id: "spring-java",
     imageUrl:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanSpring.png",
-    price: 300,
+    price: 150,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-api-spring-java",
@@ -105,7 +105,7 @@ export const cleanArchitectureCourses: Course[] = [
     id: "php-symfony",
     imageUrl:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanSymfony.png",
-    price: 300,
+    price: 150,
     status: {
       type: "available",
       url: "https://courses.ancyracademy.fr/p/clean-architecture-api-symfony-php",
@@ -125,7 +125,7 @@ export const cleanArchitectureCourses: Course[] = [
     id: "csharp-dotnet",
     imageUrl:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanNetCore.png",
-    price: 300,
+    price: 150,
     status: {
       type: "soon",
     },
@@ -144,7 +144,7 @@ export const cleanArchitectureCourses: Course[] = [
     id: "python-fastapi",
     imageUrl:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanFastAPI.png",
-    price: 300,
+    price: 150,
     status: {
       type: "unavailable",
     },
