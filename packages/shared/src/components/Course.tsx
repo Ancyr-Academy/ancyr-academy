@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Course.module.scss";
 import { Button } from "./Button";
+import currency from "currency.js";
 
 export const Course: React.FC<{
   title: string;
@@ -9,7 +10,7 @@ export const Course: React.FC<{
   status:
     | {
         type: "available";
-        url: string;
+        productId: string;
       }
     | {
         type: "soon";
@@ -27,9 +28,9 @@ export const Course: React.FC<{
   let finalUrl: string | null = null;
 
   if (status.type === "available") {
-    finalUrl = status.url;
+    finalUrl = `https://courses.ancyracademy.fr/purchase?product_id=${status.productId}`;
     if (discount && discount.code) {
-      finalUrl = `${status.url}?coupon_code=${discount.code}`;
+      finalUrl = finalUrl + `&coupon_code=${discount.code}`;
     }
   }
 
@@ -40,26 +41,32 @@ export const Course: React.FC<{
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.text}>{children}</p>
-        {status.type === "available" && (
-          <>
-            {discount ? (
-              <>
-                <p className={styles.old_pricing}>{price}€ TTC</p>
-                <p className={styles.pricing}>
-                  {price - price * discount.percentage}€ TTC
-                </p>
-              </>
-            ) : (
-              <p className={styles.pricing}>{price}€ TTC</p>
-            )}
-          </>
-        )}
       </div>
+      {status.type === "available" && (
+        <div className={styles.price_section}>
+          {discount ? (
+            <>
+              <p className={styles.old_pricing}>{price}.00€</p>
+              <p className={styles.pricing}>
+                {currency(price - price * discount.percentage).format({
+                  precision: 2,
+                  symbol: "",
+                })}
+                €
+              </p>
+            </>
+          ) : (
+            <p className={styles.pricing}>
+              {currency(price).format({ precision: 2, symbol: "" })}€
+            </p>
+          )}
+        </div>
+      )}
 
       <div className={styles.button_container}>
         {status.type === "available" && (
           <Button url={finalUrl!} wide>
-            Découvrir
+            Acheter
           </Button>
         )}
         {status.type === "soon" && (

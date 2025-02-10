@@ -19,6 +19,8 @@ import { ReviewList } from "../components/ReviewList";
 import { Review } from "../components/Review";
 import { CourseList } from "../components/CourseList";
 import { Course } from "../components/Course";
+import { NoSsrPromotional } from "../components/NoSsrPromotional";
+import { useCurrentDiscount } from "../discount-hooks";
 
 export const TestDrivenDevelopmentPage = () => {
   return (
@@ -64,6 +66,8 @@ export const TestDrivenDevelopmentPage = () => {
           },
         ]}
       />
+      <NoSsrPromotional />
+
       <div className={styles.content_body}>
         <Container>
           <PageContent>
@@ -677,6 +681,8 @@ export const TestDrivenDevelopmentPage = () => {
 };
 
 const Courses = () => {
+  const discount = useCurrentDiscount();
+
   return (
     <>
       <section>
@@ -688,9 +694,10 @@ const Courses = () => {
             price={80}
             status={{
               type: "available",
-              url: "https://courses.ancyracademy.fr/p/test-driven-development",
+              productId: "6102280",
             }}
             title="Formation TDD"
+            discount={discount}
           >
             Apprenez à développer des applications riches & complexes en étant
             véritablement guidés par les tests.

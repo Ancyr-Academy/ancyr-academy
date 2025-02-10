@@ -13,6 +13,7 @@
   border-radius: 10px;
 
   color: white;
+
 }
 
 .head_image {
@@ -34,13 +35,22 @@
   }
 }
 
+.price_section {
+  padding-inline: 40px;
+  padding-block: 20px;
+}
+
 .title {
   text-transform: uppercase;
-  font-size: core.pxToRem(24);
+  font-size: core.pxToRem(30);
   color: white;
+
+  margin-block: 8px;
 }
 
 .text {
+  margin-block: 16px;
+
   line-height: 1.2;
   font-size: core.pxToRem(21);
 }
@@ -48,15 +58,15 @@
 .old_pricing {
   text-align: right;
   font-size: core.pxToRem(21);
-  font-weight: 300;
-  color: #808080;
+  font-weight: 400;
+  color: #6f8388;
   margin-block: 0;
   text-decoration: line-through;
 }
 
 .pricing {
   text-align: right;
-  font-size: core.pxToRem(28);
+  font-size: core.pxToRem(36);
   font-weight: 800;
 
   margin-block: 0;

@@ -21,3 +21,5 @@ export { ReviewList } from "./src/components/ReviewList";
 export { CleanArchitecturePage } from "./src/pages/CleanArchitecturePage";
 export { TestDrivenDevelopmentPage } from "./src/pages/TestDrivenDevelopmentPage";
 export { useCountdown } from "./src/use-countdown";
+
+export * as teachable from "./src/lib/teachable";

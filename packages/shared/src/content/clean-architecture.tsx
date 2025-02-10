@@ -4,6 +4,7 @@ type Status =
   | {
       type: "available";
       url: string;
+      productId: string;
     }
   | {
       type: "soon";
@@ -30,7 +31,8 @@ export const cleanArchitectureCourses: Course[] = [
     price: 30,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/p/clean-architecture-fondamentaux",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102264",
+      productId: "6102264",
     },
     title: "Fondamentaux",
     resume: (
@@ -49,7 +51,8 @@ export const cleanArchitectureCourses: Course[] = [
     price: 150,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/p/clean-architecture-nextjs",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102276",
+      productId: "6102276",
     },
     title: "Web NextJS",
     resume: (
@@ -68,7 +71,8 @@ export const cleanArchitectureCourses: Course[] = [
     price: 150,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/p/clean-architecture-nestjs",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102277",
+      productId: "6102277",
     },
     title: "API NestJS",
     resume: (
@@ -88,7 +92,8 @@ export const cleanArchitectureCourses: Course[] = [
     price: 150,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/p/clean-architecture-api-spring-java",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102279",
+      productId: "6102279",
     },
     title: "API Spring Java",
     resume: (
@@ -108,7 +113,8 @@ export const cleanArchitectureCourses: Course[] = [
     price: 150,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/p/clean-architecture-api-symfony-php",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102282",
+      productId: "6102282",
     },
     title: "API Symfony PHP",
     resume: (

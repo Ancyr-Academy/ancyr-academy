@@ -312,76 +312,7 @@ export const CleanArchitecturePage = () => {
                 </b>
               </p>
             </section>
-            <section>
-              <h2>Ils en parlent mieux que moi</h2>
-              <ReviewList>
-                <Review
-                  authorImage={
-                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/rachid_jeffali.jpeg"
-                  }
-                  authorName="Rachid Jeffali"
-                >
-                  Excellente formation ! Je suis Développeur depuis un moment et
-                  j'avais l'impression de stagner sur les concepts
-                  d'Architecture. Le contenu anglophone et francophone sur la
-                  Clean Architecture était soit indigeste, soit compliqué à
-                  comprendre et surtout je ne trouvais pas de projet de A à Z en
-                  Clean Architecture. Je suis formateur, je dois rester à
-                  l'affût de ce qui se fait, des nouvelles tendances etc... Et
-                  l'architecture hexagonale et le TDD m'ont toujours intéressés
-                  et j'avais besoin de faire sauter ce verrou de compréhension.
-                  La formation d'Anthony Cyrille vient régler ce problème. A
-                  l'issue on a l'impression de faire parti d'une élite, d'une
-                  classe (limitée en places) de développeurs à part, on se sent
-                  enfin Dev Senior !
-                </Review>
-                <Review authorName="Rosko">
-                  La formation Clean Architecture offerte par Anthony Cyrille a
-                  été très satisfaisante. Le formateur démontre une pédagogie
-                  remarquable, la partie théorique est bien structurée avec des
-                  schémas facilitant la compréhension, et la flexibilité des
-                  vidéos permet une visualisation à tout moment. La partie
-                  pratique de la formation utilise des sujets concrets
-                  rencontrés en entreprise, renforçant l'applicabilité des
-                  compétences acquises dans des situations réelles. L'accès au
-                  code du projet est un atout majeur, et le discord actif
-                  présente une communauté de développeurs prête à répondre aux
-                  questions et partager des informations pertinentes. Le rapport
-                  qualité-prix est vraiment imbattable compte tenu de la
-                  complexité du sujet, et Anthony manifeste un réel engagement à
-                  nous aider à réussir. Je recommande fortement !
-                </Review>
-                <Review authorName="Carlo">
-                  "Comment créer une nouvelle fonctionnalité ? Quels fichiers
-                  dois-je modifier pour mettre à jour cette fonctionnalité ? Ah
-                  tiens, pourquoi ne pas ré-implémenter le même code, une énième
-                  fois, à cet endroit ? Mais il sert vraiment à quelque chose ce
-                  test ? Ce test est instable non ? Non non, il fonctionne bien
-                  sur ma machine" Sur le long terme, ce sont effectivement des
-                  questions du quotidien. De ce constat, je cherchais, moi
-                  aussi, à améliorer la qualité et la maintenabilité de mes
-                  applications, et surtout à retrouver le plaisir de coder. Les
-                  formations d'Anthony constituent, pour moi, la porte d'entrée
-                  idéale aux concepts de Clean architecture et de stratégies de
-                  tests. Anthony a su rendre concrets les concepts qui restaient
-                  encore trop abstraits pour moi. J'ai toujours un onglet ouvert
-                  sur la formation pour me rassurer et me donner le cap. Enfin,
-                  je suis très heureux de faire partie de sa belle communauté !
-                </Review>
-                <Review authorName="Celdama">
-                  La formation Clean Architecture d'Anthony a été une révélation
-                  pour moi en tant que développeur junior. Elle combine une
-                  excellente pédagogie avec une compréhension profonde des
-                  principes de conception logicielle, rendant le contenu
-                  accessible à tous les niveaux. Les études de cas pratiques
-                  utilisant React et Next.js sont particulièrement
-                  enrichissantes. Un plus notable est la disponibilité d'Anthony
-                  sur Discord pour répondre aux questions, ce qui renforce
-                  l'apprentissage continu. Je recommande pour ceux qui veulent
-                  affiner leurs compétences en architecture logicielle.
-                </Review>
-              </ReviewList>
-            </section>
+
             <section>
               <h2>A qui s'adresse cette formation ?</h2>
               <p>Cette formation a été pensée pour toi si...</p>
@@ -741,7 +672,7 @@ const Courses = () => {
             price={400}
             status={{
               type: "available",
-              url: "https://courses.ancyracademy.fr/p/clean-architecture-mega-bundle",
+              productId: "6102265",
             }}
             title="MegaBundle"
             discount={discount}
@@ -754,7 +685,7 @@ const Courses = () => {
             price={250}
             status={{
               type: "available",
-              url: "https://courses.ancyracademy.fr/p/clean-architecture-javascript-bundle",
+              productId: "6102269",
             }}
             title="Fullstack JavaScript"
             discount={discount}
@@ -769,13 +700,26 @@ const Courses = () => {
             price={150}
             status={{
               type: "available",
-              url: "https://courses.ancyracademy.fr/p/clean-architecture-java-bundle",
+              productId: "6102275",
             }}
             title="Java"
             discount={discount}
           >
             Contient les 2 formations "Clean Architecture Fondamentaux" et
             "Clean Architecture Java/Spring"
+          </Course>
+          <Course
+            imageUrl="https://cdn.filestackcontent.com/wqaw6PHfTKCXbdbhws9C"
+            price={150}
+            status={{
+              type: "available",
+              productId: "6102950",
+            }}
+            title="PHP"
+            discount={discount}
+          >
+            Contient les 2 formations "Clean Architecture Fondamentaux" et
+            "Clean Architecture PHP / Symfony"
           </Course>
         </CourseList>
       </section>
