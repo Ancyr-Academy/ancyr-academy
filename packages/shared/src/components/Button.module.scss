@@ -8,11 +8,10 @@
   font-size: core.pxToRem(20);
   color: white;
 
-  border: none;
   border-radius: 5px;
 
   padding-inline: 40px;
-  padding-block: 16px;
+  padding-block: 12px;
 
   transition: filter 0.2s;
 
@@ -22,15 +21,19 @@
 }
 
 .primary {
-  background-color: var(--color-primary);
+  background-color: #03ACA6;
+  border: 1px solid #5AE0CC;
 }
 
 .secondary {
-  background-color: var(--color-button-secondary);
+  background-color: #026461;
+  border: 1px solid #5AE0CC;
 }
 
 .tertiary {
-  background-color: var(--color-button-tertiary);
+  background-color: #7c7c7c;
+  border: 1px solid #5e5e5e;
+
 }
 
 .wide {

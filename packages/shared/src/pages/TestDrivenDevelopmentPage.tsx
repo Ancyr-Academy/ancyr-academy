@@ -68,41 +68,6 @@ export const TestDrivenDevelopmentPage = () => {
         <Container>
           <PageContent>
             <section>
-              <h2>Ils ont suivi cette formation</h2>
-              <div className={styles.companies}>
-                <img
-                  alt="Amazon"
-                  src={
-                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/amazon.png"
-                  }
-                />
-                <img
-                  alt="Google"
-                  src={
-                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/google.png"
-                  }
-                />
-                <img
-                  alt="UKG"
-                  src={
-                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/ukg.png"
-                  }
-                />
-                <img
-                  alt="CapGemini"
-                  src={
-                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/capgemini.png"
-                  }
-                />
-                <img
-                  alt="Orange"
-                  src={
-                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/companies/orange.png"
-                  }
-                />
-              </div>
-            </section>
-            <section>
               <h2>Une approche qui résout notre vrai problème</h2>
               <p>Est-ce que, comme moi auparavant, vous en avez marre...</p>
               <ul>

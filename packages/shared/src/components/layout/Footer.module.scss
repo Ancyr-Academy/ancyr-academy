@@ -1,7 +1,7 @@
 @use '../../core';
 
 .view {
-  border-top: 1px solid #c0c0c0;
+  border-top: 1px solid #192B2A;
   padding-block: 80px;
   margin-top: 80px;
 
@@ -34,7 +34,7 @@
   text-transform: uppercase;
   font-size: core.pxToRem(21);
   font-weight: 700;
-  color: var(--color-primary);
+  color: white;
 }
 
 .subtitle {
@@ -43,7 +43,7 @@
 
   font-size: core.pxToRem(20);
   font-weight: 300;
-  color: #3e3e3e;
+  color: #E6E5E5;
 }
 
 .icons {
@@ -59,8 +59,13 @@
   align-items: center;
   justify-content: center;
 
-  color: #333;
+  color: #E6E5E5;
   font-size: core.pxToRem(28);
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .copyright {
@@ -69,7 +74,7 @@
 
   font-size: core.pxToRem(20);
   font-weight: 300;
-  color: #999;
+  color: #b4b3b3;
 }
 
 .links_section {
@@ -97,7 +102,7 @@
   text-transform: uppercase;
   font-size: core.pxToRem(21);
   font-weight: 700;
-  color: var(--color-primary);
+  color: white;
 }
 
 .section_links {
@@ -115,10 +120,10 @@
 .section_single_link {
   font-size: core.pxToRem(20);
   font-weight: 300;
-  color: #3e3e3e;
+  color: #E6E5E5;
   text-decoration: none;
 
   &:hover {
-    color: #000;
+    color: white;
   }
 }

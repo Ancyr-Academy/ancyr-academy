@@ -7,7 +7,6 @@ const Page = () => {
     <main>
       <Intro />
       <NoSsrPromotional />
-      {/*<LastArticles />*/}
       <LastCourses />
     </main>
   );

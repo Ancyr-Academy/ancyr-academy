@@ -1,0 +1,18 @@
+@use "@ancyracademy/shared/src/core" as core;
+
+.view {
+  margin-block: 80px;
+}
+
+.list {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @include core.mediaQuery("medium") {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+}

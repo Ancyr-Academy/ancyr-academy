@@ -1,11 +1,17 @@
 @use '../core';
 
 .view {
-  background-color: #b40404;
+  margin-top: 24px;
 }
 
 .subview {
   padding-block: 28px;
+  padding-inline: 36px;
+
+  background-color: #0F5053;
+  border: 1px solid #5AE0CC;
+  border-radius: 10px;
+
 
   display: flex;
   justify-content: space-between;
@@ -63,8 +69,8 @@
   font-size: core.pxToRem(24);
   font-weight: 600;
 
-  background-color: #fff3f3;
-  color: #810d0d;
+  background-color: #034548;
+  color: #5cd9e0;
 
   padding-inline: 20px;
   padding-block: 8px;

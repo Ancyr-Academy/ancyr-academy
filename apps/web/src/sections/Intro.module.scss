@@ -1,0 +1,78 @@
+@use "@ancyracademy/shared/src/core" as core;
+
+.view {
+  padding-block: 100px;
+
+  @include core.mediaQuery("medium") {
+    padding-block: 80px;
+  }
+
+  @include core.mediaQuery("small") {
+    padding-block: 60px;
+  }
+}
+
+.content {
+  gap: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include core.mediaQuery("medium") {
+    gap: 40px;
+  }
+}
+
+.image_container {
+  img {
+    height: 360px;
+    width: 360px;
+    object-fit: contain;
+  }
+
+  @include core.mediaQuery("medium") {
+    order: -1;
+
+    img {
+      height: 140px;
+      width: 140px;
+      object-fit: cover;
+    }
+  }
+
+  @include core.mediaQuery("small") {
+    display: none;
+  }
+}
+
+.texts {
+  flex: 1;
+}
+
+.intro_title {
+  font-size: core.pxToRem(52);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+
+  color: white;
+}
+
+.intro_title_effect {
+  background: linear-gradient(90deg, #3BE4FD, #A8FA7D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro_text {
+  font-size: core.pxToRem(28);
+  line-height: 1.3;
+  font-weight: 400;
+  max-width: 600px;
+
+  margin-block: 24px;
+
+  color: white;
+
+}

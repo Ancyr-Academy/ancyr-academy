@@ -1,16 +1,9 @@
 @use '../../core';
 
 .view {
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: rgba(77, 213, 255, 0.2);
+  border-bottom: 1px solid #44CDE3;
 
-  background-color: white;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-
-  overflow-x: auto;
 }
 
 .inner_view {
@@ -20,7 +13,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
 
   height: var(--navbar-height);
 
@@ -32,12 +25,15 @@
 }
 
 .logo {
+  width: 200px;
   @include core.mediaQuery("small") {
     display: none;
   }
 }
 
 .menu {
+  margin-top: 12px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,16 +46,20 @@
   }
 
   a {
-    font-size: core.pxToRem(20);
-    color: #444;
+    font-size: core.pxToRem(18);
+    color: #DFDFDF;
     text-decoration: none;
 
     &:hover {
-      color: black;
+      color: white;
     }
   }
 
   @include core.mediaQuery("small") {
     gap: 14px;
   }
+}
+
+.separator {
+  flex: 1;
 }

@@ -5,7 +5,8 @@
 }
 
 .moneyback {
-  background-color: var(--color-primary);
+  background-color: #0F5053;
+  border: 1px solid #5AE0CC;
   border-radius: 5px;
 
   padding: 40px;
@@ -22,18 +23,5 @@
     font-size: core.pxToRem(22);
 
     line-height: 1.3;
-  }
-}
-
-.companies {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-top: 40px;
-
-  img {
-    width: 100%;
-    max-width: 180px;
   }
 }

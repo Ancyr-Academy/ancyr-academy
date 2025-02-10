@@ -2,6 +2,7 @@
 
 import styles from "./Header.module.scss";
 import React from "react";
+import { Button } from "../Button";
 
 const MenuItem: React.FC<{
   url: string;
@@ -18,14 +19,14 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
   const prefix = fullUrl ? "https://ancyracademy.fr" : "";
   return (
     <>
-      <div className={styles.header}>
+      <div className={styles.view}>
         <div className={styles.inner_view}>
           <div>
             <img
               className={styles.logo}
               alt="Ancyr Academy"
               src={
-                "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/logo-full.png"
+                "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/logo-white.png"
               }
             />
           </div>
@@ -36,10 +37,9 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
             </MenuItem>
             <MenuItem url={prefix + "/courses"}>E-learning</MenuItem>
             <MenuItem url={prefix + "/training"}>Training</MenuItem>
-            <MenuItem url="https://www.youtube.com/@ancyracademy">
-              Youtube
-            </MenuItem>
           </ul>
+          <div className={styles.separator}></div>
+          <Button>Espace Etudiants</Button>
         </div>
       </div>
     </>

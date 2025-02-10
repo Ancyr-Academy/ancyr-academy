@@ -56,21 +56,23 @@ export const Course: React.FC<{
         )}
       </div>
 
-      {status.type === "available" && (
-        <Button url={finalUrl!} wide>
-          Découvrir
-        </Button>
-      )}
-      {status.type === "soon" && (
-        <Button disabled tint="secondary" wide>
-          En développpement
-        </Button>
-      )}
-      {status.type === "unavailable" && (
-        <Button disabled tint="tertiary" wide>
-          Indisponible
-        </Button>
-      )}
+      <div className={styles.button_container}>
+        {status.type === "available" && (
+          <Button url={finalUrl!} wide>
+            Découvrir
+          </Button>
+        )}
+        {status.type === "soon" && (
+          <Button disabled tint="secondary" wide>
+            En développpement
+          </Button>
+        )}
+        {status.type === "unavailable" && (
+          <Button disabled tint="tertiary" wide>
+            Indisponible
+          </Button>
+        )}
+      </div>
     </div>
   );
 };

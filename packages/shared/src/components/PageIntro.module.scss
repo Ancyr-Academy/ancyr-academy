@@ -1,22 +1,29 @@
 @use '../core';
 
 .view {
-  background-color: var(--color-secondary);
-  padding-top: 120px;
-  padding-bottom: 40px;
+  margin-block: 40px;
 }
 
 .content {
+  padding-block: 20px;
+  padding-inline: 20px;
+
+  background-color: #0F5053;
+  border: 1px solid #5AE0CC;
+  border-radius: 10px;
 }
 
 .intro_title {
   font-size: core.pxToRem(40);
   margin: 0;
+  color: white;
 }
 
 .intro_text {
-  font-size: core.pxToRem(21);
+  font-size: core.pxToRem(24);
   font-weight: 300;
+  color: white;
 
   margin-block: 0;
+  margin-top: 12px;
 }

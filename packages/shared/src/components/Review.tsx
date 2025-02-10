@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaUser } from "react-icons/fa";
 import styles from "./Review.module.scss";
 
 export const Review: React.FC<{
@@ -10,13 +10,12 @@ export const Review: React.FC<{
   return (
     <div className={styles.view}>
       <div className={styles.head}>
-        <img
-          className={styles.profile_picture}
-          src={
-            authorImage ??
-            "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/user.png"
-          }
-        />
+        {authorImage ? (
+          <img className={styles.profile_picture} src={authorImage} />
+        ) : (
+          <FaUser size={40} />
+        )}
+
         <h6 className={styles.author}>{authorName}</h6>
       </div>
       <p className={styles.content}>{children}</p>

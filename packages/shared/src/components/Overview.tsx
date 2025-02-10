@@ -15,6 +15,7 @@ export const Overview: React.FC<{
       <Container>
         <div className={styles.content}>
           <div className={styles.left}>
+            <h1 className={styles.pre_title}>Formation Complete</h1>
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subtitle}>{subtitle}</p>
           </div>

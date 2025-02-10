@@ -1,94 +1,35 @@
 "use client";
 
-import { styled } from "styled-components";
+import styles from "./Intro.module.scss";
 import { Button, Container } from "@ancyracademy/shared";
-import { pxToRem } from "../ui/font-utils";
-import { mediaQuery, size } from "../ui/media-query";
 
 export const Intro = () => {
   return (
-    <View>
+    <div className={styles.view}>
       <Container>
-        <Content>
-          <Texts>
-            <IntroTitle>Ma mission ?</IntroTitle>
-            <IntroText>
-              Aider les développeurs à créer de meilleurs logiciels.
-            </IntroText>
-            <Button url="/courses">Voir les cours</Button>
-          </Texts>
-          <ImageContainer>
+        <div className={styles.content}>
+          <div className={styles.image_container}>
             <img
               alt="Ancyr Academy"
               src={
                 "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/logo-alone.png"
               }
             />
-          </ImageContainer>
-        </Content>
+          </div>
+          <div className={styles.texts}>
+            <h6 className={styles.intro_title}>
+              Software Engineering
+              <br />{" "}
+              <span className={styles.intro_title_effect}>for tomorrow</span>
+            </h6>
+            <p className={styles.intro_text}>
+              Développez des compétences qui sont faites pour durer, créez des
+              applications à l’épreuve du temps, devenez de véritables seniors.
+            </p>
+            <Button url="/courses">Voir les cours</Button>
+          </div>
+        </div>
       </Container>
-    </View>
+    </div>
   );
 };
-
-const View = styled.div`
-  background-color: var(--color-secondary);
-  padding-block: 100px;
-
-  ${mediaQuery(size.medium)} {
-    padding-block: 80px;
-  }
-
-  ${mediaQuery(size.small)} {
-    padding-block: 60px;
-  }
-`;
-
-const Content = styled.div`
-  gap: 80px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  ${mediaQuery(size.medium)} {
-    gap: 40px;
-  }
-`;
-
-const Texts = styled.div`
-  flex: 1;
-`;
-
-const IntroTitle = styled.h6`
-  font-size: ${pxToRem(21)};
-  text-transform: uppercase;
-  margin: 0;
-
-  color: var(--color-primary);
-`;
-
-const IntroText = styled.p`
-  font-size: ${pxToRem(40)};
-  font-weight: 700;
-  max-width: 600px;
-
-  margin-bottom: 28px;
-  margin-top: 12px;
-`;
-
-const ImageContainer = styled.div`
-  ${mediaQuery(size.medium)} {
-    order: -1;
-
-    img {
-      height: 140px;
-      width: 140px;
-      object-fit: cover;
-    }
-  }
-
-  ${mediaQuery(size.small)} {
-    display: none;
-  }
-`;

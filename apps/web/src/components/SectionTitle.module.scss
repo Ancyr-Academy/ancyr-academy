@@ -1,0 +1,10 @@
+@use "@ancyracademy/shared/src/core" as core;
+
+.view {
+  font-size: core.pxToRem(32);
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+
+

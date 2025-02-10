@@ -1,6 +1,8 @@
 @use '../core';
 
 .view {
+  color: white;
+
   & > section {
     margin-bottom: 80px;
 
@@ -9,7 +11,7 @@
       font-weight: 700;
       text-transform: uppercase;
 
-      color: var(--color-primary);
+      color: white;
     }
 
     & > p {
@@ -19,7 +21,7 @@
 
       a {
         text-decoration: none;
-        color: var(--color-primary);
+        color: white;
         transition: all 0.2s;
 
         &:hover {
@@ -32,7 +34,7 @@
       }
 
       & > i {
-        color: #5c5c5c;
+        color: white;
       }
     }
 
@@ -43,7 +45,7 @@
       li {
         svg {
           margin-right: 12px;
-          fill: var(--color-primary);
+          fill: white;
           font-size: core.pxToRem(36);
         }
 
