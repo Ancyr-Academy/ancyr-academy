@@ -12,6 +12,6 @@
     "tsconfig": "workspace:*",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@10.2.1",
+  "packageManager": "pnpm@9.15.3",
   "name": "ancyr-academy"
 }
