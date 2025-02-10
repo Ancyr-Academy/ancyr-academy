@@ -1,4 +1,4 @@
-@import '../core';
+@use '../core';
 
 .view {
   background-color: #b40404;
@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: flex-end;
 
-  @include mediaQuery("medium") {
+  @include core.mediaQuery("medium") {
     flex-direction: column;
     align-items: initial;
     justify-content: initial;
@@ -28,7 +28,7 @@
 
 .title {
   color: white;
-  font-size: pxToRem(32);
+  font-size: core.pxToRem(32);
   margin: 0;
 }
 
@@ -36,7 +36,7 @@
   margin-top: 4px;
 
   color: #fff1f1;
-  font-size: pxToRem(24);
+  font-size: core.pxToRem(24);
 
   max-width: 450px;
 }
@@ -54,13 +54,13 @@
   width: 90px;
   gap: 8px;
 
-  @include mediaQuery("medium") {
+  @include core.mediaQuery("medium") {
     width: fit-content;
   }
 }
 
 .countdown_number {
-  font-size: pxToRem(24);
+  font-size: core.pxToRem(24);
   font-weight: 600;
 
   background-color: #fff3f3;
@@ -74,5 +74,5 @@
 
 .countdown_label {
   color: var(--color-secondary);
-  font-size: pxToRem(18);
+  font-size: core.pxToRem(18);
 }

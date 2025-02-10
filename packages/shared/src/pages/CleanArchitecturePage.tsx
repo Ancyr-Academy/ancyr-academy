@@ -14,7 +14,6 @@ import {
 } from "react-icons/io5";
 import styles from "./CleanArchitecturePage.module.scss";
 import { Overview } from "../components/Overview";
-import { Promotional } from "../components/Promotional";
 import { Container } from "../components/Container";
 import { PageContent } from "../components/PageContent";
 import { ReviewList } from "../components/ReviewList";
@@ -23,6 +22,7 @@ import { CourseList } from "../components/CourseList";
 import { Course } from "../components/Course";
 import { useCurrentDiscount } from "../discount-hooks";
 import { cleanArchitectureCourses } from "../content/clean-architecture";
+import { NoSsrPromotional } from "../components/NoSsrPromotional";
 
 export const CleanArchitecturePage = () => {
   return (
@@ -72,7 +72,7 @@ export const CleanArchitecturePage = () => {
           },
         ]}
       />
-      <Promotional />
+      <NoSsrPromotional />
       <div className={styles.content_body}>
         <Container>
           <PageContent>

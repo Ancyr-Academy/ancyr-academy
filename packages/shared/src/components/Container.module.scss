@@ -1,4 +1,4 @@
-@import '../core';
+@use '../core';
 
 .view {
   max-width: var(--container-size);
@@ -6,7 +6,7 @@
 
   padding-inline: 40px;
 
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     padding-inline: 16px;
   }
 }

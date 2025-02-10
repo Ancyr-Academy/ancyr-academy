@@ -1,11 +1,11 @@
-@import '../core';
+@use '../core';
 
 .view {
   display: inline-block;
   text-decoration: none;
 
   text-align: center;
-  font-size: pxToRem(20);
+  font-size: core.pxToRem(20);
   color: white;
 
   border: none;
@@ -38,7 +38,7 @@
 }
 
 .big {
-  font-size: pxToRem(20);
+  font-size: core.pxToRem(20);
   padding-block: 20px;
 }
 

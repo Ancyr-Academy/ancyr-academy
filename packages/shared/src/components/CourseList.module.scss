@@ -1,4 +1,4 @@
-@import '../core';
+@use '../core';
 
 .view {
   margin-inline: auto;
@@ -6,12 +6,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 
-  @include mediaQuery("large") {
+  @include core.mediaQuery("large") {
     gap: 40px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include mediaQuery("medium") {
+  @include core.mediaQuery("medium") {
     grid-template-columns: repeat(1, 1fr);
   }
 }

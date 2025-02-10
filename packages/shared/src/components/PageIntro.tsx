@@ -2,8 +2,8 @@
 
 import React from "react";
 import styles from "./PageIntro.module.scss";
-import { Promotional } from "./Promotional";
 import { Container } from "./Container";
+import { NoSsrPromotional } from "./NoSsrPromotional";
 
 export const PageIntro: React.FC<{
   title: string;
@@ -20,7 +20,7 @@ export const PageIntro: React.FC<{
           </div>
         </Container>
       </div>
-      {showPromotional !== false && <Promotional />}
+      {showPromotional !== false && <NoSsrPromotional />}
     </>
   );
 };

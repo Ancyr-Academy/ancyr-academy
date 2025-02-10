@@ -1,11 +1,11 @@
-@import '../../core';
+@use '../../core';
 
 .view {
   border-top: 1px solid #c0c0c0;
   padding-block: 80px;
   margin-top: 80px;
 
-  @include mediaQuery("medium") {
+  @include core.mediaQuery("medium") {
     padding-block: 60px;
   }
 }
@@ -14,13 +14,13 @@
   display: flex;
   justify-content: space-between;
 
-  @include mediaQuery("medium") {
+  @include core.mediaQuery("medium") {
     flex-direction: column;
     justify-content: initial;
     gap: 60px;
   }
 
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     gap: 30px;
   }
 }
@@ -32,7 +32,7 @@
   margin-block: 0;
 
   text-transform: uppercase;
-  font-size: pxToRem(21);
+  font-size: core.pxToRem(21);
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -41,7 +41,7 @@
   margin-block: 0;
   margin-bottom: 10px;
 
-  font-size: pxToRem(20);
+  font-size: core.pxToRem(20);
   font-weight: 300;
   color: #3e3e3e;
 }
@@ -60,14 +60,14 @@
   justify-content: center;
 
   color: #333;
-  font-size: pxToRem(28);
+  font-size: core.pxToRem(28);
 }
 
 .copyright {
   margin-block: 0;
   margin-top: 24px;
 
-  font-size: pxToRem(20);
+  font-size: core.pxToRem(20);
   font-weight: 300;
   color: #999;
 }
@@ -76,13 +76,13 @@
   display: flex;
   gap: 80px;
 
-  @include mediaQuery("medium") {
+  @include core.mediaQuery("medium") {
     flex-direction: column;
     justify-content: initial;
     gap: 60px;
   }
 
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     gap: 30px;
   }
 }
@@ -95,7 +95,7 @@
   margin-block: 0;
 
   text-transform: uppercase;
-  font-size: pxToRem(21);
+  font-size: core.pxToRem(21);
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -107,13 +107,13 @@
   flex-direction: column;
   gap: 16px;
 
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     gap: 8px;
   }
 }
 
 .section_single_link {
-  font-size: pxToRem(20);
+  font-size: core.pxToRem(20);
   font-weight: 300;
   color: #3e3e3e;
   text-decoration: none;

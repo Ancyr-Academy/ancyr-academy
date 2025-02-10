@@ -1,15 +1,15 @@
-@import '../core';
+@use '../core';
 
 .view {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 
-  @include mediaQuery("medium") {
+  @include core.mediaQuery("medium") {
     gap: 8px;
   }
 
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     grid-template-columns: repeat(1, 1fr);
   }
 }

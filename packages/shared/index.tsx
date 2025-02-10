@@ -9,7 +9,6 @@ export { Duration } from "./src/lib/duration";
 export { Header } from "./src/components/layout/Header";
 export { Footer } from "./src/components/layout/Footer";
 export { Container } from "./src/components/Container";
-export { Promotional, PromotionalUI } from "./src/components/Promotional";
 export { PageIntro } from "./src/components/PageIntro";
 export { Button } from "./src/components/Button";
 export { PageContent } from "./src/components/PageContent";

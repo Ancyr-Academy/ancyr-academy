@@ -8,8 +8,8 @@ export const Review: React.FC<{
   children: string;
 }> = ({ authorImage, authorName, children }) => {
   return (
-    <a className={styles.view}>
-      <a className={styles.head}>
+    <div className={styles.view}>
+      <div className={styles.head}>
         <img
           className={styles.profile_picture}
           src={
@@ -18,7 +18,7 @@ export const Review: React.FC<{
           }
         />
         <h6 className={styles.author}>{authorName}</h6>
-      </a>
+      </div>
       <p className={styles.content}>{children}</p>
       <div className={styles.stars}>
         <FaStar />
@@ -27,6 +27,6 @@ export const Review: React.FC<{
         <FaStar />
         <FaStar />
       </div>
-    </a>
+    </div>
   );
 };

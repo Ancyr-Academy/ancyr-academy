@@ -1,4 +1,4 @@
-@import '../core';
+@use '../core';
 
 .view {
   background-color: var(--color-secondary);
@@ -10,12 +10,12 @@
 }
 
 .intro_title {
-  font-size: pxToRem(40);
+  font-size: core.pxToRem(40);
   margin: 0;
 }
 
 .intro_text {
-  font-size: pxToRem(21);
+  font-size: core.pxToRem(21);
   font-weight: 300;
 
   margin-block: 0;

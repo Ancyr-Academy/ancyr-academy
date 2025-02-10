@@ -1,12 +1,12 @@
 import { Intro } from "../sections/Intro";
 import { LastCourses } from "../sections/LastCourses";
-import { Promotional } from "@ancyracademy/shared";
+import { NoSsrPromotional } from "@ancyracademy/shared/src/components/NoSsrPromotional";
 
 const Page = () => {
   return (
     <main>
       <Intro />
-      <Promotional />
+      <NoSsrPromotional />
       {/*<LastArticles />*/}
       <LastCourses />
     </main>

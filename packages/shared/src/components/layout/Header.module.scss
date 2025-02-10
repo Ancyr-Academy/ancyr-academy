@@ -1,4 +1,4 @@
-@import '../../core';
+@use '../../core';
 
 .view {
   position: fixed;
@@ -24,7 +24,7 @@
 
   height: var(--navbar-height);
 
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     max-width: initial;
     padding-inline: 18px;
     justify-content: initial;
@@ -32,7 +32,7 @@
 }
 
 .logo {
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     display: none;
   }
 }
@@ -50,7 +50,7 @@
   }
 
   a {
-    font-size: (pxToRem(20));
+    font-size: core.pxToRem(20);
     color: #444;
     text-decoration: none;
 
@@ -59,7 +59,7 @@
     }
   }
 
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     gap: 14px;
   }
 }

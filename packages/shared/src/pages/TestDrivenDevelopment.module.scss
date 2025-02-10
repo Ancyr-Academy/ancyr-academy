@@ -1,4 +1,4 @@
-@import '../core';
+@use '../core';
 
 .content_body {
   margin-top: 80px;
@@ -14,12 +14,12 @@
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: pxToRem(32);
+    font-size: core.pxToRem(32);
   }
 
   p {
     color: white;
-    font-size: pxToRem(22);
+    font-size: core.pxToRem(22);
 
     line-height: 1.3;
   }
@@ -39,7 +39,7 @@
     max-width: 180px;
   }
 
-  @include mediaQuery("small") {
+  @include core.mediaQuery("small") {
     img {
       max-width: 100px;
     }
@@ -56,12 +56,12 @@
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: pxToRem(32);
+    font-size: core.pxToRem(32);
   }
 
   p {
     color: white;
-    font-size: pxToRem(24);
+    font-size: core.pxToRem(24);
 
     line-height: 1.3;
   }
