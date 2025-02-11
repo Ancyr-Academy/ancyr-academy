@@ -4,24 +4,3 @@
   margin-top: 80px;
 }
 
-.moneyback {
-  background-color: #0F5053;
-  border: 1px solid #5AE0CC;
-  border-radius: 5px;
-
-  padding: 40px;
-
-  h2 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: core.pxToRem(32);
-  }
-
-  p {
-    color: white;
-    font-size: core.pxToRem(22);
-
-    line-height: 1.3;
-  }
-}

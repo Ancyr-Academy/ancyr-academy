@@ -36,11 +36,13 @@
 }
 
 .pre_title {
+  display: inline-block; // for gradient
+
   font-size: core.pxToRem(24);
   text-transform: uppercase;
   margin-block: 0;
 
-  background: linear-gradient(90deg, #3BE4FD, #A8FA7D);
+  background: linear-gradient(to right, #3BE4FD, #A8FA7D);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

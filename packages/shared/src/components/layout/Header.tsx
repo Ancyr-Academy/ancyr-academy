@@ -21,7 +21,7 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
     <>
       <div className={styles.view}>
         <div className={styles.inner_view}>
-          <div>
+          <a href={"https://ancyracademy.fr"}>
             <img
               className={styles.logo}
               alt="Ancyr Academy"
@@ -29,7 +29,7 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
                 "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/logo-white.png"
               }
             />
-          </div>
+          </a>
           <ul className={styles.menu}>
             <MenuItem url={"https://blog.ancyracademy.fr"}>Blog</MenuItem>
             <MenuItem url={"https://youtube.com/@ancyracademyfr"}>

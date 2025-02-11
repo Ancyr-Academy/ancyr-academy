@@ -12,7 +12,8 @@ export const Button: React.FC<{
   wide?: boolean;
   tint?: Tint;
   size?: Size;
-}> = ({ url, children, wide, size, disabled, tint }) => {
+  onClick?: () => void;
+}> = ({ url, children, wide, size, disabled, tint, onClick }) => {
   const className = classNames(
     styles.view,
     styles.primary,
@@ -30,9 +31,17 @@ export const Button: React.FC<{
       [styles.wide as any]: wide,
     },
   );
-  
+
   if (disabled) {
     return <div className={className}>{children}</div>;
+  }
+
+  if (onClick) {
+    return (
+      <button className={className} onClick={onClick}>
+        {children}
+      </button>
+    );
   }
 
   return (

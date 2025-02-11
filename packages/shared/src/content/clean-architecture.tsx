@@ -99,9 +99,8 @@ export const cleanArchitectureCourses: Course[] = [
     resume: (
       <>
         Apprenez à développer une application back-end en{" "}
-        <b>Clean Architecture / Domain-Driven Design</b> avec Spring Boot,
-        développé en <b>TDD</b> et couvert de <b>tests d'intégrations</b> sur un
-        projet complexe.
+        <b>Clean Architecture</b> avec Spring Boot, développé en <b>TDD</b> et
+        couvert de <b>tests d'intégrations</b> sur un projet complexe.
       </>
     ),
     isHot: false,
@@ -120,9 +119,8 @@ export const cleanArchitectureCourses: Course[] = [
     resume: (
       <>
         Apprenez à développer une application fullstack en{" "}
-        <b>Clean Architecture / Domain-Driven Design</b> avec Symfony, développé
-        en <b>TDD</b> et couvert de <b>tests d'intégrations</b> sur un projet
-        complexe.
+        <b>Clean Architecture</b> avec Symfony, développé en <b>TDD</b> et
+        couvert de <b>tests d'intégrations</b> sur un projet complexe.
       </>
     ),
     isHot: true,
@@ -139,9 +137,8 @@ export const cleanArchitectureCourses: Course[] = [
     resume: (
       <>
         Apprenez à développer une application back-end en{" "}
-        <b>Clean Architecture / Domain-Driven Design</b> avec .NET Core en C#,
-        développé en <b>TDD</b> et couvert de <b>tests d'intégrations</b> sur un
-        projet complexe.
+        <b>Clean Architecture</b> avec .NET Core en C#, développé en <b>TDD</b>{" "}
+        et couvert de <b>tests d'intégrations</b> sur un projet complexe.
       </>
     ),
     isHot: false,
@@ -158,9 +155,8 @@ export const cleanArchitectureCourses: Course[] = [
     resume: (
       <>
         Apprenez à développer une application back-end en{" "}
-        <b>Clean Architecture / Domain-Driven Design</b> avec FastAPI, développé
-        en <b>TDD</b> et couvert de <b>tests d'intégrations</b> sur un projet
-        complexe.
+        <b>Clean Architecture </b> avec FastAPI, développé en <b>TDD</b> et
+        couvert de <b>tests d'intégrations</b> sur un projet complexe.
       </>
     ),
     isHot: false,
