@@ -80,11 +80,6 @@
 
 .content {
   color: white;
-
-  & > p {
-    font-size: core.pxToRem(24);
-    line-height: 1.4;
-  }
 }
 
 .section {
@@ -136,10 +131,6 @@
 }
 
 .professor_text {
-  color: white;
-  font-size: core.pxToRem(24);
-  line-height: 1.4;
-
   b {
     display: block;
     background: linear-gradient(to right, #3BE4FD, #A8FA7D);
@@ -147,4 +138,18 @@
     -webkit-text-fill-color: transparent;
   }
 
+}
+
+.selling_paragraph {
+  color: white;
+  font-size: core.pxToRem(24);
+  line-height: 1.4;
+}
+
+.moneyback_image {
+  display: block;
+  margin-inline: auto;
+  margin-top: 32px;
+
+  height: 200px;
 }

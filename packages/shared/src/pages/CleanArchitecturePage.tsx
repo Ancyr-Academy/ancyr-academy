@@ -6,23 +6,22 @@ import {
   IoCash,
   IoFolderOpen,
   IoInfinite,
-  IoPaperPlane,
   IoPeople,
-  IoPerson,
   IoPlayCircle,
   IoPodium,
-  IoReader,
-  IoStar,
   IoTime,
 } from "react-icons/io5";
 import styles from "./CleanArchitecturePage.module.scss";
 import { Overview } from "../components/Overview";
-import { Professor, SellingList, SellingPage } from "../components/SellingPage";
+import {
+  buildingBlocks,
+  SalesPage,
+  SellingParagraph,
+} from "../components/SalesPage";
 import { useCurrentDiscount } from "../discount-hooks";
 import { CourseList } from "../components/CourseList";
 import { Course } from "../components/Course";
 import { cleanArchitectureCourses } from "../content/clean-architecture";
-import { CompleteReviewList } from "../components/ReviewList";
 
 export const CleanArchitecturePage = () => {
   return (
@@ -33,7 +32,8 @@ export const CleanArchitecturePage = () => {
           <>
             Développez des applications riches et complexes en
             <br />
-            <b>pas à pas en Clean Architecture</b> et en <b>TDD</b>.
+            <b>pas à pas en Clean Architecture</b> et en <b>TDD</b> dans
+            différents langages et différentes stacks.
           </>
         }
         points={[
@@ -72,98 +72,42 @@ export const CleanArchitecturePage = () => {
         ]}
       />
       <div className={styles.content_body}>
-        <SellingPage
+        <SalesPage
           sections={[
-            {
-              id: "about",
-              icon: IoBook,
-              menuTitle: "A propos",
-              subtitle: "Conçu avec grand soin",
-              title: "A propos du cours",
-              content: (
-                <p>
-                  La formation Clean Architecture en PHP & Symfony a été conçu
-                  pour vous aider à développer des applications robustes et
-                  scalables qui durent dans le temps.
-                  <br /> Ce cours vise à vous faire passer de novice à
-                  professionnel et à être capable de mettre votre savoir en
-                  pratique immédiatement.
-                  <br />
-                  <br />
-                  Apprendre la Clean Architecture, ça peut paraître intimidant.
-                  Rassurez-vous, cette formation va droit au but et se concentre
-                  intégralement sur la pratique. Elle est accessible à tout
-                  développeur ayant un minimum d’expérience en développement
-                  logiciel.
-                </p>
-              ),
-            },
-            {
-              id: "material",
-              icon: IoReader,
-              menuTitle: "Contenu",
-              subtitle: "La théorie et la pratique",
-              title: "Ce que vous allez apprendre",
-              content: (
-                <SellingList
-                  elements={[
-                    "Mettre en place une Clean Architecture",
-                    "Développer votre application en TDD",
-                    "Tester votre application de bout en bout",
-                    "Ecrire des tests unitaires solide",
-                  ]}
-                />
-              ),
-            },
-            {
-              id: "target",
-              icon: IoPeople,
-              menuTitle: "Cible",
-              subtitle: "Cible visée",
-              title: "A qui s'adresse ce cours ?",
-              content: (
-                <SellingList
-                  elements={[
-                    "Aux développeurs qui désirent développer des logiciels plus robustes avec une méthode qui a fait ses preuves",
-                    "Qui désirent développer des programmes de très haute qualité, flexible et réutilisables",
-                    "Qui veulent apprendre à tester leur application sous toutes ses coutûres",
-                    "Qui souhaitent améliorer leur compétence en matière de design orienté objet",
-                  ]}
-                />
-              ),
-            },
-            {
-              id: "professor",
-              icon: IoPerson,
-              menuTitle: "Instructeur",
-              subtitle: "Instructeur",
-              title: "Qui enseigne ce cours ?",
-              content: <Professor />,
-            },
-            {
-              id: "reviews",
-              icon: IoStar,
-              menuTitle: "Avis",
-              subtitle: "Ils en parlent mieux que nous",
-              title: "Qu'en disent les élèves ?",
-              content: <CompleteReviewList />,
-            },
-            {
-              id: "bundles",
-              icon: IoFolderOpen,
-              menuTitle: "Bundles",
-              subtitle: "Ils sont souvent achetés ensemble",
-              title: "Bundles",
-              content: <Bundles />,
-            },
-            {
-              id: "courses",
-              icon: IoPaperPlane,
-              menuTitle: "Cours",
-              subtitle: "Conçus sur mesure",
-              title: "Cours",
-              content: <Courses />,
-            },
+            buildingBlocks.about(
+              <SellingParagraph>
+                La formation Clean Architecture en PHP & Symfony a été conçu
+                pour vous aider à développer des applications robustes et
+                scalables qui durent dans le temps.
+                <br /> Ce cours vise à vous faire passer de novice à
+                professionnel et à être capable de mettre votre savoir en
+                pratique immédiatement.
+                <br />
+                <br />
+                Apprendre la Clean Architecture, ça peut paraître intimidant.
+                Rassurez-vous, cette formation va droit au but et se concentre
+                intégralement sur la pratique. Elle est accessible à tout
+                développeur ayant un minimum d’expérience en développement
+                logiciel.
+              </SellingParagraph>,
+            ),
+            buildingBlocks.content([
+              "Mettre en place une Clean Architecture",
+              "Développer votre application en TDD",
+              "Tester votre application de bout en bout",
+              "Ecrire des tests unitaires solide",
+            ]),
+            buildingBlocks.target([
+              "Aux développeurs qui désirent développer des logiciels plus robustes avec une méthode qui a fait ses preuves",
+              "Qui désirent développer des programmes de très haute qualité, flexible et réutilisables",
+              "Qui veulent apprendre à tester leur application sous toutes ses coutûres",
+              "Qui souhaitent améliorer leur compétence en matière de design orienté objet",
+            ]),
+            buildingBlocks.professor,
+            buildingBlocks.reviews,
+            buildingBlocks.bundles(<Bundles />),
+            buildingBlocks.courses(<Courses />),
+            buildingBlocks.moneyback,
           ]}
         />
       </div>
