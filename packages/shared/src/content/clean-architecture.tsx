@@ -9,7 +9,6 @@ export const cleanArchitectureBundles: CourseType[] = [
     status: {
       type: "available",
       productId: "6102265",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102265",
     },
     title: "MegaBundle",
     resume: (
@@ -27,7 +26,6 @@ export const cleanArchitectureBundles: CourseType[] = [
     status: {
       type: "available",
       productId: "6102269",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102269",
     },
     title: "Fullstack JavaScript",
     resume: (
@@ -45,7 +43,6 @@ export const cleanArchitectureBundles: CourseType[] = [
     status: {
       type: "available",
       productId: "6102275",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102275",
     },
     title: "Java",
     resume: (
@@ -63,7 +60,6 @@ export const cleanArchitectureBundles: CourseType[] = [
     status: {
       type: "available",
       productId: "6102950",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102950",
     },
     title: "PHP",
     resume: (
@@ -84,7 +80,6 @@ export const cleanArchitectureCourses: CourseType[] = [
     price: 30,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102264",
       productId: "6102264",
     },
     title: "Fondamentaux",
@@ -104,7 +99,6 @@ export const cleanArchitectureCourses: CourseType[] = [
     price: 150,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102276",
       productId: "6102276",
     },
     title: "Web NextJS",
@@ -124,7 +118,6 @@ export const cleanArchitectureCourses: CourseType[] = [
     price: 150,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102277",
       productId: "6102277",
     },
     title: "API NestJS",
@@ -145,7 +138,6 @@ export const cleanArchitectureCourses: CourseType[] = [
     price: 150,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102279",
       productId: "6102279",
     },
     title: "API Spring Java",
@@ -165,7 +157,6 @@ export const cleanArchitectureCourses: CourseType[] = [
     price: 150,
     status: {
       type: "available",
-      url: "https://courses.ancyracademy.fr/purchase?product_id=6102282",
       productId: "6102282",
     },
     title: "API Symfony PHP",

@@ -8,9 +8,8 @@ import { Duration } from "../lib/duration";
 
 export const PromotionalUI: React.FC<{
   duration: Duration;
-  title: string;
   message: any;
-}> = ({ duration, title, message }) => {
+}> = ({ duration, message }) => {
   if (duration.total === 0) {
     return null;
   }
