@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @include core.mediaQuery("medium") {
+  @include core.mediaQuery("large") {
     flex-direction: column;
     align-items: initial;
     justify-content: initial;
@@ -36,6 +36,14 @@
 .countdowns {
   display: flex;
   gap: 5px;
+
+  @include core.mediaQuery("large") {
+    margin-left: -18px;
+  }
+
+  @include core.mediaQuery("medium") {
+    margin-left: initial;
+  }
 }
 
 .countdown {
@@ -45,6 +53,7 @@
 
   width: 90px;
   gap: 8px;
+
 
   @include core.mediaQuery("medium") {
     width: fit-content;

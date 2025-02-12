@@ -39,9 +39,11 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
             <MenuItem url={prefix + "/workshops"}>Workshops</MenuItem>
           </ul>
           <div className={styles.separator}></div>
-          <Button url={"https://courses.ancyracademy.fr"}>
-            Espace Etudiants
-          </Button>
+          <div className={styles.students_space}>
+            <Button url={"https://courses.ancyracademy.fr"}>
+              Espace Etudiants
+            </Button>
+          </div>
         </div>
       </div>
     </>

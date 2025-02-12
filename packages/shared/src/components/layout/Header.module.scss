@@ -63,3 +63,9 @@
 .separator {
   flex: 1;
 }
+
+.students_space {
+  @include core.mediaQuery("medium") {
+    display: none;
+  }
+}

@@ -5,6 +5,10 @@
   align-items: flex-start;
 
   gap: 100px;
+
+  @include core.mediaQuery("large") {
+    gap: 40px;
+  }
 }
 
 .menu_container {
@@ -21,6 +25,14 @@
 
   position: sticky;
   top: 40px;
+
+  @include core.mediaQuery("large") {
+    width: 140px;
+  }
+
+  @include core.mediaQuery("medium") {
+    display: none;
+  }
 }
 
 .menu {

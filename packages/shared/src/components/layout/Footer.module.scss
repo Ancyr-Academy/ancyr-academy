@@ -3,7 +3,7 @@
 .view {
   border-top: 1px solid #192B2A;
   padding-block: 80px;
-  margin-top: 80px;
+  margin-top: 20px;
 
   @include core.mediaQuery("medium") {
     padding-block: 60px;
