@@ -15,13 +15,14 @@ import styles from "./CleanArchitecturePage.module.scss";
 import { Overview } from "../components/Overview";
 import {
   buildingBlocks,
+  Courses,
   SalesPage,
   SellingParagraph,
 } from "../components/SalesPage";
-import { useCurrentDiscount } from "../discount-hooks";
-import { CourseList } from "../components/CourseList";
-import { Course } from "../components/Course";
-import { cleanArchitectureCourses } from "../content/clean-architecture";
+import {
+  cleanArchitectureBundles,
+  cleanArchitectureCourses,
+} from "../content/clean-architecture";
 
 export const CleanArchitecturePage = () => {
   return (
@@ -105,97 +106,16 @@ export const CleanArchitecturePage = () => {
             ]),
             buildingBlocks.professor,
             buildingBlocks.reviews,
-            buildingBlocks.bundles(<Bundles />),
-            buildingBlocks.courses(<Courses />),
+            buildingBlocks.bundles(
+              <Courses courses={cleanArchitectureBundles} />,
+            ),
+            buildingBlocks.courses(
+              <Courses courses={cleanArchitectureCourses} />,
+            ),
             buildingBlocks.moneyback,
           ]}
         />
       </div>
     </main>
-  );
-};
-
-const Bundles = () => {
-  const discount = useCurrentDiscount();
-
-  return (
-    <CourseList>
-      <Course
-        imageUrl="https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu"
-        isHot
-        price={400}
-        status={{
-          type: "available",
-          productId: "6102265",
-        }}
-        title="MegaBundle"
-        discount={discount}
-      >
-        Toutes les formations Clean Architecture disponibles (JavaScript & Java){" "}
-        <b>+ celles à venir</b>
-      </Course>
-      <Course
-        imageUrl="https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls"
-        price={250}
-        status={{
-          type: "available",
-          productId: "6102269",
-        }}
-        title="Fullstack JavaScript"
-        discount={discount}
-      >
-        Contient les 3 formations "Clean Architecture Fondamentaux", "Clean
-        Architecture API NestJS" & "Clean Architecture Frontend React/Next.js"
-      </Course>
-
-      <Course
-        imageUrl="https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl"
-        price={150}
-        status={{
-          type: "available",
-          productId: "6102275",
-        }}
-        title="Java"
-        discount={discount}
-      >
-        Contient les 2 formations "Clean Architecture Fondamentaux" et "Clean
-        Architecture Java/Spring"
-      </Course>
-      <Course
-        imageUrl="https://cdn.filestackcontent.com/wqaw6PHfTKCXbdbhws9C"
-        price={150}
-        status={{
-          type: "available",
-          productId: "6102950",
-        }}
-        title="PHP"
-        discount={discount}
-      >
-        Contient les 2 formations "Clean Architecture Fondamentaux" et "Clean
-        Architecture PHP / Symfony"
-      </Course>
-    </CourseList>
-  );
-};
-
-const Courses = () => {
-  const discount = useCurrentDiscount();
-
-  return (
-    <CourseList>
-      {cleanArchitectureCourses.map((course) => (
-        <Course
-          imageUrl={course.imageUrl}
-          isHot={course.isHot}
-          key={course.id}
-          price={course.price}
-          status={course.status}
-          title={course.title}
-          discount={discount}
-        >
-          {course.resume}
-        </Course>
-      ))}
-    </CourseList>
   );
 };

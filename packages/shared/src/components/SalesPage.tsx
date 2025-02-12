@@ -13,6 +13,11 @@ import {
 } from "react-icons/io5";
 import { CompleteReviewList } from "./ReviewList";
 import { LuTable } from "react-icons/lu";
+import { CourseType } from "../content/course";
+import { useCurrentDiscount } from "../discount-hooks";
+import { NoSsrPromotional } from "./NoSsrPromotional";
+import { CourseList } from "./CourseList";
+import { Course } from "./Course";
 
 type Section = {
   id: string;
@@ -93,15 +98,15 @@ export const Professor = () => {
           "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/core/ancyr.jpg"
         }
       />
-      <p className={styles.professor_text}>
+      <SellingParagraph>
         Je suis Anthony Cyrille. Après plus de 15 ans d’expérience dans le
         développement logiciel, j’ai décidé d’enseigner tout ce que l’industrie
         m’a appris :{" "}
-        <b>
+        <b className={styles.glow}>
           les compétences les plus indispensables du métier, celles qui font la
           différence, celles qui durent.
         </b>
-      </p>
+      </SellingParagraph>
     </div>
   );
 };
@@ -127,6 +132,37 @@ export const MoneyBack = () => {
 
 export const SellingParagraph = ({ children }: { children: any }) => {
   return <p className={styles.selling_paragraph}>{children}</p>;
+};
+
+export const Courses = ({
+  courses,
+  showDiscount,
+}: {
+  courses: CourseType[];
+  showDiscount?: boolean;
+}) => {
+  const discount = useCurrentDiscount();
+
+  return (
+    <>
+      {showDiscount !== false && <NoSsrPromotional />}
+      <CourseList>
+        {courses.map((course) => (
+          <Course
+            key={course.id}
+            imageUrl={course.imageUrl}
+            isHot={course.isHot}
+            price={course.price}
+            status={course.status}
+            title={course.title}
+            discount={discount}
+          >
+            {course.resume}
+          </Course>
+        ))}
+      </CourseList>
+    </>
+  );
 };
 
 export const buildingBlocks = {

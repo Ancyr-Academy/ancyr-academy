@@ -1,29 +1,82 @@
 import React from "react";
+import { CourseType } from "./course";
 
-type Status =
-  | {
-      type: "available";
-      url: string;
-      productId: string;
-    }
-  | {
-      type: "soon";
-    }
-  | {
-      type: "unavailable";
-    };
+export const cleanArchitectureBundles: CourseType[] = [
+  {
+    id: "mega-bundle",
+    imageUrl: "https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu",
+    price: 400,
+    status: {
+      type: "available",
+      productId: "6102265",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102265",
+    },
+    title: "MegaBundle",
+    resume: (
+      <>
+        Toutes les formations Clean Architecture disponibles (JavaScript & Java){" "}
+        <b>+ celles à venir</b>
+      </>
+    ),
+    isHot: true,
+  },
+  {
+    id: "fullstack-javascript",
+    imageUrl: "https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls",
+    price: 250,
+    status: {
+      type: "available",
+      productId: "6102269",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102269",
+    },
+    title: "Fullstack JavaScript",
+    resume: (
+      <>
+        Contient les 3 formations "Clean Architecture Fondamentaux", "Clean
+        Architecture API NestJS" & "Clean Architecture Frontend React/Next.js"
+      </>
+    ),
+    isHot: false,
+  },
+  {
+    id: "java",
+    imageUrl: "https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl",
+    price: 150,
+    status: {
+      type: "available",
+      productId: "6102275",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102275",
+    },
+    title: "Java",
+    resume: (
+      <>
+        Contient les 2 formations "Clean Architecture Fondamentaux" et "Clean
+        Architecture Java/Spring"
+      </>
+    ),
+    isHot: false,
+  },
+  {
+    id: "php",
+    imageUrl: "https://cdn.filestackcontent.com/wqaw6PHfTKCXbdbhws9C",
+    price: 150,
+    status: {
+      type: "available",
+      productId: "6102950",
+      url: "https://courses.ancyracademy.fr/purchase?product_id=6102950",
+    },
+    title: "PHP",
+    resume: (
+      <>
+        Contient les 2 formations "Clean Architecture Fondamentaux" et "Clean
+        Architecture PHP / Symfony"
+      </>
+    ),
+    isHot: false,
+  },
+];
 
-type Course = {
-  id: string;
-  imageUrl: string;
-  price: number;
-  title: string;
-  status: Status;
-  resume: React.ReactNode;
-  isHot: boolean;
-};
-
-export const cleanArchitectureCourses: Course[] = [
+export const cleanArchitectureCourses: CourseType[] = [
   {
     id: "fondamentaux",
     imageUrl:

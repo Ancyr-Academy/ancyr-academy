@@ -130,20 +130,17 @@
   margin-right: 20px;
 }
 
-.professor_text {
-  b {
+.selling_paragraph {
+  color: white;
+  font-size: core.pxToRem(24);
+  line-height: 1.4;
+
+  b.glow {
     display: block;
     background: linear-gradient(to right, #3BE4FD, #A8FA7D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
-}
-
-.selling_paragraph {
-  color: white;
-  font-size: core.pxToRem(24);
-  line-height: 1.4;
 }
 
 .moneyback_image {
