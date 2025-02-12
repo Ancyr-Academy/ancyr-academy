@@ -18,36 +18,31 @@ export const PromotionalUI: React.FC<{
   return (
     <div className={styles.view}>
       <div className={styles.subview}>
-        <div className={styles.left}>
-          <h2 className={styles.title}>{title.toUpperCase()}</h2>
-          <div className={styles.content}>{message}</div>
-        </div>
-        <div className={styles.right}>
-          <div className={styles.countdowns}>
-            <div className={styles.countdown}>
-              <div className={styles.countdown_number}>
-                {duration.pad(duration.days)}
-              </div>
-              <div className={styles.countdown_label}>jours</div>
+        <div className={styles.content}>{message}</div>
+        <div className={styles.countdowns}>
+          <div className={styles.countdown}>
+            <div className={styles.countdown_number}>
+              {duration.pad(duration.days)}
             </div>
-            <div className={styles.countdown}>
-              <div className={styles.countdown_number}>
-                {duration.pad(duration.hours)}
-              </div>
-              <div className={styles.countdown_label}>heures</div>
+            <div className={styles.countdown_label}>jours</div>
+          </div>
+          <div className={styles.countdown}>
+            <div className={styles.countdown_number}>
+              {duration.pad(duration.hours)}
             </div>
-            <div className={styles.countdown}>
-              <div className={styles.countdown_number}>
-                {duration.pad(duration.minutes)}
-              </div>
-              <div className={styles.countdown_label}>minutes</div>
+            <div className={styles.countdown_label}>heures</div>
+          </div>
+          <div className={styles.countdown}>
+            <div className={styles.countdown_number}>
+              {duration.pad(duration.minutes)}
             </div>
-            <div className={styles.countdown}>
-              <div className={styles.countdown_number}>
-                {duration.pad(duration.seconds)}
-              </div>
-              <div className={styles.countdown_label}>sec</div>
+            <div className={styles.countdown_label}>minutes</div>
+          </div>
+          <div className={styles.countdown}>
+            <div className={styles.countdown_number}>
+              {duration.pad(duration.seconds)}
             </div>
+            <div className={styles.countdown_label}>sec</div>
           </div>
         </div>
       </div>
@@ -65,7 +60,6 @@ export const Promotional: React.FC = () => {
   return (
     <PromotionalUI
       duration={duration}
-      title={"En cours"}
       message={
         <>
           Jusqu'à <b>-{discount!.percentage * 100}%</b> sur les{" "}

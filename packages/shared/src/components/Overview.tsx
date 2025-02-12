@@ -1,14 +1,24 @@
 import React from "react";
 import { Container } from "./Container";
 import styles from "./Overview.module.scss";
+import {
+  IoBook,
+  IoCash,
+  IoInfinite,
+  IoPeople,
+  IoPlayCircle,
+  IoPodium,
+  IoTime,
+} from "react-icons/io5";
 
+type Point = {
+  Icon: any;
+  text: string;
+};
 export const Overview: React.FC<{
   title: string;
   subtitle: any;
-  points: Array<{
-    Icon: any;
-    text: string;
-  }>;
+  points: Point[];
 }> = ({ title, subtitle, points }) => {
   return (
     <div className={styles.view}>
@@ -35,3 +45,34 @@ export const Overview: React.FC<{
     </div>
   );
 };
+
+export const commonsPoints = ({ hours }: { hours: number }) => [
+  {
+    Icon: IoPodium,
+    text: "Débutants à Experts",
+  },
+  {
+    Icon: IoBook,
+    text: "Théorie & Pratique",
+  },
+  {
+    Icon: IoPlayCircle,
+    text: "7 heures de vidéo HD",
+  },
+  {
+    Icon: IoPeople,
+    text: "Aide de la communauté",
+  },
+  {
+    Icon: IoInfinite,
+    text: "Accès à vie",
+  },
+  {
+    Icon: IoTime,
+    text: "Apprenez à votre rythme",
+  },
+  {
+    Icon: IoCash,
+    text: "Satisfait ou Remboursé",
+  },
+];

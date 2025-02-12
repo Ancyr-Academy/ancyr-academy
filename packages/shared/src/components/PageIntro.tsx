@@ -20,7 +20,11 @@ export const PageIntro: React.FC<{
           </div>
         </Container>
       </div>
-      {showPromotional !== false && <NoSsrPromotional />}
+      {showPromotional !== false && (
+        <Container>
+          <NoSsrPromotional />
+        </Container>
+      )}
     </>
   );
 };

@@ -1,4 +1,4 @@
-export type TrainingType = {
+export type WorkshopType = {
   title: string;
   resume: string;
   imageUrl: string;
@@ -10,7 +10,7 @@ export type TrainingType = {
   programUrl: string;
 };
 
-export const allTrainings = [
+export const allWorkshops = [
   // {
   //   title: "Test-Driven Development",
   //   resume: [

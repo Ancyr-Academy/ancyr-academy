@@ -3,7 +3,6 @@ import React from "react";
 type Status =
   | {
       type: "available";
-      url: string;
       productId: string;
     }
   | {

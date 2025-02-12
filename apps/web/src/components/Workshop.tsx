@@ -1,42 +1,42 @@
 import { styled } from "styled-components";
 import React from "react";
 import { pxToRem } from "../ui/font-utils";
-import { Button, TrainingType } from "@ancyracademy/shared";
+import { Button, WorkshopType } from "@ancyracademy/shared";
 import { mediaQuery, size } from "../ui/media-query";
 
-export const Training: React.FC<{ training: TrainingType }> = ({
-  training,
+export const Workshop: React.FC<{ workshop: WorkshopType }> = ({
+  workshop,
 }) => {
   return (
     <View>
       <Head>
-        {!!training.imageUrl && (
+        {!!workshop.imageUrl && (
           <ImageContainer>
-            <img src={training.imageUrl} />
+            <img src={workshop.imageUrl} />
           </ImageContainer>
         )}
 
         <Texts>
-          <Title>{training.title}</Title>
-          <Resume>{training.resume}</Resume>
+          <Title>{workshop.title}</Title>
+          <Resume>{workshop.resume}</Resume>
           <KeyPoints>
             <KeyPoint>
-              Dates : <b>{training.dates}</b>
+              Dates : <b>{workshop.dates}</b>
             </KeyPoint>
             <KeyPoint>
-              Durée : <b>{training.duration}</b>
+              Durée : <b>{workshop.duration}</b>
             </KeyPoint>
             <KeyPoint>
-              Niveau : <b>{training.level}</b>
+              Niveau : <b>{workshop.level}</b>
             </KeyPoint>
             <KeyPoint>
-              Environnement : <b>{training.environment}</b>
+              Environnement : <b>{workshop.environment}</b>
             </KeyPoint>
             <KeyPoint>Places : 6 participants</KeyPoint>
 
             <KeyPoint>
               Programme :{" "}
-              <a href={training.programUrl}>Consulter le Programme</a>
+              <a href={workshop.programUrl}>Consulter le Programme</a>
             </KeyPoint>
             <KeyPoint>
               <h3>Tarif</h3>
@@ -49,7 +49,7 @@ export const Training: React.FC<{ training: TrainingType }> = ({
           </KeyPoints>
         </Texts>
       </Head>
-      <Button size="big" url={training.url} wide>
+      <Button size="big" url={workshop.url} wide>
         Participer
       </Button>
     </View>

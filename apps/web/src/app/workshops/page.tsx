@@ -2,9 +2,9 @@
 
 import { styled } from "styled-components";
 import React from "react";
-import { allTrainings, Container, PageIntro } from "@ancyracademy/shared";
+import { allWorkshops, Container, PageIntro } from "@ancyracademy/shared";
 import { mediaQuery, size } from "../../ui/media-query";
-import { Training } from "../../components/Training";
+import { Workshop } from "../../components/Workshop";
 
 const Page = () => {
   return (
@@ -16,8 +16,8 @@ const Page = () => {
       />
       <Container>
         <List>
-          {allTrainings.map((training, index) => (
-            <Training key={index} training={training} />
+          {allWorkshops.map((training, index) => (
+            <Workshop key={index} workshop={training} />
           ))}
         </List>
       </Container>
