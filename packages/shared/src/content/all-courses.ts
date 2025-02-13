@@ -18,7 +18,8 @@ export const allCourses: Course[] = [
     url: "/clean-architecture",
     isFree: false,
     isHot: true,
-    imageUrl: "https://cdn.filestackcontent.com/x6worA6VR1OUspPAEDAR",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/clean_architecture_course.png",
   },
   {
     title: "CQRS",
