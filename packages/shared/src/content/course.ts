@@ -1,16 +1,9 @@
 import React from "react";
 
-type Status =
-  | {
-      type: "available";
-      productId: string;
-    }
-  | {
-      type: "soon";
-    }
-  | {
-      type: "unavailable";
-    };
+type Status = {
+  type: "available";
+  productId: string;
+};
 
 export type CourseType = {
   id: string;
@@ -19,5 +12,6 @@ export type CourseType = {
   title: string;
   status: Status;
   resume: React.ReactNode;
+  previewUrl?: string;
   isHot: boolean;
 };

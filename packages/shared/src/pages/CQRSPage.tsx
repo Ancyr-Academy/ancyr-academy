@@ -80,6 +80,8 @@ export const CQRSPage = () => {
                       ses besoins spécifiques.
                     </>
                   ),
+                  previewUrl:
+                    "https://courses.ancyracademy.fr/courses/cqrs/lectures/59980560",
                 },
               ]}
             />,

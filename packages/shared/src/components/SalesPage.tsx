@@ -157,6 +157,7 @@ export const Courses = ({
             status={course.status}
             title={course.title}
             discount={showDiscount !== false ? discount : undefined}
+            previewUrl={course.previewUrl}
           >
             {course.resume}
           </Course>

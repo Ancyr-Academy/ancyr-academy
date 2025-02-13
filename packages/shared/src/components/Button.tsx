@@ -13,7 +13,8 @@ export const Button: React.FC<{
   tint?: Tint;
   size?: Size;
   onClick?: () => void;
-}> = ({ url, children, wide, size, disabled, tint, onClick }) => {
+  newTab?: boolean;
+}> = ({ url, children, wide, size, disabled, tint, onClick, newTab }) => {
   const className = classNames(
     styles.view,
     styles.primary,
@@ -45,7 +46,7 @@ export const Button: React.FC<{
   }
 
   return (
-    <a className={className} href={url}>
+    <a className={className} href={url} target={newTab ? "_blank" : "_self"}>
       {children}
     </a>
   );

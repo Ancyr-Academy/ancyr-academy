@@ -124,4 +124,8 @@
 .button_container {
   margin-inline: 20px;
   margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
