@@ -1,10 +1,8 @@
 import styles from "./CourseResume.module.scss";
-import { styled } from "styled-components";
 import React from "react";
 import { Button } from "@ancyracademy/shared";
 
 export const CourseResume: React.FC<{
-  type: string;
   title: string;
   resume: string;
   imageUrl: string;
@@ -12,7 +10,7 @@ export const CourseResume: React.FC<{
   isHot?: boolean;
   isFree?: boolean;
   isNew?: boolean;
-}> = ({ type, title, resume, imageUrl, url, isNew, isHot, isFree }) => {
+}> = ({ title, resume, imageUrl, url, isNew, isHot, isFree }) => {
   return (
     <div className={styles.view}>
       {isNew ? (

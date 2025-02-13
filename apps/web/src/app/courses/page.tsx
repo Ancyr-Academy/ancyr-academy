@@ -23,7 +23,6 @@ const Page = () => {
               key={index}
               resume={course.resume}
               title={course.title}
-              type={course.type}
               url={course.url}
             />
           ))}
