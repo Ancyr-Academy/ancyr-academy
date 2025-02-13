@@ -1,6 +1,8 @@
+import React from "react";
+import { LuTable } from "react-icons/lu";
+
 import styles from "./SalesPage.module.scss";
 import { Container } from "./Container";
-import React from "react";
 import {
   IoBook,
   IoCash,
@@ -12,7 +14,6 @@ import {
   IoStar,
 } from "react-icons/io5";
 import { CompleteReviewList } from "./ReviewList";
-import { LuTable } from "react-icons/lu";
 import { CourseType } from "../content/course";
 import { useCurrentDiscount } from "../discount-hooks";
 import { NoSsrPromotional } from "./NoSsrPromotional";
@@ -155,7 +156,7 @@ export const Courses = ({
             price={course.price}
             status={course.status}
             title={course.title}
-            discount={discount}
+            discount={showDiscount !== false ? discount : undefined}
           >
             {course.resume}
           </Course>

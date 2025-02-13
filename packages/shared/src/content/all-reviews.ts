@@ -16,6 +16,30 @@ export const allReviews = [
     content: `Avant cette formation, je cherchais à améliorer la qualité et la maintenabilité des architectures Front-end. Cette formation a non seulement répondu à mes attentes, mais elle les a même dépassées. cette formation a été extrêmement enrichissante et m'a permis de consolider mes connaissances en clean architecture. Je la recommande vivement à quiconque souhaite améliorer ses compétences en matière d'architecture Front-end.`,
   },
   {
+    authorName: "Damien Gouron",
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/damien_gouron.jpeg",
+    content: `Agréablement surpris par la formation. J'étais sceptique car j'avais peur que ça reste juste en surface et donc de rester un peu sur ma faim, pas du tout. C'est clairement un des meilleurs investissement que j'ai fais.  Les notions apprises sont directement applicable au boulot. 
+Niveau code, le gap de qualité avant/après est juste insane ! Une fois qu'on y a gouter, pas de retour en arrière possible.`,
+  },
+  {
+    authorName: "Lou Delcourt",
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/lou_delcourt.jpeg",
+    content: `Formation au top très claire et efficace. Je n'aurais jamais eu la même reflexion sur la manière d'implémenter son code pour faire des units tests sans celle-ci. `,
+  },
+
+  {
+    authorName: "Haithem Zeggari",
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/haithem_zeggari.jpeg",
+    content: `J'ai eu l'opportunité de suivre la formation Clean Architecture - API Spring Java avec Anthony Cyrille, et je ne peux que la recommander ! Grâce à son expertise et sa pédagogie, j'ai pu approfondir mes connaissances en Clean Architecture, TDD, MockMVC, JPA, JWT et CQRS.
+
+Les explications sont claires, les exercices pratiques pertinents, et le suivi tout au long du parcours est vraiment appréciable. Une excellente formation pour toute personne souhaitant structurer ses applications back-end avec de bonnes pratiques !
+
+Encore merci Anthony pour cette expérience formatrice !`,
+  },
+  {
     authorImage:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/meldonati.jpeg",
     authorName: "Melaïna Donati",
@@ -41,7 +65,7 @@ export const allReviews = [
   },
   {
     authorImage:
-      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yohann_herbet.jpeg",
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yohann_herbet.png",
     authorName: "Yohann Herbet",
     content: `Anthony est très bon pédagogue. J'ai adoré la formation et la qualité technique est vraiment au rendez-vous ! J'ai obtenu beaucoup de réponses à mes questions, avec en prime pas mal de bonus à ce que je recherchais. Cette formation m'a fait monter en niveau très rapidement et m'a permis de comprendre chaque principe évoqué. J'ai maintenant une très bonne compréhension de la clean architecture et suis capable d'interpréter différentes façons de l'implémenter et de l'appliquer.`,
   },
@@ -62,6 +86,12 @@ export const allReviews = [
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yllies_h.jpeg",
     authorName: "Yllies H",
     content: `J’ai trouvé la formation sur la Clean Architecture extrêmement interessante. Elle m'a offert une compréhension approfondie des principes fondamentaux de conception logicielle, en mettant l'accent sur la séparation des préoccupations et la maintenabilité du code. Je recommande sans hésiter surtout pour se démarquer de la masse de développeurs !`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/kevin_monsieur.jpeg",
+    authorName: "Kevin Monsieur",
+    content: `Très compréhensif, beaucoup de contenu verbeux au départ mais au file du temps ils deviennent très compréhensifs grâce à tous les rappels, exemples etc`,
   },
   {
     authorImage:
@@ -86,5 +116,100 @@ export const allReviews = [
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/frederic_lossignol.jpeg",
     authorName: "Frederic Lossignol",
     content: `Formateur JS, Angular, Node.js orienté clean Architecture, j'ai particulièrement aimé la précision de cette formation, tant dans la terminologie du vocabulaire, que les comparaisons des types de tests, leur raison d'être et le choix des tests à privilégier selon les situations. Ce niveau de précision est rare quand on parle des test, au niveau des développeurs, c'est un plus indéniable de cette formation que je recommande moi-même à mes apprenants.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/pierre_alexandre_dhery.jpeg",
+    authorName: "Pierre-Alexandre Dhery",
+    content: `Excellente formation qui aborde les concepts du testing et qui n'est pas juste fixée sur comment tester avec tel framework. J'ai trouvé que c'etait très bien expliqué très bien structuré et parfaitement synthétisé. Une superbe formation qui me donne fortement envie d'enchainer sur la formation TDD.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/jeremie_nguetsop_komolo.jpeg",
+    authorName: "Jérémie NGUETSOP KOMOLO",
+    content: `Explications claires.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/theo_pichon.jpeg",
+    authorName: "Theo Pichon",
+    content: `Les principes liés à la Clean Architecture ont été très bien détaillés et résumés. Chaque concept a été expliqué clairement, ce qui a grandement facilité la compréhension. La formation est bien structurée, progressant logiquement d'un sujet à l'autre. Globalement, c'était une très expérience et je recommande vivement cette formation à ceux qui veulent découvrir la Clean Architecture.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/anthony_delhaye.jpeg",
+    authorName: "Anthony Delhaye",
+    content: `Enfin une formation qui reprend les bases ou plutôt le socle théorique de la clean architecture (bien plus que le livre du même nom)`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/raphael_escrig.jpeg",
+    authorName: "Raphaël Escrig",
+    content: `Super, les notions abordées sont top et très très bien expliquées. Les morceaux de code montrés expliquent pleinement la théorie vue juste avant. Peut être des petits couacs micros de temps en temps (grésillements) mais sinon top et merci beaucoup !`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/elie_michel_nono.jpeg",
+    authorName: "Elie-Michel Nono",
+    content: `Très belle formation. Explications épurées, un vrai régal. `,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/dimitri_subrini.jpeg",
+    authorName: "Dimitri Subrini",
+    content: `J'ai récemment terminé cette formation et je suis très satisfait des résultats. Les modules étaient clairs, bien structurés. Anthony est un expert dans son domaine et a su rendre l'apprentissage à la fois engageant et efficace.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/florian_merrien.jpeg",
+    authorName: "Florian Merrien",
+    content: `Très bonne formation pour débuter, revoir et comprendre de bout en bout à quoi correspond la Clean Architecture : des concepts à l'étude de cas.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/laurent_perroteau.jpeg",
+    authorName: "Laurent Perroteau",
+    content: `Merci pour ce regard orienté métier du développement. Le monde React et Node manquent malheureusement de guideline et se concentrent presque uniquement sur les innovations techniques, peu sur la maintenabilité des projets en soi.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/brice_macias.jpeg",
+    authorName: "Brice Macias",
+    content: `Une formation idéale pour monter en séniorité et apprendre des concepts d'architecture logiciel pour développer des applications robustes et testables`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/david_libert.jpeg",
+    authorName: "David Libert",
+    content: `J'ai beaucoup aimé cette formation. Il me reste des questions sur la place de la gestion des erreurs, et plus de cas concret en pseudo code aurait été top. Mais c'est du beau boulot. Merci`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/benjamin_girard.jpeg",
+    authorName: "Benjamin Girard",
+    content: `Génial. tout est bien expliqué, les exemples sont concret, comme dans la vraie vie. On touche à plein de notions différentes. Je ne peux que recommander cette formation.`,
+  },
+  {
+    authorName: "Geoffrey Villard",
+    content: `Vraiment top !`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/tanguy_chusseau.jpeg",
+    authorName: "Tanguy Chusseau",
+    content: `Formation très claire, bien structurée, agréable à suivre et qui permet de bien consolider ses bases en Tests Unitaires. Je la recommande sans hésiter !`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yao_charles_konan.jpeg",
+    authorName: "Yao Charles Konan",
+    content: `Très bien structurée. On part de concepts abstraits mais bien expliqués à leur application concrète`,
+  },
+  
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/mounir_b.jpeg",
+    authorName: "Mounir B",
+    content: `Cette formation ma permis de comprendre de manière claire les différents type de tests (unitaire, intégration, e2e ). De lire le code autrement, de différencier un code testable d'un code non testable et de refactorer le code qui apporte le plus de valeur pour pouvoir le tester (Gestion de dépendances volatile)`,
   },
 ];

@@ -4,7 +4,7 @@ import { CourseType } from "./course";
 export const cleanArchitectureBundles: CourseType[] = [
   {
     id: "mega-bundle",
-    imageUrl: "https://cdn.filestackcontent.com/GRpxyomeR4iUNCauuZFu",
+    imageUrl: "https://cdn.filestackcontent.com/x6worA6VR1OUspPAEDAR",
     price: 400,
     status: {
       type: "available",
@@ -21,7 +21,7 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "fullstack-javascript",
-    imageUrl: "https://cdn.filestackcontent.com/SStck28YTRS73B1Ys9ls",
+    imageUrl: "https://cdn.filestackcontent.com/PZZqfwieTQG0P1x1P0nb",
     price: 250,
     status: {
       type: "available",
@@ -38,7 +38,7 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "java",
-    imageUrl: "https://cdn.filestackcontent.com/2wspVDc5TaKYbLO11hIl",
+    imageUrl: "https://cdn.filestackcontent.com/7wUZmygxRyq5Q8XSTfiY",
     price: 150,
     status: {
       type: "available",
@@ -55,7 +55,7 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "php",
-    imageUrl: "https://cdn.filestackcontent.com/wqaw6PHfTKCXbdbhws9C",
+    imageUrl: "https://cdn.filestackcontent.com/z1p8F1VnTFuqlVv1zJM2",
     price: 150,
     status: {
       type: "available",
@@ -74,47 +74,8 @@ export const cleanArchitectureBundles: CourseType[] = [
 
 export const cleanArchitectureCourses: CourseType[] = [
   {
-    id: "fondamentaux",
-    imageUrl:
-      "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/mBkKdN7QdaTOzbWXW9WF",
-    price: 30,
-    status: {
-      type: "available",
-      productId: "6102264",
-    },
-    title: "Fondamentaux",
-    resume: (
-      <>
-        Apprenez la théorie derrière la Clean Architecture en étudiant les
-        concepts de principes SOLID, d’injection de dépendance et des patterns
-        de la Clean Architecture.
-      </>
-    ),
-    isHot: false,
-  },
-  {
-    id: "web-nextjs",
-    imageUrl:
-      "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/HQeGzGLBT3iMntw82WdE",
-    price: 150,
-    status: {
-      type: "available",
-      productId: "6102276",
-    },
-    title: "Web NextJS",
-    resume: (
-      <>
-        Apprenez à développer une application front-end en{" "}
-        <b>Clean Architecture</b> avec NextJS 13 en <b>TDD</b> avec une suite de
-        tests unitaire qui couvre 100% du périmètre fonctionnel.
-      </>
-    ),
-    isHot: true,
-  },
-  {
     id: "api-nestjs",
-    imageUrl:
-      "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/FI20zcQx6Wx1WweQUZmg",
+    imageUrl: "https://cdn.filestackcontent.com/GkTtmhfCTumJB3PPJOOf",
     price: 150,
     status: {
       type: "available",
@@ -133,8 +94,7 @@ export const cleanArchitectureCourses: CourseType[] = [
   },
   {
     id: "spring-java",
-    imageUrl:
-      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanSpring.png",
+    imageUrl: "https://cdn.filestackcontent.com/EqQkFeG0RhKMJiLNiU6z",
     price: 150,
     status: {
       type: "available",
@@ -148,12 +108,11 @@ export const cleanArchitectureCourses: CourseType[] = [
         couvert de <b>tests d'intégrations</b> sur un projet complexe.
       </>
     ),
-    isHot: false,
+    isHot: true,
   },
   {
     id: "php-symfony",
-    imageUrl:
-      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanSymfony.png",
+    imageUrl: "https://cdn.filestackcontent.com/tvNNVBQiidgkYkNtf9dA",
     price: 150,
     status: {
       type: "available",
@@ -169,40 +128,77 @@ export const cleanArchitectureCourses: CourseType[] = [
     ),
     isHot: true,
   },
+
   {
-    id: "csharp-dotnet",
-    imageUrl:
-      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanNetCore.png",
+    id: "web-nextjs",
+    imageUrl: "https://cdn.filestackcontent.com/GLY9BpMGSvqiY7xRWSpy",
     price: 150,
     status: {
-      type: "soon",
+      type: "available",
+      productId: "6102276",
     },
-    title: "API .NET Core C#",
+    title: "Front NextJS",
     resume: (
       <>
-        Apprenez à développer une application back-end en{" "}
-        <b>Clean Architecture</b> avec .NET Core en C#, développé en <b>TDD</b>{" "}
-        et couvert de <b>tests d'intégrations</b> sur un projet complexe.
+        Apprenez à développer une application front-end en{" "}
+        <b>Clean Architecture</b> avec NextJS 13 en <b>TDD</b> avec une suite de
+        tests unitaire qui couvre 100% du périmètre fonctionnel.
       </>
     ),
     isHot: false,
   },
   {
-    id: "python-fastapi",
-    imageUrl:
-      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanFastAPI.png",
-    price: 150,
+    id: "fondamentaux",
+    imageUrl: "https://cdn.filestackcontent.com/2Sg9RQCR0DRk6inikTAQ",
+    price: 30,
     status: {
-      type: "unavailable",
+      type: "available",
+      productId: "6102264",
     },
-    title: "API FastAPI Python",
+    title: "Fondamentaux",
     resume: (
       <>
-        Apprenez à développer une application back-end en{" "}
-        <b>Clean Architecture </b> avec FastAPI, développé en <b>TDD</b> et
-        couvert de <b>tests d'intégrations</b> sur un projet complexe.
+        Apprenez la théorie derrière la Clean Architecture en étudiant les
+        concepts de principes SOLID, d’injection de dépendance et des patterns
+        de la Clean Architecture.
       </>
     ),
     isHot: false,
   },
+  // {
+  //   id: "csharp-dotnet",
+  //   imageUrl:
+  //     "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanNetCore.png",
+  //   price: 150,
+  //   status: {
+  //     type: "soon",
+  //   },
+  //   title: "API .NET Core C#",
+  //   resume: (
+  //     <>
+  //       Apprenez à développer une application back-end en{" "}
+  //       <b>Clean Architecture</b> avec .NET Core en C#, développé en <b>TDD</b>{" "}
+  //       et couvert de <b>tests d'intégrations</b> sur un projet complexe.
+  //     </>
+  //   ),
+  //   isHot: false,
+  // },
+  // {
+  //   id: "python-fastapi",
+  //   imageUrl:
+  //     "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/CleanFastAPI.png",
+  //   price: 150,
+  //   status: {
+  //     type: "unavailable",
+  //   },
+  //   title: "API FastAPI Python",
+  //   resume: (
+  //     <>
+  //       Apprenez à développer une application back-end en{" "}
+  //       <b>Clean Architecture </b> avec FastAPI, développé en <b>TDD</b> et
+  //       couvert de <b>tests d'intégrations</b> sur un projet complexe.
+  //     </>
+  //   ),
+  //   isHot: false,
+  // },
 ];

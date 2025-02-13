@@ -11,13 +11,11 @@ export const ReviewList: React.FC<{ children: any }> = ({ children }) => {
 };
 
 export const CompleteReviewList = () => {
-  const [showAll, setShowAll] = useState(false);
-
-  const reviewsToShow = showAll === false ? allReviews.slice(0, 3) : allReviews;
+  const [countToShow, setCountToShow] = useState(3);
 
   return (
     <ReviewList>
-      {reviewsToShow.map((review, index) => (
+      {allReviews.slice(0, countToShow).map((review, index) => (
         <Review
           key={index}
           authorName={review.authorName}
@@ -26,11 +24,14 @@ export const CompleteReviewList = () => {
           {review.content}
         </Review>
       ))}
-      {showAll === false && (
-        <Button onClick={() => setShowAll(true)}>Voir plus</Button>
-      )}
-      {showAll === true && (
-        <Button onClick={() => setShowAll(false)}>Voir moins</Button>
+      {countToShow < allReviews.length && (
+        <Button
+          onClick={() =>
+            setCountToShow((state) => Math.min(allReviews.length, state + 5))
+          }
+        >
+          Voir plus
+        </Button>
       )}
     </ReviewList>
   );

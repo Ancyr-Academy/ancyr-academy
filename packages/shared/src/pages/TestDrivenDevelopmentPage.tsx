@@ -70,7 +70,7 @@ export const TestDrivenDevelopmentPage = () => {
                     type: "available",
                     productId: "6102280",
                   },
-                  title: "Formation TDD",
+                  title: "Test-Driven Development",
                   resume: (
                     <>
                       Apprenez à développer des applications riches & complexes

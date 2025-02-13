@@ -57,7 +57,7 @@ export const commonsPoints = ({ hours }: { hours: number }) => [
   },
   {
     Icon: IoPlayCircle,
-    text: "7 heures de vidéo HD",
+    text: hours + " heures de vidéo HD",
   },
   {
     Icon: IoPeople,

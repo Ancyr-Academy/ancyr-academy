@@ -66,6 +66,12 @@ export const Footer: React.FC = () => {
                 </a>
                 <a
                   className={styles.section_single_link}
+                  href="https://ancyracademy.fr/cqrs"
+                >
+                  CQRS
+                </a>
+                <a
+                  className={styles.section_single_link}
                   href="https://courses.ancyracademy.fr/p/essentials-principes-solid"
                 >
                   Principes SOLID
