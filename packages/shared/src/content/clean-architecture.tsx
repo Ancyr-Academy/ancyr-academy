@@ -13,8 +13,8 @@ export const cleanArchitectureBundles: CourseType[] = [
     title: "MegaBundle",
     resume: (
       <>
-        Toutes les formations Clean Architecture disponibles (JavaScript & Java){" "}
-        <b>+ celles à venir</b>
+        Toutes les formations Clean Architecture disponibles (JavaScript, Java &
+        PHP) <b>+ celles à venir (C#...)</b>
       </>
     ),
     isHot: true,
