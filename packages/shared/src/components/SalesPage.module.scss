@@ -96,6 +96,14 @@
 
 .section {
   margin-bottom: 120px;
+
+  @include core.mediaQuery("medium") {
+    margin-bottom: 80px;
+  }
+
+  @include core.mediaQuery("small") {
+    margin-bottom: 40px;
+  }
 }
 
 .selling_list {
@@ -133,6 +141,14 @@
 
   gap: 40px;
   margin-top: 36px;
+
+  @include core.mediaQuery("medium") {
+    gap: 20px;
+  }
+
+  @include core.mediaQuery("small") {
+    flex-direction: column;
+  }
 }
 
 .professor_avatar {
