@@ -15,38 +15,40 @@
   display: block;
   border: 1px solid transparent;
 
+  transition: filter 0.2s;
+  
+  &:hover {
+    filter: brightness(1.2);
+  }
 }
 
 .blog_post {
   height: max-content;
-  padding-inline: 32px;
-  padding-block: 16px;
 
   border: 1px solid #1a4f4a;
   background-color: #101818;
   border-radius: 10px;
-
-  margin-inline: auto;
-  color: white;
-
-
-  @include core.mediaQuery("medium") {
-    padding-inline: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  overflow: hidden;
 }
 
 .blog_title {
+  color: white;
+  background-color: #029d91;
+  margin-block: 0;
+
+  padding: 20px;
   font-size: core.pxToRem(30);
   text-transform: uppercase;
   font-weight: 800;
-  margin-bottom: 16px;
 }
 
 .blog_excerpt {
+  color: white;
+
+  padding-inline: 24px;
+  padding-block: 16px;
+
   font-size: core.pxToRem(20);
-  margin-bottom: 16px;
   line-height: 1.3;
 
   p {

@@ -24,7 +24,7 @@ export const allCourses: Course[] = [
   {
     title: "CQRS",
     resume:
-      "Apprenez à développer des applications robustes et scalables en mettant en place une Clean Architecture testée de bout en bout.",
+      "Découvrez le pattern CQRS et apprenez comment simplifier votre code en séparant les opérations de lecture et d’écriture.",
     url: "/cqrs",
     isFree: false,
     isHot: true,

@@ -1,0 +1,77 @@
+@use "@ancyracademy/shared/src/core" as core;
+
+.view {
+
+}
+
+.about {
+  padding-inline: 32px;
+  padding-top: 32px;
+  padding-bottom: 20px;
+
+  border: 1px solid #40fde5;
+  background-color: #101515;
+  border-radius: 10px;
+
+}
+
+.about_avatar {
+  display: block;
+
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  margin-inline: auto;
+}
+
+.about_text {
+  color: white;
+  font-size: core.pxToRem(20);
+  line-height: 1.4;
+  margin-top: 32px;
+}
+
+.mini_course_section {
+  margin-top: 40px;
+}
+
+.mini_course_section_intro {
+  color: white;
+  font-size: core.pxToRem(30);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+
+  padding-bottom: 12px;
+  border-bottom: 3px solid white;
+}
+
+.mini_course {
+  display: block;
+
+  border: 1px solid #262f2e;
+  background-color: #101515;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  text-decoration: none;
+
+  transition: filter .2s;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.mini_course_image {
+  height: 180px;
+}
+
+
+.mini_course_resume {
+  color: white;
+  padding-inline: 24px;
+  font-size: core.pxToRem(20);
+
+  margin-block: 0;
+  padding-block: 24px;
+}

@@ -7,6 +7,7 @@ import styles from "./BlogPage.module.scss";
 import { useEffect } from "react";
 
 import "./Highlight.scss";
+import { BlogAside } from "./BlogAside";
 
 hljs.registerLanguage(
   "typescript",
@@ -25,13 +26,20 @@ export const BlogPage = ({
   }, []);
 
   return (
-    <Container size={"small"}>
-      <div className={styles.page}>
+    <Container>
+      <div className={styles.intro}>
         <h1 className={styles.title}>{title}</h1>
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{ __html: content }}
-        ></div>
+      </div>
+      <div className={styles.page}>
+        <article className={styles.article}>
+          <div
+            className={styles.content}
+            dangerouslySetInnerHTML={{ __html: content }}
+          ></div>
+        </article>
+        <aside className={styles.aside}>
+          <BlogAside />
+        </aside>
       </div>
     </Container>
   );

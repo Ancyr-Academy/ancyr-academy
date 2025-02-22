@@ -10,9 +10,13 @@ const Page = async ({ params }: { params: any }) => {
 
   const fullPath = path.resolve("src", "posts", slug + ".md");
   const fileContents = fs.readFileSync(fullPath, "utf8");
-  const parsed = matter(fileContents);
+  const parsed = matter(fileContents, {
+    excerpt: true,
+  });
 
-  const content = await markdownToHtml(parsed.content);
+  const content = await markdownToHtml(
+    parsed.content.slice(parsed.excerpt.length + 3),
+  );
 
   return <BlogPage title={parsed.data.title} content={content} />;
 };

@@ -479,6 +479,6 @@ Je ne vous ai montré que l'aspect immergé de l'iceberg qu'est le pattern Ports
 simple aboutit
 à énormément de conséquences sur la façon dont on développe nos applications.
 
-Je présente ce pattern plus en profondeur dans
-mes [formations Clean Architecture](https://clean-architecture.ancyracademy.fr).
+Mes [formations Clean Architecture](https://clean-architecture.ancyracademy.fr) étudient le sujet beaucoup plus en
+profondeur avec des projets tirés de la vie réelle.
 
