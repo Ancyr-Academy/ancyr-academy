@@ -15,7 +15,9 @@ const Page = async ({ params }: { params: any }) => {
   });
 
   const content = await markdownToHtml(
-    parsed.content.slice(parsed.excerpt.length + 3),
+    parsed.excerpt
+      ? parsed.content.slice(parsed.excerpt!.length + 3)
+      : parsed.content,
   );
 
   return <BlogPage title={parsed.data.title} content={content} />;
