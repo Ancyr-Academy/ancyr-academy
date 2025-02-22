@@ -1,7 +1,18 @@
 @use '../core';
 
-.view {
+.normal {
   max-width: var(--container-size);
+  margin: 0 auto;
+
+  padding-inline: 40px;
+
+  @include core.mediaQuery("small") {
+    padding-inline: 16px;
+  }
+}
+
+.small {
+  max-width: 800px;
   margin: 0 auto;
 
   padding-inline: 40px;

@@ -31,7 +31,7 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
             />
           </a>
           <ul className={styles.menu}>
-            <MenuItem url={"https://blog.ancyracademy.fr"}>Blog</MenuItem>
+            <MenuItem url={prefix + "/blog"}>Blog</MenuItem>
             <MenuItem url={"https://youtube.com/@ancyracademyfr"}>
               Youtube
             </MenuItem>
