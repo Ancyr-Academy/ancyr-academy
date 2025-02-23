@@ -1,8 +1,6 @@
 @use '../core';
 
 .view {
-
-
   position: relative;
   padding-block: 60px;
 }
@@ -45,11 +43,19 @@
   background: linear-gradient(to right, #3BE4FD, #A8FA7D);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(20);
+  }
 }
 
 .title {
   margin-block: 0;
   font-size: core.pxToRem(48);
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(36);
+  }
 }
 
 .subtitle {
@@ -61,6 +67,11 @@
 
   b {
     font-weight: 600;
+  }
+
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(20);
   }
 }
 
@@ -81,6 +92,11 @@
 
   margin-block: 0;
   margin-bottom: 28px;
+
+  @include core.mediaQuery("small") {
+    margin-bottom: 20px;
+    font-size: core.pxToRem(20);
+  }
 }
 
 .overview_list {
@@ -101,5 +117,13 @@
     font-weight: 300;
 
     padding-block: 12px;
+  }
+
+
+  @include core.mediaQuery("small") {
+    li {
+      font-size: core.pxToRem(20);
+      padding-block: 8px;
+    }
   }
 }

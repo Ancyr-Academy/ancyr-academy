@@ -49,6 +49,7 @@
 
 .hot_badge {
   position: absolute;
+  z-index: 1;
   top: -20px;
   right: 20px;
 
@@ -63,11 +64,16 @@
 
   text-transform: uppercase;
   font-size: core.pxToRem(20);
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(16);
+    top: -24px;
+    right: 12px;
+  }
 }
 
 .texts {
   padding-block: 32px;
-
 }
 
 .title {
@@ -78,6 +84,10 @@
 
   text-transform: uppercase;
   font-weight: 800;
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(24);
+  }
 }
 
 .resume {
@@ -87,4 +97,8 @@
   color: white;
   margin-top: 0;
   margin-bottom: 0;
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(20);
+  }
 }

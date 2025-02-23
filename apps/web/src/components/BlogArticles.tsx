@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "@ancyracademy/shared";
 import React from "react";
-import styles from "./BlogArticle.module.scss";
+import styles from "./BlogArticles.module.scss";
 
 export type ArticleResume = {
   title: string;
@@ -14,19 +14,18 @@ export const BlogArticles = ({ posts }: { posts: Array<any> }) => {
     <Container>
       <div className={styles.blog_section}>
         {posts.map((post) => (
-          <Link
-            href={"/blog/" + post.slug}
-            key={post.slug}
-            className={styles.blog_post_link}
-          >
-            <div className={styles.blog_post}>
-              <h2 className={styles.blog_title}>{post.title}</h2>
+          <div className={styles.blog_post}>
+            <h2 className={styles.blog_title}>{post.title}</h2>
+            <div className={styles.blog_content_section}>
               <p
                 className={styles.blog_excerpt}
                 dangerouslySetInnerHTML={{ __html: post.excerpt }}
               />
+              <Link href={"/blog/" + post.slug} className={styles.read_more}>
+                Lire la suite
+              </Link>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </Container>

@@ -75,6 +75,10 @@
   color: white;
 
   margin-top: 4px;
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(36);
+  }
 }
 
 .content_subtitle {
@@ -133,6 +137,18 @@
       font-weight: 600;
     }
   }
+
+  @include core.mediaQuery("small") {
+    li {
+      svg {
+        font-size: core.pxToRem(24);
+      }
+
+      span {
+        font-size: core.pxToRem(20);
+      }
+    }
+  }
 }
 
 .professor_row {
@@ -168,6 +184,10 @@
     background: linear-gradient(to right, #3BE4FD, #A8FA7D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(20);
   }
 }
 

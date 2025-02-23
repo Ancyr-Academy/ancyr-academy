@@ -49,12 +49,14 @@
     font-size: core.pxToRem(25);
   }
 
-  p, ul li {
+  p, li {
     font-size: core.pxToRem(20);
     line-height: 1.5;
+
+    padding-block: 4px;
   }
 
-  p, ul, h1, h2, h3 {
+  p, ul, ol, h1, h2, h3 {
     margin-bottom: 32px;
   }
 
@@ -136,19 +138,18 @@
 
   @include core.mediaQuery("small") {
     pre {
-      font-size: core.pxToRem(14);
-      white-space: pre-wrap;
+      font-size: core.pxToRem(12);
     }
 
     blockquote {
-      margin-block: 30px;
+      margin-block: 24px;
 
       p {
         font-size: core.pxToRem(20);
       }
     }
 
-    p, ul, h1, h2, h3 {
+    p, ul, ol, h1, h2, h3 {
       margin-bottom: 24px;
     }
 

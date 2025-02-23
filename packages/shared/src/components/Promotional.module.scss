@@ -71,9 +71,17 @@
   padding-block: 8px;
 
   border-radius: 5px;
+
+  @include core.mediaQuery("small") {
+    padding-inline: 16px;
+  }
 }
 
 .countdown_label {
   color: var(--color-secondary);
   font-size: core.pxToRem(18);
+
+  @include core.mediaQuery("small") {
+    font-size: core.pxToRem(14);
+  }
 }

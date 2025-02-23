@@ -57,6 +57,10 @@
   margin: 0;
 
   color: white;
+
+  @include core.mediaQuery("medium") {
+    font-size: core.pxToRem(40);
+  }
 }
 
 .intro_title_effect {
@@ -75,4 +79,7 @@
 
   color: white;
 
+  @include core.mediaQuery("medium") {
+    font-size: core.pxToRem(24);
+  }
 }
