@@ -12,8 +12,8 @@ draft: false
 ---
 
 Quand on découvre le Domain-Driven Design, surtout à travers les livres récents, on commence souvent par enseigner
-le design stratégique, à savoir identifier le **Domain** et les **Subdomains**, et décomposer son application en *
-*Bounded Contexts**.
+le design stratégique, à savoir identifier le **Domain** et les **Subdomains**, et
+décomposer son application en **Bounded Contexts**.
 
 --- 
 
@@ -99,7 +99,7 @@ En bref, c'est une catastrophe.
 
 L'autre approche consiste donc à associer un Bounded Context à chaque Subdomain.
 
-![](bcsd_one_to_/posts/bounded-contexts-vs-subdomains/one.jpg)
+![](/posts/bounded-contexts-vs-subdomains/bcsd_one_to_one.jpg)
 
 Chaque Bounded Context peut se matérialiser...
 

@@ -15,8 +15,11 @@ export const BlogArticles = ({ posts }: { posts: Array<any> }) => {
       <div className={styles.blog_section}>
         {posts.map((post) => (
           <div className={styles.blog_post}>
-            <h2 className={styles.blog_title}>{post.title}</h2>
+            <Link href={"/blog/" + post.slug} className={styles.blog_thumbnail}>
+              <img src={"/posts/" + post.slug + "/thumbnail.png"} />
+            </Link>
             <div className={styles.blog_content_section}>
+              <h2 className={styles.blog_title}>{post.title}</h2>
               <p
                 className={styles.blog_excerpt}
                 dangerouslySetInnerHTML={{ __html: post.excerpt }}

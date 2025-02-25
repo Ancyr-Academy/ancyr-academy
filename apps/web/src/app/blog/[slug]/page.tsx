@@ -1,31 +1,22 @@
 import path from "node:path";
 import * as fs from "node:fs";
 import matter from "gray-matter";
+import { Metadata, ResolvingMetadata } from "next";
 
 import { BlogPage } from "../../../components/BlogPage";
 import { markdownToHtml } from "../../../markdown";
 
-const Page = async ({ params }: { params: any }) => {
-  const { slug } = await params;
-
+const parse = (slug: string) => {
   const fullPath = path.resolve("src", "posts", slug + ".md");
   const fileContents = fs.readFileSync(fullPath, "utf8");
-  const parsed = matter(fileContents, {
+
+  return matter(fileContents, {
     excerpt: true,
   });
-
-  const content = await markdownToHtml(
-    parsed.excerpt
-      ? parsed.content.slice(parsed.excerpt!.length + 3)
-      : parsed.content,
-  );
-
-  return <BlogPage title={parsed.data.title} content={content} />;
 };
 
 export const generateStaticParams = () => {
   const postsPath = path.resolve("src", "posts");
-
   const posts = fs.readdirSync(postsPath);
 
   return posts.map((post) => ({
@@ -33,6 +24,46 @@ export const generateStaticParams = () => {
       slug: post,
     },
   }));
+};
+
+export const generateMetadata = async ({
+  params,
+  parent,
+}: {
+  params: any;
+  parent: ResolvingMetadata;
+}): Promise<Metadata> => {
+  const { slug } = await params;
+
+  const parsed = parse(slug);
+  const title = parsed.data.title;
+  const description = parsed.excerpt
+    ?.trim()
+    .replace(/\n/g, " ")
+    .replace(/\*/g, "");
+  const images = [`/posts/${slug}/thumbnail.png`];
+
+  return {
+    title,
+    openGraph: {
+      title,
+      description,
+      images,
+    },
+    twitter: {
+      title,
+      description,
+      images,
+    },
+  };
+};
+
+const Page = async ({ params }: { params: any }) => {
+  const { slug } = await params;
+  const parsed = parse(slug);
+  const content = await markdownToHtml(parsed.content);
+
+  return <BlogPage title={parsed.data.title} content={content} />;
 };
 
 export default Page;
