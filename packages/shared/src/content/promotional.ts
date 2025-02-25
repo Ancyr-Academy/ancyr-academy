@@ -24,7 +24,12 @@ const discountStates = [
   },
 ] as const;
 
-const exceptionalDiscount: ExceptionalDiscount | null = null;
+const exceptionalDiscount: ExceptionalDiscount | null = {
+  startsAt: new Date("2025-02-25T00:00:00Z"),
+  endsAt: new Date("2025-02-28T23:55:00Z"),
+  percentage: 0.25,
+  code: "WINTER25",
+};
 
 export const promotional: {
   totalSlots: number;
