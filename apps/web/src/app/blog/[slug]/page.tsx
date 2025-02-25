@@ -1,7 +1,7 @@
 import path from "node:path";
 import * as fs from "node:fs";
 import matter from "gray-matter";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 
 import { BlogPage } from "../../../components/BlogPage";
 import { markdownToHtml } from "../../../markdown";
@@ -28,10 +28,8 @@ export const generateStaticParams = () => {
 
 export const generateMetadata = async ({
   params,
-  parent,
 }: {
   params: any;
-  parent: ResolvingMetadata;
 }): Promise<Metadata> => {
   const { slug } = await params;
 
@@ -44,6 +42,7 @@ export const generateMetadata = async ({
   const images = [`/posts/${slug}/thumbnail.png`];
 
   return {
+    metadataBase: new URL("https://ancyracademy.fr"),
     title,
     openGraph: {
       title,
