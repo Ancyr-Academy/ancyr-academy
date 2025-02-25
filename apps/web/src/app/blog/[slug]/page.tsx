@@ -34,7 +34,7 @@ export const generateMetadata = async ({
   const { slug } = await params;
 
   const parsed = parse(slug);
-  const title = parsed.data.title;
+  const title = `${parsed.data.title} - Ancyr Academy`;
   const description = parsed.excerpt
     ?.trim()
     .replace(/\n/g, " ")
