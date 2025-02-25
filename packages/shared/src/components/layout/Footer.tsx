@@ -12,7 +12,6 @@ export const Footer: React.FC = () => {
         <div className={styles.inner}>
           <div className={styles.resume_section}>
             <h6 className={styles.title}>Ancyr Academy</h6>
-            <p className={styles.subtitle}>Par Anthony Cyrille</p>
             <div className={styles.icons}>
               <a
                 className={styles.icon}
@@ -50,7 +49,7 @@ export const Footer: React.FC = () => {
           </div>
           <div className={styles.links_section}>
             <div className={styles.single_section}>
-              <h6 className={styles.section_title}>Formations</h6>
+              <h6 className={styles.section_title}>Cours en ligne</h6>
               <div className={styles.section_links}>
                 <a
                   className={styles.section_single_link}

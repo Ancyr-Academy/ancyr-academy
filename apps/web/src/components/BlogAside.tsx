@@ -2,10 +2,12 @@
 
 import styles from "./BlogAside.module.scss";
 import React from "react";
-import { allCourses } from "@ancyracademy/shared";
+import { allCourses, useCurrentDiscount } from "@ancyracademy/shared";
 import Link from "next/link";
 
 export const BlogAside = ({}) => {
+  const discount = useCurrentDiscount();
+
   return (
     <div>
       <div className={styles.about}>
@@ -31,6 +33,9 @@ export const BlogAside = ({}) => {
               alt={course.title}
             />
             <p className={styles.mini_course_resume}>{course.resume}</p>
+            {discount !== null && course.isFree === false && (
+              <div className={styles.mini_course_hot}>En promo !</div>
+            )}
           </Link>
         ))}
       </div>
