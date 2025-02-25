@@ -28,12 +28,10 @@ export const Course: React.FC<{
   discount,
   previewUrl,
 }) => {
-  let finalUrl: string | null = null;
-
-  finalUrl = `https://courses.ancyracademy.fr/purchase?product_id=${status.productId}`;
-  if (discount && discount.code) {
-    finalUrl = finalUrl + `&coupon_code=${discount.code}`;
-  }
+  const baseUrl = `https://courses.ancyracademy.fr/purchase?product_id=${status.productId}`;
+  const finalUrl = discount?.code
+    ? `${baseUrl}&coupon_code=${discount.code}`
+    : baseUrl;
 
   return (
     <div className={styles.view}>
