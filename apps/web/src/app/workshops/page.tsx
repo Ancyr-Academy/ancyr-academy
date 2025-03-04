@@ -10,14 +10,14 @@ const Page = () => {
   return (
     <main>
       <PageIntro
-        subtitle="Suivez 2 à 3 jours de formation en live avec moi sur des sujets complexes mais essentielles"
-        title="Training / Formations"
+        subtitle="Suivez 2 à 3 jours de workshop en live avec moi sur des sujets avancés de l'IT"
+        title="Workshop"
         showPromotional={false}
       />
       <Container>
         <List>
-          {allWorkshops.map((training, index) => (
-            <Workshop key={index} workshop={training} />
+          {allWorkshops.map((workshop, index) => (
+            <Workshop key={index} workshop={workshop} />
           ))}
         </List>
       </Container>

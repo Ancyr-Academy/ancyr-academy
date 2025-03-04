@@ -32,17 +32,17 @@ export const Workshop: React.FC<{ workshop: WorkshopType }> = ({
             <KeyPoint>
               Environnement : <b>{workshop.environment}</b>
             </KeyPoint>
-            <KeyPoint>Places : 6 participants</KeyPoint>
+            <KeyPoint>Places : 4 à 8 participants</KeyPoint>
 
             <KeyPoint>
               Programme :{" "}
               <a href={workshop.programUrl}>Consulter le Programme</a>
             </KeyPoint>
             <KeyPoint>
-              <h3>Tarif</h3>
+              <Pricing>Tarif</Pricing>
               <b>Entreprise / Société / EI / Micro</b> : 1,500.00€ HT
               <br />
-              <b>Salarié / Etudiant</b> : 400.00€ TTC
+              <b>Salarié / Etudiant</b> : 480.00€ TTC
               <br />
               <br />
             </KeyPoint>
@@ -63,8 +63,9 @@ const View = styled.div`
   padding-top: 32px;
   padding-bottom: 20px;
 
-  border: 1px solid #dfe8e8;
-  border-radius: 5px;
+  border: 1px solid #1a4f4a;
+  background-color: #101818;
+  border-radius: 10px;
 
   ${mediaQuery(size.medium)} {
     padding-inline: 16px;
@@ -109,13 +110,14 @@ const Title = styled.h4`
   margin-top: 0;
   margin-bottom: 14px;
   text-transform: uppercase;
+  color: white;
 `;
 
 const Resume = styled.p`
   font-size: ${pxToRem(20)};
   line-height: 1.3;
   margin: 0;
-  color: #3e3e3e;
+  color: white;
 `;
 
 const KeyPoints = styled.div`
@@ -130,5 +132,18 @@ const KeyPoint = styled.p`
   font-size: ${pxToRem(20)};
   line-height: 1.3;
   margin: 0;
-  color: #3e3e3e;
+  color: white;
+
+  a {
+    color: #40fde5;
+    text-decoration: none;
+  }
+`;
+
+const Pricing = styled.span`
+  display: block;
+  font-weight: bold;
+
+  margin-block: 16px;
+  font-size: ${pxToRem(24)};
 `;
