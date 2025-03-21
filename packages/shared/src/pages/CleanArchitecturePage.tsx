@@ -8,10 +8,7 @@ import {
   SalesPage,
   SellingParagraph,
 } from "../components/SalesPage";
-import {
-  cleanArchitectureBundles,
-  cleanArchitectureCourses,
-} from "../content/clean-architecture";
+import { cleanArchitectureBundles } from "../content/clean-architecture";
 
 export const CleanArchitecturePage = () => {
   return (
@@ -63,9 +60,6 @@ export const CleanArchitecturePage = () => {
           buildingBlocks.reviews,
           buildingBlocks.bundles(
             <Courses courses={cleanArchitectureBundles} />,
-          ),
-          buildingBlocks.courses(
-            <Courses courses={cleanArchitectureCourses} />,
           ),
           buildingBlocks.moneyback,
         ]}

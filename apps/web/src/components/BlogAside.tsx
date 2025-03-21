@@ -34,7 +34,7 @@ export const BlogAside = ({}) => {
             />
             <p className={styles.mini_course_resume}>{course.resume}</p>
             {discount !== null && course.isFree === false && (
-              <div className={styles.mini_course_hot}>En promo !</div>
+              <div className={styles.mini_course_hot}>Fin de promo !</div>
             )}
           </Link>
         ))}
