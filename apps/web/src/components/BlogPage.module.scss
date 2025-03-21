@@ -53,10 +53,13 @@
     font-size: core.pxToRem(20);
     line-height: 1.5;
 
-    padding-block: 4px;
   }
 
-  p, ul, ol, h1, h2, h3 {
+  p {
+    margin-bottom: 16px;
+  }
+  
+  ul, ol, h1, h2, h3 {
     margin-bottom: 32px;
   }
 
