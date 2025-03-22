@@ -7,6 +7,9 @@ export type ArticleResume = {
   title: string;
   slug: string;
   excerpt: string;
+  date: Date;
+  categories: string[];
+  tags: string[];
 };
 
 export const BlogArticles = ({ posts }: { posts: Array<any> }) => {
@@ -14,7 +17,7 @@ export const BlogArticles = ({ posts }: { posts: Array<any> }) => {
     <Container>
       <div className={styles.blog_section}>
         {posts.map((post) => (
-          <div className={styles.blog_post}>
+          <div key={post.title} className={styles.blog_post}>
             <Link href={"/blog/" + post.slug} className={styles.blog_thumbnail}>
               <img src={"/posts/" + post.slug + "/thumbnail.png"} />
             </Link>

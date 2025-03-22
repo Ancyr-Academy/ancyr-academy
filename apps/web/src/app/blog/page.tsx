@@ -21,11 +21,16 @@ const Page = async () => {
         title: parsed.data.title,
         slug: filename.replace(".md", ""),
         excerpt: await markdownToHtml(parsed.excerpt!),
+        date: parsed.data.date,
+        categories: parsed.data.categories,
+        tags: parsed.data.tags,
       };
     }),
   );
 
-  return <BlogArticles posts={data} />;
+  const sorted = data.sort((a, b) => b.date.getTime() - a.date.getTime());
+
+  return <BlogArticles posts={sorted} />;
 };
 
 export default Page;
