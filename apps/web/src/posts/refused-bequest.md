@@ -18,7 +18,7 @@ d'implémenter certaines méthodes de l'interface dont elle hérite. Est-ce grav
 ---
 
 Choisissons un petit fil rouge pour illustrer le problème. Imaginons que nous voulions développer une collection avec
-une seule méthode `update` pour modifier les éléments de la collection.
+une seule méthode `select` pour modifier les éléments de la collection.
 
 On créé une interface `Collection` avec plusieurs dérivées car il y a plusieurs moyens d'implémenter une collection.
 
@@ -40,7 +40,7 @@ class ArrayCollection implements Collection {
 }
 ```
 
-Jusque là rien de bien étrange. On voudra par exemple récupérer uniquement les nombres pairs.
+Jusque là rien de bien étrange. On peut se créer un `Selector` qui récupère uniquement les nombres pairs.
 
 ```ts
 class EvenSelector implements Selector {
@@ -62,8 +62,6 @@ ce même schéma.
 Par chance, on peut réutiliser notre Selector pour le faire.
 
 ```ts
-import {Selector} from "postcss-selector-parser";
-
 interface Selector {
   approve(element: number): boolean;
 }
@@ -176,7 +174,7 @@ Evidemment, c'est dégueulasse.
   pour chaque implémentation et violer OCP.
 - Ensuite, puisqu'on déclare accepter n'importe quelle collection, pourquoi vouloir vérifier le type de la collection ?
   C'est tout ce qu'il y a de plus procédural : on ne fait pas confiance à l'objet, on veut savoir ce qu'il est, on lui
-  demande ses papiers d'identités car visiblement il faut avoir un âge légal pour pouvoir supprimer des éléments.
+  demande ses papiers d'identité car visiblement il faut avoir un âge légal pour pouvoir supprimer des éléments...
 
 ## Caught Exception
 
