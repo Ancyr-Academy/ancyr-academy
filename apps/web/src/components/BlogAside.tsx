@@ -26,7 +26,11 @@ export const BlogAside = ({}) => {
       <div className={styles.mini_course_section}>
         <h4 className={styles.mini_course_section_intro}>Nos cours</h4>
         {allCourses.map((course) => (
-          <Link href={course.url} className={styles.mini_course}>
+          <Link
+            key={course.title}
+            href={course.url}
+            className={styles.mini_course}
+          >
             <img
               className={styles.mini_course_image}
               src={course.imageUrl}

@@ -7,6 +7,7 @@ categories:
   - software engineering
 tags:
   - design patterns
+  - object-oriented
   - advanced
 draft: false
 ---

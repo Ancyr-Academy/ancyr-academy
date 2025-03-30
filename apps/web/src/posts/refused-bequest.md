@@ -8,6 +8,7 @@ categories:
 tags:
   - code smells
   - advanced
+  - object-oriented
 draft: false
 ---
 
