@@ -13,7 +13,7 @@ draft: false
 ---
 
 Saviez vous que `if` n'existe pas en Smalltalk, l'ancêtre des langages objets ? On pourrait croire que c'est par
-fénéantise ou que c'est une lubie d'illuminés de la Silicon Valley, mais la réalité est bien plus profonde..
+fainéantise ou que c'est une lubie d'illuminés de la Silicon Valley, mais la réalité est bien plus profonde..
 
 ---
 
