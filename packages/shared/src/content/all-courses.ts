@@ -53,7 +53,7 @@ export const allCourses: Course[] = [
     title: "Principes SOLID",
     resume:
       "Découvrez les principes SOLID en profondeur avec des exemples de code tirés de la vie réelle.",
-    url: "https://cdn.filestackcontent.com/EN1eoOE2SHuhNZ782vvX",
+    url: "https://courses.ancyracademy.fr/p/essentials-principes-solid",
     isFree: true,
     isHot: false,
     imageUrl: "https://cdn.filestackcontent.com/EN1eoOE2SHuhNZ782vvX",
