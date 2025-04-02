@@ -13,6 +13,7 @@ import {
   IoFolderOpen,
   IoLogoDiscord,
   IoMail,
+  IoMap,
   IoPeople,
   IoPerson,
   IoPricetag,
@@ -25,7 +26,7 @@ import { useCurrentDiscount } from "../discount-hooks";
 import { NoSsrPromotional } from "./NoSsrPromotional";
 import { CourseList } from "./CourseList";
 import { Course } from "./Course";
-import { IoIosClock, IoLogoLinkedin } from "react-icons/io";
+import { IoIosClock, IoIosPaper, IoLogoLinkedin } from "react-icons/io";
 import { InlineWidget } from "react-calendly";
 
 type Section = {
@@ -236,8 +237,21 @@ export const PracticalInformations = ({
             </span>
           </p>
           <p className={styles.practical_point}>
+            <IoPeople />
+            <span>Groupe de 6 à 10 personnes</span>
+          </p>
+          <p className={styles.practical_point}>
             <IoPricetag />
-            <span>{price.toFixed(2)}€ HT</span>
+            <span>
+              <b>Tarif : </b>
+              {price.toFixed(2)}€ HT
+            </span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoIosPaper />
+            <span>
+              <i>Non éligible CPF / OPCO</i>
+            </span>
           </p>
         </section>
 
@@ -293,6 +307,33 @@ export const PracticalInformations = ({
   );
 };
 
+export const WorkshopProgram = ({
+  elements,
+}: {
+  elements: Array<{
+    title: string;
+    points: string[];
+  }>;
+}) => {
+  return (
+    <div className={styles.workshop_program}>
+      {elements.map((e, i) => (
+        <section key={i}>
+          <h5 className={styles.workshop_program_title}>{e.title}</h5>
+          <ul className={styles.selling_list}>
+            {e.points.map((point, i) => (
+              <li key={i}>
+                <IoCheckmarkCircleOutline color={"#5AE0CC"} />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  );
+};
+
 export const buildingBlocks = {
   professor: {
     id: "professor",
@@ -343,6 +384,15 @@ export const buildingBlocks = {
       menuTitle: "A propos",
       subtitle: "Conçu avec grand soin",
       title: "A propos du cours",
+      content,
+    }) as const,
+  plan: (content: any) =>
+    ({
+      id: "about",
+      icon: IoMap,
+      menuTitle: "Programme",
+      subtitle: "Plan de cours",
+      title: "Programme",
       content,
     }) as const,
   content: (items: string[]) => ({

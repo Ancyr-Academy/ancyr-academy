@@ -61,12 +61,20 @@
 }
 
 .menu_hot a {
-  background: linear-gradient(to right, #83ebfa, #A8FA7D);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  position: relative;
   font-weight: 600;
+  text-shadow: 0 0 8px rgba(131, 235, 250, 0.6), 0 0 12px rgba(168, 250, 125, 0.4);
+  animation: glow 1.5s infinite alternate;
 }
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 4px rgba(131, 235, 250, 0.4), 0 0 12px rgba(168, 250, 125, 0.4);
+  }
+  to {
+    text-shadow: 0 0 12px rgba(131, 235, 250, 0.6), 0 0 16px rgba(168, 250, 125, 0.6);
+  }
+}
 
 .separator {
   flex: 1;

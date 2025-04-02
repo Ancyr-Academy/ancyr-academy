@@ -239,8 +239,9 @@
 
 .practical_title {
   text-transform: uppercase;
-  font-size: core.pxToRem(30);
+  font-size: core.pxToRem(24);
   color: white;
+  font-weight: 800;
 
   margin-top: 0;
   margin-bottom: 20px;
@@ -254,4 +255,14 @@
   margin-top: 0;
   margin-bottom: 20px;
   font-size: core.pxToRem(20);
+}
+
+.workshop_program_title {
+  text-transform: uppercase;
+  font-size: core.pxToRem(26);
+  color: white;
+  font-weight: 800;
+
+  margin-top: 0;
+  margin-bottom: 20px;
 }

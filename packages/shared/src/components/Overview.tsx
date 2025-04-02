@@ -3,6 +3,7 @@ import { Container } from "./Container";
 import styles from "./Overview.module.scss";
 import {
   IoBook,
+  IoCalendar,
   IoCash,
   IoCode,
   IoInfinite,
@@ -97,6 +98,10 @@ export const workshopPoints = ({ hours }: { hours: number }) => [
   {
     Icon: IoPlayCircle,
     text: hours + " heures de Workshop",
+  },
+  {
+    Icon: IoCalendar,
+    text: "7 sessions sur 7 semaines",
   },
   {
     Icon: IoTime,
