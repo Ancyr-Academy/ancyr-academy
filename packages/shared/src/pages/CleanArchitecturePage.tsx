@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { commonsPoints, Overview } from "../components/Overview";
+import { coursePoints, Overview } from "../components/Overview";
 import {
   buildingBlocks,
   Courses,
@@ -23,7 +23,7 @@ export const CleanArchitecturePage = () => {
             différents langages et différentes stacks.
           </>
         }
-        points={commonsPoints({ hours: 30 })}
+        points={coursePoints({ hours: 30 })}
       />
       <SalesPage
         sections={[

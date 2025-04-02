@@ -60,6 +60,14 @@
   }
 }
 
+.menu_hot a {
+  background: linear-gradient(to right, #83ebfa, #A8FA7D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+
 .separator {
   flex: 1;
 }

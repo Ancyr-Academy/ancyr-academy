@@ -4,6 +4,7 @@ import styles from "./Overview.module.scss";
 import {
   IoBook,
   IoCash,
+  IoCode,
   IoInfinite,
   IoPeople,
   IoPlayCircle,
@@ -17,15 +18,18 @@ type Point = {
 };
 export const Overview: React.FC<{
   title: string;
+  pretitle?: string;
   subtitle: any;
   points: Point[];
-}> = ({ title, subtitle, points }) => {
+}> = ({ title, pretitle, subtitle, points }) => {
   return (
     <div className={styles.view}>
       <Container>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h1 className={styles.pre_title}>Formation Complete</h1>
+            <h1 className={styles.pre_title}>
+              {pretitle ?? "Formation Complete"}
+            </h1>
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subtitle}>{subtitle}</p>
           </div>
@@ -46,7 +50,7 @@ export const Overview: React.FC<{
   );
 };
 
-export const commonsPoints = ({ hours }: { hours: number }) => [
+export const coursePoints = ({ hours }: { hours: number }) => [
   {
     Icon: IoPodium,
     text: "Débutants à Experts",
@@ -66,6 +70,33 @@ export const commonsPoints = ({ hours }: { hours: number }) => [
   {
     Icon: IoInfinite,
     text: "Accès à vie",
+  },
+  {
+    Icon: IoTime,
+    text: "Apprenez à votre rythme",
+  },
+  {
+    Icon: IoCash,
+    text: "Satisfait ou Remboursé",
+  },
+];
+
+export const workshopPoints = ({ hours }: { hours: number }) => [
+  {
+    Icon: IoPodium,
+    text: "Débutants à Experts",
+  },
+  {
+    Icon: IoBook,
+    text: "Théorie & Pratique",
+  },
+  {
+    Icon: IoCode,
+    text: "Exercices concrets",
+  },
+  {
+    Icon: IoPlayCircle,
+    text: hours + " heures de Workshop",
   },
   {
     Icon: IoTime,

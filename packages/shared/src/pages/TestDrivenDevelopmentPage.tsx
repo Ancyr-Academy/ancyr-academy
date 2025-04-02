@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { commonsPoints, Overview } from "../components/Overview";
+import { coursePoints, Overview } from "../components/Overview";
 import {
   buildingBlocks,
   Courses,
@@ -22,7 +22,7 @@ export const TestDrivenDevelopmentPage = () => {
             <b>Maitrisez le design</b> de vos applications.
           </>
         }
-        points={commonsPoints({ hours: 7 })}
+        points={coursePoints({ hours: 7 })}
       />
       <SalesPage
         sections={[

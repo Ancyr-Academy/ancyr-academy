@@ -5,11 +5,17 @@ import styles from "./SalesPage.module.scss";
 import { Container } from "./Container";
 import {
   IoBook,
+  IoCalendar,
   IoCash,
+  IoCheckmark,
   IoCheckmarkCircleOutline,
+  IoDocument,
   IoFolderOpen,
+  IoLogoDiscord,
+  IoMail,
   IoPeople,
   IoPerson,
+  IoPricetag,
   IoReader,
   IoStar,
 } from "react-icons/io5";
@@ -19,6 +25,8 @@ import { useCurrentDiscount } from "../discount-hooks";
 import { NoSsrPromotional } from "./NoSsrPromotional";
 import { CourseList } from "./CourseList";
 import { Course } from "./Course";
+import { IoIosClock, IoLogoLinkedin } from "react-icons/io";
+import { InlineWidget } from "react-calendly";
 
 type Section = {
   id: string;
@@ -167,6 +175,124 @@ export const Courses = ({
   );
 };
 
+export const PracticalInformations = ({
+  dates,
+  hours,
+  requirements,
+  location,
+  price,
+}: {
+  dates: string;
+  hours: string;
+  requirements: string[];
+  location: string;
+  price: number;
+}) => {
+  return (
+    <div className={styles.practical}>
+      <div className={styles.practical_view}>
+        <h4 className={styles.practical_title}>Prérequis</h4>
+        <section className={styles.practical_section}>
+          {requirements.map((r) => (
+            <p key={r} className={styles.practical_point}>
+              <IoCheckmark />
+              <span>{r}</span>
+            </p>
+          ))}
+        </section>
+
+        <h4 className={styles.practical_title}>Informations</h4>
+        <section className={styles.practical_section}>
+          <p className={styles.practical_point}>
+            <IoCalendar />
+            <span>{dates}</span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoIosClock />
+            <span>{hours}</span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoDocument />
+            <span>
+              <a
+                href={
+                  "https://docs.google.com/document/d/1emoZ7Ur8uP6VewZX30zoTO6Dznk013vkrimzjF0-QfM/edit?usp=sharing"
+                }
+              >
+                Conditions Générales de Vente
+              </a>
+            </span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoDocument />
+            <span>
+              <a
+                href={
+                  "https://docs.google.com/document/d/1RRjsTiMehN8EU2Rn8d-lzB0xlFw7MMTl3pNXcLomcrY/edit?usp=sharing"
+                }
+              >
+                Règlement Intérieur
+              </a>
+            </span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoPricetag />
+            <span>{price.toFixed(2)}€ HT</span>
+          </p>
+        </section>
+
+        <h4 className={styles.practical_title}>Participer</h4>
+        <p className={styles.practical_subtitle}>
+          Pour rejoindre le Workshop, n'hésitez pas à me joindre.
+        </p>
+        <section>
+          <p className={styles.practical_point}>
+            <IoLogoDiscord />
+            <span>Discord : @ancyrweb</span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoMail />
+            <span>
+              <a href={"mailto:anthony@ancyracademy.fr"}>M'envoyer un e-mail</a>
+            </span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoLogoLinkedin />
+            <span>
+              LinkedIn :{" "}
+              <a href={"https://www.linkedin.com/in/anthony-cyrille/"}>
+                Anthony Cyrille
+              </a>
+            </span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoCalendar />
+            <span>
+              Calendly :{" "}
+              <a href={"https://calendly.com/ancyr-academy/ddd"}>
+                Workshop DDD
+              </a>
+            </span>
+          </p>
+        </section>
+      </div>
+      <InlineWidget
+        url="https://calendly.com/ancyr-academy/ddd"
+        styles={{
+          height: "1200px",
+        }}
+        pageSettings={{
+          backgroundColor: "101818",
+          hideEventTypeDetails: false,
+          hideLandingPageDetails: false,
+          primaryColor: "5AE0CC",
+          textColor: "FFFFFF",
+        }}
+      />
+    </div>
+  );
+};
+
 export const buildingBlocks = {
   professor: {
     id: "professor",
@@ -235,4 +361,13 @@ export const buildingBlocks = {
     title: "A qui s'adresse ce cours ?",
     content: <SellingList elements={items} />,
   }),
+  practicalInfo: (content: any) =>
+    ({
+      id: "practical-info",
+      icon: LuTable,
+      menuTitle: "Infos pratiques",
+      subtitle: "Comment participer",
+      title: "Informations Pratiques",
+      content,
+    }) as const,
 } as const;

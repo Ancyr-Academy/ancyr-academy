@@ -198,3 +198,60 @@
 
   height: 200px;
 }
+
+.practical_view {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+
+  border: 1px solid #1a4f4a;
+  background-color: #101818;
+  border-radius: 10px;
+
+  color: white;
+
+
+  padding-inline: 40px;
+  padding-block: 32px;
+}
+
+.practical_point {
+  margin-block: 0;
+  margin-bottom: 8px;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: core.pxToRem(20);
+
+  svg {
+    font-size: core.pxToRem(24);
+  }
+
+  a {
+    color: #5AE0CC;
+  }
+}
+
+.practical_title {
+  text-transform: uppercase;
+  font-size: core.pxToRem(30);
+  color: white;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.practical_section {
+  margin-bottom: 40px;
+}
+
+.practical_subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: core.pxToRem(20);
+}

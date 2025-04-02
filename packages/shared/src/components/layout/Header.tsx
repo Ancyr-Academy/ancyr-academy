@@ -7,9 +7,10 @@ import { Button } from "../Button";
 const MenuItem: React.FC<{
   url: string;
   children: string;
-}> = ({ url, children }) => {
+  className?: string;
+}> = ({ url, children, className }) => {
   return (
-    <li>
+    <li className={className}>
       <a href={url}>{children}</a>
     </li>
   );
@@ -36,7 +37,12 @@ export const Header: React.FC<{ fullUrl?: boolean }> = ({ fullUrl }) => {
               Youtube
             </MenuItem>
             <MenuItem url={prefix + "/courses"}>Cours</MenuItem>
-            <MenuItem url={prefix + "/workshops"}>Workshops</MenuItem>
+            <MenuItem
+              className={styles.menu_hot}
+              url={prefix + "/workshop-ddd"}
+            >
+              Workshop DDD
+            </MenuItem>
           </ul>
           <div className={styles.separator}></div>
           <div className={styles.students_space}>

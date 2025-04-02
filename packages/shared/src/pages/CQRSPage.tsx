@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { commonsPoints, Overview } from "../components/Overview";
+import { coursePoints, Overview } from "../components/Overview";
 import {
   buildingBlocks,
   Courses,
@@ -21,7 +21,7 @@ export const CQRSPage = () => {
             besoins spécifiques.
           </>
         }
-        points={commonsPoints({ hours: 2 })}
+        points={coursePoints({ hours: 2 })}
       />
       <SalesPage
         sections={[
