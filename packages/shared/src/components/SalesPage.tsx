@@ -235,7 +235,7 @@ export const PracticalInformations = ({
           </p>
           <p className={styles.practical_point}>
             <IoPeople />
-            <span>Groupe de 6 à 10 personnes</span>
+            <span>Groupe de 6 à 8 personnes</span>
           </p>
           {/*<p className={styles.practical_point}>*/}
           {/*  <IoPricetag />*/}
