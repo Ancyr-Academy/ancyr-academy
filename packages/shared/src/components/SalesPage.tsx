@@ -11,12 +11,9 @@ import {
   IoCheckmarkCircleOutline,
   IoDocument,
   IoFolderOpen,
-  IoLogoDiscord,
-  IoMail,
   IoMap,
   IoPeople,
   IoPerson,
-  IoPricetag,
   IoReader,
   IoStar,
 } from "react-icons/io5";
@@ -26,7 +23,7 @@ import { useCurrentDiscount } from "../discount-hooks";
 import { NoSsrPromotional } from "./NoSsrPromotional";
 import { CourseList } from "./CourseList";
 import { Course } from "./Course";
-import { IoIosClock, IoIosPaper, IoLogoLinkedin } from "react-icons/io";
+import { IoIosClock, IoIosPaper } from "react-icons/io";
 import { InlineWidget } from "react-calendly";
 
 type Section = {
@@ -240,13 +237,13 @@ export const PracticalInformations = ({
             <IoPeople />
             <span>Groupe de 6 à 10 personnes</span>
           </p>
-          <p className={styles.practical_point}>
-            <IoPricetag />
-            <span>
-              <b>Tarif : </b>
-              {price.toFixed(2)}€ HT
-            </span>
-          </p>
+          {/*<p className={styles.practical_point}>*/}
+          {/*  <IoPricetag />*/}
+          {/*  <span>*/}
+          {/*    <b>Tarif : </b>*/}
+          {/*    {price.toFixed(2)}€ HT*/}
+          {/*  </span>*/}
+          {/*</p>*/}
           <p className={styles.practical_point}>
             <IoIosPaper />
             <span>
@@ -257,28 +254,29 @@ export const PracticalInformations = ({
 
         <h4 className={styles.practical_title}>Participer</h4>
         <p className={styles.practical_subtitle}>
-          Pour rejoindre le Workshop, n'hésitez pas à me joindre.
+          Pour rejoindre le Workshop, n'hésitez pas à me joindre via Calendly
+          (lien en dessous).
         </p>
         <section>
-          <p className={styles.practical_point}>
-            <IoLogoDiscord />
-            <span>Discord : @ancyrweb</span>
-          </p>
-          <p className={styles.practical_point}>
-            <IoMail />
-            <span>
-              <a href={"mailto:anthony@ancyracademy.fr"}>M'envoyer un e-mail</a>
-            </span>
-          </p>
-          <p className={styles.practical_point}>
-            <IoLogoLinkedin />
-            <span>
-              LinkedIn :{" "}
-              <a href={"https://www.linkedin.com/in/anthony-cyrille/"}>
-                Anthony Cyrille
-              </a>
-            </span>
-          </p>
+          {/*<p className={styles.practical_point}>*/}
+          {/*  <IoLogoDiscord />*/}
+          {/*  <span>Discord : @ancyrweb</span>*/}
+          {/*</p>*/}
+          {/*<p className={styles.practical_point}>*/}
+          {/*  <IoMail />*/}
+          {/*  <span>*/}
+          {/*    <a href={"mailto:anthony@ancyracademy.fr"}>M'envoyer un e-mail</a>*/}
+          {/*  </span>*/}
+          {/*</p>*/}
+          {/*<p className={styles.practical_point}>*/}
+          {/*  <IoLogoLinkedin />*/}
+          {/*  <span>*/}
+          {/*    LinkedIn :{" "}*/}
+          {/*    <a href={"https://www.linkedin.com/in/anthony-cyrille/"}>*/}
+          {/*      Anthony Cyrille*/}
+          {/*    </a>*/}
+          {/*  </span>*/}
+          {/*</p>*/}
           <p className={styles.practical_point}>
             <IoCalendar />
             <span>
