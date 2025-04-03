@@ -8,6 +8,7 @@ import { useEffect } from "react";
 
 import "./Highlight.scss";
 import { BlogAside } from "./BlogAside";
+import { DDDDisclaimer } from "./DDDDisclaimer";
 
 hljs.registerLanguage(
   "typescript",
@@ -17,9 +18,11 @@ hljs.registerLanguage(
 export const BlogPage = ({
   content,
   title,
+  tags,
 }: {
   content: string;
   title: string;
+  tags: string[];
 }) => {
   useEffect(() => {
     hljs.highlightAll();
@@ -32,6 +35,7 @@ export const BlogPage = ({
       </div>
       <div className={styles.page}>
         <article className={styles.article}>
+          <DDDDisclaimer tags={tags} />
           <div
             className={styles.content}
             dangerouslySetInnerHTML={{ __html: content }}

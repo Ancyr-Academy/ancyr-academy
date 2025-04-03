@@ -1,0 +1,45 @@
+@use "@ancyracademy/shared/src/core" as core;
+
+.view {
+  margin-bottom: 80px;
+  padding-block: 40px;
+  padding-inline: 36px;
+
+  background-color: #0F5053;
+  border: 1px solid #5AE0CC;
+  border-radius: 10px;
+
+
+  @include core.mediaQuery("large") {
+    flex-direction: column;
+    align-items: initial;
+    justify-content: initial;
+
+    gap: 20px;
+  }
+}
+
+.title {
+  margin-block: 0;
+
+  color: white;
+  font-size: core.pxToRem(24);
+  text-transform: uppercase;
+}
+
+.text {
+  margin-block: 0;
+  margin-top: 12px;
+
+  color: white;
+  font-size: core.pxToRem(20);
+  line-height: 1.3;
+
+  b {
+    font-weight: 800;
+  }
+
+  a {
+    color: white;
+  }
+}

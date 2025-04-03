@@ -61,8 +61,11 @@ const Page = async ({ params }: { params: any }) => {
   const { slug } = await params;
   const parsed = parse(slug);
   const content = await markdownToHtml(parsed.content);
+  const tags = parsed.data.tags;
 
-  return <BlogPage title={parsed.data.title} content={content} />;
+  return (
+    <BlogPage title={parsed.data.title} content={content} tags={tags ?? []} />
+  );
 };
 
 export default Page;
