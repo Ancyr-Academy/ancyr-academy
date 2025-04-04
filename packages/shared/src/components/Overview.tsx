@@ -12,6 +12,7 @@ import {
   IoPodium,
   IoTime,
 } from "react-icons/io5";
+import { Button } from "./Button";
 
 type Point = {
   Icon: any;
@@ -22,7 +23,11 @@ export const Overview: React.FC<{
   pretitle?: string;
   subtitle: any;
   points: Point[];
-}> = ({ title, pretitle, subtitle, points }) => {
+  button?: {
+    title: string;
+    href: string;
+  };
+}> = ({ title, pretitle, subtitle, points, button }) => {
   return (
     <div className={styles.view}>
       <Container>
@@ -33,6 +38,11 @@ export const Overview: React.FC<{
             </h1>
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subtitle}>{subtitle}</p>
+            {!!button && (
+              <Button url={button.href} size={"big"}>
+                {button.title}
+              </Button>
+            )}
           </div>
           <div className={styles.right}>
             <h6 className={styles.course_overview}>Contenu dans le cours</h6>

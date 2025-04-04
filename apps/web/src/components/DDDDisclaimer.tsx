@@ -13,8 +13,8 @@ export const DDDDisclaimer = ({ tags }: { tags: string[] }) => {
         Vous voulez approfondir vos compétences en DDD ?
       </h6>
       <p className={styles.text}>
-        Nous ouvrons un <b>Workshop DDD</b> de 7 sessions étalées sur 7
-        semaines, du <b>29 Avril au 10 Juin</b>.
+        J'ouvre un <b>Workshop DDD</b> de 7 sessions étalées sur 7 semaines, du{" "}
+        <b>29 Avril au 10 Juin</b>.
         <br />
         <a href={"/workshop-ddd"}>Pour plus d'informations, cliquez ici.</a>
       </p>

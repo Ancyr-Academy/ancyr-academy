@@ -409,13 +409,13 @@ export const buildingBlocks = {
     title: "A qui s'adresse ce cours ?",
     content: <SellingList elements={items} />,
   }),
-  practicalInfo: (content: any) =>
+  reserve: (content: any) =>
     ({
-      id: "practical-info",
+      id: "reserve",
       icon: LuTable,
-      menuTitle: "Infos pratiques",
+      menuTitle: "Réserver",
       subtitle: "Comment participer",
-      title: "Informations Pratiques",
+      title: "Réserver",
       content,
     }) as const,
 } as const;

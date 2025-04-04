@@ -24,6 +24,10 @@ export const WorkshopDDDPage = () => {
           </>
         }
         points={workshopPoints({ hours: 24 })}
+        button={{
+          title: "Réserver maintenant",
+          href: "#reserve",
+        }}
       />
       <SalesPage
         sections={[
@@ -143,7 +147,7 @@ export const WorkshopDDDPage = () => {
           ),
           buildingBlocks.professor,
           buildingBlocks.reviews,
-          buildingBlocks.practicalInfo(
+          buildingBlocks.reserve(
             <PracticalInformations
               dates={"Du 29 Avril au 10 Juin 2024"}
               hours={"De 9h à 12h30"}
