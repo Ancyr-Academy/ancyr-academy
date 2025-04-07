@@ -16,6 +16,7 @@ export { CourseList } from "./src/components/CourseList";
 export { Overview } from "./src/components/Overview";
 export { Review } from "./src/components/Review";
 export { ReviewList } from "./src/components/ReviewList";
+export { RegularPage } from "./src/components/RegularPage";
 
 export { CleanArchitecturePage } from "./src/pages/CleanArchitecturePage";
 export { TestDrivenDevelopmentPage } from "./src/pages/TestDrivenDevelopmentPage";

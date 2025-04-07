@@ -1,0 +1,25 @@
+@use '../core';
+
+.page {
+  margin-block: 80px;
+  min-height: 800px;
+
+
+  @include core.mediaQuery("small") {
+    min-height: initial;
+  }
+}
+
+.title {
+  font-size: core.pxToRem(50);
+  color: white;
+}
+
+.content {
+  font-size: core.pxToRem(24);
+  color: white;
+
+  a {
+    color: #5AE0CC;
+  }
+}
