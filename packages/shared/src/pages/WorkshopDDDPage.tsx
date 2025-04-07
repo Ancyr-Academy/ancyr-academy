@@ -9,26 +9,38 @@ import {
   SellingParagraph,
   WorkshopProgram,
 } from "../components/SalesPage";
+import { Container } from "../components/Container";
+import { InlineWidget } from "react-calendly";
 
 export const WorkshopDDDPage = () => {
   return (
     <main>
       <Overview
-        pretitle={"Workshop Long"}
+        pretitle={"Workshop"}
         title={"Domain-Driven Design"}
         subtitle={
           <>
             Maitrisez la complexité de votre logiciel avec le{" "}
-            <b>Domain-Driven Design</b>, la <b>Clean Architecture</b> et le{" "}
-            <b>développement orienté objet</b>
+            <b>Domain-Driven Design</b> et apprenez comment le mettre en oeuvre
+            dans vos propres produits.
           </>
         }
         points={workshopPoints({ hours: 24 })}
-        button={{
-          title: "Réserver maintenant",
-          href: "#reserve",
-        }}
       />
+      <div style={{ marginBottom: 80 }}>
+        <Container>
+          <InlineWidget
+            url="https://calendly.com/ancyr-academy/ddd"
+            pageSettings={{
+              backgroundColor: "101818",
+              hideEventTypeDetails: false,
+              hideLandingPageDetails: false,
+              primaryColor: "5AE0CC",
+              textColor: "FFFFFF",
+            }}
+          />
+        </Container>
+      </div>
       <SalesPage
         sections={[
           buildingBlocks.about(
@@ -40,10 +52,14 @@ export const WorkshopDDDPage = () => {
               <br />
               <br />
               Ce Workshop est divisé en{" "}
-              <b>7 demi-journées étalées sur 7 semaines</b> pour avoir le temps
-              de digérer ce que vous allez apprendre. Vous aurez des devoirs à
-              faire chaque semaine et aurez accès à un canal privilégié pour me
-              poser vos questions.
+              <b>7 demi-journées étalées sur 7 semaines</b> vous donne le temps
+              d'intégrer les concepts les plus complexes du DDD et de partager
+              vos questions avec moi et les autres participants.
+              <br />
+              <br />
+              <b>
+                Vous repartez avec une vision claire du DDD et de ses patterns.
+              </b>
             </SellingParagraph>,
           ),
           buildingBlocks.content([
@@ -147,21 +163,35 @@ export const WorkshopDDDPage = () => {
           ),
           buildingBlocks.professor,
           buildingBlocks.reviews,
+          buildingBlocks.moneyback,
           buildingBlocks.reserve(
             <PracticalInformations
               dates={"Du 29 Avril au 10 Juin 2024"}
               hours={"De 9h à 12h30"}
               requirements={[
-                "2 ans d'expérience en développement logiciel, préférablement back-end",
-                "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait",
+                "2 ans d'expérience en développement logiciel",
+                "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
               ]}
               location={"A distance, sur Zoom"}
               price={1500}
             />,
           ),
-          buildingBlocks.moneyback,
         ]}
       />
+      <div style={{ marginBlock: 80 }}>
+        <Container>
+          <InlineWidget
+            url="https://calendly.com/ancyr-academy/ddd"
+            pageSettings={{
+              backgroundColor: "101818",
+              hideEventTypeDetails: false,
+              hideLandingPageDetails: false,
+              primaryColor: "5AE0CC",
+              textColor: "FFFFFF",
+            }}
+          />
+        </Container>
+      </div>
     </main>
   );
 };
