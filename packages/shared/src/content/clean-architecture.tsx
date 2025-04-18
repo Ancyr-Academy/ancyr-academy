@@ -37,6 +37,40 @@ export const cleanArchitectureBundles: CourseType[] = [
     isHot: false,
   },
   {
+    id: "react-nextjs",
+    imageUrl: "https://cdn.filestackcontent.com/MhBT57hnQsWQObusmAka",
+    price: 150,
+    status: {
+      type: "available",
+      productId: "6220209",
+    },
+    title: "React NextJS",
+    resume: (
+      <>
+        Contient les 2 formations "Clean Architecture Fondamentaux" & "Clean
+        Architecture Frontend React/Next.js"
+      </>
+    ),
+    isHot: false,
+  },
+  {
+    id: "backend-nestjs",
+    imageUrl: "https://cdn.filestackcontent.com/o0cQTbL3QUOCCnhbrXDk",
+    price: 150,
+    status: {
+      type: "available",
+      productId: "6220223",
+    },
+    title: "Backend API NestJS",
+    resume: (
+      <>
+        Contient les 3 formations "Clean Architecture Fondamentaux" & "Clean
+        Architecture API NestJS"
+      </>
+    ),
+    isHot: false,
+  },
+  {
     id: "java",
     imageUrl: "https://cdn.filestackcontent.com/7wUZmygxRyq5Q8XSTfiY",
     price: 150,
