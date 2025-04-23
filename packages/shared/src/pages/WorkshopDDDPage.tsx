@@ -166,8 +166,8 @@ export const WorkshopDDDPage = () => {
           buildingBlocks.moneyback,
           buildingBlocks.reserve(
             <PracticalInformations
-              dates={"Du 29 Avril au 10 Juin 2024"}
-              hours={"De 9h à 12h30"}
+              dates={"Prochaine date à planifier"}
+              hours={"Prochains horaires à déterminer"}
               requirements={[
                 "2 ans d'expérience en développement logiciel",
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
