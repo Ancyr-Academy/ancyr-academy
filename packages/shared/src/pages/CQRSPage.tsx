@@ -60,7 +60,7 @@ export const CQRSPage = () => {
           buildingBlocks.reviews,
           buildingBlocks.courses(
             <Courses
-              showDiscount={false}
+              showDiscount={true}
               courses={[
                 {
                   id: "6106784",
