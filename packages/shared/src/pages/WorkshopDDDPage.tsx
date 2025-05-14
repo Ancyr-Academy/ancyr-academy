@@ -53,13 +53,19 @@ export const WorkshopDDDPage = () => {
               <br />
               Ce Workshop est divisé en{" "}
               <b>6 demi-journées étalées sur 6 semaines</b> vous donne le temps
-              d'intégrer les concepts les plus complexes du DDD et de partager
-              vos questions avec moi et les autres participants.
+              d'intégrer les concepts avancés du Domain-Driven Design et de les
+              mettre en application dans des exercices à difficulté croissante.
+              <br />
+              <br />
+              Chaque session est composée <b>
+                de 2 à 3 ateliers de groupe
+              </b>{" "}
+              pour vraiment prendre le sujet en main avec des exemples concrets.
               <br />
               <br />
               <b>
-                Vous repartez avec une vision très claire du DDD et de ses
-                patterns.
+                Vous repartez avec une expérience pratique du Domain-Driven
+                Design.
               </b>
             </SellingParagraph>,
           ),
