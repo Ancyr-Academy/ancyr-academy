@@ -36,13 +36,12 @@ export const Footer: React.FC = () => {
               </a>
             </div>
             <p className={styles.copyright}>
-              © 2023-présent AncyrAcademy
+              © 2023-présent Ancyr Academy SAS
               <br />
-              Anthony Benkhebbab EI
               <br />
-              9 rue des colonnes, 75002 Paris, France.
+              229 rue Saint-Honoré, 75001 Paris, France.
               <br />
-              SIRET 839 317 971 00035
+              SIREN 944 280 692
               <br />
               Tous droits réservés.
             </p>
