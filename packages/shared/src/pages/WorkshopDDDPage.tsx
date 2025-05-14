@@ -25,7 +25,7 @@ export const WorkshopDDDPage = () => {
             dans vos propres produits.
           </>
         }
-        points={workshopPoints({ hours: 24 })}
+        points={workshopPoints({ hours: 21 })}
       />
       <div style={{ marginBottom: 80 }}>
         <Container>
@@ -45,37 +45,39 @@ export const WorkshopDDDPage = () => {
         sections={[
           buildingBlocks.about(
             <SellingParagraph>
-              Ce Workshop vise à vous enseigner le Domain-Driven Design, une
-              méthodologie dont le but est de partager le même langage et la
-              même vision du métier entre les développeurs et les experts
-              métier.
+              A travers ce Workshop, vous allez apprendre en profondeur le
+              Domain-Driven Design, un concept dont le but est de partager le
+              même langage et la même vision du métier entre les développeurs et
+              les experts métier.
               <br />
               <br />
               Ce Workshop est divisé en{" "}
-              <b>7 demi-journées étalées sur 7 semaines</b> vous donne le temps
+              <b>6 demi-journées étalées sur 6 semaines</b> vous donne le temps
               d'intégrer les concepts les plus complexes du DDD et de partager
               vos questions avec moi et les autres participants.
               <br />
               <br />
               <b>
-                Vous repartez avec une vision claire du DDD et de ses patterns.
+                Vous repartez avec une vision très claire du DDD et de ses
+                patterns.
               </b>
             </SellingParagraph>,
           ),
           buildingBlocks.content([
             "Ce qu'est le Domain-Driven Design et quand l'utiliser",
             "Les outils pour comprendre le métier et le modéliser",
-            "La notion de Langage Ubiquitaire et de Domain Modeling",
-            "Les concepts de Subdomains et leur différenciation",
-            "Les patterns stratégiques, notamment les Bounded Contexts et le Context Mapping",
-            "Les patterns tactiques, dont les Aggregates et les Domain Events",
-            "Comment implémenter le DDD dans son code",
-            "Intégrer plusieurs Bounded Contexts indépendants",
+            "Le Langage Ubiquitaire",
+            "Les Domains & Subdomains et comment les identifier",
+            "Le Design Objet extrêmement avancé sur des cas très pointus",
+            "Une vision claire des Aggregates et toutes les erreurs à ne pas faire",
+            "Les Bounded Contexts, leur rapport avec les Subdomains et comment les identifier / implémenter",
+            "Des devoirs qui mettront à l'épreuve vos talents de designer et vous permettront d'expérimenter le DDD concrètement",
           ]),
           buildingBlocks.target([
             "Aux développeurs qui veulent comprendre le DDD en profondeur",
-            "Qui souhaitent se familiariser avec le développement objet",
-            "Qui veulent apprendre à décomposer un très gros projet en Bounded Contexts",
+            "Qui veulent une approche hands-on & pratique du DDD, pas seulement théorique",
+            "Qui veulent développer des compétences de designer logiciel poussées",
+            "Qui veulent mettre en pratique le DDD dans leurs projets",
           ]),
           buildingBlocks.plan(
             <WorkshopProgram
@@ -84,77 +86,78 @@ export const WorkshopDDDPage = () => {
                   title: "Jour 1",
                   points: [
                     "Tour de table & présentation",
-                    "Introduction au Domain-Driven Design et au besoin qu'il vient résoudre",
-                    "Introduction au Fil rouge du Workshop",
-                    "Analyse du Problème : Domains, Subdomains, UseCases, Analyse de Noms, Analyse de Verbes",
+                    "Introduction au Domain-Driven Design",
+                    "Initiation à l'analyse du Problem Space",
+                    "Domains & Subdomains : comment les identifier ?",
+                    "Où faire du DDD pour maximiser son profit",
                     "Questions / Réponses",
-                    "Devoirs",
+                    "Devoirs technique",
                   ],
                 },
                 {
                   title: "Jour 2",
                   points: [
                     "Corrigé des devoirs",
-                    "Découverte du Solution Space et du Design Stratégique",
-                    "Introduction au Model-Driven Development",
-                    "Concepts : Bounded Contexts, Context Mapping, Intégration et Subdomains",
-                    "Atelier : Bounded Contexts & Mapping du Fil rouge",
+                    "Introduction au Domain Modeling et à la véritable POO",
+                    "Mise à mort des idées reçues sur la POO",
+                    "Découverte des Domain Objects",
+                    "Introduction aux Value Objects",
+                    "Introduction à l'Architecture Logicielle en DDD",
+                    "Atelier de Domain Modeling",
                     "Questions / Réponses",
-                    "Devoirs",
+                    "Devoirs technique",
                   ],
                 },
                 {
                   title: "Jour 3",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction au paradigme orienté objet",
-                    "Découverte du Design Tactique",
-                    "Concepts : Aggregates, Entités, Value Objects, Domain Events, Repositories & Domain Services",
-                    "Mini-fil rouge pour expérimenter les patterns tactiques",
-                    "Atelier : développement d'une mini-application en appliquant les patterns",
+                    "Introduction aux Entités / Repositories",
+                    "Introduction aux Design Patterns (Policy & Template Method)",
+                    "Discussion : Template Method vs Strategy",
+                    "Discussion : Domain Model Trilemma (CAP du Domain Modeling)",
+                    "Etude d'un cas complexe qui justifie l'utilisation de patterns",
+                    "Atelier : application du Policy sur un exercice évolutif tiré de la vie réelle",
                     "Questions / Réponses",
-                    "Devoirs",
+                    "Devoirs qui mettra à l'épreuve vos compétences de design (très exigeant)",
                   ],
                 },
                 {
                   title: "Jour 4",
                   points: [
                     "Corrigé des devoirs",
-                    "Patterns Architecturaux du Domain-Driven Design",
-                    "Introduction à la Clean Architecture",
-                    "Développement de l'application du fil rouge avec un premier Bounded Context",
+                    "Introduction : Aggregates, Invariants, Transactions & Consistence",
+                    "Clarification du concept avec des exemples réels",
+                    "Atelier : design d'Aggregates avec les erreurs que je vois très souvent",
+                    "Atelier : développement d'un cas complexe avec des Aggregates",
                     "Questions / Réponses",
-                    "Devoirs",
+                    "Devoirs sur le design d'Aggregate",
                   ],
                 },
                 {
                   title: "Jour 5",
                   points: [
                     "Corrigé des devoirs",
-                    "Développement d'autres Bounded Contexts en Intégration",
-                    "Application de patterns complexes",
+                    "Introduction : Bounded Context, Context Mapping & Integration",
+                    "Introduction : l'aspect socio-technique du DDD (très récent, cutting-edge)",
+                    "Revisite complète et intensive des Bounded Contexts",
+                    "Discussion : Integrations de Bounded Contexts",
+                    "Atelier : étude de cas de Bounded Contexts",
+                    "Atelier : découpage de Bounded Contexts",
                     "Questions / Réponses",
-                    "Devoirs",
+                    "Devoirs sur le découpage en BCs et l'intégration entre BCs",
                   ],
                 },
                 {
                   title: "Jour 6",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction à l'Event-Driven Programming",
-                    "Introduction à l'Eventual Consistency et au patterns évènementiels",
-                    "Développement d'un Bounded Context en évènementiel",
-                    "Tester un système évènementiel",
-                    "Questions / Réponses",
-                    "Devoirs",
-                  ],
-                },
-                {
-                  title: "Jour 7",
-                  points: [
-                    "Corrigé des devoirs",
-                    "Récapitulatif de ce qu'on a appris",
-                    "Notions pour aller plus loin (CQRS, Long Running Process, Sagas, Event-Sourcing, Modular Monoliths)",
+                    "Pistes à explorer pour aller plus loin",
+                    "Piste : Behavior-Driven Development pour le Requirement Discovery",
+                    "Piste : Event-Driven Programming & Eventual Consistency",
+                    "Piste : CQRS",
+                    "Discussion : Microservices & Bounded Contexts",
+                    "Discussion : Stratégies de Tests à appliquer",
                     "Questions / Réponses",
                   ],
                 },
@@ -163,11 +166,11 @@ export const WorkshopDDDPage = () => {
           ),
           buildingBlocks.professor,
           buildingBlocks.reviews,
-          buildingBlocks.moneyback,
+          buildingBlocks.workshopMoneyback,
           buildingBlocks.reserve(
             <PracticalInformations
-              dates={"Prochaine date à planifier"}
-              hours={"Prochains horaires à déterminer"}
+              dates={"Du Jeudi 26/06/2024 au Jeudi 31/07/2024"}
+              hours={"De 9h à 12h30"}
               requirements={[
                 "2 ans d'expérience en développement logiciel",
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",

@@ -103,7 +103,7 @@ export const workshopPoints = ({ hours }: { hours: number }) => [
   },
   {
     Icon: IoCode,
-    text: "Exercices concrets",
+    text: "Exercices exigeants",
   },
   {
     Icon: IoPlayCircle,
@@ -111,7 +111,7 @@ export const workshopPoints = ({ hours }: { hours: number }) => [
   },
   {
     Icon: IoCalendar,
-    text: "7 sessions sur 7 semaines",
+    text: "6 sessions sur 6 semaines",
   },
   {
     Icon: IoTime,

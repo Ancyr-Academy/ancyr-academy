@@ -136,6 +136,22 @@ export const MoneyBack = () => {
   );
 };
 
+export const WorkshopMoneyBack = ({ days }: { days?: number }) => {
+  return (
+    <SellingParagraph>
+      Des milliers de développeurs ont adoptés nos formations sans retour en
+      arrière. Mais si c'est pas votre cas, pas de problèmes !{" "}
+      <b>
+        Vous pouvez bénéficier des 2 premières sessions de ce Workshop et
+        demander un remboursement sans justification.
+      </b>
+      <br />
+      <br />
+      Mais nous sommes convaincus que vous allez l'adorer.
+    </SellingParagraph>
+  );
+};
+
 export const SellingParagraph = ({ children }: { children: any }) => {
   return <p className={styles.selling_paragraph}>{children}</p>;
 };
@@ -293,6 +309,14 @@ export const buildingBlocks = {
     subtitle: "Et si c'est pas pour moi ?",
     title: "30 jours pour l'adopter",
     content: <MoneyBack />,
+  } as const,
+  workshopMoneyback: {
+    id: "moneyback",
+    icon: IoCash,
+    menuTitle: "Garanties",
+    subtitle: "Et si c'est pas pour moi ?",
+    title: "2 sessions d'essai",
+    content: <WorkshopMoneyBack />,
   } as const,
   bundles: (content: any) =>
     ({
