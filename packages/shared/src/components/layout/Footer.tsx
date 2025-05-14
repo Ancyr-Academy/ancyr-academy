@@ -38,10 +38,9 @@ export const Footer: React.FC = () => {
             <p className={styles.copyright}>
               © 2023-présent Ancyr Academy SAS
               <br />
-              <br />
               229 rue Saint-Honoré, 75001 Paris, France.
               <br />
-              SIREN 944 280 692
+              Immatriculé 944 280 692 au R.C.S de Paris
               <br />
               Tous droits réservés.
             </p>
