@@ -82,8 +82,9 @@ export const WorkshopDDDPage = () => {
           buildingBlocks.target([
             "Aux développeurs qui veulent comprendre le DDD en profondeur",
             "Qui veulent une approche hands-on & pratique du DDD, pas seulement théorique",
-            "Qui veulent développer des compétences de designer logiciel poussées",
+            "Qui veulent développer des compétences d'architecte logiciel avancés",
             "Qui veulent mettre en pratique le DDD dans leurs projets",
+            "Qui sont prêts à travailler entre les sessions pour pratiquer les exercices guidés (entre 2h et 4h par semaine)",
           ]),
           buildingBlocks.plan(
             <WorkshopProgram
