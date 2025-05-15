@@ -40,6 +40,7 @@ export const BlogPage = ({
             className={styles.content}
             dangerouslySetInnerHTML={{ __html: content }}
           ></div>
+          <DDDDisclaimer tags={tags} />
         </article>
         <aside className={styles.aside}>
           <BlogAside />
