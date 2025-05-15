@@ -159,13 +159,13 @@ export const WorkshopDDDPage = () => {
                   title: "Jour 6",
                   points: [
                     "Corrigé des devoirs",
+                    "Sujet : Comment gérer les transactions ?",
+                    "Sujet : Comment persister nos Domain Objects ?",
+                    "Discussion : SQL vs NoSQL",
+                    "Sujets Libres",
                     "Pistes à explorer pour aller plus loin",
-                    "Piste : Behavior-Driven Development pour le Requirement Discovery",
-                    "Piste : Event-Driven Programming & Eventual Consistency",
-                    "Piste : CQRS",
-                    "Discussion : Microservices & Bounded Contexts",
-                    "Discussion : Stratégies de Tests à appliquer",
                     "Questions / Réponses",
+                    "Suggestions de Devoirs (que je corrigerai avec plaisir)",
                   ],
                 },
               ]}
