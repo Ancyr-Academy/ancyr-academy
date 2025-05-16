@@ -16,7 +16,7 @@ export const DDDDisclaimer = ({ tags }: { tags: string[] }) => {
         Rejoins <b>7 autres participants</b> pour une formation de haut niveau
         sur le <b>Domain-Driven Design</b> avec un projet qui va challenger tes
         compétences de développeur.
-        <a href={"/workshop-ddd"}>Pour plus d'informations, cliquez ici.</a>
+        <a href={"/workshop-ddd"}>Pour plus d'informations, clique ici.</a>
       </p>
     </div>
   );

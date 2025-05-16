@@ -45,28 +45,50 @@ export const WorkshopDDDPage = () => {
         sections={[
           buildingBlocks.about(
             <SellingParagraph>
-              A travers ce Workshop, vous allez apprendre en profondeur le
-              Domain-Driven Design, un concept dont le but est de partager le
-              même langage et la même vision du métier entre les développeurs et
-              les experts métier.
+              <b>
+                90% de la valeur de votre produit réside dans 10% de son code.
+              </b>
+              <br />
+              Et vous avez tout intérêt à faire en sorte que ce code là soit
+              rodé, facile à maintenir et à faire évoluer.
               <br />
               <br />
-              Ce Workshop est divisé en{" "}
-              <b>6 demi-journées étalées sur 6 semaines</b> vous donne le temps
-              d'intégrer les concepts avancés du Domain-Driven Design et de les
-              mettre en application dans des exercices à difficulté croissante.
+              Si vous avez déjà un peu d'expérience, vous savez que c'est
+              rarement le cas.
               <br />
               <br />
-              Chaque session est composée <b>
-                de 2 à 3 ateliers de groupe
-              </b>{" "}
-              pour vraiment prendre le sujet en main avec des exemples concrets.
+              Le Domain-Driven Design est précisément né pour{" "}
+              <b>recentrer le développement sur ces 10% de code là</b>, de
+              savoir identifier ces 10%, et de permettre aux développeurs
+              d'enrichir leur produit avec des fonctionnalités toujours plus
+              complexes et utiles à leur client.
               <br />
               <br />
               <b>
-                Vous repartez avec une expérience pratique du Domain-Driven
-                Design.
+                Et ça, ça ne s'apprend ni dans les livres, ni dans des tutos, ni
+                en 2 jours de formation.
               </b>
+              <br />
+              <br />
+              Ça s'apprend en pratiquant sur des projets réels de plus en plus
+              complexes, sur plusieurs semaines, avec un feedback sur son
+              travail et des
+              <br />
+              <br />
+              Ce Workshop de 6 semaine, c'est justement l'occasion de se jeter
+              dans le bain. Pendant 6 semaines, vous allez vous plonger au coeur
+              du DDD, expérimenter avec d'autres participants, découvrir des
+              ressources et avoir des réponses à toutes les questions vous
+              traversent l'esprit.
+              <br />
+              <br />
+              Comment savoir quelle partie du produit a le plus de valeur ?
+              <br />
+              Comment modéliser un problème complexe avec un code clair ?<br />
+              Comment tester mon produit ?<br />
+              Comment gérer les transactions ?<br />
+              <br />
+              <b>6 semaines, c'est le minimum.</b>
             </SellingParagraph>,
           ),
           buildingBlocks.content([
