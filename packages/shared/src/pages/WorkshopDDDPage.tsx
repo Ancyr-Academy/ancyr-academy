@@ -49,6 +49,7 @@ export const WorkshopDDDPage = () => {
                 90% de la valeur de votre produit réside dans 10% de son code.
               </b>
               <br />
+              <br />
               Et vous avez tout intérêt à faire en sorte que ce code là soit
               rodé, facile à maintenir et à faire évoluer.
               <br />
