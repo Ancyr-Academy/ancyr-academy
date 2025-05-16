@@ -341,8 +341,8 @@ export const buildingBlocks = {
       id: "about",
       icon: IoBook,
       menuTitle: "A propos",
-      subtitle: "Conçu avec grand soin",
-      title: "A propos du cours",
+      subtitle: "De quoi ça s'agit ?",
+      title: "Dans ce cours",
       content,
     }) as const,
   plan: (content: any) =>
