@@ -73,7 +73,7 @@ export const WorkshopDDDPage = () => {
               <br />
               Ça s'apprend en pratiquant sur des projets réels de plus en plus
               complexes, sur plusieurs semaines, avec un feedback sur son
-              travail et des
+              travail.
               <br />
               <br />
               Ce Workshop de 6 semaine, c'est justement l'occasion de se jeter
