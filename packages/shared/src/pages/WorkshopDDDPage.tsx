@@ -25,7 +25,7 @@ export const WorkshopDDDPage = () => {
             dans vos propres produits.
           </>
         }
-        points={workshopPoints({ hours: 21 })}
+        points={workshopPoints({ hours: 24 })}
       />
       <div style={{ marginBottom: 80 }}>
         <Container>
@@ -35,6 +35,7 @@ export const WorkshopDDDPage = () => {
               backgroundColor: "101818",
               hideEventTypeDetails: false,
               hideLandingPageDetails: false,
+              hideGdprBanner: true,
               primaryColor: "5AE0CC",
               textColor: "FFFFFF",
             }}
@@ -76,8 +77,8 @@ export const WorkshopDDDPage = () => {
               travail.
               <br />
               <br />
-              Ce Workshop de 6 semaine, c'est justement l'occasion de se jeter
-              dans le bain. Pendant 6 semaines, vous allez vous plonger au coeur
+              Ce Workshop de 7 semaines, c'est justement l'occasion de se jeter
+              dans le bain. Pendant 7 semaines, vous allez vous plonger au coeur
               du DDD, expérimenter avec d'autres participants, découvrir des
               ressources et avoir des réponses à toutes les questions vous
               traversent l'esprit.
@@ -89,9 +90,10 @@ export const WorkshopDDDPage = () => {
               Comment tester mon produit ?<br />
               Comment gérer les transactions ?<br />
               <br />
-              <b>6 semaines, c'est le minimum.</b>
+              <b>7 semaines, c'est le minimum.</b>
             </SellingParagraph>,
           ),
+          /** Replace this by "why" **/
           buildingBlocks.content([
             "Ce qu'est le Domain-Driven Design et quand l'utiliser",
             "Les outils pour comprendre le métier et le modéliser",
@@ -102,6 +104,7 @@ export const WorkshopDDDPage = () => {
             "Les Bounded Contexts, leur rapport avec les Subdomains et comment les identifier / implémenter",
             "Des devoirs qui mettront à l'épreuve vos talents de designer et vous permettront d'expérimenter le DDD concrètement",
           ]),
+          /** Replace this by "what do you acquire" **/
           buildingBlocks.target([
             "Aux développeurs qui veulent comprendre le DDD en profondeur",
             "Qui veulent une approche hands-on & pratique du DDD, pas seulement théorique",
@@ -113,7 +116,7 @@ export const WorkshopDDDPage = () => {
             <WorkshopProgram
               elements={[
                 {
-                  title: "Jour 1",
+                  title: "Jour 1 - Introduction",
                   points: [
                     "Tour de table & présentation",
                     "Introduction au Domain-Driven Design",
@@ -125,7 +128,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 2",
+                  title: "Jour 2 - Vraie Programmation Orienté Objet",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction au Domain Modeling et à la véritable POO",
@@ -139,7 +142,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 3",
+                  title: "Jour 3 - Patterns Entity & Policy",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction aux Entités / Repositories",
@@ -153,10 +156,10 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 4",
+                  title: "Jour 4 - Aggregates (1/2)",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction : Aggregates, Invariants, Transactions & Consistence",
+                    "Introduction : Aggregates, Invariants & Concurrence",
                     "Clarification du concept avec des exemples réels",
                     "Atelier : design d'Aggregates avec les erreurs que je vois très souvent",
                     "Atelier : développement d'un cas complexe avec des Aggregates",
@@ -165,7 +168,18 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 5",
+                  title: "Jour 5 - Aggregates (2/2)",
+                  points: [
+                    "Corrigé des devoirs",
+                    "Introduction : Les 4 règles des Aggregates",
+                    "Discussion : patterns de concurrence & de transactions",
+                    "Discussion : Optimistic vs Pessimistic Lock",
+                    "Introduction : Domain Events & Eventual Consistency",
+                    "Devoirs sur le design d'Aggregate",
+                  ],
+                },
+                {
+                  title: "Jour 6 - Bounded Contexts",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction : Bounded Context, Context Mapping & Integration",
@@ -179,12 +193,11 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 6",
+                  title: "Jour 7 - Conclusions",
                   points: [
                     "Corrigé des devoirs",
-                    "Sujet : Comment gérer les transactions ?",
                     "Sujet : Comment persister nos Domain Objects ?",
-                    "Discussion : SQL vs NoSQL",
+                    "Sujet : SQL vs NoSQL",
                     "Sujets Libres",
                     "Pistes à explorer pour aller plus loin",
                     "Questions / Réponses",
@@ -199,11 +212,12 @@ export const WorkshopDDDPage = () => {
           buildingBlocks.workshopMoneyback,
           buildingBlocks.reserve(
             <PracticalInformations
-              dates={"Du Jeudi 26/06/2024 au Jeudi 31/07/2024"}
+              dates={"Du Jeudi 26/06/2024 au Jeudi 07/08/2024"}
               hours={"De 9h à 12h30"}
               requirements={[
                 "2 ans d'expérience en développement logiciel",
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
+                "Bonnes compétences de développement orienté objet",
               ]}
               location={"A distance, sur Zoom"}
               price={1500}
@@ -219,6 +233,7 @@ export const WorkshopDDDPage = () => {
               backgroundColor: "101818",
               hideEventTypeDetails: false,
               hideLandingPageDetails: false,
+              hideGdprBanner: true,
               primaryColor: "5AE0CC",
               textColor: "FFFFFF",
             }}
