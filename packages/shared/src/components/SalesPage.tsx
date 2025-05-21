@@ -252,6 +252,14 @@ export const PracticalInformations = ({
             <IoPeople />
             <span>Groupe de 6 à 8 personnes</span>
           </p>
+          <p className={styles.practical_point}>
+            <IoPeople />
+            <span>
+              <a href={"https://calendly.com/ancyr-academy/ddd"}>
+                Tarification & Autres questions
+              </a>
+            </span>
+          </p>
         </section>
       </div>
     </div>

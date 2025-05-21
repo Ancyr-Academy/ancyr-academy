@@ -111,11 +111,11 @@ export const workshopPoints = ({ hours }: { hours: number }) => [
   },
   {
     Icon: IoCalendar,
-    text: "6 sessions sur 6 semaines",
+    text: "1 session par semaine",
   },
   {
-    Icon: IoTime,
-    text: "Apprenez à votre rythme",
+    Icon: IoCalendar,
+    text: "7 sessions au total",
   },
   {
     Icon: IoCash,
