@@ -39,7 +39,7 @@ export const TestDrivenDevelopmentPage = () => {
               jusqu'à développer un vrai petit logiciel utilisable.
             </SellingParagraph>,
           ),
-          buildingBlocks.content([
+          buildingBlocks.outcomes([
             "Ce qu'est réellement le Test-Driven Development",
             "Comment le TDD vous aide à maitriser le design de vos applications",
             "Mettre en pratique le TDD sur des projets réels non triviaux",

@@ -44,7 +44,7 @@ export const CleanArchitecturePage = () => {
               logiciel.
             </SellingParagraph>,
           ),
-          buildingBlocks.content([
+          buildingBlocks.outcomes([
             "Mettre en place une Clean Architecture",
             "Développer votre application en TDD",
             "Tester votre application de bout en bout",

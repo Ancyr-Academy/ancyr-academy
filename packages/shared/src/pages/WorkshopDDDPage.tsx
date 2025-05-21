@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { InlineWidget } from "react-calendly";
 import { Overview, workshopPoints } from "../components/Overview";
 import {
   buildingBlocks,
@@ -10,7 +11,6 @@ import {
   WorkshopProgram,
 } from "../components/SalesPage";
 import { Container } from "../components/Container";
-import { InlineWidget } from "react-calendly";
 
 export const WorkshopDDDPage = () => {
   return (
@@ -93,16 +93,15 @@ export const WorkshopDDDPage = () => {
               <b>7 semaines, c'est le minimum.</b>
             </SellingParagraph>,
           ),
-          /** Replace this by "why" **/
-          buildingBlocks.content([
-            "Ce qu'est le Domain-Driven Design et quand l'utiliser",
-            "Les outils pour comprendre le métier et le modéliser",
-            "Le Langage Ubiquitaire",
-            "Les Domains & Subdomains et comment les identifier",
-            "Le Design Objet extrêmement avancé sur des cas très pointus",
-            "Une vision claire des Aggregates et toutes les erreurs à ne pas faire",
-            "Les Bounded Contexts, leur rapport avec les Subdomains et comment les identifier / implémenter",
-            "Des devoirs qui mettront à l'épreuve vos talents de designer et vous permettront d'expérimenter le DDD concrètement",
+          buildingBlocks.outcomes([
+            "Définir le Domain-Driven Design et l'implémenter dans vos projets",
+            "Initier vos collègues au Domain-Driven Design",
+            "Développer en DDD sans commettre les erreurs les plus fréquentes",
+            "Mieux développer en véritable Programmation Orientée Objet",
+            "Décomposer votre application en Bounded Contexts",
+            "Développer des monolithes aussi performants que des microservices",
+            "Concevoir des solutions poussées à des problèmes très avancés",
+            "Avoir les outils pour explorer des patterns très avancés (Microservices, Event Sourcing, CQRS...)",
           ]),
           /** Replace this by "what do you acquire" **/
           buildingBlocks.target([

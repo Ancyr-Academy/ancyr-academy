@@ -362,12 +362,12 @@ export const buildingBlocks = {
       title: "Programme",
       content,
     }) as const,
-  content: (items: string[]) => ({
-    id: "content",
+  outcomes: (items: string[]) => ({
+    id: "results",
     icon: IoReader,
-    menuTitle: "Contenu",
-    subtitle: "La théorie et la pratique",
-    title: "Ce que vous allez apprendre",
+    menuTitle: "Résultats",
+    subtitle: "Ce que vous saurez faire",
+    title: "Après ce cours, vous saurez...",
     content: <SellingList elements={items} />,
   }),
   target: (items: string[]) => ({

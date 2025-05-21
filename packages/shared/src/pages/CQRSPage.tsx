@@ -42,7 +42,7 @@ export const CQRSPage = () => {
               </b>
             </SellingParagraph>,
           ),
-          buildingBlocks.content([
+          buildingBlocks.outcomes([
             "La véritable définition du CQRS",
             "Les différents niveaux d'implémentation du CQRS",
             "Comment l'implémenter dans vos propres projets",
