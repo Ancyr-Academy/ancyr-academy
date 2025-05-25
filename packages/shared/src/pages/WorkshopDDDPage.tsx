@@ -77,11 +77,11 @@ export const WorkshopDDDPage = () => {
               travail.
               <br />
               <br />
-              Ce Workshop de 7 semaines, c'est justement l'occasion de se jeter
-              dans le bain. Pendant 7 semaines, vous allez vous plonger au coeur
-              du DDD, expérimenter avec d'autres participants, découvrir des
-              ressources et avoir des réponses à toutes les questions vous
-              traversent l'esprit.
+              Ce Workshop de 7 sessions, c'est justement l'occasion de se jeter
+              dans le bain. De plonger au coeur du DDD et du développement
+              orienté objet, d'expérimenter avec d'autres participants, de
+              découvrir des ressources et d'obtenir les clés pour approfondir
+              tous les concepts du DDD.
               <br />
               <br />
               Comment savoir quelle partie du produit a le plus de valeur ?
@@ -90,7 +90,7 @@ export const WorkshopDDDPage = () => {
               Comment tester mon produit ?<br />
               Comment gérer les transactions ?<br />
               <br />
-              <b>7 semaines, c'est le minimum.</b>
+              <b>Les réponses en 7 sessions.</b>
             </SellingParagraph>,
           ),
           buildingBlocks.outcomes([
@@ -115,7 +115,7 @@ export const WorkshopDDDPage = () => {
             <WorkshopProgram
               elements={[
                 {
-                  title: "Jour 1 - Introduction",
+                  title: "Session 1 - Introduction",
                   points: [
                     "Tour de table & présentation",
                     "Introduction au Domain-Driven Design",
@@ -127,7 +127,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 2 - Vraie Programmation Orienté Objet",
+                  title: "Session 2 - Vraie Programmation Orienté Objet",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction au Domain Modeling et à la véritable POO",
@@ -141,7 +141,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 3 - Patterns Entity & Policy",
+                  title: "Session 3 - Patterns Entity & Policy",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction aux Entités / Repositories",
@@ -155,7 +155,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 4 - Aggregates (1/2)",
+                  title: "Session 4 - Aggregates (1/2)",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction : Aggregates, Invariants & Concurrence",
@@ -167,7 +167,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 5 - Aggregates (2/2)",
+                  title: "Session 5 - Aggregates (2/2)",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction : Les 4 règles des Aggregates",
@@ -178,7 +178,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 6 - Bounded Contexts",
+                  title: "Session 6 - Bounded Contexts",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction : Bounded Context, Context Mapping & Integration",
@@ -192,7 +192,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Jour 7 - Conclusions",
+                  title: "Session 7 - Conclusions",
                   points: [
                     "Corrigé des devoirs",
                     "Sujet : Comment persister nos Domain Objects ?",
