@@ -211,7 +211,10 @@ export const WorkshopDDDPage = () => {
           buildingBlocks.workshopMoneyback,
           buildingBlocks.reserve(
             <PracticalInformations
-              dates={"Du Jeudi 26/06/2024 au Jeudi 07/08/2024"}
+              dates={[
+                "Du Jeudi 26 Juin au Jeudi 07 Août 2025",
+                "Du Mardi 05 Août au Mardi 16 Septembre 2025",
+              ]}
               hours={"De 9h à 12h30"}
               requirements={[
                 "2 ans d'expérience en développement logiciel",
@@ -224,6 +227,7 @@ export const WorkshopDDDPage = () => {
           ),
         ]}
       />
+
       <div style={{ marginBlock: 80 }}>
         <Container>
           <InlineWidget

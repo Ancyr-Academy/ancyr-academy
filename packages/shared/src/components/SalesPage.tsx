@@ -24,6 +24,7 @@ import { NoSsrPromotional } from "./NoSsrPromotional";
 import { CourseList } from "./CourseList";
 import { Course } from "./Course";
 import { IoIosClock } from "react-icons/io";
+import { Button } from "./Button";
 
 type Section = {
   id: string;
@@ -195,7 +196,7 @@ export const PracticalInformations = ({
   location,
   price,
 }: {
-  dates: string;
+  dates: string[];
   hours: string;
   requirements: string[];
   location: string;
@@ -216,10 +217,13 @@ export const PracticalInformations = ({
 
         <h4 className={styles.practical_title}>Informations</h4>
         <section className={styles.practical_section}>
-          <p className={styles.practical_point}>
-            <IoCalendar />
-            <span>{dates}</span>
-          </p>
+          {dates.map((date) => (
+            <p key={date} className={styles.practical_point}>
+              <IoCalendar />
+              <span>{date}</span>
+            </p>
+          ))}
+
           <p className={styles.practical_point}>
             <IoIosClock />
             <span>{hours}</span>
@@ -260,6 +264,16 @@ export const PracticalInformations = ({
               </a>
             </span>
           </p>
+
+          <div style={{ marginTop: 40 }}>
+            <Button
+              wide
+              size={"big"}
+              url={"https://calendly.com/ancyr-academy/ddd"}
+            >
+              Réserver ma place
+            </Button>
+          </div>
         </section>
       </div>
     </div>
