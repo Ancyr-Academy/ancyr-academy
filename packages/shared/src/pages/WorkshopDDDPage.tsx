@@ -213,7 +213,7 @@ export const WorkshopDDDPage = () => {
             <PracticalInformations
               dates={[
                 "Du Jeudi 26 Juin au Jeudi 07 Août 2025",
-                "Du Mardi 05 Août au Mardi 16 Septembre 2025",
+                "Ou bien du Mardi 05 Août au Mardi 16 Septembre 2025",
               ]}
               hours={"De 9h à 12h30"}
               requirements={[
