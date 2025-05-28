@@ -266,3 +266,30 @@
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+.faq {
+  &_section {
+    margin-bottom: 40px;
+  }
+
+  &_title {
+    font-size: core.pxToRem(32);
+    color: white;
+    font-weight: 800;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &_answer {
+    font-size: core.pxToRem(20);
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+    b {
+      font-weight: 600;
+      color: #5AE0CC;
+    }
+  }
+}

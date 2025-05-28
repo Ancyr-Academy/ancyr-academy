@@ -5,12 +5,14 @@ import { InlineWidget } from "react-calendly";
 import { Overview, workshopPoints } from "../components/Overview";
 import {
   buildingBlocks,
+  FrequentlyAskedQuestions,
   PracticalInformations,
   SalesPage,
   SellingParagraph,
   WorkshopProgram,
 } from "../components/SalesPage";
 import { Container } from "../components/Container";
+import { Button } from "../components/Button";
 
 export const WorkshopDDDPage = () => {
   return (
@@ -223,6 +225,138 @@ export const WorkshopDDDPage = () => {
               ]}
               location={"A distance, sur Zoom"}
               price={1500}
+            />,
+          ),
+          buildingBlocks.faq(
+            <FrequentlyAskedQuestions
+              questions={[
+                {
+                  title: "Pourquoi suivre ton Workshop ?",
+                  answer: (
+                    <>
+                      Parce que le workshop est interactif, hands-on et explore
+                      tous les principes avec une{" "}
+                      <b>profondeur difficile à trouver sur Internet.</b>
+                      <br />
+                      <br />
+                      Et je vous parle en connaissance de cause : j'ai analysé
+                      toutes les formations de toutes les plateformes en France
+                      et à l'International, et je me suis également formé auprès
+                      d'acteurs reconnus dans la sphère du DDD.
+                      <br />
+                      <br />
+                      Je connais les points forts et les points faibles de
+                      chacune d'entre-elles, et j'en ai distillé le meilleur
+                      dans ce Workshop.
+                      <br />
+                      <br />
+                      Ma garantie ? En cas de déception,{" "}
+                      <b>
+                        vous pouvez me demander un remboursement intégral
+                        jusqu'à la fin de la 2e session.
+                      </b>
+                      <br />
+                      <br />
+                      Personne ne me l'a demandé.
+                    </>
+                  ),
+                },
+                {
+                  title: "Comment se déroule le Workshop ?",
+                  answer: (
+                    <>
+                      Chaque session, c'est près de 4h de Workshop avec des
+                      ateliers de développement interactif, des sessions de
+                      questions / réponses et des devoirs qui devraient vous
+                      prendre entre 2 et 4 heures par semaine, peut-être plus
+                      selon votre niveau.
+                      <br /> Je reste à votre disposition pendant la semaine
+                      pour répondre à vos questions.
+                    </>
+                  ),
+                },
+                {
+                  title: "Que va m'apporter ce Workshop ?",
+                  answer: (
+                    <>
+                      Une réelle compréhension pratique du Domain-Driven Design
+                      grâce à des ateliers, des études de cas et des devoirs de
+                      code bien challengeant.
+                      <br />
+                      <br />A la fin,{" "}
+                      <b>
+                        vous serez capable d'expliquer ce qu'est le DDD, de
+                        l'implémenter dans vos applications, d'initier vos
+                        collègues et d'utiliser le DDD pour améliorer
+                        durablement le codebase de votre produit.
+                      </b>
+                    </>
+                  ),
+                },
+                {
+                  title: "Combien de temps dure le Workshop ?",
+                  answer: (
+                    <>
+                      Environ 24 heures étalées sur 7 semaines, les matins de 9h
+                      à 12h30. De futurs Workshop pourront être organisés en
+                      fonction de la demande à d'autres horaires.
+                    </>
+                  ),
+                },
+                {
+                  title: "Combien de places sont disponibles ?",
+                  answer: (
+                    <>
+                      Le Workshop est ouvert à <b>seulement 8 personnes.</b>
+                    </>
+                  ),
+                },
+                {
+                  title: "Quel est le tarif du Workshop ?",
+                  answer: <>Le prix du Workshop est de 1,500.00€ HT.</>,
+                },
+                {
+                  title: "Quel est le niveau pour participer à ce Workshop ?",
+                  answer: (
+                    <>
+                      Au moins 2 ans d’expérience en tant que développeur
+                      logiciel et une familiarité avec le développement orienté
+                      objet. Une connaissance de la Clean Architecture est un
+                      plus.
+                      <br />
+                      <br />
+                      C'est un Workshop exigeant qui ne convient pas aux
+                      débutants. Si vous êtes dans ce cas, je vous conseille
+                      d'attendre un peu. Dans le doute, réservez-moi un créneau.
+                    </>
+                  ),
+                },
+                {
+                  title: "Et si le Workshop ne me plait pas ?",
+                  answer: (
+                    <>
+                      Pas de soucis,{" "}
+                      <b>le Workshop est garantie satisfait ou remboursé</b>.
+                      Vous pouvez demander à quitter le Workshop et à être
+                      remboursé jusqu'à la fin de la 2e session.
+                      <br />
+                      <br />
+                      Un simple e-mail “Anthony, rend l’argent” durant cette
+                      période et je vous rembourse. C’est une garantie présente
+                      sur toutes mes formations.
+                      <div style={{ marginTop: 40 }}>
+                        <Button
+                          wide
+                          size={"big"}
+                          url={"https://calendly.com/ancyr-academy/ddd"}
+                        >
+                          Je veux réserver un créneau maintenant
+                        </Button>
+                      </div>
+                    </>
+                  ),
+                },
+              ]}
             />,
           ),
         ]}

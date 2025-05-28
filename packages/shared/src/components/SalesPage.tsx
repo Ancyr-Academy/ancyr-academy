@@ -1,5 +1,5 @@
 import React from "react";
-import { LuTable } from "react-icons/lu";
+import { LuCircleHelp, LuTable } from "react-icons/lu";
 
 import styles from "./SalesPage.module.scss";
 import { Container } from "./Container";
@@ -11,6 +11,7 @@ import {
   IoCheckmarkCircleOutline,
   IoDocument,
   IoFolderOpen,
+  IoHelpCircle,
   IoMap,
   IoPeople,
   IoPerson,
@@ -223,10 +224,13 @@ export const PracticalInformations = ({
               <span>{date}</span>
             </p>
           ))}
-
           <p className={styles.practical_point}>
             <IoIosClock />
             <span>{hours}</span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoPeople />
+            <span>Groupe de 6 à 8 personnes</span>
           </p>
           <p className={styles.practical_point}>
             <IoDocument />
@@ -253,11 +257,19 @@ export const PracticalInformations = ({
             </span>
           </p>
           <p className={styles.practical_point}>
-            <IoPeople />
-            <span>Groupe de 6 à 8 personnes</span>
+            <IoDocument />
+            <span>
+              <a
+                href={
+                  "https://drive.google.com/file/d/1bBIEhi5W7j2LixQuC67f4oS06Rt_XL4i/view?usp=sharing"
+                }
+              >
+                Programme de Formation
+              </a>
+            </span>
           </p>
           <p className={styles.practical_point}>
-            <IoPeople />
+            <IoHelpCircle />
             <span>
               <a href={"https://calendly.com/ancyr-academy/ddd"}>
                 Tarification & Autres questions
@@ -271,7 +283,7 @@ export const PracticalInformations = ({
               size={"big"}
               url={"https://calendly.com/ancyr-academy/ddd"}
             >
-              Réserver ma place
+              Je réserve ma place
             </Button>
           </div>
         </section>
@@ -301,6 +313,26 @@ export const WorkshopProgram = ({
               </li>
             ))}
           </ul>
+        </section>
+      ))}
+    </div>
+  );
+};
+
+export const FrequentlyAskedQuestions = ({
+  questions,
+}: {
+  questions: Array<{
+    title: string;
+    answer: any;
+  }>;
+}) => {
+  return (
+    <div className={styles.faq}>
+      {questions.map((q, i) => (
+        <section key={i} className={styles.faq_section}>
+          <h5 className={styles.faq_title}>{q.title}</h5>
+          <div className={styles.faq_answer}>{q.answer}</div>
         </section>
       ))}
     </div>
@@ -399,6 +431,15 @@ export const buildingBlocks = {
       menuTitle: "Réserver",
       subtitle: "Comment participer",
       title: "Réserver",
+      content,
+    }) as const,
+  faq: (content: any) =>
+    ({
+      id: "faq",
+      icon: LuCircleHelp,
+      menuTitle: "FAQ",
+      subtitle: "Questions courantes",
+      title: "Foire aux questions",
       content,
     }) as const,
 } as const;
