@@ -169,18 +169,33 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Session 5 - Aggregates (2/2)",
+                  title: "Session 5 - Aggregates (2/3)",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction : Les 4 règles des Aggregates",
+                    "Introduction : Les 3 règles des Aggregates",
                     "Discussion : patterns de concurrence & de transactions",
                     "Discussion : Optimistic vs Pessimistic Lock",
-                    "Introduction : Domain Events & Eventual Consistency",
+                    "Atelier : design d'Aggregates avancé",
+                    "Introduction : Domain Events",
+                    "Questions / Réponses",
                     "Devoirs sur le design d'Aggregate",
                   ],
                 },
                 {
-                  title: "Session 6 - Bounded Contexts",
+                  title: "Session 6 - Aggregates (3/3)",
+                  points: [
+                    "Corrigé des devoirs",
+                    "Introduction : La 4e règle des Aggregates",
+                    "Introduction : Eventual Consistency avec les Domain Events",
+                    "Discussion : Local Events vs Integration Events",
+                    "Discussion : Persistence des Domain Objects",
+                    "Atelier : conception d'un flow en Eventual Consistency",
+                    "Questions / Réponses",
+                    "Devoirs sur l'Eventual Consistency",
+                  ],
+                },
+                {
+                  title: "Session 7 - Bounded Contexts",
                   points: [
                     "Corrigé des devoirs",
                     "Introduction : Bounded Context, Context Mapping & Integration",
@@ -191,18 +206,6 @@ export const WorkshopDDDPage = () => {
                     "Atelier : découpage de Bounded Contexts",
                     "Questions / Réponses",
                     "Devoirs sur le découpage en BCs et l'intégration entre BCs",
-                  ],
-                },
-                {
-                  title: "Session 7 - Conclusions",
-                  points: [
-                    "Corrigé des devoirs",
-                    "Sujet : Comment persister nos Domain Objects ?",
-                    "Sujet : SQL vs NoSQL",
-                    "Sujets Libres",
-                    "Pistes à explorer pour aller plus loin",
-                    "Questions / Réponses",
-                    "Suggestions de Devoirs (que je corrigerai avec plaisir)",
                   ],
                 },
               ]}
@@ -223,8 +226,6 @@ export const WorkshopDDDPage = () => {
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
                 "Bonnes compétences de développement orienté objet",
               ]}
-              location={"A distance, sur Zoom"}
-              price={1500}
             />,
           ),
           buildingBlocks.faq(

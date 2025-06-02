@@ -194,14 +194,10 @@ export const PracticalInformations = ({
   dates,
   hours,
   requirements,
-  location,
-  price,
 }: {
   dates: string[];
   hours: string;
   requirements: string[];
-  location: string;
-  price: number;
 }) => {
   return (
     <div className={styles.practical}>
