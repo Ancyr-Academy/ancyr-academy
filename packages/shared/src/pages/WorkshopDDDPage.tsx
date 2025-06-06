@@ -314,7 +314,12 @@ export const WorkshopDDDPage = () => {
                 },
                 {
                   title: "Quel est le tarif du Workshop ?",
-                  answer: <>Le prix du Workshop est de 1,500.00€ HT.</>,
+                  answer: (
+                    <>
+                      Le prix du Workshop est de 1,500.00€, toutes taxes
+                      comprises.
+                    </>
+                  ),
                 },
                 {
                   title: "Quel est le niveau pour participer à ce Workshop ?",
