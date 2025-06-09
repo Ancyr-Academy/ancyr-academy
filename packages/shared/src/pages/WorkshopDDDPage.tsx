@@ -127,7 +127,7 @@ export const WorkshopDDDPage = () => {
                   ],
                 },
                 {
-                  title: "Session 4 - Aggregates (1/2)",
+                  title: "Session 4 - Aggregates (1/3)",
                   points: [
                     "Corrigé des devoirs",
                     "Notions : Aggregates, Invariance et Concurrence",
