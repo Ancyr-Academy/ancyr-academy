@@ -48,70 +48,45 @@ export const WorkshopDDDPage = () => {
         sections={[
           buildingBlocks.about(
             <SellingParagraph>
+              A travers ce Workshop, vous allez apprendre en profondeur le
+              Domain-Driven Design, un concept qui vise à partager le même
+              langage et la même vision du métier entre tous les acteurs du
+              projet (Devs, Product Owners, Business...).
+              <br />
+              <br />
+              Ce Workshop est divisé en{" "}
+              <b>7 demi-journées étalées sur 7 semaines</b> vous donne le temps
+              d'intégrer les concepts avancés du Domain-Driven Design et de les
+              mettre en application dans des exercices à difficulté croissante.
+              <br />
+              <br />
+              Chaque session est composée{" "}
               <b>
-                90% de la valeur de votre produit réside dans 10% de son code.
-              </b>
-              <br />
-              <br />
-              Et vous avez tout intérêt à faire en sorte que ce code là soit
-              rodé, facile à maintenir et à faire évoluer.
-              <br />
-              <br />
-              Si vous avez déjà un peu d'expérience, vous savez que c'est
-              rarement le cas.
-              <br />
-              <br />
-              Le Domain-Driven Design est précisément né pour{" "}
-              <b>recentrer le développement sur ces 10% de code là</b>, de
-              savoir identifier ces 10%, et de permettre aux développeurs
-              d'enrichir leur produit avec des fonctionnalités toujours plus
-              complexes et utiles à leur client.
+                d'ateliers pratiques, d'études de cas et d'échanges oraux
+              </b>{" "}
+              pour vraiment prendre le sujet en main avec des exemples concrets.
               <br />
               <br />
               <b>
-                Et ça, ça ne s'apprend ni dans les livres, ni dans des tutos, ni
-                en 2 jours de formation.
+                Vous repartez avec une expérience pratique du Domain-Driven
+                Design.
               </b>
-              <br />
-              <br />
-              Ça s'apprend en pratiquant sur des projets réels de plus en plus
-              complexes, sur plusieurs semaines, avec un feedback sur son
-              travail.
-              <br />
-              <br />
-              Ce Workshop de 7 sessions, c'est justement l'occasion de se jeter
-              dans le bain. De plonger au coeur du DDD et du développement
-              orienté objet, d'expérimenter avec d'autres participants, de
-              découvrir des ressources et d'obtenir les clés pour approfondir
-              tous les concepts du DDD.
-              <br />
-              <br />
-              Comment savoir quelle partie du produit a le plus de valeur ?
-              <br />
-              Comment modéliser un problème complexe avec un code clair ?<br />
-              Comment tester mon produit ?<br />
-              Comment gérer les transactions ?<br />
-              <br />
-              <b>Les réponses en 7 sessions.</b>
             </SellingParagraph>,
           ),
           buildingBlocks.outcomes([
             "Définir le Domain-Driven Design et l'implémenter dans vos projets",
             "Initier vos collègues au Domain-Driven Design",
-            "Développer en DDD sans commettre les erreurs les plus fréquentes",
-            "Mieux développer en véritable Programmation Orientée Objet",
-            "Décomposer votre application en Bounded Contexts",
-            "Développer des monolithes aussi performants que des microservices",
-            "Concevoir des solutions poussées à des problèmes très avancés",
+            "Mettre en place un design qui épouse véritablement les principes Orienté Objet",
+            "Décomposer votre application en sous applications (Bounded Contexts)",
+            "Concevoir des solutions poussées à des problèmes très complexes",
             "Avoir les outils pour explorer des patterns très avancés (Microservices, Event Sourcing, CQRS...)",
           ]),
           /** Replace this by "what do you acquire" **/
           buildingBlocks.target([
             "Aux développeurs qui veulent comprendre le DDD en profondeur",
-            "Qui veulent une approche hands-on & pratique du DDD, pas seulement théorique",
-            "Qui veulent développer des compétences d'architecte logiciel avancés",
-            "Qui veulent mettre en pratique le DDD dans leurs projets",
-            "Qui sont prêts à travailler entre les sessions pour pratiquer les exercices guidés (entre 2h et 4h par semaine)",
+            "Aux managers",
+            "Aux tech leads",
+            "Aux architectes logiciels",
           ]),
           buildingBlocks.plan(
             <WorkshopProgram
@@ -121,36 +96,31 @@ export const WorkshopDDDPage = () => {
                   points: [
                     "Tour de table & présentation",
                     "Introduction au Domain-Driven Design",
-                    "Initiation à l'analyse du Problem Space",
-                    "Domains & Subdomains : comment les identifier ?",
-                    "Où faire du DDD pour maximiser son profit",
+                    "Autoévaluation de vos connaissances",
+                    "Notions : Domain-Driven Design, Langage Ubiquitaire, Subdomains",
+                    "Atelier : Identification des Subdomains",
                     "Questions / Réponses",
                     "Devoirs technique",
                   ],
                 },
                 {
-                  title: "Session 2 - Vraie Programmation Orienté Objet",
+                  title: "Session 2 - Design Orienté Objet",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction au Domain Modeling et à la véritable POO",
-                    "Mise à mort des idées reçues sur la POO",
-                    "Découverte des Domain Objects",
-                    "Introduction aux Value Objects",
-                    "Introduction à l'Architecture Logicielle en DDD",
-                    "Atelier de Domain Modeling",
+                    "Notions : Design orienté objet, Domain Modeling, Domain Objects, Domain Services",
+                    "Notions : Architecture Logicielle en Domain-Driven Design",
+                    "Atelier : Modélisation d'un cas réel avec des Domain Objects",
                     "Questions / Réponses",
                     "Devoirs technique",
                   ],
                 },
                 {
-                  title: "Session 3 - Patterns Entity & Policy",
+                  title: "Session 3 - Patterns Entity, Policy & Repository",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction aux Entités / Repositories",
-                    "Introduction aux Design Patterns (Policy & Template Method)",
-                    "Discussion : Template Method vs Strategy",
-                    "Discussion : Domain Model Trilemma (CAP du Domain Modeling)",
-                    "Etude d'un cas complexe qui justifie l'utilisation de patterns",
+                    "Notions : Entity, Policy, Repository",
+                    "Atelier : Template Method vs Strategy",
+                    "Atelier : Domain Model Trilemma (CAP du Domain Modeling)",
                     "Atelier : application du Policy sur un exercice évolutif tiré de la vie réelle",
                     "Questions / Réponses",
                     "Devoirs qui mettra à l'épreuve vos compétences de design (très exigeant)",
@@ -160,10 +130,9 @@ export const WorkshopDDDPage = () => {
                   title: "Session 4 - Aggregates (1/2)",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction : Aggregates, Invariants & Concurrence",
-                    "Clarification du concept avec des exemples réels",
-                    "Atelier : design d'Aggregates avec les erreurs que je vois très souvent",
-                    "Atelier : développement d'un cas complexe avec des Aggregates",
+                    "Notions : Aggregates, Invariance et Concurrence",
+                    "Atelier : Etude de cas",
+                    "Atelier : modéliser un Aggregate",
                     "Questions / Réponses",
                     "Devoirs sur le design d'Aggregate",
                   ],
@@ -172,11 +141,9 @@ export const WorkshopDDDPage = () => {
                   title: "Session 5 - Aggregates (2/3)",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction : Les 3 règles des Aggregates",
-                    "Discussion : patterns de concurrence & de transactions",
-                    "Discussion : Optimistic vs Pessimistic Lock",
-                    "Atelier : design d'Aggregates avancé",
-                    "Introduction : Domain Events",
+                    "Notion : les 3 règles des Aggregates",
+                    "Notion : Concurrence, Transactions & Locks",
+                    "Atalier : design d'Aggregates avancé",
                     "Questions / Réponses",
                     "Devoirs sur le design d'Aggregate",
                   ],
@@ -185,11 +152,10 @@ export const WorkshopDDDPage = () => {
                   title: "Session 6 - Aggregates (3/3)",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction : La 4e règle des Aggregates",
-                    "Introduction : Eventual Consistency avec les Domain Events",
-                    "Discussion : Local Events vs Integration Events",
-                    "Discussion : Persistence des Domain Objects",
-                    "Atelier : conception d'un flow en Eventual Consistency",
+                    "Notions : Domain Events, Eventual Consistency & Outbox Pattern",
+                    "Notions : La 4e règle des Aggregates",
+                    "Atelier : patterns de transaction",
+                    "Atelier : Aggregates en Eventual Consistency",
                     "Questions / Réponses",
                     "Devoirs sur l'Eventual Consistency",
                   ],
@@ -198,14 +164,11 @@ export const WorkshopDDDPage = () => {
                   title: "Session 7 - Bounded Contexts",
                   points: [
                     "Corrigé des devoirs",
-                    "Introduction : Bounded Context, Context Mapping & Integration",
-                    "Introduction : l'aspect socio-technique du DDD (très récent, cutting-edge)",
-                    "Revisite complète et intensive des Bounded Contexts",
-                    "Discussion : Integrations de Bounded Contexts",
-                    "Atelier : étude de cas de Bounded Contexts",
-                    "Atelier : découpage de Bounded Contexts",
-                    "Questions / Réponses",
-                    "Devoirs sur le découpage en BCs et l'intégration entre BCs",
+                    "Notions : Bounded Context, Integration des Bounded Contexts",
+                    "Notions : Communication synchrone ou asynchrone entre Bounded Contexts",
+                    "Pistes à explorer pour aller plus loin",
+                    "Conclusions et réflexions finales",
+                    "Autoévaluation de vos connaissances",
                   ],
                 },
               ]}
@@ -217,10 +180,9 @@ export const WorkshopDDDPage = () => {
           buildingBlocks.reserve(
             <PracticalInformations
               dates={[
-                "Du Jeudi 26 Juin au Jeudi 07 Août 2025",
-                "Ou bien du Mardi 05 Août au Mardi 16 Septembre 2025",
+                "Workshop de Juin : Les Jeudis du 26 Juin au 07 Août 2025",
+                "Workshop d'Août : Les Mardis du 05 Août au 16 Septembre 2025",
               ]}
-              hours={"De 9h à 12h30"}
               requirements={[
                 "2 ans d'expérience en développement logiciel",
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
@@ -277,30 +239,12 @@ export const WorkshopDDDPage = () => {
                   ),
                 },
                 {
-                  title: "Que va m'apporter ce Workshop ?",
-                  answer: (
-                    <>
-                      Une réelle compréhension pratique du Domain-Driven Design
-                      grâce à des ateliers, des études de cas et des devoirs de
-                      code bien challengeant.
-                      <br />
-                      <br />A la fin,{" "}
-                      <b>
-                        vous serez capable d'expliquer ce qu'est le DDD, de
-                        l'implémenter dans vos applications, d'initier vos
-                        collègues et d'utiliser le DDD pour améliorer
-                        durablement le codebase de votre produit.
-                      </b>
-                    </>
-                  ),
-                },
-                {
                   title: "Combien de temps dure le Workshop ?",
                   answer: (
                     <>
-                      Environ 24 heures étalées sur 7 semaines, les matins de 9h
-                      à 12h30. De futurs Workshop pourront être organisés en
-                      fonction de la demande à d'autres horaires.
+                      Environ 24 heures étalées sur 7 semaines ainsi qu'environ
+                      4h de travaux personnels par semaine pour un total
+                      d'environ 52 heures d'accompagnement.
                     </>
                   ),
                 },
@@ -309,15 +253,6 @@ export const WorkshopDDDPage = () => {
                   answer: (
                     <>
                       Le Workshop est ouvert à <b>seulement 8 personnes.</b>
-                    </>
-                  ),
-                },
-                {
-                  title: "Quel est le tarif du Workshop ?",
-                  answer: (
-                    <>
-                      Le prix du Workshop est de 1,500.00€, toutes taxes
-                      comprises.
                     </>
                   ),
                 },
@@ -334,6 +269,66 @@ export const WorkshopDDDPage = () => {
                       C'est un Workshop exigeant qui ne convient pas aux
                       débutants. Si vous êtes dans ce cas, je vous conseille
                       d'attendre un peu. Dans le doute, réservez-moi un créneau.
+                    </>
+                  ),
+                },
+                {
+                  title: "Qu'en est-il de l'accessibilité ?",
+                  answer: (
+                    <>
+                      Nos formations sont accessibles aux personnes en situation
+                      de handicap. Les aspects, l'accessibilité et le type de
+                      handicap au regard des modalités pédagogiques sont à
+                      évoquer impérativement au cours de l'entretien préalable à
+                      toute contractualisation afin de pouvoir orienter ou
+                      accompagner au mieux les personnes en situation de
+                      handicap.
+                    </>
+                  ),
+                },
+                {
+                  title:
+                    "Quels sont les moyens et supports pédagogiques mis en oeuvre ?",
+                  answer: (
+                    <>
+                      Le formateur présente son support de formation et ponctue
+                      sa formation d’ateliers pratiques : <br />
+                      <ul>
+                        <li>Etudes de cas</li>
+                        <li>Exercices de code en groupe</li>
+                        <li>Quizzes</li>
+                      </ul>
+                      Chaque session se termine ensuite par quelques exercices à
+                      faire chez soi en prévision de la session suivante. La
+                      prochaine session démarrera par un corrigé et une étude de
+                      ces devoirs.
+                    </>
+                  ),
+                },
+                {
+                  title: "Comment sont évalués les acquis ?",
+                  answer: (
+                    <>
+                      Une feuille d'évaluation de compétences est remise à
+                      chaque stagiaire leur permettant d'évaluer leurs acquis
+                      enfin de formation.
+                      <br />
+                      <br />
+                      Une seconde évaluation permet d'évaluer les modalités
+                      pédagogiques et le contenu de la formation, de mesurer le
+                      degré de satisfaction à chaud du stagiaire pour adapter
+                      les formations suivantes aux besoins spécifiques des
+                      participants.
+                    </>
+                  ),
+                },
+                {
+                  title: "Quels sont les délais d'accès ?",
+                  answer: (
+                    <>
+                      Le délai d’accès à la formation est d’un mois en moyenne.
+                      Nous pouvons programmer les formations en fonction de vos
+                      contraintes et de nos disponibilités.
                     </>
                   ),
                 },
@@ -356,7 +351,7 @@ export const WorkshopDDDPage = () => {
                           size={"big"}
                           url={"https://calendly.com/ancyr-academy/ddd"}
                         >
-                          Je veux réserver un créneau maintenant
+                          Je veux réserver ma place maintenant
                         </Button>
                       </div>
                     </>

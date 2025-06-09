@@ -15,6 +15,7 @@ import {
   IoMap,
   IoPeople,
   IoPerson,
+  IoPricetag,
   IoReader,
   IoStar,
 } from "react-icons/io5";
@@ -107,7 +108,7 @@ export const Professor = () => {
         }
       />
       <SellingParagraph>
-        Je suis Anthony Cyrille. Après plus de 15 ans d’expérience dans le
+        Je suis Anthony Cyrille. Après plus de 12 ans d’expérience dans le
         développement logiciel, j’ai décidé d’enseigner tout ce que l’industrie
         m’a appris :{" "}
         <b className={styles.glow}>
@@ -192,11 +193,9 @@ export const Courses = ({
 
 export const PracticalInformations = ({
   dates,
-  hours,
   requirements,
 }: {
   dates: string[];
-  hours: string;
   requirements: string[];
 }) => {
   return (
@@ -222,16 +221,21 @@ export const PracticalInformations = ({
           ))}
           <p className={styles.practical_point}>
             <IoIosClock />
-            <span>{hours}</span>
+            <span>Selon date (9h à 12h30 ou 14h à 17h30)</span>
           </p>
           <p className={styles.practical_point}>
             <IoPeople />
-            <span>Groupe de 6 à 8 personnes</span>
+            <span>Groupe de 3 à 8 personnes</span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoPricetag />
+            <span>Tarif : 1,500.00€ par personne (non assujetti à la TVA)</span>
           </p>
           <p className={styles.practical_point}>
             <IoDocument />
             <span>
               <a
+                target={`_blank`}
                 href={
                   "https://docs.google.com/document/d/1emoZ7Ur8uP6VewZX30zoTO6Dznk013vkrimzjF0-QfM/edit?usp=sharing"
                 }
@@ -244,6 +248,7 @@ export const PracticalInformations = ({
             <IoDocument />
             <span>
               <a
+                target={`_blank`}
                 href={
                   "https://docs.google.com/document/d/1RRjsTiMehN8EU2Rn8d-lzB0xlFw7MMTl3pNXcLomcrY/edit?usp=sharing"
                 }
@@ -256,19 +261,24 @@ export const PracticalInformations = ({
             <IoDocument />
             <span>
               <a
+                target={`_blank`}
                 href={
-                  "https://drive.google.com/file/d/1bBIEhi5W7j2LixQuC67f4oS06Rt_XL4i/view?usp=sharing"
+                  "https://docs.google.com/document/d/1XRbDHGcyuln9p-kZFABDHpDi1xLFbxR_vDioX0uAHA0/edit?usp=sharing"
                 }
               >
                 Programme de Formation
               </a>
             </span>
           </p>
+
           <p className={styles.practical_point}>
             <IoHelpCircle />
             <span>
-              <a href={"https://calendly.com/ancyr-academy/ddd"}>
-                Tarification & Autres questions
+              <a
+                target={`_blank`}
+                href={"https://calendly.com/ancyr-academy/ddd"}
+              >
+                Prise de rendez-vous
               </a>
             </span>
           </p>
