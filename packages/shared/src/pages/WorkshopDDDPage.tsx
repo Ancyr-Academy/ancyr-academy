@@ -194,7 +194,7 @@ export const WorkshopDDDPage = () => {
             <FrequentlyAskedQuestions
               questions={[
                 {
-                  title: "Pourquoi suivre ton Workshop ?",
+                  title: "Pourquoi suivre ce Workshop ?",
                   answer: (
                     <>
                       Parce que le workshop est interactif, hands-on et explore

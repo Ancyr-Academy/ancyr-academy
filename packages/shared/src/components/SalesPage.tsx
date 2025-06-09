@@ -11,7 +11,6 @@ import {
   IoCheckmarkCircleOutline,
   IoDocument,
   IoFolderOpen,
-  IoHelpCircle,
   IoMap,
   IoPeople,
   IoPerson,
@@ -224,12 +223,38 @@ export const PracticalInformations = ({
             <span>Selon date (9h à 12h30 ou 14h à 17h30)</span>
           </p>
           <p className={styles.practical_point}>
+            <IoPricetag />
+            <span>Tarif : 1,500.00€ par personne (non assujetti à la TVA)</span>
+          </p>{" "}
+          <p className={styles.practical_point}>
+            <IoPricetag />
+            <span>
+              Des aides au financement sont possibles.
+              <br />{" "}
+              <a
+                target={`_blank`}
+                href={"https://calendly.com/ancyr-academy/ddd"}
+              >
+                Prenez rendez-vous pour plus d'informations.
+              </a>
+            </span>
+          </p>
+          <p className={styles.practical_point}>
             <IoPeople />
             <span>Groupe de 3 à 8 personnes</span>
           </p>
           <p className={styles.practical_point}>
-            <IoPricetag />
-            <span>Tarif : 1,500.00€ par personne (non assujetti à la TVA)</span>
+            <IoDocument />
+            <span>
+              <a
+                target={`_blank`}
+                href={
+                  "https://docs.google.com/document/d/1XRbDHGcyuln9p-kZFABDHpDi1xLFbxR_vDioX0uAHA0/edit?usp=sharing"
+                }
+              >
+                Programme de Formation
+              </a>
+            </span>
           </p>
           <p className={styles.practical_point}>
             <IoDocument />
@@ -257,32 +282,6 @@ export const PracticalInformations = ({
               </a>
             </span>
           </p>
-          <p className={styles.practical_point}>
-            <IoDocument />
-            <span>
-              <a
-                target={`_blank`}
-                href={
-                  "https://docs.google.com/document/d/1XRbDHGcyuln9p-kZFABDHpDi1xLFbxR_vDioX0uAHA0/edit?usp=sharing"
-                }
-              >
-                Programme de Formation
-              </a>
-            </span>
-          </p>
-
-          <p className={styles.practical_point}>
-            <IoHelpCircle />
-            <span>
-              <a
-                target={`_blank`}
-                href={"https://calendly.com/ancyr-academy/ddd"}
-              >
-                Prise de rendez-vous
-              </a>
-            </span>
-          </p>
-
           <div style={{ marginTop: 40 }}>
             <Button
               wide
