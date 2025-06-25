@@ -78,13 +78,22 @@ export const Footer: React.FC = () => {
             <div className={styles.single_section}>
               <h6 className={styles.section_title}>Liens</h6>
               <div className={styles.section_links}>
-                <a className={styles.section_single_link} href="#">
+                <a
+                  className={styles.section_single_link}
+                  href="https://docs.google.com/document/d/1pzB_2E8K_NtZz3TmP3jB-wHTgnbbwswvsHCstqOaC0A/edit?usp=sharing"
+                >
                   Politique de Confidentialité
                 </a>
-                <a className={styles.section_single_link} href="#">
+                <a
+                  className={styles.section_single_link}
+                  href="https://docs.google.com/document/d/1Af3mHkhOIqOoyeM3ex7yiQLzv6Ic_SaPwCo7McxVP38/edit?usp=sharing"
+                >
                   Conditions d'Utilisations
                 </a>
-                <a className={styles.section_single_link} href="#">
+                <a
+                  className={styles.section_single_link}
+                  href="https://docs.google.com/document/d/1Rz_pr8zO_eDteH0BHOCpILG48IbMiSZAlj7unzU3GIU/edit?usp=sharing"
+                >
                   Mentions Légales
                 </a>
               </div>
