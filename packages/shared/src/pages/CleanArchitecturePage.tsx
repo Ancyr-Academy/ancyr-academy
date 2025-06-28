@@ -29,20 +29,13 @@ export const CleanArchitecturePage = () => {
         sections={[
           buildingBlocks.about(
             <SellingParagraph>
-              La formation Clean Architecture a été conçu pour vous aider à
-              développer des applications robustes et scalables avec des
-              principes d'architecture logicielle avancés, peu importe votre
-              stack : React, NodeJS, PHP, Java, etc.
-              <br /> Ce cours vise à vous faire passer de novice à professionnel
-              et à être capable de mettre votre savoir en pratique
-              immédiatement.
-              <br />
-              <br />
-              Apprendre la Clean Architecture, ça peut paraître intimidant.
-              Rassurez-vous, cette formation va droit au but et se concentre
-              intégralement sur la pratique. Elle est accessible à tout
-              développeur ayant un minimum d’expérience en développement
-              logiciel.
+              On sait que la Clean Architecture peu paraître intidimante. Rien
+              n'est plus faux. Dans cette formation, vous apprendrez à
+              développer des applications back-end et front-end en Clean
+              Architecture avec des exemples simples et concrets. En prime, vous
+              apprendrez comment la Clean Architecture vous permet d'avoir une
+              application testable, et comment guider le développement de votre
+              application par les tests avec le Test-Driven Development (TDD).
             </SellingParagraph>,
           ),
           buildingBlocks.outcomes([

@@ -14,7 +14,7 @@ export const cleanArchitectureBundles: CourseType[] = [
     resume: (
       <>
         Toutes les formations Clean Architecture disponibles (JavaScript, Java &
-        PHP) <b>+ celles à venir (C#...)</b>
+        PHP) en un seul bundle.
       </>
     ),
     isHot: true,
