@@ -3,15 +3,12 @@
 import styles from "./LastCourses.module.scss";
 import React from "react";
 import { allCourses, Container } from "@ancyracademy/shared";
-import { SectionTitle } from "../components/SectionTitle";
 import { CourseResume } from "../components/CourseResume";
 import { NoSsrPromotional } from "@ancyracademy/shared/src/components/NoSsrPromotional";
 
 export const LastCourses: React.FC = () => {
   return (
     <Container>
-      <SectionTitle>Nos cours en ligne</SectionTitle>
-
       <NoSsrPromotional />
       <div className={styles.view}>
         <div className={styles.list}>

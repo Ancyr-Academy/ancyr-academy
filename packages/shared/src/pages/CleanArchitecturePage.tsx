@@ -29,7 +29,7 @@ export const CleanArchitecturePage = () => {
         sections={[
           buildingBlocks.about(
             <SellingParagraph>
-              On sait que la Clean Architecture peu paraître intidimante. Rien
+              On sait que la Clean Architecture peut paraître intidimante. Rien
               n'est plus faux. Dans cette formation, vous apprendrez à
               développer des applications back-end et front-end en Clean
               Architecture avec des exemples simples et concrets. En prime, vous
