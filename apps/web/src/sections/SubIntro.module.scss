@@ -1,0 +1,100 @@
+@use "@ancyracademy/shared/src/core" as core;
+
+.view {
+  padding-block: 100px;
+
+  @include core.mediaQuery("medium") {
+    padding-block: 80px;
+  }
+
+  @include core.mediaQuery("small") {
+    padding-block: 20px;
+  }
+}
+
+.content {
+  gap: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include core.mediaQuery("large") {
+    gap: 80px;
+  }
+  @include core.mediaQuery("medium") {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+
+.texts {
+  flex: 1;
+}
+
+.title {
+  font-size: core.pxToRem(36);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+
+  color: white;
+
+  @include core.mediaQuery("medium") {
+    font-size: core.pxToRem(32);
+  }
+}
+
+.separator {
+  margin-block: 16px;
+  margin-left: 0;
+
+  @include core.mediaQuery("medium") {
+    margin-block: 24px;
+  }
+}
+
+
+.text {
+  font-size: core.pxToRem(24);
+  line-height: 1.3;
+  font-weight: 400;
+
+  margin-block: 16px;
+  margin-bottom: 32px;
+
+  color: white;
+
+  @include core.mediaQuery("medium") {
+    font-size: core.pxToRem(24);
+  }
+}
+
+.image_container {
+  img {
+    width: 560px;
+    object-fit: contain;
+  }
+
+  @include core.mediaQuery("large") {
+    img {
+      width: 420px;
+      object-fit: cover;
+    }
+  }
+  @include core.mediaQuery("medium") {
+    img {
+      width: auto;
+      height: 320px;
+      object-fit: contain;
+
+    }
+  }
+
+  @include core.mediaQuery("small") {
+    img {
+      display: none;
+    }
+  }
+}

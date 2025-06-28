@@ -20,13 +20,13 @@ export const Intro = () => {
             <h6 className={styles.intro_title}>
               Software Engineering
               <br />{" "}
-              <span className={styles.intro_title_effect}>for tomorrow</span>
+              <span className={styles.intro_title_effect}>Fundamentals</span>
             </h6>
             <p className={styles.intro_text}>
               Développez des compétences qui sont faites pour durer, créez des
-              applications à l’épreuve du temps, devenez de véritables seniors.
+              applications de très haute qualité, devenez de véritables seniors.
             </p>
-            <Button url="/courses">Voir les cours</Button>
+            <Button url="/courses">Toutes nos formations</Button>
           </div>
         </div>
       </Container>

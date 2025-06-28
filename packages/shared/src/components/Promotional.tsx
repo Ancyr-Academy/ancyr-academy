@@ -61,8 +61,8 @@ export const Promotional: React.FC = () => {
       duration={duration}
       message={
         <>
-          Jusqu'à <b>-{discount!.percentage * 100}%</b> sur les{" "}
-          <b>cours en e-learning</b> avec le code <b>{discount!.code}</b>
+          Profitez de <b>-{discount!.percentage * 100}%</b> sur tous nos{" "}
+          <b>cours en ligne</b> avec le code <b>{discount!.code}</b>
         </>
       }
     />

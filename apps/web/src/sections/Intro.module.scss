@@ -22,6 +22,10 @@
   @include core.mediaQuery("medium") {
     gap: 40px;
   }
+
+  @include core.mediaQuery("small") {
+    flex-direction: column;
+  }
 }
 
 .image_container {
@@ -35,14 +39,17 @@
     order: -1;
 
     img {
-      height: 140px;
-      width: 140px;
-      object-fit: cover;
+      height: 180px;
+      width: 180px;
+      object-fit: contain;
     }
   }
 
   @include core.mediaQuery("small") {
-    display: none;
+    img {
+      object-fit: contain;
+    }
+
   }
 }
 
