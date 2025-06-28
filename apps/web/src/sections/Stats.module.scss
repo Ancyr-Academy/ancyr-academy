@@ -1,0 +1,96 @@
+@use "@ancyracademy/shared/src/core" as core;
+
+.view {
+  padding-block: 60px;
+}
+
+.title {
+  text-align: center;
+  font-size: core.pxToRem(36);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+
+  color: white;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: core.pxToRem(24);
+  color: white;
+
+  margin: 0;
+  margin-top: 16px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  margin-top: 80px;
+
+  @include core.mediaQuery("medium") {
+    flex-direction: column;
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat_outer {
+  height: 240px;
+  width: 240px;
+
+  border-radius: 50%;
+  border: 1px solid #63ECD7;
+
+  padding: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.stat_inner {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 50%;
+
+  background: radial-gradient(circle, #5AE0CC10, #1C3E3810);
+  border: 1px solid rgba(90, 224, 204, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat_value {
+  font-size: core.pxToRem(52);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #63ECD7;
+  text-align: center;
+
+  margin: 0;
+}
+
+.stat_text {
+  font-size: core.pxToRem(24);
+  font-weight: 400;
+  color: white;
+
+  margin-top: 40px;
+  text-align: center;
+
+  @include core.mediaQuery("medium") {
+    max-width: 300px;
+  }
+}

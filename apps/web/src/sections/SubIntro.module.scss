@@ -1,11 +1,7 @@
 @use "@ancyracademy/shared/src/core" as core;
 
 .view {
-  padding-block: 100px;
-
-  @include core.mediaQuery("medium") {
-    padding-block: 80px;
-  }
+  padding-block: 60px;
 
   @include core.mediaQuery("small") {
     padding-block: 20px;
