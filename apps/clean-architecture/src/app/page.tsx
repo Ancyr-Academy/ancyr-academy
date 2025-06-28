@@ -3,9 +3,9 @@ import { CleanArchitecturePage } from "@ancyracademy/shared";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Clean Architecture - Ancyr Academy",
+  title: "Formation Clean Architecture complète et en ligne - Ancyr Academy",
   description:
-    "Formation Complète Clean Architecture en TDD - 30h de cours intensifs avec exercices & explications claires pour apprendre et maitriser la Clean Architecture en TDD",
+    "Apprenez à créer des applications front-end et back-end en Clean Architecture et en TDD en NodeJS, React, PHP ou Java.",
   openGraph: {
     images: [
       {

@@ -29,9 +29,10 @@ export const CleanArchitecturePage = () => {
         sections={[
           buildingBlocks.about(
             <SellingParagraph>
-              La formation Clean Architecture en PHP & Symfony a été conçu pour
-              vous aider à développer des applications robustes et scalables qui
-              durent dans le temps.
+              La formation Clean Architecture a été conçu pour vous aider à
+              développer des applications robustes et scalables avec des
+              principes d'architecture logicielle avancés, peu importe votre
+              stack : React, NodeJS, PHP, Java, etc.
               <br /> Ce cours vise à vous faire passer de novice à professionnel
               et à être capable de mettre votre savoir en pratique
               immédiatement.
