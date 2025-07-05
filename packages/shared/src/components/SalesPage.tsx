@@ -275,7 +275,7 @@ export const PracticalInformations = ({
               <a
                 target={`_blank`}
                 href={
-                  "https://docs.google.com/document/d/1RRjsTiMehN8EU2Rn8d-lzB0xlFw7MMTl3pNXcLomcrY/edit?usp=sharing"
+                  "https://drive.google.com/file/d/1oaE9yAjicGyU-eMmBPuWY1s02oCrvRWd/view?usp=sharing"
                 }
               >
                 Règlement Intérieur

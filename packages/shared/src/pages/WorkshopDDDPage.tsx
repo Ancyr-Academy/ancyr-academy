@@ -179,10 +179,7 @@ export const WorkshopDDDPage = () => {
           buildingBlocks.workshopMoneyback,
           buildingBlocks.reserve(
             <PracticalInformations
-              dates={[
-                "Workshop de Juin : Les Jeudis du 26 Juin au 07 Août 2025",
-                "Workshop d'Août : Les Mardis du 05 Août au 16 Septembre 2025",
-              ]}
+              dates={["Les Mardis du 05 Août au 16 Septembre 2025"]}
               requirements={[
                 "2 ans d'expérience en développement logiciel",
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
