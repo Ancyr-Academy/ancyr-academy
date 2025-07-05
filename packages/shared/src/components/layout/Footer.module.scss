@@ -32,18 +32,9 @@
   margin-block: 0;
 
   text-transform: uppercase;
-  font-size: core.pxToRem(28);
+  font-size: core.pxToRem(20);
   font-weight: 700;
   color: white;
-}
-
-.subtitle {
-  margin-block: 0;
-  margin-bottom: 10px;
-
-  font-size: core.pxToRem(20);
-  font-weight: 300;
-  color: #E6E5E5;
 }
 
 .icons {
@@ -72,7 +63,7 @@
   margin-block: 0;
   margin-top: 24px;
 
-  font-size: core.pxToRem(20);
+  font-size: core.pxToRem(16);
   font-weight: 300;
   color: #b4b3b3;
 }
@@ -100,7 +91,7 @@
   margin-block: 0;
 
   text-transform: uppercase;
-  font-size: core.pxToRem(21);
+  font-size: core.pxToRem(20);
   font-weight: 700;
   color: white;
 }
@@ -118,7 +109,7 @@
 }
 
 .section_single_link {
-  font-size: core.pxToRem(20);
+  font-size: core.pxToRem(16);
   font-weight: 300;
   color: #E6E5E5;
   text-decoration: none;

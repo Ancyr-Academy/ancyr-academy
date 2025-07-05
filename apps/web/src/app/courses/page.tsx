@@ -36,10 +36,15 @@ const List = styled.div`
   margin-top: 40px;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 
   ${mediaQuery(size.medium)} {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  ${mediaQuery(size.small)} {
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
   }

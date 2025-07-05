@@ -43,7 +43,7 @@
 }
 
 .separator {
-  margin-block: 16px;
+  margin-block: 32px;
   margin-left: 0;
 
   @include core.mediaQuery("medium") {
@@ -53,8 +53,8 @@
 
 
 .text {
-  font-size: core.pxToRem(24);
-  line-height: 1.3;
+  font-size: core.pxToRem(20);
+  line-height: 1.5;
   font-weight: 400;
 
   margin-block: 16px;
