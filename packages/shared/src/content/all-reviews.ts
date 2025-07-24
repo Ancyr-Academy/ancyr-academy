@@ -1,6 +1,48 @@
 export const allReviews = [
   {
     authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/aurelien_brachet.jpeg",
+    authorName: "Aurélien Brachet",
+    content: `Une formation exceptionnelle sur le DDD ! J’ai suivi cette formation de 6 semaines avec beaucoup d’intérêt, et je dois dire que j’ai été bluffé par la qualité du contenu. Que vous soyez débutant ou déjà expérimenté, vous y trouverez une structure claire, des explications concrètes et des exemples directement applicables dans vos projets. Chaque session m’a permis de mieux comprendre les principes fondamentaux du Domain-Driven Design, tout en me donnant des clés pour structurer des applications robustes et évolutives. Un grand bravo au formateur pour sa pédagogie et sa passion communicative. Je la recommande vivement à toute personne souhaitant approfondir sérieusement sa compréhension du DDD.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/pierre_chene.jpeg",
+    authorName: "Pierre Chene",
+    content: `J'ai suivi le workshop DDD de 6 semaines. Les sujets abordés sont bien structurés et creusés durant la formation. Il y a une mise en pratique concrète avec un projet fil rouge. Aussi, les questions des participants sont réellement traitées et débattues. Bref, c'était une formation de qualité que je recommande.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/charles_meldhine_madi_mnemoi.jpeg",
+    authorName: "Charles-Meldhine Madi Mnemoi",
+    content: `Les formations d’Anthony ont profondément transformé ma manière de travailler. Chaque euro et chaque minute investi en valent largement la peine. Par exemple, je prends désormais plaisir à écrire des tests rapides, lisibles et robustes, qui me protègent des régressions sans devoir être réécrits au moindre refactoring. Résultat : je travaille avec bien plus de sérénité au quotidien. Anthony est un excellent pédagogue, passionné et précis. Ses explications sont à la fois accessibles et approfondies : on sent qu’il maîtrise ses sujets sur le bout des doigts. Il parvient à transmettre à la fois les fondamentaux théoriques et les techniques concrètes, pragmatiques et directement applicables, le tout à travers des projets et exemples réalistes tirés du monde professionnel — loin des katas simplistes. Il est également très présent dans sa communauté, toujours disponible pour répondre aux questions, y compris de personnes qui ne sont pas (encore) ses étudiants. En résumé : si vous souhaitez progresser sérieusement en ingénierie logicielle, foncez les yeux fermés.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/jean_michelet.png",
+    authorName: "Jean Michelet",
+    content: `Anthony fait un travail formidable pour simplifier des concepts théoriques et définir des stratégies concrètes applicables en entreprise. Pour les développeurs qui n'ont pas toujours le temps de lire des tonnes de livres et d'articles sur un sujet particulier, et pour les entreprises souhaitant former rapidement et efficacement leurs employés, ses formations représentent un gain de temps, d'énergie et d'argent très rentable. De plus, ses connaissances dépassent largement l'architecture logicielle pour couvrir un vaste champ des sciences informatiques. Je recommande donc à la fois aux développeurs curieux et aux entreprises désireuses d'améliorer la qualité de leurs logiciels de donner une chance à son contenu.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/george_cosson.jpeg",
+    authorName: "Georges Cosson",
+    content: `J'ai suivi la formation DDD sur 6 semaine d'Anthony. Il est passioné et passionant. Les sujets sont bien amenés et s'enchainent bien, dans la bonne humeur. Je recommande aux devs voulant découvrir ou creuser le DDD (et toutes les bonnes pratiques que ça implique)`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/aymeric_maillot.jpeg",
+    authorName: "Aymeric Maillot",
+    content: `J’ai suivi plusieurs formations en développement, mais celle sur la Clean Architecture en Java chez Ancyr Academy est de loin ma préférée. Construire un projet from scratch avec une telle architecture est un véritable défi, mais l'approche d'Anthony rend le processus à la fois accessible et stimulant. Ce que j’ai particulièrement apprécié, c’est la manière dont Ancyr Academy allie théorie et pratique de façon ludique. On ne se contente pas d’apprendre des concepts abstraits : chaque notion est immédiatement mise en application dans des cas concrets, ce qui facilite grandement la compréhension du sujet. Je recommande vivement les formations d’Ancyr Academy à tous ceux qui souhaitent approfondir leurs connaissances en architecture logicielle.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/guillaume_jasmin.png",
+    authorName: "Guillaume Jasmin",
+    content: `Formation DDD très complète, avec beaucoup de pédagogie.`,
+  },
+  {
+    authorImage:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yaziddaoudi.jpeg",
     authorName: "Yazid Daoudi",
     content: `Je conseil fortement la formation d'Anthony. Elle convient a tous, debutant et confirmé. Anthony prend le temps d'expliquer toute la theorie autour de la clean architecture pour ensuite nous plonger dans une etude de cas avec react et next. De plus le contenu est mis a jour en fonction des remarques faites par les membres de la formation. Je recommande a 100% !`,
@@ -205,7 +247,7 @@ Encore merci Anthony pour cette expérience formatrice !`,
     authorName: "Yao Charles Konan",
     content: `Très bien structurée. On part de concepts abstraits mais bien expliqués à leur application concrète`,
   },
-  
+
   {
     authorImage:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/mounir_b.jpeg",
