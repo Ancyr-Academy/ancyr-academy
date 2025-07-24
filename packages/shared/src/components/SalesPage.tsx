@@ -14,7 +14,6 @@ import {
   IoMap,
   IoPeople,
   IoPerson,
-  IoPricetag,
   IoReader,
   IoStar,
 } from "react-icons/io5";
@@ -220,25 +219,9 @@ export const PracticalInformations = ({
           ))}
           <p className={styles.practical_point}>
             <IoIosClock />
-            <span>Selon date (9h à 12h30 ou 14h à 17h30)</span>
+            <span>9h à 12h30</span>
           </p>
-          <p className={styles.practical_point}>
-            <IoPricetag />
-            <span>Tarif : 1,500.00€ par personne (non assujetti à la TVA)</span>
-          </p>{" "}
-          <p className={styles.practical_point}>
-            <IoPricetag />
-            <span>
-              Des aides au financement sont possibles.
-              <br />{" "}
-              <a
-                target={`_blank`}
-                href={"https://calendly.com/ancyr-academy/ddd"}
-              >
-                Prenez rendez-vous pour plus d'informations.
-              </a>
-            </span>
-          </p>
+
           <p className={styles.practical_point}>
             <IoPeople />
             <span>Groupe de 3 à 8 personnes</span>
