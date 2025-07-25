@@ -6,12 +6,15 @@ import { Review } from "./Review";
 import { allReviews } from "../content/all-reviews";
 import { Button } from "./Button";
 
+const INITIAL_COUNT_TO_SHOW = 5;
+const INCREMENT_COUNT = 5;
+
 export const ReviewList: React.FC<{ children: any }> = ({ children }) => {
   return <div className={styles.view}>{children}</div>;
 };
 
 export const CompleteReviewList = () => {
-  const [countToShow, setCountToShow] = useState(3);
+  const [countToShow, setCountToShow] = useState(INITIAL_COUNT_TO_SHOW);
 
   return (
     <ReviewList>
@@ -27,7 +30,9 @@ export const CompleteReviewList = () => {
       {countToShow < allReviews.length && (
         <Button
           onClick={() =>
-            setCountToShow((state) => Math.min(allReviews.length, state + 5))
+            setCountToShow((state) =>
+              Math.min(allReviews.length, state + INCREMENT_COUNT),
+            )
           }
         >
           Voir plus

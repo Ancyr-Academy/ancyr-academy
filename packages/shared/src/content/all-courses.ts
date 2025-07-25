@@ -1,5 +1,3 @@
-type CourseType = "Cours Complet" | "Essentials";
-
 type Course = {
   title: string;
   resume: string;
@@ -19,7 +17,7 @@ export const allCourses: Course[] = [
     isFree: false,
     isHot: true,
     imageUrl:
-      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/clean_architecture_course.png",
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca.png",
   },
   {
     title: "CQRS",
@@ -28,7 +26,8 @@ export const allCourses: Course[] = [
     url: "/cqrs",
     isFree: false,
     isHot: true,
-    imageUrl: "https://cdn.filestackcontent.com/g3Yv0uBaQ2OYoY8hrnZH",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_cqrs.png",
   },
   {
     title: "Test-Driven Development",
@@ -38,7 +37,8 @@ export const allCourses: Course[] = [
     isNew: false,
     isFree: false,
     isHot: false,
-    imageUrl: "https://cdn.filestackcontent.com/WEocxIejSmyMFkXKkU1A",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_tdd.png",
   },
   {
     title: "Tests Unitaires",
@@ -47,7 +47,8 @@ export const allCourses: Course[] = [
     url: "https://courses.ancyracademy.fr/p/essentials-tests-unitaires",
     isFree: true,
     isHot: false,
-    imageUrl: "https://cdn.filestackcontent.com/RXp3a6BRTW26a2bXGpFA",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_tests_unitaires.png",
   },
   {
     title: "Principes SOLID",
@@ -56,6 +57,7 @@ export const allCourses: Course[] = [
     url: "https://courses.ancyracademy.fr/p/essentials-principes-solid",
     isFree: true,
     isHot: false,
-    imageUrl: "https://cdn.filestackcontent.com/EN1eoOE2SHuhNZ782vvX",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_solid.png",
   },
 ];

@@ -34,7 +34,7 @@ export const Overview: React.FC<{
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.pre_title}>
-              {pretitle ?? "Formation Complete"}
+              {pretitle ?? "Formation en e-learning"}
             </h1>
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subtitle}>{subtitle}</p>

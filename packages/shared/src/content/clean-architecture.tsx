@@ -4,7 +4,8 @@ import { CourseType } from "./course";
 export const cleanArchitectureBundles: CourseType[] = [
   {
     id: "mega-bundle",
-    imageUrl: "https://cdn.filestackcontent.com/x6worA6VR1OUspPAEDAR",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_megabundle.png",
     price: 400,
     status: {
       type: "available",
@@ -21,7 +22,8 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "fullstack-javascript",
-    imageUrl: "https://cdn.filestackcontent.com/PZZqfwieTQG0P1x1P0nb",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_javascript.png",
     price: 250,
     status: {
       type: "available",
@@ -38,7 +40,8 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "react-nextjs",
-    imageUrl: "https://cdn.filestackcontent.com/MhBT57hnQsWQObusmAka",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_bundle_frontend_nextjs.png",
     price: 150,
     status: {
       type: "available",
@@ -55,7 +58,8 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "backend-nestjs",
-    imageUrl: "https://cdn.filestackcontent.com/o0cQTbL3QUOCCnhbrXDk",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_bundle_backend_nestjs.png",
     price: 150,
     status: {
       type: "available",
@@ -72,7 +76,8 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "java",
-    imageUrl: "https://cdn.filestackcontent.com/7wUZmygxRyq5Q8XSTfiY",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_bundle_java.png",
     price: 150,
     status: {
       type: "available",
@@ -89,7 +94,8 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "php",
-    imageUrl: "https://cdn.filestackcontent.com/z1p8F1VnTFuqlVv1zJM2",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_bundle_php.png",
     price: 150,
     status: {
       type: "available",
@@ -106,7 +112,8 @@ export const cleanArchitectureBundles: CourseType[] = [
   },
   {
     id: "fondamentaux",
-    imageUrl: "https://cdn.filestackcontent.com/2Sg9RQCR0DRk6inikTAQ",
+    imageUrl:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_fondamentaux.png",
     price: 30,
     status: {
       type: "available",
