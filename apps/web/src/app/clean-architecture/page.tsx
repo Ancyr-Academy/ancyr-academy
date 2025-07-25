@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/clean_architecture_course.png",
+        url: "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca.png",
       },
     ],
   },
   twitter: {
     images: [
       {
-        url: "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/formations/clean_architecture_course.png",
+        url: "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca.png",
       },
     ],
   },
