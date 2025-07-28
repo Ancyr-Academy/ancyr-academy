@@ -23,7 +23,7 @@ export const cleanArchitectureBundles: CourseType[] = [
   {
     id: "fullstack-javascript",
     imageUrl:
-      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_javascript.png",
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_ca_bundle_javascript.png",
     price: 250,
     status: {
       type: "available",
