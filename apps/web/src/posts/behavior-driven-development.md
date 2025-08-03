@@ -19,29 +19,30 @@ l'historique du BDD pour mieux comprendre de quoi il s'agit.
 
 ## Le Test-Driven Development
 
-Si vous lisez ce blog, vous connaissez déjà le Test-Driven Development. C'est une approche de développement logiciel chère 
-à un mouvement très connu : l'Extreme Programming (XP), le père d'agile. Les promoteurs de l'XP étaient convaincus que la qualité
-devait être une valeur première du code sans quoi il était impossible de livrer par itérations courtes et rapides.
+Si vous lisez ce blog, vous connaissez déjà le **Test-Driven Development** : une approche au développement logiciel chère 
+à un mouvement très connu, **l'Extreme Programming (XP)**, le père d'agile. 
 
-En somme, ils ne voyaient pas le "test" du TDD comme étant une méthode de vérification du logiciel. Ils voyaient le "test"
-du TD comme un objectif à atteindre. En TDD, le test a pour vocation de justifier l'existence de code. On écrit du code en réaction
-à un test qui échoue, et cette dynamique permet d'avoir une forme de "double-entry book-keeping" dans lequel le test passe au vert pour 
-nous signifier que la feature a bien été implémenté.
+Les promoteurs de l'XP étaient convaincus que la qualité devait être une valeur première du code et qu'écrire des tests 
+aidait grandement à itérer rapidement sans perdre trop de temps sur des régressions. Mais surtout, ils ne voyaient pas le "test" du TDD 
+comme étant une méthode de vérification du logiciel. **Ils voyaient le "test" du TDD comme un objectif à atteindre.** 
 
-J'insiste là dessus, en TDD on spécifie, on ne vérifie pas. C'est important car c'est cette confusion qui mènera à la 
-naissance du Behavior-Driven Development.
+En TDD, le test a pour vocation de justifier l'existence de code. On écrit du code en réaction à un test qui échoue, 
+et cette dynamique permet d'avoir une forme de "double-entry book-keeping" dans lequel le test passe au vert pour nous signifier que la feature a bien été implémenté.
+
+J'insiste là dessus. En TDD, on spécifie, on ne vérifie pas. C'est important car c'est cette confusion qui mènera à la 
+naissance du **Behavior-Driven Development**.
 
 ## Le problème du TDD
 
-Dan North (ainsi que d'autres devs) ont remarqué que le TDD prenait en popularité mais était très mal compris. Pour le grand public, le 
-TDD était une approche de test, et pour eux faire du TDD signifiait tester le code.
+Dan North (ainsi que d'autres devs) ont remarqué que le TDD devenait populaire, mais était très mal compris. Pour le grand public, le 
+TDD était une approche de test, **et pour eux faire du TDD signifiait tester le code**.
 
 Cette mentalité a plusieurs conséquences négatives :
 
-- Les tests deviennent très couplés à la structure du code, on se retrouve avec un test unitaire par classe
-- Le focus est mis sur la vérification, et il devient facile de trop tester
-- A trop tester, le code devient difficile à changer, ce qui est antithétique à la raison d'être du TDD
-- En général, on fait des tests après avoir créé le code, pas avant, ce qui impliquait beaucoup de résistances à l'adoption
+- Les tests deviennent **très couplés à la structure du code**, on se retrouve avec un test par classe
+- Le focus est mis sur la **vérification**, et il devient facile de trop tester
+- A trop tester, **le code devient difficile à changer**, ce qui est antithétique à la raison d'être du TDD
+- En général, on fait des tests après avoir créé le code, pas avant, **ce qui impliquait beaucoup de résistances à l'adoption**
 - On a pas forcément le temps de tester le code, surtout dans un contexte où on manque de temps (ce qui est souvent le cas)
 
 Vous voyez, associer "TDD" à "test" implique à la fois une très mauvaise compréhension du TDD mais également une très 
@@ -72,9 +73,9 @@ d'écrire un test pour vérifier du code, **je suis en train d'expliquer comment
 
 Pour aller plus loin dans l'idée de "spécifier", Dan North proposa également de revoir le wording des trois A. Pour rappel, un test est
 structuré autour de 3 phases : 
-- Arrange, dans laquelle on prépare le contexte d'éxecution du test
-- Act, dans laquelle on effectue une action sur le système testé
-- Assert, dans laquelle on vérifie le résultat
+- **Arrange**, dans laquelle on prépare le contexte d'éxecution du test
+- **Act**, dans laquelle on effectue une action sur le système testé
+- **Assert**, dans laquelle on vérifie le résultat
 
 Les 3A étant trop "test-oriented", Dan North propose plutôt l'approche **Given, When, Then**. Dans le cadre de la liste vide,
 ça donnerait...
@@ -85,10 +86,10 @@ WHEN asking the size of the list
 THEN the size should be 0
 ```
 
-Ce qui n'a plus rien à voir avec du testing et tout à voir avec de la documentation.
+Ce qui n'a plus rien à voir avec du testing et tout à voir avec de la **documentation**.
 
 Ces 3 points avaient pour objectif non pas de réinventer le TDD mais de mettre en avant ce que signifie véritablement le TDD. Au départ,
-le BDD n'était rien de plus que **TDD done right**. 
+le BDD n'était rien de plus que du **TDD done right**. 
 
 ## L'évolution du BDD
 
@@ -105,11 +106,11 @@ prendre beaucoup de recul et cherche à mettre en place les outils pour aider le
 
 Et cette démarche commence en brisant un premier mur : **celui de la spécification**.
 
-Dans l'approche BDD, la spécification n'est plus un besoin figé venu d'en haut mais un sujet de conversation que l'on
-veut explorer, en mettant à la table les développeurs, les business analyst, l'équipe product et tout autre stakeholder ayant
-un intérêt quelconque vis à vis du logiciel.
+Dans l'approche BDD, la spécification n'est plus un besoin figé venu d'en haut mais **un sujet de conversation que l'on
+veut explorer**, en mettant à la table les développeurs, les business analyst, l'équipe product et tout autre stakeholder ayant
+**un intérêt quelconque vis à vis du logiciel.**
 
-En d'autre terme, de rendre la spécification négociable et challengeable.
+En d'autre terme, de rendre **la spécification négociable, évolutive et challengeable**.
 
 En faisant de la spécification un sujet de conversation, on créé de la conversation et on s'offre :
 
@@ -118,9 +119,9 @@ En faisant de la spécification un sujet de conversation, on créé de la conver
 - De mieux comprendre **pourquoi** on développe cette feature, car on prend en compte **le besoin qui motive la spécification**
 - D'itérer sur une spécification beaucoup plus légère et d'approfondir **seulement si le feedback est positif**
 
-Du véritable Agile.
+**Du véritable Agile.**
 
-Et c'est ça qu'il faut retenir du BDD d'aujourd'hui : **mettre l'accent sur la discussion pour déterminer comment créer le logiciel 
+Voilà ce qu'il faut retenir de l'état de l'art du BDD : une méthodologie qui **met l'accent sur la discussion pour déterminer comment créer le logiciel 
 qui sera utile à toutes les parties prenantes**.
 
 L'aspect "automatisation" du BDD, qui a donné naissance au BDD, **est un aspect purement secondaire du BDD**. Pour citer Dan North, 
@@ -130,12 +131,14 @@ le plus grand préjudice qu'il a pu porter au concept de BDD est de l'avoir asso
 
 Aujourd'hui, le BDD porte en lui deux définitions proches mais assez différentes dues à son historique.
 
-- D'une part, c'est une réhabilitation de ce qu'aurait dû être le TDD
-- D'autre part, une méthodologie qui aide à déterminer comment construire le bon logiciel à travers la discussion
+- D'une part, c'est une **réhabilitation de ce qu'aurait dû être le TDD**
+- D'autre part, **une méthodologie** qui aide à déterminer comment construire le bon logiciel à travers la **discussion**
 
 Elles ne sont pas opposées, mais différentes. Malheureusement, elles donnent lieu à des débats parfaitement inutiles.
 
-**Le plus dangereux étant que BDD = TDD**. Rien n'est plus faux, mais on verra pourquoi dans un autre article. Retenez simplement :
+**Le plus dangereux étant que BDD = TDD**. 
+
+Rien n'est plus faux, mais on verra pourquoi dans un autre article. Retenez simplement :
 
 - Que le TDD est une pratique de construction de code itérative et incrémentale qui aide le développeur à construire du code une étape à la fois
 - Le BDD est une approche qui permet de spécifier ce que doit faire le logiciel
