@@ -185,6 +185,12 @@ export const WorkshopDDDPage = () => {
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
                 "Bonnes compétences de développement orienté objet",
               ]}
+              hours={"9h à 12h30"}
+              price={1500}
+              programUrl={
+                "https://drive.google.com/file/d/1lySVB0Dvzza0drtWdMbgf8DKEllqiaQc/view?usp=sharing"
+              }
+              bookUrl={"https://calendly.com/ancyr-academy/ddd"}
             />,
           ),
           buildingBlocks.faq(

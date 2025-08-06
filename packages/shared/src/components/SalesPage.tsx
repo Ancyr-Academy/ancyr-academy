@@ -193,9 +193,17 @@ export const Courses = ({
 export const PracticalInformations = ({
   dates,
   requirements,
+  hours,
+  price,
+  programUrl,
+  bookUrl,
 }: {
   dates: string[];
   requirements: string[];
+  hours: string;
+  price: number;
+  programUrl: string;
+  bookUrl: string;
 }) => {
   return (
     <div className={styles.practical}>
@@ -215,29 +223,35 @@ export const PracticalInformations = ({
           {dates.map((date) => (
             <p key={date} className={styles.practical_point}>
               <IoCalendar />
-              <span>{date}</span>
+              <span>
+                <b>{date}</b>
+              </span>
             </p>
           ))}
           <p className={styles.practical_point}>
             <IoIosClock />
-            <span>9h à 12h30</span>
+            <span>
+              <b>{hours}</b>
+            </span>
           </p>
           <p className={styles.practical_point}>
             <IoPricetag />
-            <span>Tarif : 1,500.00€ par personne (non assujetti à la TVA)</span>
+            <span>
+              Tarif :{" "}
+              <b>
+                {price.toLocaleString("fr-FR", {
+                  style: "currency",
+                  currency: "EUR",
+                })}{" "}
+                par personne (non assujetti à la TVA)
+              </b>
+            </span>
           </p>
           <p className={styles.practical_point}>
             <IoPricetag />
             <span>
               Des aides au financement et des facilités de paiement sont
               possibles.
-              <br />{" "}
-              <a
-                target={`_blank`}
-                href={"https://calendly.com/ancyr-academy/ddd"}
-              >
-                Prenez rendez-vous pour plus d'informations.
-              </a>
             </span>
           </p>
           <p className={styles.practical_point}>
@@ -247,12 +261,7 @@ export const PracticalInformations = ({
           <p className={styles.practical_point}>
             <IoDocument />
             <span>
-              <a
-                target={`_blank`}
-                href={
-                  "https://docs.google.com/document/d/1XRbDHGcyuln9p-kZFABDHpDi1xLFbxR_vDioX0uAHA0/edit?usp=sharing"
-                }
-              >
+              <a target={`_blank`} href={programUrl}>
                 Programme de Formation
               </a>
             </span>
@@ -284,11 +293,7 @@ export const PracticalInformations = ({
             </span>
           </p>
           <div style={{ marginTop: 40 }}>
-            <Button
-              wide
-              size={"big"}
-              url={"https://calendly.com/ancyr-academy/ddd"}
-            >
+            <Button wide size={"big"} url={bookUrl}>
               Je réserve ma place
             </Button>
           </div>
