@@ -107,12 +107,15 @@ export const Professor = () => {
         }
       />
       <SellingParagraph>
-        Je suis Anthony Cyrille. Après plus de 12 ans d’expérience dans le
-        développement logiciel, j’ai décidé d’enseigner tout ce que l’industrie
-        m’a appris :{" "}
-        <b className={styles.glow}>
-          les compétences les plus indispensables du métier, celles qui font la
-          différence, celles qui durent.
+        Hello ! 👋
+        <br />
+        Moi, c'est <b>Anthony Cyrille</b>. Après plus de 12 ans d’expérience
+        dans le développement logiciel, j’ai décidé d’enseigner les leçons
+        riches que j'ai appris de l'industrie : des compétences profondes,
+        difficiles d'accès mais{" "}
+        <b>
+          qui font toute la différence entre un développeur junior et un
+          véritable développeur senior.
         </b>
       </SellingParagraph>
     </div>
@@ -194,14 +197,16 @@ export const PracticalInformations = ({
   dates,
   requirements,
   hours,
-  price,
+  regularPrice,
+  discountPrice,
   programUrl,
   bookUrl,
 }: {
   dates: string[];
   requirements: string[];
   hours: string;
-  price: number;
+  regularPrice: number;
+  discountPrice: number;
   programUrl: string;
   bookUrl: string;
 }) => {
@@ -237,9 +242,22 @@ export const PracticalInformations = ({
           <p className={styles.practical_point}>
             <IoPricetag />
             <span>
-              Tarif :{" "}
+              Tarif Entreprise / Freelance :{" "}
               <b>
-                {price.toLocaleString("fr-FR", {
+                {regularPrice.toLocaleString("fr-FR", {
+                  style: "currency",
+                  currency: "EUR",
+                })}{" "}
+                par personne (non assujetti à la TVA)
+              </b>
+            </span>
+          </p>
+          <p className={styles.practical_point}>
+            <IoPricetag />
+            <span>
+              Tarif Particulier :{" "}
+              <b>
+                {discountPrice.toLocaleString("fr-FR", {
                   style: "currency",
                   currency: "EUR",
                 })}{" "}

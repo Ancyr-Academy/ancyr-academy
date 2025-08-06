@@ -179,12 +179,7 @@
   font-size: core.pxToRem(24);
   line-height: 1.4;
 
-  b.glow {
-    display: block;
-    background: linear-gradient(to right, #3BE4FD, #A8FA7D);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+
 
   @include core.mediaQuery("small") {
     font-size: core.pxToRem(20);
@@ -267,8 +262,8 @@
   color: white;
   font-weight: 800;
 
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 
 .faq {

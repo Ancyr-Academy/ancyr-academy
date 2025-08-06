@@ -48,40 +48,38 @@ export const WorkshopDDDPage = () => {
         sections={[
           buildingBlocks.about(
             <SellingParagraph>
-              A travers ce Workshop, vous allez apprendre en profondeur le
-              Domain-Driven Design, un concept qui vise à partager le même
-              langage et la même vision du métier entre tous les acteurs du
-              projet (Devs, Product Owners, Business...).
+              A travers ce Workshop, vous allez apprendre à développer des
+              applications guidés par le métier avec le{" "}
+              <b>Domain-Driven Design</b>, un concept qui vise à modéliser des
+              solutions techniques à des problèmes métier très complexes.
               <br />
               <br />
-              Ce Workshop est divisé en{" "}
-              <b>7 demi-journées étalées sur 7 semaines</b> vous donne le temps
-              d'intégrer les concepts avancés du Domain-Driven Design et de les
-              mettre en application dans des exercices à difficulté croissante.
+              Ce Workshop est divisé en <b>7 sessions</b> pour vous permettre de
+              progresser à votre rythme et de mettre en application les concepts
+              abordés avec des exercices pratiques.
               <br />
               <br />
               Chaque session est composée{" "}
               <b>
-                d'ateliers pratiques, d'études de cas et d'échanges oraux
+                d'ateliers pratiques, d'exercices, d'études de cas et d'échanges
               </b>{" "}
               pour vraiment prendre le sujet en main avec des exemples concrets.
               <br />
               <br />
               <b>
-                Vous repartez avec une expérience pratique du Domain-Driven
-                Design.
+                Vous repartez avec une véritable expérience pratique du
+                Domain-Driven Design.
               </b>
             </SellingParagraph>,
           ),
           buildingBlocks.outcomes([
             "Définir le Domain-Driven Design et l'implémenter dans vos projets",
             "Initier vos collègues au Domain-Driven Design",
-            "Mettre en place un design qui épouse véritablement les principes Orienté Objet",
-            "Décomposer votre application en sous applications (Bounded Contexts)",
-            "Concevoir des solutions poussées à des problèmes très complexes",
+            "Mettre en place un design véritablement orienté-objet",
+            "Décomposer votre application en modules plus simples à maintenir avec les Bounded Contexts",
+            "Concevoir des solutions techniques avancées à des problèmes très complexes",
             "Avoir les outils pour explorer des patterns très avancés (Microservices, Event Sourcing, CQRS...)",
           ]),
-          /** Replace this by "what do you acquire" **/
           buildingBlocks.target([
             "Aux développeurs qui veulent comprendre le DDD en profondeur",
             "Aux managers",
@@ -179,14 +177,15 @@ export const WorkshopDDDPage = () => {
           buildingBlocks.workshopMoneyback,
           buildingBlocks.reserve(
             <PracticalInformations
-              dates={["Les Mardis du 05 Août au 16 Septembre 2025"]}
+              dates={["Les Mardis du 23 Septembre au 4 Novembre 2025"]}
               requirements={[
                 "2 ans d'expérience en développement logiciel",
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
                 "Bonnes compétences de développement orienté objet",
               ]}
               hours={"9h à 12h30"}
-              price={1500}
+              regularPrice={1500}
+              discountPrice={800}
               programUrl={
                 "https://drive.google.com/file/d/1lySVB0Dvzza0drtWdMbgf8DKEllqiaQc/view?usp=sharing"
               }
