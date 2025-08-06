@@ -4,12 +4,12 @@ import styles from "./LastCourses.module.scss";
 import React from "react";
 import { allCourses, Container } from "@ancyracademy/shared";
 import { CourseResume } from "../components/CourseResume";
-import { NoSsrPromotional } from "@ancyracademy/shared/src/components/NoSsrPromotional";
+import { SectionTitle } from "../components/SectionTitle";
 
 export const LastCourses: React.FC = () => {
   return (
     <Container>
-      <NoSsrPromotional />
+      <SectionTitle>Nos cours en e-learning</SectionTitle>
       <div className={styles.view}>
         <div className={styles.list}>
           {allCourses.map((course, index) => (

@@ -3,9 +3,7 @@
 .view {
   position: relative;
 
-  padding-inline: 32px;
-  padding-top: 32px;
-  padding-bottom: 20px;
+
 
   border: 1px solid #1a4f4a;
   background-color: #101818;
@@ -73,7 +71,11 @@
 }
 
 .texts {
-  padding-block: 32px;
+  padding-inline: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  height: 200px;
 }
 
 .title {
