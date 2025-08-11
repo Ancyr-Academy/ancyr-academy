@@ -9,7 +9,7 @@ import {
   PracticalInformations,
   SalesPage,
   SellingParagraph,
-  WorkshopProgram,
+  WorkshopProgram
 } from "../components/SalesPage";
 import { Container } from "../components/Container";
 import { Button } from "../components/Button";
@@ -177,7 +177,7 @@ export const WorkshopDDDPage = () => {
           buildingBlocks.workshopMoneyback,
           buildingBlocks.reserve(
             <PracticalInformations
-              dates={["Les Mardis du 23 Septembre au 4 Novembre 2025"]}
+              dates={["Les Mardis du 14 Octobre au 25 Novembre 2025"]}
               requirements={[
                 "2 ans d'expérience en développement logiciel",
                 "Être à l'aise avec une stack NodeJS, mais vous pouvez choisir la stack qui vous plait (Java, C#, PHP...)",
