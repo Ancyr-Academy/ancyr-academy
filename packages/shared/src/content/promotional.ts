@@ -26,7 +26,7 @@ const discountStates = [
 
 const exceptionalDiscount: ExceptionalDiscount | null = {
   startsAt: new Date("2025-09-24T00:00:00Z"),
-  endsAt: new Date("2025-09-28T00:00:00Z"),
+  endsAt: new Date("2025-09-29T00:00:00Z"),
   percentage: 0.4,
   code: "FRENCHDAYS2025",
 };
