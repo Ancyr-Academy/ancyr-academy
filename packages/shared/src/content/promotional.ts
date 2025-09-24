@@ -25,10 +25,10 @@ const discountStates = [
 ] as const;
 
 const exceptionalDiscount: ExceptionalDiscount | null = {
-  startsAt: new Date("2025-06-26T00:00:00Z"),
-  endsAt: new Date("2025-06-30T00:00:00Z"),
-  percentage: 0.3,
-  code: "MUSIQUE2025",
+  startsAt: new Date("2025-09-24T00:00:00Z"),
+  endsAt: new Date("2025-09-28T00:00:00Z"),
+  percentage: 0.4,
+  code: "FRENCHDAYS2025",
 };
 
 export const promotional: {
