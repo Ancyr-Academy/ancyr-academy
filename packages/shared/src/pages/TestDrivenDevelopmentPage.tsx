@@ -63,7 +63,7 @@ export const TestDrivenDevelopmentPage = () => {
                 {
                   id: "6102280",
                   imageUrl:
-                    "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/4IOk4vyYRAilc9MnO8LE",
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_tdd.png",
                   isHot: true,
                   price: 80,
                   upcomingPrice: 120,

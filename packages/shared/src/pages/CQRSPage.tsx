@@ -65,7 +65,7 @@ export const CQRSPage = () => {
                 {
                   id: "6106784",
                   imageUrl:
-                    "https://cdn.filestackcontent.com/g3Yv0uBaQ2OYoY8hrnZH",
+                    "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_cqrs.png",
                   isHot: true,
                   price: 50,
                   status: {
