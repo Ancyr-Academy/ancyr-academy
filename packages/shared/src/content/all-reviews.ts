@@ -25,6 +25,36 @@ export const allReviews = [
   },
   {
     authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/matthias_jacques.jpeg",
+    authorName: "Matthias Jacques",
+    content: `Workshop DDD complet et de qualité. Tout au long du workshop on a un vrai fil conducteur progressif, dans lequel chaque concept est amené avec cohérence pour servir et répondre aux problématiques rencontrés. Les sujets sont abordés de façon claire avec de vrai moments d'échanges (avec les forces et les faiblesses) le tout saupoudré avec des pépites sur certaines techniques dev (architectecure, pattern, implémentation) Bref un vrai exemple de pédagogie. Je recommande vous en aurez pour votre argent.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/lior_levi.jpeg",
+    authorName: "Lior Levi",
+    content: `C'était du vraiment solide ! L'apprentissage était plutôt intense et j'en ressors avec énormément de compétences approfondies en DDD et en OOP. Ma manière de coder à déjà changé, et je ne reviendrai pas en arrière :) Merci Anthony 👍🏽`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/aymeric_soubrouillard.jpeg",
+    authorName: "Aymeric Soubrouillard",
+    content: `Trés bonne experience avec Anthony sur cette formation au DDD avec une trés bonne alternance de theorie et de pratiques tout au long des seances. Il a su s'adatper à notre rythme. J'ai particulierment apprecié les differents insight de POO avancés. L'exercice home work en trame de fond est parfait pour comprendre l'evolution de framework. Bravo !`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/alan_duchene.jpeg",
+    authorName: "Alan Duchêne",
+    content: `Super formation sur le DDD sur un format très intéressant. La formation a duré 6 semaines à raison d'une demi journée par semaine. Ceci permet de garder en tête les concepts, de ne pas oublier d'appliquer sur des exercices entre deux sessions et ceci sur du moyen terme (6 semaines). Anthony est très compétent, plein de bon conseils, il maitrise son sujet et a toujours le sourire. En plus de cette formation, j'étais déjà abonné à ses formations en ligne, je recommande à 100% Anthony et ses formations.`,
+  },
+  {
+    authorImage:
+      "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/romain_chenard.jpeg",
+    authorName: "Romain Chenard",
+    content: `Super expérience ! Workshop de très bonne qualité. La partie pratique est challengeante et très bien organisée. Je me suis vraiment senti progresser !!`,
+  },
+  {
+    authorImage:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/george_cosson.jpeg",
     authorName: "Georges Cosson",
     content: `J'ai suivi la formation DDD sur 6 semaine d'Anthony. Il est passioné et passionant. Les sujets sont bien amenés et s'enchainent bien, dans la bonne humeur. Je recommande aux devs voulant découvrir ou creuser le DDD (et toutes les bonnes pratiques que ça implique)`,
@@ -46,6 +76,10 @@ export const allReviews = [
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/ca/reviews/yaziddaoudi.jpeg",
     authorName: "Yazid Daoudi",
     content: `Je conseil fortement la formation d'Anthony. Elle convient a tous, debutant et confirmé. Anthony prend le temps d'expliquer toute la theorie autour de la clean architecture pour ensuite nous plonger dans une etude de cas avec react et next. De plus le contenu est mis a jour en fonction des remarques faites par les membres de la formation. Je recommande a 100% !`,
+  },
+  {
+    authorName: "Teddy Morin",
+    content: `Une super formation, qui va droit au but. Je voulais des exemples pratiques, sans perdre mon temps à décortiquer des ressources de mauvaise qualité qu’on trouve ailleurs. Anthony est un excellent professeur, j’ai trouvé exactement ce que je cherchais.`,
   },
   {
     authorImage:
