@@ -180,6 +180,7 @@ export const Courses = ({
             imageUrl={course.imageUrl}
             isHot={course.isHot}
             price={course.price}
+            upcomingPrice={course.upcomingPrice}
             status={course.status}
             title={course.title}
             discount={showDiscount !== false ? discount : undefined}

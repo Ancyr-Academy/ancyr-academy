@@ -6,6 +6,7 @@ import currency from "currency.js";
 export const Course: React.FC<{
   title: string;
   price: number;
+  upcomingPrice?: number;
   imageUrl: string;
   status: {
     type: "available";
@@ -22,6 +23,7 @@ export const Course: React.FC<{
   title,
   children,
   price,
+  upcomingPrice,
   imageUrl,
   status,
   isHot,
@@ -43,8 +45,8 @@ export const Course: React.FC<{
       </div>
       <div className={styles.price_section}>
         {discount ? (
-          <>
-            <p className={styles.old_pricing}>{price}.00€</p>
+          <div className={styles.pricings}>
+            <p className={styles.old_pricing}>{upcomingPrice ?? price}.00€</p>
             <p className={styles.pricing}>
               {currency(price - price * discount.percentage).format({
                 precision: 2,
@@ -52,11 +54,23 @@ export const Course: React.FC<{
               })}
               €
             </p>
-          </>
+          </div>
         ) : (
-          <p className={styles.pricing}>
-            {currency(price).format({ precision: 2, symbol: "" })}€
-          </p>
+          <div className={styles.pricings}>
+            {upcomingPrice && (
+              <p className={styles.upcoming_price}>
+                Bientôt à{" "}
+                {currency(upcomingPrice).format({
+                  precision: 2,
+                  symbol: "",
+                })}
+                €
+              </p>
+            )}
+            <p className={styles.pricing}>
+              {currency(price).format({ precision: 2, symbol: "" })}€
+            </p>
+          </div>
         )}
       </div>
 

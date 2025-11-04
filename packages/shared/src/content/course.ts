@@ -9,6 +9,7 @@ export type CourseType = {
   id: string;
   imageUrl: string;
   price: number;
+  upcomingPrice?: number;
   title: string;
   status: Status;
   resume: React.ReactNode;

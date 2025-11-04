@@ -66,6 +66,7 @@ export const TestDrivenDevelopmentPage = () => {
                     "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/4IOk4vyYRAilc9MnO8LE",
                   isHot: true,
                   price: 80,
+                  upcomingPrice: 120,
                   status: {
                     type: "available",
                     productId: "6102280",
