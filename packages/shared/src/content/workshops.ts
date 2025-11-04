@@ -14,6 +14,6 @@ export const allWorkshops = [
     imageUrl:
       "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/workshops/w_ddd.png",
     url: "/workshops/ddd",
-    nextDates: "Les Mardis, du 20 Janvier au 3 Mars 2025",
+    nextDates: "Les Mardis, du 10 Mars au 21 Avril 2026",
   },
 ];
