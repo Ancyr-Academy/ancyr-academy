@@ -44,7 +44,7 @@ export const Course: React.FC<{
         <p className={styles.text}>{children}</p>
       </div>
       <div className={styles.price_section}>
-        {discount ? (
+        {discount && !upcomingPrice ? (
           <div className={styles.pricings}>
             <p className={styles.old_pricing}>{upcomingPrice ?? price}.00€</p>
             <p className={styles.pricing}>
