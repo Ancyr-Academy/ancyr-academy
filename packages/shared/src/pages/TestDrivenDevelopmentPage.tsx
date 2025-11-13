@@ -65,8 +65,7 @@ export const TestDrivenDevelopmentPage = () => {
                   imageUrl:
                     "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_tdd.png",
                   isHot: true,
-                  price: 80,
-                  upcomingPrice: 150,
+                  price: 150,
                   status: {
                     type: "available",
                     productId: "6102280",
