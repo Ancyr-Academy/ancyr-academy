@@ -13,11 +13,6 @@ const discountStates = [
     slots: [0, 1],
   },
   {
-    percentage: 0.15,
-    code: "CODE15",
-    slots: [3, 4],
-  },
-  {
     percentage: 0.1,
     code: "CODE10",
     slots: [6, 7],
@@ -25,10 +20,10 @@ const discountStates = [
 ] as const;
 
 const exceptionalDiscount: ExceptionalDiscount | null = {
-  startsAt: new Date("2025-09-24T00:00:00Z"),
-  endsAt: new Date("2025-09-29T00:00:00Z"),
-  percentage: 0.4,
-  code: "FRENCHDAYS2025",
+  startsAt: new Date("2025-11-25T00:00:00Z"),
+  endsAt: new Date("2025-12-01T00:00:00Z"),
+  percentage: 0.5,
+  code: "BLACKFRIDAY2025",
 };
 
 export const promotional: {
