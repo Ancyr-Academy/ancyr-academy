@@ -61,7 +61,7 @@ export const TestDrivenDevelopmentPage = () => {
             <Courses
               courses={[
                 {
-                  id: "6102280",
+                  id: "6530092",
                   imageUrl:
                     "https://ancyracademy-public.s3.eu-west-1.amazonaws.com/website/courses/v_tdd.png",
                   isHot: true,
