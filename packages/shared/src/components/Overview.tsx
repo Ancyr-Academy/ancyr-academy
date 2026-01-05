@@ -117,8 +117,4 @@ export const workshopPoints = ({ hours }: { hours: number }) => [
     Icon: IoCalendar,
     text: "7 sessions au total",
   },
-  {
-    Icon: IoCash,
-    text: "Satisfait ou Remboursé",
-  },
 ];

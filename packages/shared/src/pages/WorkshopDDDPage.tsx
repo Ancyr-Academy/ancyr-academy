@@ -174,7 +174,6 @@ export const WorkshopDDDPage = () => {
           ),
           buildingBlocks.professor,
           buildingBlocks.reviews,
-          buildingBlocks.workshopMoneyback,
           buildingBlocks.reserve(
             <PracticalInformations
               dates={["Les Mardis, du 10 Mars au 21 Avril 2026"]}
@@ -199,30 +198,16 @@ export const WorkshopDDDPage = () => {
                   title: "Pourquoi suivre ce Workshop ?",
                   answer: (
                     <>
-                      Parce que le workshop est interactif, hands-on et explore
-                      tous les principes avec une{" "}
-                      <b>profondeur difficile à trouver sur Internet.</b>
+                      Parce qu'elle a été conçue pour vous enseigner les
+                      concepts du Domain-Driven Design avec une approche unique
+                      et hands-on. Vous allez vraiment créer un produit de A à Z
+                      durant ces 7 semaines et intégrer petit à petit toutes les
+                      briques du Domain-Driven Design.
                       <br />
                       <br />
-                      Et je vous parle en connaissance de cause : j'ai analysé
-                      toutes les formations de toutes les plateformes en France
-                      et à l'International, et je me suis également formé auprès
-                      d'acteurs reconnus dans la sphère du DDD.
-                      <br />
-                      <br />
-                      Je connais les points forts et les points faibles de
-                      chacune d'entre-elles, et j'en ai distillé le meilleur
-                      dans ce Workshop.
-                      <br />
-                      <br />
-                      Ma garantie ? En cas de déception,{" "}
-                      <b>
-                        vous pouvez me demander un remboursement intégral
-                        jusqu'à la fin de la 2e session.
-                      </b>
-                      <br />
-                      <br />
-                      Personne ne me l'a demandé.
+                      Vous repartez avec une vraie expérience pratique du
+                      Domain-Driven Design que vous pourrez réutiliser
+                      immédiatement dans vos propres projets.
                     </>
                   ),
                 },
@@ -331,22 +316,6 @@ export const WorkshopDDDPage = () => {
                       Le délai d’accès à la formation est d’un mois en moyenne.
                       Nous pouvons programmer les formations en fonction de vos
                       contraintes et de nos disponibilités.
-                    </>
-                  ),
-                },
-                {
-                  title: "Et si le Workshop ne me plait pas ?",
-                  answer: (
-                    <>
-                      Pas de soucis,{" "}
-                      <b>le Workshop est garantie satisfait ou remboursé</b>.
-                      Vous pouvez demander à quitter le Workshop et à être
-                      remboursé jusqu'à la fin de la 2e session.
-                      <br />
-                      <br />
-                      Un simple e-mail “Anthony, rend l’argent” durant cette
-                      période et je vous rembourse. C’est une garantie présente
-                      sur toutes mes formations.
                       <div style={{ marginTop: 40 }}>
                         <Button
                           wide
