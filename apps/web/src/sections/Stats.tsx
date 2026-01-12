@@ -14,11 +14,11 @@ export const Stats = () => {
           <div className={styles.stat}>
             <div className={styles.stat_outer}>
               <div className={styles.stat_inner}>
-                <h6 className={styles.stat_value}>+1700</h6>
+                <h6 className={styles.stat_value}>+2000</h6>
               </div>
             </div>
             <p className={styles.stat_text}>
-              Plus de 1700 élèves ont suivi nos cours en lignes et nos
+              Plus de 2000 élèves ont suivi nos cours en lignes et nos
               formations
             </p>
           </div>
