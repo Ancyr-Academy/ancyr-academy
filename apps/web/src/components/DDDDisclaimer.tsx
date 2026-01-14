@@ -6,13 +6,14 @@ export const DDDDisclaimer = ({ tags }: { tags: string[] }) => {
   return (
     <div className={styles.view}>
       <h6 className={styles.title}>
-        Je comprends rien au Domain-Driven Design !
+        Tu veux skill-up tes compétences d'architectre logicielle ?
       </h6>
       <p className={styles.text}>
-        Pas de soucis, c'est le cas pour énormément de développeurs.
+        Je donne un Workshop introductif et complet sur le Domain-Driven Design
+        du 10 Mars au 21 Avril 2026.
         <br />
         <a href={"/workshop-ddd"}>
-          Jette un oeil à ça, ça risque de te plaire.
+          Il reste encore quelques places, alors inscris-toi vite !
         </a>
       </p>
     </div>
