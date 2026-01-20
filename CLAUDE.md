@@ -56,12 +56,6 @@ const Page = () => <CleanArchitecturePage />;
 
 **Blog System**: Markdown files in `apps/web/src/posts/` processed with remark/rehype.
 
-### Environment Variables
-
-Required in `.env`:
-- `GHOST_URL` / `GHOST_KEY` - Ghost CMS integration (global)
-- `TEACHABLE_APIKEY` - Teachable course API
-
 ## Tech Stack
 
 - Next.js 15 with Turbopack
