@@ -18,9 +18,6 @@ pnpm dev
 # Build all apps
 pnpm build
 
-# Lint all apps
-pnpm lint
-
 # Format code
 pnpm format
 
@@ -33,7 +30,7 @@ pnpm --filter @ancyracademy/clean-architecture dev
 
 ### Monorepo Structure
 
-- **apps/web** - Main marketing website (Next.js 15 with App Router)
+- **apps/web** - Main marketing website (Next.js 16 with App Router)
 - **apps/clean-architecture** - Standalone landing page for Clean Architecture course
 - **packages/shared** - Shared React components, pages, content, and utilities
 - **packages/tsconfig** - Shared TypeScript configurations
@@ -58,7 +55,7 @@ const Page = () => <CleanArchitecturePage />;
 
 ## Tech Stack
 
-- Next.js 15 with Turbopack
+- Next.js 16 with Turbopack
 - React 19
 - TypeScript (strict mode with `noUncheckedIndexedAccess`)
 - pnpm 9.x workspaces
